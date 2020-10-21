@@ -1,6 +1,6 @@
 from iei_project.models.publicacion import Publicacion
 
-class Articulo:
+class Articulo(Publicacion):
     """
     Clase artículo
     """

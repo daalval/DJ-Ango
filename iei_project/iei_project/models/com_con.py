@@ -1,6 +1,6 @@
 from iei_project.models.publicacion import Publicacion
 
-class Com_con:
+class Com_con(Publicacion):
     """
     Clase comunicaciones-congresos
     """
