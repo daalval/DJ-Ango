@@ -1,7 +1,55 @@
 {% extends "base.html" %}
 
-{% block title %} Search {% endblock %}
+{% block title %} Resultados {% endblock %}
 
 {% block content %}
+
+<div class="row mb-5">
+
+{% for number in list %}
+
+<div class="card mx-auto d-block p-5 shadow-sm grid-item" style="width: 25rem;">
+    <div class="card-body">
+      <form class="row">
+        <label class="font-weight-bold text-muted">{{number}}</label>
+      </form>
+    </div>
+</div>
+
+{% endfor %}
+
+</div>
+
+<div class="row mb-5">
+
+{% for number in list %}
+
+<div class="card mx-auto d-block p-5 shadow-sm grid-item" style="width: 25rem;">
+    <div class="card-body">
+      <form class="row">
+        <label class="font-weight-bold text-muted">{{number}}</label>
+      </form>
+    </div>
+</div>
+
+{% endfor %}
+
+</div>
+
+<div class="row mb-5">
+
+{% for number in list %}
+
+<div class="card mx-auto d-block p-5 shadow-sm grid-item" style="width: 25rem;">
+    <div class="card-body">
+      <form class="row">
+        <label class="font-weight-bold text-muted">{{number}}</label>
+      </form>
+    </div>
+</div>
+
+{% endfor %}
+
+</div>
 
 {% endblock %}

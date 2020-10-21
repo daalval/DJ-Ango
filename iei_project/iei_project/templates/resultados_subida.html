@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+{% block title %} Resultados de subida {% endblock %}
+
+{% block content %}
+
+<div class="card mx-auto d-block p-5 shadow-sm" style="width: 80rem;">
+    <div class="card-body">
+      <form class="row">
+        <div class="col">
+            <label class="font-weight-bold text-muted">Referencias cargadas</label>
+            <div class="mt-2 ml-5">
+            <div class="input-group">
+              <label for="article" class="ml-3">Artículo: </label>
+            </div>
+
+            <div class="input-group">
+              <label for="book" class="ml-3">Libro:</label>
+            </div>
+
+            <div class="input-group">
+              <label for="congress" class="ml-3">Comunicación en congreso:</label>
+            </div>
+
+            <div class="input-group">
+              <label for="congress" class="ml-3">Total:</label>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+            <label class="font-weight-bold text-muted">Errores: </label>
+            <hr>
+            <textarea class="form-control" rows="10" disabled="true">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed nisi nibh. Sed ullamcorper, nulla consequat egestas rutrum, mauris quam efficitur lectus, tincidunt tempor metus purus vel metus. Proin eu justo vitae ex interdum eleifend quis a est. Donec neque elit, congue vulputate lectus fringilla, dignissim suscipit felis. In dapibus elit velit, ac vulputate metus aliquet eu. Nulla accumsan massa eget placerat molestie. Morbi elementum feugiat neque. Nulla facilisi. Etiam quis nisi vel odio condimentum lacinia.
+
+Duis et elit ut magna suscipit porta. Donec fringilla ante sapien, et finibus turpis pharetra at. Sed commodo erat in rhoncus laoreet. Etiam pharetra ac augue eget placerat. Nunc sed semper nisi. Proin porta, tellus vel varius facilisis, est nisi vehicula nulla, et pharetra metus nunc ac mauris. Etiam vestibulum sem eget euismod gravida. Vivamus lacinia nisl a sem gravida rhoncus. In fermentum metus sapien. Maecenas felis ligula, hendrerit sit amet lacinia et, vulputate eu mauris. Etiam fringilla ligula sapien, id egestas dolor efficitur at. Pellentesque porttitor eget mi quis posuere. Nunc et vestibulum velit, in imperdiet lectus. Etiam tristique magna at porttitor mollis.
+
+Sed porttitor velit urna, non egestas metus tristique iaculis. Sed lobortis, felis id euismod pharetra, lectus metus tincidunt nunc, eu aliquet diam augue nec metus. Nullam viverra, eros sed cursus commodo, nibh enim suscipit turpis, aliquam iaculis magna nisi vel quam. Duis in eros eget tellus iaculis luctus et vel orci. Nullam neque felis, luctus in ante ut, accumsan consectetur massa. Donec tincidunt ante nec risus volutpat tempus. Suspendisse imperdiet mauris quis elit gravida, at commodo tellus pretium. Praesent eu pretium nulla, sed ullamcorper metus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean augue odio, dapibus in tempor ac, ultrices vel nulla. In non felis nisi.
+
+Integer massa ligula, maximus non venenatis id, ultrices et quam. In turpis risus, tincidunt in sollicitudin et, suscipit et massa. Duis sed ullamcorper lacus, nec interdum ligula. Aliquam vitae gravida massa. Suspendisse tempus leo neque, a ultricies ex malesuada at. Ut nunc dui, pharetra ut venenatis sed, dignissim id dolor. Fusce tempus purus ligula, non rhoncus risus pretium porttitor.
+
+Duis nunc nibh, placerat in nunc nec, pellentesque pharetra risus. Fusce vel feugiat leo. Integer a sollicitudin velit. Aenean vestibulum massa a leo aliquet elementum. Vestibulum tincidunt ex in nibh fringilla viverra. Quisque efficitur hendrerit rutrum. Aliquam id bibendum purus. Duis rutrum commodo ante, in malesuada turpis dignissim eu. Ut quis felis augue. Quisque eu nisi nec nulla tempor tincidunt ac ac urna.
+            </textarea >
+        </div>
+      </form>
+    </div>
+</div>
+
+{% endblock %}
