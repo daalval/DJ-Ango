@@ -1,4 +1,4 @@
 from django.shortcuts import render
 
-def buscar (request,publicaciones):
+def buscar (request):
     return render(request,'buscar.html')
