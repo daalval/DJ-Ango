@@ -1,5 +1,5 @@
 class Ejemplar(object):
     def __init__(self, volumen, numero, mes):
-        self.volumen = volumen
-        self.numero = numero
-        self.mes = mes
+        self._volumen = volumen
+        self._numero = numero
+        self._mes = mes
