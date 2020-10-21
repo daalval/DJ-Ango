@@ -16,9 +16,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import include, path
 from iei_project.views.search import search
+from iei_project.views.results import results
 
 urlpatterns = [
     path('polls/', include('polls.urls')),
     path('admin/', admin.site.urls),
     path('search/', search),
+    path('results/', results),
 ]
