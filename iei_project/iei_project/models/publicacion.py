@@ -1,9 +1,7 @@
-from Persona import Persona
-
 class Publicacion(object):
 
     def __init__(self, titulo, anyo, url, autores):
-        self.titulo = titulo
-        self.anyo = anyo
-        self.url = url
-        self.autores = autores
+        self._titulo = titulo
+        self._anyo = anyo
+        self._url = url
+        self._autores = autores
