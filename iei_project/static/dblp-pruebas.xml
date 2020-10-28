@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dblp SYSTEM "F:/out/dblp.dtd">
+<dblp>
+	<article mdate="2020-06-25" key="tr/meltdown/s18" publtype="informal">
+		<author>Paul Kocher</author>
+		<author>Daniel Genkin</author>
+		<author>Daniel Gruss</author>
+		<author>Werner Haas 0004</author>
+		<author>Mike Hamburg</author>
+		<author>Moritz Lipp</author>
+		<author>Stefan Mangard</author>
+		<author>Thomas Prescher 0002</author>
+		<author>Michael Schwarz 0001</author>
+		<author>Yuval Yarom</author>
+		<title>Spectre Attacks: Exploiting Speculative Execution.</title>
+		<journal>meltdownattack.com</journal>
+		<year>2018</year>
+		<ee type="oa">https://spectreattack.com/spectre.pdf</ee>
+	</article>
+	<article mdate="2020-06-25" key="tr/meltdown/m18" publtype="informal">
+		<author>Moritz Lipp</author>
+		<author>Michael Schwarz 0001</author>
+		<author>Daniel Gruss</author>
+		<author>Thomas Prescher 0002</author>
+		<author>Werner Haas 0004</author>
+		<author>Stefan Mangard</author>
+		<author>Paul Kocher</author>
+		<author>Daniel Genkin</author>
+		<author>Yuval Yarom</author>
+		<author>Mike Hamburg</author>
+		<title>Meltdown</title>
+		<journal>meltdownattack.com</journal>
+		<ee type="oa">https://meltdownattack.com/meltdown.pdf</ee>
+		<year>2018</year>
+	</article>
+	<article mdate="2020-07-09" key="journals/see/Davies19">
+		<author orcid="0000-0002-2113-9103">Sarah R. Davies</author>
+		<title>An Ethics of the System: Talking to Scientists About Research Integrity.</title>
+		<pages>1235-1253</pages>
+		<year>2019</year>
+		<volume>25</volume>
+		<journal>Sci. Eng. Ethics</journal>
+		<number>4</number>
+		<ee>https://doi.org/10.1007/s11948-018-0064-y</ee>
+		<ee>https://www.wikidata.org/entity/Q58657000</ee>
+		<url>db/journals/see/see25.html#Davies19</url>
+	</article>
+	<article mdate="2020-07-09" key="journals/see/NairB20">
+		<author>Indira Nair</author>
+		<author>William M. Bulleit</author>
+		<title>Pragmatism and Care in Engineering Ethics.</title>
+		<pages>65-87</pages>
+		<year>2020</year>
+		<volume>26</volume>
+		<journal>Sci. Eng. Ethics</journal>
+		<number>1</number>
+		<ee>https://doi.org/10.1007/s11948-018-0080-y</ee>
+		<ee>https://www.wikidata.org/entity/Q90930992</ee>
+		<url>db/journals/see/see26.html#NairB20</url>
+	</article>
+	<article mdate="2020-07-09" key="journals/see/Silva18">
+		<author>Jaime A. Teixeira da Silva</author>
+		<title>Reflection on the Fazlul Sarkar versus PubPeer ("John Doe") Case.</title>
+		<pages>323-325</pages>
+		<year>2018</year>
+		<volume>24</volume>
+		<journal>Sci. Eng. Ethics</journal>
+		<number>1</number>
+		<ee>https://doi.org/10.1007/s11948-016-9863-1</ee>
+		<ee>https://www.wikidata.org/entity/Q53750216</ee>
+		<url>db/journals/see/see24.html#Silva18</url>
+	</article>
+	<article mdate="2020-07-09" key="journals/see/Punzi18">
+		<author orcid="0000-0002-3689-8970">Vito L. Punzi</author>
+		<title>A Social Responsibility Guide for Engineering Students and Professionals of all Faith Traditions: An Overview.</title>
+		<pages>1253-1277</pages>
+		<year>2018</year>
+		<volume>24</volume>
+		<journal>Sci. Eng. Ethics</journal>
+		<number>4</number>
+		<ee>https://doi.org/10.1007/s11948-017-9948-5</ee>
+		<ee>https://www.wikidata.org/entity/Q47776669</ee>
+		<url>db/journals/see/see24.html#Punzi18</url>
+	</article>
+	<article mdate="2020-07-09" key="journals/see/DehalKKS18">
+		<author>Neelam Dehal</author>
+		<author orcid="0000-0001-5321-0958">Kewal Krishan</author>
+		<author orcid="0000-0003-0346-1075">Tanuj Kanchan</author>
+		<author>Amarjeet Singh 0004</author>
+		<title>Mandatory Publications: An Approach to Kill 'Lack of Will' or 'Lack of Skill'?</title>
+		<pages>773-777</pages>
+		<year>2018</year>
+		<volume>24</volume>
+		<journal>Sci. Eng. Ethics</journal>
+		<number>2</number>
+		<ee>https://doi.org/10.1007/s11948-017-9903-5</ee>
+		<ee>https://www.wikidata.org/entity/Q47225481</ee>
+		<url>db/journals/see/see24.html#DehalKKS18</url>
+	</article>
+	<article mdate="2020-07-09" key="journals/see/Houdek20">
+		<author orcid="0000-0001-9755-6635">Petr Houdek</author>
+		<title>Fraud and Understanding the Moral Mind: Need for Implementation of Organizational Characteristics into Behavioral Ethics.</title>
+		<pages>691-707</pages>
+		<year>2020</year>
+		<volume>26</volume>
+		<journal>Sci. Eng. Ethics</journal>
+		<number>2</number>
+		<ee>https://doi.org/10.1007/s11948-019-00117-z</ee>
+		<ee>https://www.wikidata.org/entity/Q92736437</ee>
+		<url>db/journals/see/see26.html#Houdek20</url>
+	</article>
+</dblp>
