@@ -1,2 +1,1 @@
 iei_project/static/dblp2015-2020-sin-Incoll-phdth.xml filter=lfs diff=lfs merge=lfs -text
-iei_project/static/dblp.xml filter=lfs diff=lfs merge=lfs -text
