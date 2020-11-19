@@ -1,9 +1,3 @@
-
-
-
-from iei_project.models.Publicacion import Publicacion
-
-
 class Articulo(Publicacion):
     """
     Clase artículo
