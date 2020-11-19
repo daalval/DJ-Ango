@@ -1,3 +1,5 @@
+from bibliosearch.models.publicacion import Publicacion
+
 class Articulo(Publicacion):
     """
     Clase artículo
