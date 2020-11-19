@@ -1,4 +1,4 @@
-from iei_project.models.Persona import Persona
+from bibliosearch.models.Persona import Persona
 from logging import setLogRecordFactory
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys

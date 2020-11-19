@@ -1,6 +1,6 @@
 from django.shortcuts import render
 import math
-from iei_project.controllers.seleniumEngine import Selenium
+from bibliosearch.controllers.seleniumEngine import Selenium
 
 MAX_ITEMS = 9
 MAX_ROWS = 3

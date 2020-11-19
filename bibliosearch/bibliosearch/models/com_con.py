@@ -1,4 +1,4 @@
-from iei_project.models.publicacion import Publicacion
+from bibliosearch.models.publicacion import Publicacion
 
 class Com_con(Publicacion):
     """
