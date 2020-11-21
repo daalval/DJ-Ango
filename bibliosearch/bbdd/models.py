@@ -43,5 +43,5 @@ class Persona(models.Model):
     apellidos = models.CharField(null = True, max_length = 45)
 
 class PersonaPublicacion(models.Model):
-    persona = models.ForeignKey(Persona, on_delete = models.CASCADE, null = False)
-    publicacion = models.ForeignKey(Publicacion, on_delete = models.CASCADE, null = False)
+    persona = models.OneToOneField(Persona, on_delete = models.CASCADE, null = False)
+    publicacion = models.OneToOneField(Publicacion, on_delete = models.CASCADE, null = False)
