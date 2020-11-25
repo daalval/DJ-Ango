@@ -1,0 +1,1167 @@
+{
+    "total_records": 3740486,
+    "total_searched": 5325232,
+    "articles": [
+        {
+            "doi": "10.1109/MMET.1996.565634",
+            "title": "Mathematical questions of the boundary equation method in non-stationary problems of the diffraction of electromagnetic waves",
+            "publisher": "IEEE",
+            "isbn": "0-7803-3291-1",
+            "partnum": "96TH8183",
+            "rank": 1,
+            "authors": {
+                "authors": [
+                    {
+                        "affiliation": "Kharkov State Univ., Ukraine",
+                        "authorUrl": "https://ieeexplore.ieee.org/author/37352283300",
+                        "id": 37352283300,
+                        "full_name": "I. Chudinovich",
+                        "author_order": 1
+                    },
+                    {
+                        "authorUrl": "https://ieeexplore.ieee.org/author/37352283200",
+                        "id": 37352283200,
+                        "full_name": "A. Lytova",
+                        "author_order": 2
+                    }
+                ]
+            },
+            "access_type": "LOCKED",
+            "content_type": "Conferences",
+            "abstract": "We develop another approach to the construction of surface retarded potentials. We use directly the fundamental solution /spl Phi/(X) (6/spl times/6 matrix) for the Maxwell system which satisfies the causality condition /spl Phi/(X)=O when t<O. The analog of the third Green formula shows the view of these potentials to us.",
+            "article_number": "565634",
+            "pdf_url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=565634",
+            "abstract_url": "https://ieeexplore.ieee.org/document/565634/",
+            "publication_title": "MMET '96. VIth International Conference on Mathematical Methods in Electromagnetic Theory. Proceedings",
+            "conference_location": "Lviv, Ukraine",
+            "conference_dates": "10-13 Sept. 1996",
+            "publication_number": 4228,
+            "is_number": 12274,
+            "publication_year": 1996,
+            "publication_date": "10-13 Sept. 1996",
+            "start_page": "73",
+            "end_page": "75",
+            "citing_paper_count": 0,
+            "citing_patent_count": 0,
+            "index_terms": {
+                "ieee_terms": {
+                    "terms": [
+                        "Electromagnetic diffraction",
+                        "Electromagnetic scattering",
+                        "Maxwell equations",
+                        "Surface waves",
+                        "Magnetic fields",
+                        "Tellurium",
+                        "Electromagnetic fields",
+                        "Boundary conditions",
+                        "Partial differential equations"
+                    ]
+                }
+            },
+            "isbn_formats": {
+                "isbns": [
+                    {
+                        "format": "Print ISBN",
+                        "value": "0-7803-3291-1",
+                        "isbnType": "Historical"
+                    }
+                ]
+            }
+        },
+        {
+            "doi": "10.1109/DRC.1991.664662",
+            "title": "Status of Tft/lcd Flat Panel Display",
+            "publisher": "IEEE",
+            "isbn": "0-87942-647-0",
+            "rank": 2,
+            "authors": {
+                "authors": [
+                    {
+                        "affiliation": "Central Research Laboratory, Japan",
+                        "authorUrl": "https://ieeexplore.ieee.org/author/37332265000",
+                        "id": 37332265000,
+                        "full_name": "T. Tsukada",
+                        "author_order": 1
+                    }
+                ]
+            },
+            "access_type": "LOCKED",
+            "content_type": "Conferences",
+            "article_number": "664662",
+            "pdf_url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=664662",
+            "abstract_url": "https://ieeexplore.ieee.org/document/664662/",
+            "publication_title": "[1991] 49th Annual Device Research Conference Digest",
+            "conference_location": "Boulder, CO, USA",
+            "conference_dates": "17-19 June 1991",
+            "publication_number": 5394,
+            "is_number": 14589,
+            "publication_year": 1991,
+            "publication_date": "17-19 June 1991",
+            "start_page": "IA_3",
+            "end_page": "0_11",
+            "citing_paper_count": 2,
+            "citing_patent_count": 0,
+            "index_terms": {
+                "ieee_terms": {
+                    "terms": [
+                        "Thin film transistors",
+                        "Flat panel displays",
+                        "Liquid crystal displays",
+                        "Glass",
+                        "Cathode ray tubes",
+                        "Active matrix technology",
+                        "Delay",
+                        "Artificial intelligence",
+                        "Electrodes",
+                        "Laboratories"
+                    ]
+                }
+            },
+            "isbn_formats": {
+                "isbns": [
+                    {
+                        "format": "Print ISBN",
+                        "value": "0-87942-647-0",
+                        "isbnType": "Historical"
+                    }
+                ]
+            }
+        },
+        {
+            "title": "IEE Colloquium on 'Practical Applications of DSP Devices' (Digest No.100)",
+            "publisher": "IET",
+            "rank": 3,
+            "authors": {
+                "authors": []
+            },
+            "access_type": "LOCKED",
+            "content_type": "Conferences",
+            "article_number": "190359",
+            "pdf_url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=190359",
+            "abstract_url": "https://ieeexplore.ieee.org/document/190359/",
+            "publication_title": "IEE Colloquium on Practical Applications of DSP Devices",
+            "conference_location": "London, UK",
+            "conference_dates": "11-11 June 1990",
+            "publication_number": 1840,
+            "is_number": 4837,
+            "publication_year": 1990,
+            "publication_date": "11-11 June 1990",
+            "start_page": "0_1",
+            "citing_paper_count": 0,
+            "citing_patent_count": 0,
+            "index_terms": {
+                "ieee_terms": {
+                    "terms": [
+                        "Digital signal processors",
+                        "Speech processing"
+                    ]
+                }
+            }
+        },
+        {
+            "doi": "10.1109/IST.2004.1397299",
+            "title": "IST/2004 Medical Applications",
+            "publisher": "IEEE",
+            "isbn": "0-7803-8591-8",
+            "partnum": "04EX896",
+            "rank": 4,
+            "authors": {
+                "authors": []
+            },
+            "access_type": "LOCKED",
+            "content_type": "Conferences",
+            "article_number": "1397299",
+            "pdf_url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=1397299",
+            "abstract_url": "https://ieeexplore.ieee.org/document/1397299/",
+            "publication_title": "2004 IEEE International Workshop on Imaging Systems and Techniques (IST) (IEEE Cat. No.04EX896)",
+            "conference_location": "Stresa",
+            "conference_dates": "14-14 May 2004",
+            "publication_number": 9610,
+            "is_number": 30383,
+            "publication_year": 2004,
+            "publication_date": "14-14 May 2004",
+            "start_page": "134",
+            "end_page": "134",
+            "citing_paper_count": 0,
+            "citing_patent_count": 0,
+            "index_terms": {
+                "ieee_terms": {
+                    "terms": [
+                        "Medical services",
+                        "Biomedical equipment"
+                    ]
+                }
+            },
+            "isbn_formats": {
+                "isbns": [
+                    {
+                        "format": "Print ISBN",
+                        "value": "0-7803-8591-8",
+                        "isbnType": "Historical"
+                    }
+                ]
+            }
+        },
+        {
+            "title": "2007 IET Seminar on New Regulatory Requirements and Techniques for Achieving Electromagnetic Compatibility in Commercial Buildings",
+            "publisher": "IET",
+            "isbn": "978-0-86341-795-5",
+            "issn": "0537-9989",
+            "rank": 5,
+            "authors": {
+                "authors": []
+            },
+            "access_type": "LOCKED",
+            "content_type": "Conferences",
+            "article_number": "4211163",
+            "pdf_url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=4211163",
+            "abstract_url": "https://ieeexplore.ieee.org/document/4211163/",
+            "publication_title": "2007 IET Seminar on New Regulatory Requirements and Techniques for Achieving Electromagnetic Compatibility in Commercial Buildings",
+            "conference_location": "London",
+            "conference_dates": "13-13 April 2007",
+            "publication_number": 4211161,
+            "is_number": 4211162,
+            "publication_year": 2007,
+            "publication_date": "13-13 April 2007",
+            "start_page": "c1",
+            "end_page": "c1",
+            "citing_paper_count": 0,
+            "citing_patent_count": 0,
+            "index_terms": {},
+            "isbn_formats": {
+                "isbns": [
+                    {
+                        "format": "Print ISBN",
+                        "value": "978-0-86341-795-5",
+                        "isbnType": "New-2005"
+                    }
+                ]
+            }
+        },
+        {
+            "doi": "10.1109/INTMAG.1990.734099",
+            "title": "Stoechimetry and microwave properties of YIG films grown by ion beam sputtering",
+            "publisher": "IEEE",
+            "rank": 6,
+            "authors": {
+                "authors": [
+                    {
+                        "authorUrl": "https://ieeexplore.ieee.org/author/38351681100",
+                        "id": 38351681100,
+                        "full_name": "F. Chevrier",
+                        "author_order": 1
+                    },
+                    {
+                        "authorUrl": "https://ieeexplore.ieee.org/author/37316791500",
+                        "id": 37316791500,
+                        "full_name": "M. Artinian",
+                        "author_order": 2
+                    },
+                    {
+                        "authorUrl": "https://ieeexplore.ieee.org/author/37315825100",
+                        "id": 37315825100,
+                        "full_name": "H. Le Gall",
+                        "author_order": 3
+                    }
+                ]
+            },
+            "access_type": "LOCKED",
+            "content_type": "Conferences",
+            "article_number": "734099",
+            "pdf_url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=734099",
+            "abstract_url": "https://ieeexplore.ieee.org/document/734099/",
+            "publication_title": "1990 IEEE International Magnetics Conference (INTERMAG)",
+            "conference_location": "Brighton, UK",
+            "conference_dates": "17-20 April 1990",
+            "publication_number": 5567,
+            "is_number": 14901,
+            "publication_year": 1990,
+            "publication_date": "17-20 April 1990",
+            "start_page": "AR",
+            "end_page": "AR",
+            "citing_paper_count": 0,
+            "citing_patent_count": 0,
+            "index_terms": {
+                "ieee_terms": {
+                    "terms": [
+                        "Ion beams",
+                        "Sputtering"
+                    ]
+                }
+            }
+        },
+        {
+            "title": "Microtechnology meets Nanoscience = a Commercial Opportunity?",
+            "publisher": "IET",
+            "isbn": "0-86341-445-1",
+            "issn": "0537-9989",
+            "rank": 7,
+            "authors": {
+                "authors": []
+            },
+            "access_type": "LOCKED",
+            "content_type": "Conferences",
+            "article_number": "1514297",
+            "pdf_url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=1514297",
+            "abstract_url": "https://ieeexplore.ieee.org/document/1514297/",
+            "publication_title": "Microtechnology Meets Nanoscience - A commercial Opportunity?",
+            "conference_location": "London, UK",
+            "conference_dates": "8-8 July 2004",
+            "publication_number": 10128,
+            "is_number": 32424,
+            "publication_year": 2004,
+            "publication_date": "8-8 July 2004",
+            "start_page": "0_3",
+            "end_page": "0_3",
+            "citing_paper_count": 0,
+            "citing_patent_count": 0,
+            "index_terms": {},
+            "isbn_formats": {
+                "isbns": [
+                    {
+                        "format": "Print ISBN",
+                        "value": "0-86341-445-1",
+                        "isbnType": "Historical"
+                    }
+                ]
+            }
+        },
+        {
+            "title": "Latency for Real-Time Machine-to-Machine Communication in LTE-Based System Architecture",
+            "publisher": "VDE",
+            "isbn": "978-3-8007-3343-9",
+            "rank": 8,
+            "authors": {
+                "authors": [
+                    {
+                        "full_name": "Navid Nikaein",
+                        "author_order": 1
+                    },
+                    {
+                        "full_name": "Srdjan Krea",
+                        "author_order": 2
+                    }
+                ]
+            },
+            "access_type": "LOCKED",
+            "content_type": "Conferences",
+            "abstract": "Machine-to-machine communication has attracted a lot of interest in the mobile communication industry and is under standardization process in 3GPP. Of particular interest is LTE-Advanced support for various M2M service requirements and efficient management and handling of a huge number of machines as mobile subscribers. In addition to the higher throughput, one of the main advantages of LTE/LTE-A in comparison with the previous cellular networks is the reduced transmission latency, which makes this type of networks very attractive for real-time mobile M2M communication scenarios. This paper presents a M2M system architecture based on LTE/LTE-A and highlights the delays associated with each part of the system. Three real-time M2M applications are analyzed and the main latency bottlenecks are identified. Proposals on how the latency can be further reduced are described.",
+            "article_number": "5898065",
+            "pdf_url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=5898065",
+            "abstract_url": "https://ieeexplore.ieee.org/document/5898065/",
+            "publication_title": "17th European Wireless 2011 - Sustainable Wireless Technologies",
+            "conference_location": "Vienna, Austria",
+            "conference_dates": "27-29 April 2011",
+            "publication_number": 5897968,
+            "is_number": 5897969,
+            "publication_year": 2011,
+            "publication_date": "27-29 April 2011",
+            "start_page": "1",
+            "end_page": "6",
+            "citing_paper_count": 9,
+            "citing_patent_count": 1,
+            "index_terms": {
+                "ieee_terms": {
+                    "terms": [
+                        "Decision support systems",
+                        "Europe",
+                        "Wireless communication"
+                    ]
+                }
+            },
+            "isbn_formats": {
+                "isbns": [
+                    {
+                        "format": "Print ISBN",
+                        "value": "978-3-8007-3343-9",
+                        "isbnType": "New-2005"
+                    }
+                ]
+            }
+        },
+        {
+            "doi": "10.1109/INTMAG.1990.734891",
+            "title": "Seek durability for CoCrTa perpendicular flexible disks",
+            "publisher": "IEEE",
+            "rank": 9,
+            "authors": {
+                "authors": [
+                    {
+                        "authorUrl": "https://ieeexplore.ieee.org/author/37088240954",
+                        "id": 37088240954,
+                        "full_name": "Katsumichi",
+                        "author_order": 1
+                    },
+                    {
+                        "authorUrl": "https://ieeexplore.ieee.org/author/37088244378",
+                        "id": 37088244378,
+                        "full_name": "Tagami",
+                        "author_order": 2
+                    },
+                    {
+                        "authorUrl": "https://ieeexplore.ieee.org/author/37088243392",
+                        "id": 37088243392,
+                        "full_name": "T. Takeda",
+                        "author_order": 3
+                    },
+                    {
+                        "authorUrl": "https://ieeexplore.ieee.org/author/37323112100",
+                        "id": 37323112100,
+                        "full_name": "H. Hayashida",
+                        "author_order": 4
+                    },
+                    {
+                        "authorUrl": "https://ieeexplore.ieee.org/author/38091102100",
+                        "id": 38091102100,
+                        "full_name": "T. Arai",
+                        "author_order": 5
+                    }
+                ]
+            },
+            "access_type": "LOCKED",
+            "content_type": "Conferences",
+            "article_number": "734891",
+            "pdf_url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=734891",
+            "abstract_url": "https://ieeexplore.ieee.org/document/734891/",
+            "publication_title": "1990 IEEE International Magnetics Conference (INTERMAG)",
+            "conference_location": "Brighton, UK",
+            "conference_dates": "17-20 April 1990",
+            "publication_number": 5567,
+            "is_number": 14901,
+            "publication_year": 1990,
+            "publication_date": "17-20 April 1990",
+            "start_page": "HA",
+            "end_page": "HA",
+            "citing_paper_count": 0,
+            "citing_patent_count": 0,
+            "index_terms": {}
+        },
+        {
+            "title": "IEE Colloquium on 'NDT Technology in Aerospace' (Digest No.10)",
+            "publisher": "IET",
+            "rank": 10,
+            "authors": {
+                "authors": []
+            },
+            "access_type": "LOCKED",
+            "content_type": "Conferences",
+            "article_number": "189667",
+            "pdf_url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=189667",
+            "abstract_url": "https://ieeexplore.ieee.org/document/189667/",
+            "publication_title": "IEE Colloquium on NDT Technology in Aerospace",
+            "conference_location": "London, UK",
+            "conference_dates": "15-15 Jan. 1990",
+            "publication_number": 1925,
+            "is_number": 4782,
+            "publication_year": 1990,
+            "publication_date": "15-15 Jan. 1990",
+            "start_page": "0_1",
+            "citing_paper_count": 0,
+            "citing_patent_count": 0,
+            "index_terms": {
+                "ieee_terms": {
+                    "terms": [
+                        "Aerospace testing",
+                        "Inspection",
+                        "Nondestructive testing",
+                        "Acoustic testing"
+                    ]
+                }
+            }
+        },
+        {
+            "doi": "10.1109/INTMAG.1990.734278",
+            "title": "Dynamic properties of a cross-tie domain wall",
+            "publisher": "IEEE",
+            "rank": 11,
+            "authors": {
+                "authors": [
+                    {
+                        "authorUrl": "https://ieeexplore.ieee.org/author/37315585200",
+                        "id": 37315585200,
+                        "full_name": "A.F. Popkov",
+                        "author_order": 1
+                    },
+                    {
+                        "authorUrl": "https://ieeexplore.ieee.org/author/37375541000",
+                        "id": 37375541000,
+                        "full_name": "A.S. Sigov",
+                        "author_order": 2
+                    },
+                    {
+                        "authorUrl": "https://ieeexplore.ieee.org/author/37332915800",
+                        "id": 37332915800,
+                        "full_name": "A.G. Shishkov",
+                        "author_order": 3
+                    },
+                    {
+                        "authorUrl": "https://ieeexplore.ieee.org/author/37063071000",
+                        "id": 37063071000,
+                        "full_name": "A.K. Zvezdin",
+                        "author_order": 4
+                    }
+                ]
+            },
+            "access_type": "LOCKED",
+            "content_type": "Conferences",
+            "article_number": "734278",
+            "pdf_url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=734278",
+            "abstract_url": "https://ieeexplore.ieee.org/document/734278/",
+            "publication_title": "1990 IEEE International Magnetics Conference (INTERMAG)",
+            "conference_location": "Brighton, UK",
+            "conference_dates": "17-20 April 1990",
+            "publication_number": 5567,
+            "is_number": 14901,
+            "publication_year": 1990,
+            "publication_date": "17-20 April 1990",
+            "start_page": "BB",
+            "end_page": "BB",
+            "citing_paper_count": 0,
+            "citing_patent_count": 0,
+            "index_terms": {}
+        },
+        {
+            "doi": "10.1364/ACP.2012.AS4B.1",
+            "title": "Modeling and design of high density photonic integrated circuits",
+            "publisher": "IEEE",
+            "isbn": "978-1-4673-6274-0",
+            "issn": "2162-108X",
+            "partnum": "12EX8014",
+            "rank": 12,
+            "authors": {
+                "authors": [
+                    {
+                        "affiliation": "McMaster University, Hamilton, Ontario, CANADA",
+                        "full_name": "W. Huang",
+                        "author_order": 1
+                    }
+                ]
+            },
+            "access_type": "LOCKED",
+            "content_type": "Conferences",
+            "abstract": "Abstract not available. The document was not made available for publication as part of the conference proceedings.",
+            "article_number": "6510853",
+            "pdf_url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=6510853",
+            "abstract_url": "https://ieeexplore.ieee.org/document/6510853/",
+            "publication_title": "2012 Asia Communications and Photonics Conference (ACP)",
+            "conference_location": "Guangzhou",
+            "conference_dates": "7-10 Nov. 2012",
+            "publication_number": 6504590,
+            "is_number": 6510568,
+            "publication_year": 2012,
+            "publication_date": "7-10 Nov. 2012",
+            "start_page": "1",
+            "end_page": "1",
+            "citing_paper_count": 0,
+            "citing_patent_count": 0,
+            "index_terms": {},
+            "isbn_formats": {
+                "isbns": [
+                    {
+                        "format": "Print ISBN",
+                        "value": "978-1-4673-6274-0",
+                        "isbnType": "New-2005"
+                    }
+                ]
+            }
+        },
+        {
+            "doi": "10.1049/cp.2012.1148",
+            "title": "Exitence and uniqueness of forest insect pests model with growth fuction",
+            "publisher": "IET",
+            "isbn": "978-1-84919-537-9",
+            "rank": 13,
+            "authors": {
+                "authors": [
+                    {
+                        "affiliation": "College of Science, Zhejiang University of Technology, Hangzhou 310023, China",
+                        "full_name": "Zhao Aijuan",
+                        "author_order": 1
+                    },
+                    {
+                        "affiliation": "College of Science, Zhejiang University of Technology, Hangzhou 310023, China",
+                        "full_name": "Dingjiang Wang",
+                        "author_order": 2
+                    },
+                    {
+                        "affiliation": "College of Science, Zhejiang University of Technology, Hangzhou 310023, China",
+                        "full_name": "Zhang Yingying",
+                        "author_order": 3
+                    }
+                ]
+            },
+            "access_type": "LOCKED",
+            "content_type": "Conferences",
+            "abstract": "Based on the classical forest systems model and consider the growth function's impact on cut rate and forest age, a new forest epidemic model is established. The existence and uniqueness of nonnegative solution of the system are proved by using the operator C0 -semigroup theory.",
+            "article_number": "6492755",
+            "pdf_url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=6492755",
+            "abstract_url": "https://ieeexplore.ieee.org/document/6492755/",
+            "publication_title": "International Conference on Automatic Control and Artificial Intelligence (ACAI 2012)",
+            "conference_location": "Xiamen",
+            "conference_dates": "3-5 March 2012",
+            "publication_number": 6482782,
+            "is_number": 6492510,
+            "publication_year": 2012,
+            "publication_date": "3-5 March 2012",
+            "start_page": "1013",
+            "end_page": "1015",
+            "citing_paper_count": 0,
+            "citing_patent_count": 0,
+            "index_terms": {
+                "author_terms": {
+                    "terms": [
+                        "forest insect pests",
+                        "growth function",
+                        "operate C0 - semigroup",
+                        "existence and uniqueness"
+                    ]
+                }
+            },
+            "isbn_formats": {
+                "isbns": [
+                    {
+                        "format": "Electronic ISBN",
+                        "value": "978-1-84919-537-9",
+                        "isbnType": "New-2005"
+                    }
+                ]
+            }
+        },
+        {
+            "title": "Field Stop Press-Pack Diodes in Half Bridge Submodules for Increased Efficiency in MMC Applications",
+            "publisher": "VDE",
+            "isbn": "978-3-8007-4938-6",
+            "rank": 14,
+            "authors": {
+                "authors": [
+                    {
+                        "full_name": "Fabian Hohmann",
+                        "author_order": 1
+                    },
+                    {
+                        "full_name": "Mark-M. Bakran",
+                        "author_order": 2
+                    }
+                ]
+            },
+            "access_type": "LOCKED",
+            "content_type": "Conferences",
+            "abstract": "In this paper a half bridge with an external antiparallel field stop Press-Pack diode (FS PP diode) is investigated to reduce conduction losses and enhance its efficiency. A sufficient softness for hardswitching application is accomplished and the optimal irradiation dose is experimentally determined to achieve low losses in an MMC not only in inverter, but also in rectifier mode.",
+            "article_number": "8767581",
+            "pdf_url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8767581",
+            "abstract_url": "https://ieeexplore.ieee.org/document/8767581/",
+            "publication_title": "PCIM Europe 2019; International Exhibition and Conference for Power Electronics, Intelligent Motion, Renewable Energy and Energy Management",
+            "conference_location": "Nuremberg, Germany",
+            "conference_dates": "7-9 May 2019",
+            "publication_number": 8767470,
+            "is_number": 8767471,
+            "publication_year": 2019,
+            "publication_date": "7-9 May 2019",
+            "start_page": "1",
+            "end_page": "8",
+            "citing_paper_count": 0,
+            "citing_patent_count": 0,
+            "index_terms": {},
+            "isbn_formats": {
+                "isbns": [
+                    {
+                        "format": "Print ISBN",
+                        "value": "978-3-8007-4938-6",
+                        "isbnType": "New-2005"
+                    }
+                ]
+            }
+        },
+        {
+            "title": "Keynote speakers",
+            "publisher": "IEEE",
+            "isbn": "978-989-8425-25-6",
+            "partnum": "10EX5346C",
+            "rank": 15,
+            "authors": {
+                "authors": []
+            },
+            "access_type": "LOCKED",
+            "content_type": "Conferences",
+            "abstract": "Provides an abstract for each of the keynote presentations and may include a brief professional biography of each",
+            "article_number": "5741962",
+            "pdf_url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=5741962",
+            "abstract_url": "https://ieeexplore.ieee.org/document/5741962/",
+            "publication_title": "2010 International Conference on Optical Communication Systems (OPTICS)",
+            "conference_location": "Athens",
+            "conference_dates": "26-28 July 2010",
+            "publication_number": 5738445,
+            "is_number": 5741955,
+            "publication_year": 2010,
+            "publication_date": "26-28 July 2010",
+            "start_page": "1",
+            "end_page": "1",
+            "citing_paper_count": 0,
+            "citing_patent_count": 0,
+            "index_terms": {},
+            "isbn_formats": {
+                "isbns": [
+                    {
+                        "format": "Electronic ISBN",
+                        "value": "978-989-8425-25-6",
+                        "isbnType": "New-2005"
+                    }
+                ]
+            }
+        },
+        {
+            "title": "Computers and Safety. A First International Conference on the Use of Programmable Electronic Systems in Safety Related Applications (Conf. Publ. No.314)",
+            "publisher": "IET",
+            "rank": 16,
+            "authors": {
+                "authors": []
+            },
+            "access_type": "LOCKED",
+            "content_type": "Conferences",
+            "article_number": "82223",
+            "pdf_url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=82223",
+            "abstract_url": "https://ieeexplore.ieee.org/document/82223/",
+            "publication_title": "1989 A First International Conference on the Use of Programmable Electronic Systems in Safety Related Applications Computers and Safety",
+            "conference_location": "Cardiff, UK",
+            "conference_dates": "8-10 Nov. 1989",
+            "publication_number": 1228,
+            "is_number": 2696,
+            "publication_year": 1989,
+            "publication_date": "8-10 Nov. 1989",
+            "start_page": "0_1",
+            "citing_paper_count": 0,
+            "citing_patent_count": 0,
+            "index_terms": {
+                "ieee_terms": {
+                    "terms": [
+                        "Digital control",
+                        "Computer aided engineering",
+                        "Computer fault tolerance",
+                        "Logic",
+                        "Safety",
+                        "Software reliability",
+                        "Standards"
+                    ]
+                }
+            }
+        },
+        {
+            "doi": "10.1109/ITST.2007.4295844",
+            "title": "Sensing Technologies",
+            "publisher": "IEEE",
+            "isbn": "1-4244-1178-5",
+            "partnum": "07EX1765",
+            "rank": 17,
+            "authors": {
+                "authors": []
+            },
+            "access_type": "LOCKED",
+            "content_type": "Conferences",
+            "article_number": "4295844",
+            "pdf_url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=4295844",
+            "abstract_url": "https://ieeexplore.ieee.org/document/4295844/",
+            "publication_title": "2007 7th International Conference on ITS Telecommunications",
+            "conference_location": "Sophia Antipolis",
+            "conference_dates": "6-8 June 2007",
+            "publication_number": 4295807,
+            "is_number": 4295808,
+            "publication_year": 2007,
+            "publication_date": "6-8 June 2007",
+            "start_page": "1",
+            "end_page": "1",
+            "citing_paper_count": 0,
+            "citing_patent_count": 0,
+            "index_terms": {},
+            "isbn_formats": {
+                "isbns": [
+                    {
+                        "format": "CD",
+                        "value": "1-4244-1178-5",
+                        "isbnType": "Historical"
+                    },
+                    {
+                        "format": "Print ISBN",
+                        "value": "1-4244-1177-7",
+                        "isbnType": "Historical"
+                    }
+                ]
+            }
+        },
+        {
+            "doi": "10.1109/INTMAG.1990.734457",
+            "title": "Effect of the volume of the switching unit on the properties of magnetic recording particles",
+            "publisher": "IEEE",
+            "rank": 18,
+            "authors": {
+                "authors": [
+                    {
+                        "authorUrl": "https://ieeexplore.ieee.org/author/37331736200",
+                        "id": 37331736200,
+                        "full_name": "A.R. Corradi",
+                        "author_order": 1
+                    },
+                    {
+                        "authorUrl": "https://ieeexplore.ieee.org/author/38169256400",
+                        "id": 38169256400,
+                        "full_name": "T.G. Price",
+                        "author_order": 2
+                    },
+                    {
+                        "authorUrl": "https://ieeexplore.ieee.org/author/37327159400",
+                        "id": 37327159400,
+                        "full_name": "C.A. Dinitto",
+                        "author_order": 3
+                    },
+                    {
+                        "authorUrl": "https://ieeexplore.ieee.org/author/37359454200",
+                        "id": 37359454200,
+                        "full_name": "W.B. Green",
+                        "author_order": 4
+                    }
+                ]
+            },
+            "access_type": "LOCKED",
+            "content_type": "Conferences",
+            "article_number": "734457",
+            "pdf_url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=734457",
+            "abstract_url": "https://ieeexplore.ieee.org/document/734457/",
+            "publication_title": "1990 IEEE International Magnetics Conference (INTERMAG)",
+            "conference_location": "Brighton, UK",
+            "conference_dates": "17-20 April 1990",
+            "publication_number": 5567,
+            "is_number": 14901,
+            "publication_year": 1990,
+            "publication_date": "17-20 April 1990",
+            "start_page": "DA",
+            "end_page": "DA",
+            "citing_paper_count": 0,
+            "citing_patent_count": 0,
+            "index_terms": {
+                "ieee_terms": {
+                    "terms": [
+                        "Magnetic switching",
+                        "Magnetic properties",
+                        "Magnetic recording"
+                    ]
+                }
+            }
+        },
+        {
+            "title": "Blank page",
+            "publisher": "IET",
+            "isbn": "978-0-86341-801-3",
+            "issn": "0537-9989",
+            "partnum": "PES07/847",
+            "rank": 19,
+            "authors": {
+                "authors": []
+            },
+            "access_type": "LOCKED",
+            "content_type": "Conferences",
+            "article_number": "4375362",
+            "pdf_url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=4375362",
+            "abstract_url": "https://ieeexplore.ieee.org/document/4375362/",
+            "publication_title": "2007 Institution of Engineering and Technology Seminar on The Pros and Cons of Using Commercial 'Off the Shelf' Components in Aviation Applications",
+            "conference_location": "London",
+            "conference_dates": "4-4 Sept. 2007",
+            "publication_number": 4375340,
+            "is_number": 4375341,
+            "publication_year": 2007,
+            "publication_date": "4-4 Sept. 2007",
+            "start_page": "100",
+            "end_page": "100",
+            "citing_paper_count": 0,
+            "citing_patent_count": 0,
+            "index_terms": {},
+            "isbn_formats": {
+                "isbns": [
+                    {
+                        "format": "Print ISBN",
+                        "value": "978-0-86341-801-3",
+                        "isbnType": "New-2005"
+                    }
+                ]
+            }
+        },
+        {
+            "doi": "10.1109/OFC.2005.192949",
+            "title": "Optical coherence tomography",
+            "publisher": "IEEE",
+            "isbn": "1-55752-783-0",
+            "partnum": "05CH37672",
+            "rank": 20,
+            "volume": "4",
+            "authors": {
+                "authors": [
+                    {
+                        "authorUrl": "https://ieeexplore.ieee.org/author/37278566900",
+                        "id": 37278566900,
+                        "full_name": "Zhongping Chen",
+                        "author_order": 1
+                    }
+                ]
+            },
+            "access_type": "LOCKED",
+            "content_type": "Conferences",
+            "article_number": "1501487",
+            "pdf_url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=1501487",
+            "html_url": "https://ieeexplore.ieee.org/document/1501487/",
+            "abstract_url": "https://ieeexplore.ieee.org/document/1501487/",
+            "publication_title": "OFC/NFOEC Technical Digest. Optical Fiber Communication Conference, 2005.",
+            "conference_location": "Anaheim, CA",
+            "conference_dates": "6-11 March 2005",
+            "publication_number": 9987,
+            "is_number": 32091,
+            "publication_year": 2005,
+            "publication_date": "6-11 March 2005",
+            "start_page": "217",
+            "end_page": "260",
+            "citing_paper_count": 0,
+            "citing_patent_count": 0,
+            "index_terms": {
+                "ieee_terms": {
+                    "terms": [
+                        "Tomography",
+                        "Optical imaging",
+                        "Biopsy",
+                        "Biomedical optical imaging",
+                        "Research and development"
+                    ]
+                }
+            },
+            "isbn_formats": {
+                "isbns": [
+                    {
+                        "format": "Print ISBN",
+                        "value": "1-55752-783-0",
+                        "isbnType": "Historical"
+                    }
+                ]
+            }
+        },
+        {
+            "title": "Compressive Sensing for Spaceborne Transmitter - Stationary Receiver Bistatic SAR Imaging",
+            "publisher": "VDE",
+            "isbn": "978-3-8007-4636-1",
+            "rank": 21,
+            "authors": {
+                "authors": [
+                    {
+                        "full_name": "Elena-Iulia Dobre",
+                        "author_order": 1
+                    },
+                    {
+                        "full_name": "Andrei Anghel",
+                        "author_order": 2
+                    }
+                ]
+            },
+            "access_type": "LOCKED",
+            "content_type": "Conferences",
+            "abstract": "Compressive sensing (CS) is a technique which stresses that sparse signals can be reconstructed from fewer samples than required by the Nyquist-Shannon sampling theorem. Lately, the trend of increasing the signal processing complexity for alleviating the requirement of a high acquisition rate of several Synthetic Aperture Radar (SAR) processing techniques has settled in, and CS is suitable for this purpose. The main goal of this article is the analysis of a CS algorithm applied to SAR data of sparse ground scenes, acquired through bistatic SAR systems. We implement the Orthogonal Matching Pursuit (OMP) and apply it to bistatic range-compressed SAR data to reconstruct the ground reflectivity.",
+            "article_number": "8438255",
+            "pdf_url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8438255",
+            "abstract_url": "https://ieeexplore.ieee.org/document/8438255/",
+            "publication_title": "EUSAR 2018; 12th European Conference on Synthetic Aperture Radar",
+            "conference_location": "Aachen, Germany",
+            "conference_dates": "4-7 June 2018",
+            "publication_number": 8437290,
+            "is_number": 8437291,
+            "publication_year": 2018,
+            "publication_date": "4-7 June 2018",
+            "start_page": "1",
+            "end_page": "6",
+            "citing_paper_count": 0,
+            "citing_patent_count": 0,
+            "index_terms": {},
+            "isbn_formats": {
+                "isbns": [
+                    {
+                        "format": "Print ISBN",
+                        "value": "978-3-8007-4636-1",
+                        "isbnType": "New-2005"
+                    }
+                ]
+            }
+        },
+        {
+            "title": "Applications Oriented Stability Theory for Discrete Linear Repetitive Processes",
+            "publisher": "VDE",
+            "isbn": "978-3-8007-3543-3",
+            "rank": 22,
+            "authors": {
+                "authors": [
+                    {
+                        "full_name": "Pawel Dabkowski",
+                        "author_order": 1
+                    },
+                    {
+                        "full_name": "Krzysztof Galkowski",
+                        "author_order": 2
+                    },
+                    {
+                        "full_name": "Eric Rogers",
+                        "author_order": 3
+                    }
+                ]
+            },
+            "access_type": "LOCKED",
+            "content_type": "Conferences",
+            "abstract": "Many systems repeat the same operation over and over again on a finite duration. Repetitive processes have this characteristic where repeated sweeps, termed passes, are made over the finite pass length and when each is complete the process resets to the starting location and the next pass begins. The distinguishing feature of these processes is that the output, or pass profile, produced on each pass explicitly contributes to the dynamics of the next one and can result in oscillations that increase in amplitude from pass-to-pass. For applications, it is necessary to have a stability theory on which to base control law design for stabilization and performance. This paper gives a reflective overview of the stability theory for linear repetitive processes with particular attention to the forms of stability possible, their characterizations, and suitability for control law design. A particular feature is that the strongest form of stability for these processes can, especially for applications, lead to difficulties in control law design for stability and performance. One alternative in such cases is also considered.",
+            "article_number": "6623832",
+            "pdf_url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=6623832",
+            "abstract_url": "https://ieeexplore.ieee.org/document/6623832/",
+            "publication_title": "nDS '13; Proceedings of the 8th International Workshop on Multidimensional Systems",
+            "conference_location": "Erlangen, Germany",
+            "conference_dates": "9-11 Sept. 2013",
+            "publication_number": 6623813,
+            "is_number": 6623814,
+            "publication_year": 2013,
+            "publication_date": "9-11 Sept. 2013",
+            "start_page": "1",
+            "end_page": "6",
+            "citing_paper_count": 0,
+            "citing_patent_count": 0,
+            "index_terms": {},
+            "isbn_formats": {
+                "isbns": [
+                    {
+                        "format": "Print ISBN",
+                        "value": "978-3-8007-3543-3",
+                        "isbnType": "New-2005"
+                    }
+                ]
+            }
+        },
+        {
+            "title": "Blank page",
+            "publisher": "IET",
+            "isbn": "0-86341-478-8",
+            "issn": "0537-9989",
+            "rank": 23,
+            "authors": {
+                "authors": []
+            },
+            "access_type": "LOCKED",
+            "content_type": "Conferences",
+            "article_number": "1513923",
+            "pdf_url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=1513923",
+            "abstract_url": "https://ieeexplore.ieee.org/document/1513923/",
+            "publication_title": "The IEE 2-Day Seminar on IT to HD: Visions of Broadcasting in the 21st Century, (Ref. No. 2004/10760)",
+            "conference_location": "London, UK",
+            "conference_dates": "30 Nov.-1 Dec. 2004",
+            "publication_number": 10114,
+            "is_number": 32410,
+            "publication_year": 2004,
+            "publication_date": "30 Nov.-1 Dec. 2004",
+            "start_page": "276",
+            "end_page": "276",
+            "citing_paper_count": 0,
+            "citing_patent_count": 0,
+            "index_terms": {},
+            "isbn_formats": {
+                "isbns": [
+                    {
+                        "format": "Print ISBN",
+                        "value": "0-86341-478-8",
+                        "isbnType": "Historical"
+                    }
+                ]
+            }
+        },
+        {
+            "doi": "10.1109/MEMSYS.2007.4432956",
+            "title": "Oral presentations",
+            "publisher": "IEEE",
+            "isbn": "978-1-4244-0950-1",
+            "issn": "1084-6999",
+            "partnum": "07CH37871",
+            "rank": 24,
+            "authors": {
+                "authors": []
+            },
+            "access_type": "LOCKED",
+            "content_type": "Conferences",
+            "article_number": "4432956",
+            "pdf_url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=4432956",
+            "abstract_url": "https://ieeexplore.ieee.org/document/4432956/",
+            "publication_title": "2007 IEEE 20th International Conference on Micro Electro Mechanical Systems (MEMS)",
+            "conference_location": "Hyogo",
+            "conference_dates": "21-25 Jan. 2007",
+            "publication_number": 4432954,
+            "is_number": 4432955,
+            "publication_year": 2007,
+            "publication_date": "21-25 Jan. 2007",
+            "start_page": "ix",
+            "end_page": "xxiv",
+            "citing_paper_count": 0,
+            "citing_patent_count": 0,
+            "index_terms": {
+                "ieee_terms": {
+                    "terms": [
+                        "Sensor arrays",
+                        "Capacitive sensors",
+                        "Sensor systems",
+                        "Micromechanical devices",
+                        "Acoustic sensors",
+                        "Fluidics",
+                        "CMOS technology",
+                        "Gyroscopes",
+                        "Silicon",
+                        "Automotive engineering"
+                    ]
+                }
+            },
+            "isbn_formats": {
+                "isbns": [
+                    {
+                        "format": "Print ISBN",
+                        "value": "978-1-4244-0950-1",
+                        "isbnType": "New-2005"
+                    }
+                ]
+            }
+        },
+        {
+            "title": "Flip-chip external-cavity lasers in Si",
+            "publisher": "IEEE",
+            "isbn": "978-1-5090-6229-4",
+            "rank": 25,
+            "authors": {
+                "authors": []
+            },
+            "access_type": "LOCKED",
+            "content_type": "Conferences",
+            "abstract": "We will review recent progress in high-density integration of photonics into switching systems and discuss future approaches to even tighter photonics integration to multi-chip modules and interposers highlighting critical challenges and opportunities.",
+            "article_number": "7936836",
+            "pdf_url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7936836",
+            "abstract_url": "https://ieeexplore.ieee.org/document/7936836/",
+            "publication_title": "2017 Optical Fiber Communications Conference and Exhibition (OFC)",
+            "conference_location": "Los Angeles, CA",
+            "conference_dates": "19-23 March 2017",
+            "publication_number": 7932337,
+            "is_number": 7936771,
+            "publication_year": 2017,
+            "publication_date": "19-23 March 2017",
+            "start_page": "1",
+            "end_page": "1",
+            "citing_paper_count": 0,
+            "citing_patent_count": 0,
+            "index_terms": {},
+            "isbn_formats": {
+                "isbns": [
+                    {
+                        "format": "Print on Demand(PoD) ISBN",
+                        "value": "978-1-5090-6229-4",
+                        "isbnType": "New-2005"
+                    },
+                    {
+                        "format": "Electronic ISBN",
+                        "value": "978-1-9435-8023-1",
+                        "isbnType": "New-2005"
+                    }
+                ]
+            }
+        }
+    ]
+}
