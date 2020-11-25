@@ -1,4 +1,4 @@
-from iei_project.models.Publicacion import Publicacion
+from bibliosearch.models.Publicacion import Publicacion
 
 
 class Libro(Publicacion):

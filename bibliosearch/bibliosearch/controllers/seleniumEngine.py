@@ -1,31 +1,33 @@
+from bibliosearch.models.Persona import Persona
 from logging import setLogRecordFactory
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
-import time
+from pybtex.database import parse_string
 
 
 class Selenium(object):
     def search(self, fecha_inicial, fecha_final):
-        profile = webdriver.FirefoxProfile(
-            'C:/Users/Dani/AppData/Roaming/Mozilla/Firefox/Profiles/s6ttqby6.default-release')
+        # profile = webdriver.FirefoxProfile(
+        #     'C:/Users/Dani/AppData/Roaming/Mozilla/Firefox/Profiles/s6ttqby6.default-release')
 
-        PROXY_HOST = "12.12.12.123"
-        PROXY_PORT = "1234"
-        profile.set_preference("network.proxy.type", 1)
-        profile.set_preference("network.proxy.http", PROXY_HOST)
-        profile.set_preference("network.proxy.http_port", int(PROXY_PORT))
-        profile.set_preference("dom.webdriver.enabled", False)
-        profile.set_preference('useAutomationExtension', False)
-        profile.update_preferences()
-        desired = webdriver.DesiredCapabilities.FIREFOX
-        driver = webdriver.Firefox(executable_path=r"iei_project/controllers/geckodriver.exe",
-                                   firefox_profile=profile, desired_capabilities=desired)
-        # driver = webdriver.Chrome('iei_project/controllers/chromedriver.exe')
+        # PROXY_HOST = "12.12.12.123"
+        # PROXY_PORT = "1234"
+        # profile.set_preference("network.proxy.type", 1)
+        # profile.set_preference("network.proxy.http", PROXY_HOST)
+        # profile.set_preference("network.proxy.http_port", int(PROXY_PORT))
+        # profile.set_preference("dom.webdriver.enabled", False)
+        # profile.set_preference('useAutomationExtension', False)
+        # profile.update_preferences()
+        # desired = webdriver.DesiredCapabilities.FIREFOX
+        # driver = webdriver.Firefox(executable_path=r"iei_project/controllers/geckodriver.exe",
+        #                            firefox_profile=profile, desired_capabilities=desired)
+        driver = webdriver.Chrome('iei_project/controllers/chromedriver.exe')
         driver.get("https://scholar.google.es/#d=gs_asd")
-        fecha_inicial_element = driver.find_element_by_id("gs_asd_ylo")
+        fecha_inicial_element = WebDriverWait(driver, 10).until(
+                lambda driver: driver.find_element_by_id("gs_asd_ylo"))
         fecha_inicial_element.send_keys(fecha_inicial)
         fecha_final_element = driver.find_element_by_id("gs_asd_yhi")
         fecha_final_element.send_keys(fecha_final)
@@ -36,7 +38,10 @@ class Selenium(object):
         if len(listElements) == 0:
             return []
 
+        dictionary = {}
+
         index = 0
+
         while(index < len(listElements)):
             self.extract_element(listElements[index], driver)
             index = index + 1
@@ -67,14 +72,33 @@ class Selenium(object):
             EC.element_to_be_clickable((By.CLASS_NAME, "gs_citi"))).click()
         text = driver.find_element_by_tag_name(
             'pre').get_attribute('innerText')
-        print(text)
+
+        data = parse_string(text,'bibtex')
+
+        result = {}
+
+
+        entry = list(data.entries.values())[0]
+
+        type = entry.type
+
+        print(type)
+
+        authors = entry.persons.get('author')
+
+        for author in authors:
+            persona = Persona(author.first_names,author.middle_names + author.last_names)
+            print(persona)
+        
+        
+
         driver.back()
         driver.back()
 
 
 def main():
     selenium = Selenium()
-    selenium.search('1000', '1600')
+    selenium.search('1000', '1500')
 
 
 if __name__ == "__main__":
