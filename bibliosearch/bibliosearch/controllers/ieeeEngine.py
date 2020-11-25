@@ -14,8 +14,8 @@ def fromJsonConferences(url, file):
         json.dump(data, outfile)
 
 def main():
-    fromJsonBooks("https://ieeexploreapi.ieee.org/api/v1/search/articles?parameter&apikey=efv84mzqq6ydx4dbd59jhdcn&content_type=Books", 'static/ieeeXploreBooks.json')
-    fromJsonConferences("https://ieeexploreapi.ieee.org/api/v1/search/articles?parameter&apikey=efv84mzqq6ydx4dbd59jhdcn&content_type=Conferences", 'static/ieeeXploreConferences.json')
+    fromJsonBooks("https://ieeexploreapi.ieee.org/api/v1/search/articles?parameter&apikey=efv84mzqq6ydx4dbd59jhdcn&content_type=Books&max_records=200", 'static/ieeeXploreBooks.json')
+    fromJsonConferences("https://ieeexploreapi.ieee.org/api/v1/search/articles?parameter&apikey=efv84mzqq6ydx4dbd59jhdcn&content_type=Conferences&max_records=200", 'static/ieeeXploreConferences.json')
 
 if __name__ == "__main__":
     main()
