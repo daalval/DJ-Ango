@@ -1,0 +1,949 @@
+{
+    "total_records": 51339,
+    "total_searched": 5325232,
+    "articles": [
+        {
+            "title": "Chapter 5 - Design for Body Torsion",
+            "publisher": "SAE",
+            "isbn": "9780768047684",
+            "rank": 1,
+            "authors": {
+                "authors": [
+                    {
+                        "affiliation": "University of Michigan-Ann Arbor",
+                        "full_name": "Donald Malen",
+                        "author_order": 1
+                    }
+                ]
+            },
+            "access_type": "LOCKED",
+            "content_type": "Books",
+            "article_number": "8523697",
+            "pdf_url": "https://ieeexplore.ieee.org/xpl/ebooks/bookPdfWithBanner.jsp?fileName=8523697.pdf&bkn=8522086&pdfType=chapter",
+            "abstract_url": "https://ieeexplore.ieee.org/document/8523697/",
+            "publication_title": "Fundamentals of Automobile Body Structure Design",
+            "publication_number": 8522086,
+            "publication_year": 2011,
+            "start_page": "163",
+            "end_page": "213",
+            "citing_paper_count": 0,
+            "citing_patent_count": 0,
+            "index_terms": {},
+            "isbn_formats": {
+                "isbns": [
+                    {
+                        "format": "Online ISBN",
+                        "value": "9780768047684",
+                        "isbnType": "New-2005"
+                    }
+                ]
+            }
+        },
+        {
+            "title": "Pedestrian Throw Kinematics in Forward Projection Collisions",
+            "publisher": "SAE",
+            "isbn": "9780768092417",
+            "rank": 2,
+            "authors": {
+                "authors": []
+            },
+            "access_type": "LOCKED",
+            "content_type": "Books",
+            "article_number": "8859109",
+            "pdf_url": "https://ieeexplore.ieee.org/xpl/ebooks/bookPdfWithBanner.jsp?fileName=8859109.pdf&bkn=8859086&pdfType=chapter",
+            "abstract_url": "https://ieeexplore.ieee.org/document/8859109/",
+            "publication_title": "Pedestrian Collisions",
+            "publication_number": 8859086,
+            "publication_year": 2019,
+            "start_page": "65",
+            "end_page": "78",
+            "citing_paper_count": 0,
+            "citing_patent_count": 0,
+            "index_terms": {
+                "ieee_terms": {
+                    "terms": [
+                        "Trajectory",
+                        "Kinematics",
+                        "Automobiles",
+                        "Mathematical model",
+                        "Asphalt",
+                        "Accidents",
+                        "Vehicle crash testing"
+                    ]
+                }
+            },
+            "isbn_formats": {
+                "isbns": [
+                    {
+                        "format": "Online ISBN",
+                        "value": "9780768092417",
+                        "isbnType": "New-2005"
+                    }
+                ]
+            }
+        },
+        {
+            "title": "Translational Equivalence Among Word Types",
+            "publisher": "MIT Press",
+            "isbn": "9780262279642",
+            "rank": 3,
+            "authors": {
+                "authors": [
+                    {
+                        "full_name": "I. Dan Melamed",
+                        "author_order": 1
+                    }
+                ]
+            },
+            "access_type": "LOCKED",
+            "content_type": "Books",
+            "article_number": "6282889",
+            "pdf_url": "https://ieeexplore.ieee.org/xpl/ebooks/bookPdfWithBanner.jsp?fileName=6282889.pdf&bkn=6267413&pdfType=chapter",
+            "abstract_url": "https://ieeexplore.ieee.org/document/6282889/",
+            "publication_title": "Empirical Methods for Exploiting Parallel Texts",
+            "publication_number": 6267413,
+            "publication_year": 2001,
+            "start_page": "79",
+            "end_page": "79",
+            "citing_paper_count": 0,
+            "citing_patent_count": 0,
+            "index_terms": {},
+            "isbn_formats": {
+                "isbns": [
+                    {
+                        "format": "Online ISBN",
+                        "value": "9780262279642",
+                        "isbnType": "New-2005"
+                    }
+                ]
+            }
+        },
+        {
+            "title": "EV Engines and Powertrains",
+            "publisher": "SAE",
+            "isbn": "9780768096545",
+            "rank": 4,
+            "authors": {
+                "authors": [
+                    {
+                        "full_name": "Ronald Jurgen",
+                        "author_order": 1
+                    }
+                ]
+            },
+            "access_type": "LOCKED",
+            "content_type": "Books",
+            "article_number": "8522714",
+            "pdf_url": "https://ieeexplore.ieee.org/xpl/ebooks/bookPdfWithBanner.jsp?fileName=8522714.pdf&bkn=8522113&pdfType=chapter",
+            "abstract_url": "https://ieeexplore.ieee.org/document/8522714/",
+            "publication_title": "Electric and Hybrid-Electric Vehicles: Engines and Powertrains",
+            "publication_number": 8522113,
+            "publication_year": 2011,
+            "start_page": "9",
+            "end_page": "9",
+            "citing_paper_count": 0,
+            "citing_patent_count": 0,
+            "index_terms": {},
+            "isbn_formats": {
+                "isbns": [
+                    {
+                        "format": "Online ISBN",
+                        "value": "9780768096545",
+                        "isbnType": "New-2005"
+                    }
+                ]
+            }
+        },
+        {
+            "title": "1998",
+            "publisher": "SAE",
+            "isbn": "9780768095944",
+            "rank": 5,
+            "authors": {
+                "authors": [
+                    {
+                        "affiliation": "SAE International",
+                        "full_name": "Daniel Holt",
+                        "author_order": 1
+                    }
+                ]
+            },
+            "access_type": "LOCKED",
+            "content_type": "Books",
+            "article_number": "8522360",
+            "pdf_url": "https://ieeexplore.ieee.org/xpl/ebooks/bookPdfWithBanner.jsp?fileName=8522360.pdf&bkn=8522111&pdfType=chapter",
+            "abstract_url": "https://ieeexplore.ieee.org/document/8522360/",
+            "publication_title": "Design of Racing and High-Performance Engines 1998-2003",
+            "publication_number": 8522111,
+            "publication_year": 2003,
+            "start_page": "493",
+            "end_page": "493",
+            "citing_paper_count": 0,
+            "citing_patent_count": 0,
+            "index_terms": {},
+            "isbn_formats": {
+                "isbns": [
+                    {
+                        "format": "Online ISBN",
+                        "value": "9780768095944",
+                        "isbnType": "New-2005"
+                    }
+                ]
+            }
+        },
+        {
+            "title": "The Cold Section",
+            "publisher": "SAE",
+            "isbn": "9780768095425",
+            "rank": 6,
+            "authors": {
+                "authors": [
+                    {
+                        "affiliation": "Alltec",
+                        "full_name": "Rene Nardi Rezende",
+                        "author_order": 1
+                    }
+                ]
+            },
+            "access_type": "LOCKED",
+            "content_type": "Books",
+            "article_number": "8860915",
+            "pdf_url": "https://ieeexplore.ieee.org/xpl/ebooks/bookPdfWithBanner.jsp?fileName=8860915.pdf&bkn=8854942&pdfType=chapter",
+            "abstract_url": "https://ieeexplore.ieee.org/document/8860915/",
+            "publication_title": "Liquid Rocket Engine: Thrust Chamber Parametric Modeling",
+            "publication_number": 8854942,
+            "publication_year": 2018,
+            "start_page": "87",
+            "end_page": "91",
+            "citing_paper_count": 0,
+            "citing_patent_count": 0,
+            "index_terms": {},
+            "isbn_formats": {
+                "isbns": [
+                    {
+                        "format": "Online ISBN",
+                        "value": "9780768095425",
+                        "isbnType": "New-2005"
+                    }
+                ]
+            }
+        },
+        {
+            "title": "Advanced Tutorials",
+            "publisher": "MIT Press",
+            "isbn": "9780262257145",
+            "rank": 7,
+            "authors": {
+                "authors": [
+                    {
+                        "full_name": "Pascal Van Hentenryck",
+                        "author_order": 1
+                    }
+                ]
+            },
+            "access_type": "LOCKED",
+            "content_type": "Books",
+            "article_number": "6284464",
+            "pdf_url": "https://ieeexplore.ieee.org/xpl/ebooks/bookPdfWithBanner.jsp?fileName=6284464.pdf&bkn=6267351&pdfType=chapter",
+            "abstract_url": "https://ieeexplore.ieee.org/document/6284464/",
+            "publication_title": "Logic Programming: The 11th International Conference",
+            "publication_number": 6267351,
+            "publication_year": 1994,
+            "start_page": "7",
+            "end_page": "7",
+            "citing_paper_count": 0,
+            "citing_patent_count": 0,
+            "index_terms": {},
+            "isbn_formats": {
+                "isbns": [
+                    {
+                        "format": "Online ISBN",
+                        "value": "9780262257145",
+                        "isbnType": "New-2005"
+                    }
+                ]
+            }
+        },
+        {
+            "title": "Informal Relationships: Working with the Government",
+            "publisher": "MIT Press",
+            "isbn": "9780262255820",
+            "rank": 8,
+            "authors": {
+                "authors": [
+                    {
+                        "full_name": "Sandra Braman",
+                        "author_order": 1
+                    }
+                ]
+            },
+            "access_type": "LOCKED",
+            "content_type": "Books",
+            "article_number": "6280032",
+            "pdf_url": "https://ieeexplore.ieee.org/xpl/ebooks/bookPdfWithBanner.jsp?fileName=6280032.pdf&bkn=6267229&pdfType=chapter",
+            "abstract_url": "https://ieeexplore.ieee.org/document/6280032/",
+            "publication_title": "Communication Researchers and Policy-making",
+            "publication_number": 6267229,
+            "publication_year": 2003,
+            "start_page": "293",
+            "end_page": "293",
+            "citing_paper_count": 0,
+            "citing_patent_count": 0,
+            "index_terms": {},
+            "isbn_formats": {
+                "isbns": [
+                    {
+                        "format": "Online ISBN",
+                        "value": "9780262255820",
+                        "isbnType": "New-2005"
+                    }
+                ]
+            }
+        },
+        {
+            "title": "2003-01-2261 Obstacle State Estimation For Imminent Crash Prediction & Countermeasure Deployment Decision-Making",
+            "publisher": "SAE",
+            "isbn": "9780768096262",
+            "rank": 9,
+            "authors": {
+                "authors": [
+                    {
+                        "full_name": "Daniel Holt",
+                        "author_order": 1
+                    }
+                ]
+            },
+            "access_type": "LOCKED",
+            "content_type": "Books",
+            "article_number": "8522499",
+            "pdf_url": "https://ieeexplore.ieee.org/xpl/ebooks/bookPdfWithBanner.jsp?fileName=8522499.pdf&bkn=8522123&pdfType=chapter",
+            "abstract_url": "https://ieeexplore.ieee.org/document/8522499/",
+            "publication_title": "Recent Developments in Automotive Safety Technology",
+            "publication_number": 8522123,
+            "publication_year": 2004,
+            "start_page": "663",
+            "end_page": "668",
+            "citing_paper_count": 0,
+            "citing_patent_count": 0,
+            "index_terms": {},
+            "isbn_formats": {
+                "isbns": [
+                    {
+                        "format": "Online ISBN",
+                        "value": "9780768096262",
+                        "isbnType": "New-2005"
+                    }
+                ]
+            }
+        },
+        {
+            "title": "Automated Vehicles: The Safety of Controllers, Sensors, and Actuators",
+            "publisher": "SAE",
+            "isbn": "9780768098181",
+            "rank": 10,
+            "authors": {
+                "authors": []
+            },
+            "access_type": "LOCKED",
+            "content_type": "Books",
+            "article_number": "8860740",
+            "pdf_url": "https://ieeexplore.ieee.org/xpl/ebooks/bookPdfWithBanner.jsp?fileName=8860740.pdf&bkn=8854932&pdfType=chapter",
+            "abstract_url": "https://ieeexplore.ieee.org/document/8860740/",
+            "publication_title": "The Safety of Controllers, Sensors, and Actuators",
+            "publication_number": 8854932,
+            "publication_year": 2020,
+            "start_page": "i",
+            "end_page": "xxxii",
+            "citing_paper_count": 0,
+            "citing_patent_count": 0,
+            "index_terms": {},
+            "isbn_formats": {
+                "isbns": [
+                    {
+                        "format": "Online ISBN",
+                        "value": "9780768098181",
+                        "isbnType": "New-2005"
+                    }
+                ]
+            }
+        },
+        {
+            "title": "A Model-Driven Approach for Dependent Failure Analysis in Consideration of Multicore Processors Using Modified EAST-ADL",
+            "publisher": "SAE",
+            "isbn": "9780768002102",
+            "rank": 11,
+            "authors": {
+                "authors": []
+            },
+            "access_type": "LOCKED",
+            "content_type": "Books",
+            "article_number": "8860449",
+            "pdf_url": "https://ieeexplore.ieee.org/xpl/ebooks/bookPdfWithBanner.jsp?fileName=8860449.pdf&bkn=8854917&pdfType=chapter",
+            "abstract_url": "https://ieeexplore.ieee.org/document/8860449/",
+            "publication_title": "Characterizing the Safety of Automated Vehicles",
+            "publication_number": 8854917,
+            "publication_year": 2020,
+            "start_page": "35",
+            "end_page": "46",
+            "citing_paper_count": 0,
+            "citing_patent_count": 0,
+            "index_terms": {},
+            "isbn_formats": {
+                "isbns": [
+                    {
+                        "format": "Online ISBN",
+                        "value": "9780768002102",
+                        "isbnType": "New-2005"
+                    }
+                ]
+            }
+        },
+        {
+            "title": "Trends in Traditional Computer Uses",
+            "publisher": "MIT Press",
+            "isbn": "9780262256001",
+            "rank": 12,
+            "authors": {
+                "authors": [
+                    {
+                        "full_name": "Michael L. Dertouzos",
+                        "author_order": 1
+                    },
+                    {
+                        "full_name": "Joel Moses",
+                        "author_order": 2
+                    }
+                ]
+            },
+            "access_type": "LOCKED",
+            "content_type": "Books",
+            "article_number": "6281090",
+            "pdf_url": "https://ieeexplore.ieee.org/xpl/ebooks/bookPdfWithBanner.jsp?fileName=6281090.pdf&bkn=6267247&pdfType=chapter",
+            "abstract_url": "https://ieeexplore.ieee.org/document/6281090/",
+            "publication_title": "The Computer Age: A Twenty-Year View",
+            "publication_number": 6267247,
+            "publication_year": 1980,
+            "start_page": "127",
+            "end_page": "127",
+            "citing_paper_count": 0,
+            "citing_patent_count": 0,
+            "index_terms": {},
+            "isbn_formats": {
+                "isbns": [
+                    {
+                        "format": "Online ISBN",
+                        "value": "9780262256001",
+                        "isbnType": "New-2005"
+                    }
+                ]
+            }
+        },
+        {
+            "title": "Biomass Burning in Tropical Ecosystems",
+            "publisher": "MIT Press",
+            "isbn": "9780262310895",
+            "rank": 13,
+            "authors": {
+                "authors": [
+                    {
+                        "full_name": "Joel S. Levine",
+                        "author_order": 1
+                    }
+                ]
+            },
+            "access_type": "LOCKED",
+            "content_type": "Books",
+            "article_number": "6302633",
+            "pdf_url": "https://ieeexplore.ieee.org/xpl/ebooks/bookPdfWithBanner.jsp?fileName=6302633.pdf&bkn=6276828&pdfType=chapter",
+            "abstract_url": "https://ieeexplore.ieee.org/document/6302633/",
+            "publication_title": "Global Biomass Burning: Atmospheric, Climatic, and Biospheric Implications",
+            "publication_number": 6276828,
+            "publication_year": 1991,
+            "start_page": "75",
+            "end_page": "75",
+            "citing_paper_count": 0,
+            "citing_patent_count": 0,
+            "index_terms": {},
+            "isbn_formats": {
+                "isbns": [
+                    {
+                        "format": "Electronic ISBN",
+                        "value": "9780262310895",
+                        "isbnType": "New-2005"
+                    },
+                    {
+                        "format": "Electronic ISBN",
+                        "value": "0262310899",
+                        "isbnType": "Historical"
+                    }
+                ]
+            }
+        },
+        {
+            "title": "Introduction",
+            "publisher": "SAE",
+            "isbn": "9780768096545",
+            "rank": 14,
+            "authors": {
+                "authors": [
+                    {
+                        "full_name": "Ronald Jurgen",
+                        "author_order": 1
+                    }
+                ]
+            },
+            "access_type": "LOCKED",
+            "content_type": "Books",
+            "article_number": "8522749",
+            "pdf_url": "https://ieeexplore.ieee.org/xpl/ebooks/bookPdfWithBanner.jsp?fileName=8522749.pdf&bkn=8522113&pdfType=chapter",
+            "abstract_url": "https://ieeexplore.ieee.org/document/8522749/",
+            "publication_title": "Electric and Hybrid-Electric Vehicles: Engines and Powertrains",
+            "publication_number": 8522113,
+            "publication_year": 2011,
+            "start_page": "1",
+            "end_page": "1",
+            "citing_paper_count": 0,
+            "citing_patent_count": 0,
+            "index_terms": {},
+            "isbn_formats": {
+                "isbns": [
+                    {
+                        "format": "Online ISBN",
+                        "value": "9780768096545",
+                        "isbnType": "New-2005"
+                    }
+                ]
+            }
+        },
+        {
+            "title": "Fluid",
+            "publisher": "SAE",
+            "isbn": "9780768096385",
+            "rank": 15,
+            "authors": {
+                "authors": [
+                    {
+                        "affiliation": "General Motors Corp",
+                        "full_name": "John Maten",
+                        "author_order": 1
+                    },
+                    {
+                        "affiliation": "BorgWarner Inc.",
+                        "full_name": "Bruce Anderson",
+                        "author_order": 2
+                    }
+                ]
+            },
+            "access_type": "LOCKED",
+            "content_type": "Books",
+            "article_number": "8522928",
+            "pdf_url": "https://ieeexplore.ieee.org/xpl/ebooks/bookPdfWithBanner.jsp?fileName=8522928.pdf&bkn=8522100&pdfType=chapter",
+            "abstract_url": "https://ieeexplore.ieee.org/document/8522928/",
+            "publication_title": "Continously Variable Transmission (CVT)",
+            "publication_number": 8522100,
+            "publication_year": 2006,
+            "start_page": "215",
+            "end_page": "215",
+            "citing_paper_count": 0,
+            "citing_patent_count": 0,
+            "index_terms": {},
+            "isbn_formats": {
+                "isbns": [
+                    {
+                        "format": "Online ISBN",
+                        "value": "9780768096385",
+                        "isbnType": "New-2005"
+                    }
+                ]
+            }
+        },
+        {
+            "title": "Modular Gripper for Flexible Assembly Operations",
+            "publisher": "SAE",
+            "isbn": "9780768084252",
+            "rank": 16,
+            "authors": {
+                "authors": []
+            },
+            "access_type": "LOCKED",
+            "content_type": "Books",
+            "article_number": "8859152",
+            "pdf_url": "https://ieeexplore.ieee.org/xpl/ebooks/bookPdfWithBanner.jsp?fileName=8859152.pdf&bkn=8859084&pdfType=chapter",
+            "abstract_url": "https://ieeexplore.ieee.org/document/8859152/",
+            "publication_title": "So You Want to Design Aircraft: Robots on the Floor",
+            "publication_number": 8859084,
+            "publication_year": 2017,
+            "start_page": "25",
+            "end_page": "39",
+            "citing_paper_count": 0,
+            "citing_patent_count": 0,
+            "index_terms": {
+                "ieee_terms": {
+                    "terms": [
+                        "Aircraft",
+                        "Aircraft manufacture",
+                        "Grippers",
+                        "Industries",
+                        "Aircraft propulsion",
+                        "Production systems"
+                    ]
+                }
+            },
+            "isbn_formats": {
+                "isbns": [
+                    {
+                        "format": "Online ISBN",
+                        "value": "9780768084252",
+                        "isbnType": "New-2005"
+                    }
+                ]
+            }
+        },
+        {
+            "title": "Material Properties of Pregnant Tissues",
+            "publisher": "SAE",
+            "isbn": "9780768057867",
+            "rank": 17,
+            "authors": {
+                "authors": [
+                    {
+                        "affiliation": "Virginia Tech",
+                        "full_name": "Stefan Duma",
+                        "author_order": 1
+                    }
+                ]
+            },
+            "access_type": "LOCKED",
+            "content_type": "Books",
+            "article_number": "8522144",
+            "pdf_url": "https://ieeexplore.ieee.org/xpl/ebooks/bookPdfWithBanner.jsp?fileName=8522144.pdf&bkn=8522138&pdfType=chapter",
+            "abstract_url": "https://ieeexplore.ieee.org/document/8522144/",
+            "publication_title": "Pregnant Occupant Biomechanics: Advances in Automobile Safety Research",
+            "publication_number": 8522138,
+            "publication_year": 2011,
+            "start_page": "225",
+            "end_page": "292",
+            "citing_paper_count": 0,
+            "citing_patent_count": 0,
+            "index_terms": {},
+            "isbn_formats": {
+                "isbns": [
+                    {
+                        "format": "Online ISBN",
+                        "value": "9780768057867",
+                        "isbnType": "New-2005"
+                    }
+                ]
+            }
+        },
+        {
+            "title": "AI and Music: Generative Grammars",
+            "publisher": "MIT Press",
+            "isbn": "9780262290982",
+            "rank": 18,
+            "authors": {
+                "authors": [
+                    {
+                        "full_name": "Stephen Schwanauer",
+                        "author_order": 1
+                    },
+                    {
+                        "full_name": "David Levitt",
+                        "author_order": 2
+                    }
+                ]
+            },
+            "access_type": "LOCKED",
+            "content_type": "Books",
+            "article_number": "6276029",
+            "pdf_url": "https://ieeexplore.ieee.org/xpl/ebooks/bookPdfWithBanner.jsp?fileName=6276029.pdf&bkn=6267501&pdfType=chapter",
+            "abstract_url": "https://ieeexplore.ieee.org/document/6276029/",
+            "publication_title": "Machine Models of Music",
+            "publication_number": 6267501,
+            "publication_year": 1993,
+            "start_page": "213",
+            "end_page": "214",
+            "citing_paper_count": 0,
+            "citing_patent_count": 0,
+            "index_terms": {},
+            "isbn_formats": {
+                "isbns": [
+                    {
+                        "format": "Online ISBN",
+                        "value": "9780262290982",
+                        "isbnType": "New-2005"
+                    }
+                ]
+            }
+        },
+        {
+            "title": "Clustered-Dot Ordered Dither",
+            "publisher": "MIT Press",
+            "isbn": "9780262291026",
+            "rank": 19,
+            "authors": {
+                "authors": [
+                    {
+                        "full_name": "Robert Ulichney",
+                        "author_order": 1
+                    }
+                ]
+            },
+            "access_type": "LOCKED",
+            "content_type": "Books",
+            "abstract": "This chapter contains sections titled: The Classical Screen, Rectangular Grids, Hexagonal Grids",
+            "article_number": "6275910",
+            "pdf_url": "https://ieeexplore.ieee.org/xpl/ebooks/bookPdfWithBanner.jsp?fileName=6275910.pdf&bkn=6267504&pdfType=chapter",
+            "abstract_url": "https://ieeexplore.ieee.org/document/6275910/",
+            "publication_title": "Digital Halftoning",
+            "publication_number": 6267504,
+            "publication_year": 1987,
+            "start_page": "77",
+            "end_page": "126",
+            "citing_paper_count": 0,
+            "citing_patent_count": 0,
+            "index_terms": {},
+            "isbn_formats": {
+                "isbns": [
+                    {
+                        "format": "Online ISBN",
+                        "value": "9780262291026",
+                        "isbnType": "New-2005"
+                    }
+                ]
+            }
+        },
+        {
+            "title": "Reverse Engineering Messages",
+            "publisher": "SAE",
+            "isbn": "9780768095418",
+            "rank": 20,
+            "authors": {
+                "authors": [
+                    {
+                        "affiliation": "HEM Data Corporation",
+                        "full_name": "Eric Walter",
+                        "author_order": 1
+                    },
+                    {
+                        "affiliation": "HEM Data Corporation",
+                        "full_name": "Richard Walter",
+                        "author_order": 2
+                    }
+                ]
+            },
+            "access_type": "LOCKED",
+            "content_type": "Books",
+            "article_number": "8860596",
+            "pdf_url": "https://ieeexplore.ieee.org/xpl/ebooks/bookPdfWithBanner.jsp?fileName=8860596.pdf&bkn=8854872&pdfType=chapter",
+            "abstract_url": "https://ieeexplore.ieee.org/document/8860596/",
+            "publication_title": "Data Acquisition from Light-Duty Vehicles Using OBD and CAN",
+            "publication_number": 8854872,
+            "publication_year": 2018,
+            "start_page": "143",
+            "end_page": "152",
+            "citing_paper_count": 0,
+            "citing_patent_count": 0,
+            "index_terms": {},
+            "isbn_formats": {
+                "isbns": [
+                    {
+                        "format": "Online ISBN",
+                        "value": "9780768095418",
+                        "isbnType": "New-2005"
+                    }
+                ]
+            }
+        },
+        {
+            "title": "Applications",
+            "publisher": "MIT Press",
+            "isbn": "0262328968",
+            "rank": 21,
+            "authors": {
+                "authors": [
+                    {
+                        "full_name": "S. S. Iyengar",
+                        "author_order": 1
+                    },
+                    {
+                        "full_name": "Kianoosh G. Boroojeni",
+                        "author_order": 2
+                    }
+                ]
+            },
+            "access_type": "LOCKED",
+            "content_type": "Books",
+            "article_number": "7120890",
+            "pdf_url": "https://ieeexplore.ieee.org/xpl/ebooks/bookPdfWithBanner.jsp?fileName=7120890.pdf&bkn=7120882&pdfType=chapter",
+            "abstract_url": "https://ieeexplore.ieee.org/document/7120890/",
+            "publication_title": "Oblivious Network Routing: Algorithms and Applications",
+            "publication_number": 7120882,
+            "publication_year": 2015,
+            "start_page": "93",
+            "end_page": "93",
+            "citing_paper_count": 0,
+            "citing_patent_count": 0,
+            "index_terms": {},
+            "isbn_formats": {
+                "isbns": [
+                    {
+                        "format": "Online ISBN",
+                        "value": "0262328968",
+                        "isbnType": "Historical"
+                    },
+                    {
+                        "format": "Online ISBN",
+                        "value": "9780262328968",
+                        "isbnType": "New-2005"
+                    }
+                ]
+            }
+        },
+        {
+            "title": "Jets in Finite Space",
+            "publisher": "MIT Press",
+            "isbn": "9780262310703",
+            "rank": 22,
+            "authors": {
+                "authors": [
+                    {
+                        "affiliation": "Moscow Aviation Institute",
+                        "full_name": "G. N. Abramovich",
+                        "author_order": 1
+                    }
+                ]
+            },
+            "access_type": "LOCKED",
+            "content_type": "Books",
+            "article_number": "6300345",
+            "pdf_url": "https://ieeexplore.ieee.org/xpl/ebooks/bookPdfWithBanner.jsp?fileName=6300345.pdf&bkn=6276868&pdfType=chapter",
+            "abstract_url": "https://ieeexplore.ieee.org/document/6300345/",
+            "publication_title": "The Theory of Turbulent Jets",
+            "publication_number": 6276868,
+            "publication_year": 2003,
+            "start_page": "389",
+            "end_page": "389",
+            "citing_paper_count": 0,
+            "citing_patent_count": 0,
+            "index_terms": {},
+            "isbn_formats": {
+                "isbns": [
+                    {
+                        "format": "Electronic ISBN",
+                        "value": "9780262310703",
+                        "isbnType": "New-2005"
+                    },
+                    {
+                        "format": "Electronic ISBN",
+                        "value": "0262310708",
+                        "isbnType": "Historical"
+                    }
+                ]
+            }
+        },
+        {
+            "title": "Benefits and Methodology for Dimensioning a Vehicle Using a 3D Scanner for Accident Reconstruction Purposes",
+            "publisher": "SAE",
+            "isbn": "9780768091861",
+            "rank": 23,
+            "authors": {
+                "authors": []
+            },
+            "access_type": "LOCKED",
+            "content_type": "Books",
+            "article_number": "8860166",
+            "pdf_url": "https://ieeexplore.ieee.org/xpl/ebooks/bookPdfWithBanner.jsp?fileName=8860166.pdf&bkn=8854926&pdfType=chapter",
+            "abstract_url": "https://ieeexplore.ieee.org/document/8860166/",
+            "publication_title": "Collision Documentation",
+            "publication_number": 8854926,
+            "publication_year": 2019,
+            "start_page": "47",
+            "end_page": "62",
+            "citing_paper_count": 0,
+            "citing_patent_count": 0,
+            "index_terms": {},
+            "isbn_formats": {
+                "isbns": [
+                    {
+                        "format": "Online ISBN",
+                        "value": "9780768091861",
+                        "isbnType": "New-2005"
+                    }
+                ]
+            }
+        },
+        {
+            "title": "Parallel Programming",
+            "publisher": "MIT Press",
+            "isbn": "9780262286787",
+            "rank": 24,
+            "authors": {
+                "authors": [
+                    {
+                        "full_name": "Thomas Sterling",
+                        "author_order": 1
+                    }
+                ]
+            },
+            "access_type": "LOCKED",
+            "content_type": "Books",
+            "article_number": "6299851",
+            "pdf_url": "https://ieeexplore.ieee.org/xpl/ebooks/bookPdfWithBanner.jsp?fileName=6299851.pdf&bkn=6276846&pdfType=chapter",
+            "abstract_url": "https://ieeexplore.ieee.org/document/6299851/",
+            "publication_title": "Beowulf Cluster Computing with Windows",
+            "publication_number": 6276846,
+            "publication_year": 2001,
+            "start_page": "165",
+            "end_page": "165",
+            "citing_paper_count": 0,
+            "citing_patent_count": 0,
+            "index_terms": {},
+            "isbn_formats": {
+                "isbns": [
+                    {
+                        "format": "Online ISBN",
+                        "value": "9780262286787",
+                        "isbnType": "New-2005"
+                    }
+                ]
+            }
+        },
+        {
+            "title": "Servitization and Physical Asset Management",
+            "publisher": "SAE",
+            "isbn": "9780768095739",
+            "rank": 25,
+            "authors": {
+                "authors": [
+                    {
+                        "full_name": "Michael Provost",
+                        "author_order": 1
+                    }
+                ]
+            },
+            "access_type": "LOCKED",
+            "content_type": "Books",
+            "article_number": "8860524",
+            "pdf_url": "https://ieeexplore.ieee.org/xpl/ebooks/bookPdfWithBanner.jsp?fileName=8860524.pdf&bkn=8854907&pdfType=chapter",
+            "abstract_url": "https://ieeexplore.ieee.org/document/8860524/",
+            "publication_title": "Servitization and Physical Asset Management",
+            "publication_number": 8854907,
+            "publication_year": 2018,
+            "start_page": "i",
+            "end_page": "xxiii",
+            "citing_paper_count": 0,
+            "citing_patent_count": 0,
+            "index_terms": {},
+            "isbn_formats": {
+                "isbns": [
+                    {
+                        "format": "Online ISBN",
+                        "value": "9780768095739",
+                        "isbnType": "New-2005"
+                    }
+                ]
+            }
+        }
+    ]
+}
