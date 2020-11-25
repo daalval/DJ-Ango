@@ -1,6 +1,6 @@
 import math
 import urllib
-import urllib2
+import urllib3
 import xml.etree.ElementTree as ET
 import json
 
@@ -155,7 +155,7 @@ class XPLORE:
         if field in self.allowedSearchFields:
             self.addParameter(field, value)
         else:
-            print "Searches against field " + field + " are not supported"
+            print("Searches against field " + field + " are not supported")
 
 
     # string value   Abstract text to query
@@ -364,7 +364,7 @@ class XPLORE:
         else:
         
             if self.queryProvided is False:
-                print "No search criteria provided"
+                print("No search criteria provided")
         
             data = self.queryAPI(str)
             formattedData = self.formatData(data)
@@ -434,7 +434,7 @@ class XPLORE:
     # return string: Results from API
     def queryAPI(self, url):
 
-        content = urllib2.urlopen(url).read()
+        content = urllib3.urlopen(url).read()
         return content
 
 
