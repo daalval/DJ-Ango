@@ -126,14 +126,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-
-
-
-
-
-
-
-# for article in data['articles']:
-#         print(article['title'])
-#         print(article['rank'])

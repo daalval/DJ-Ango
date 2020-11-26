@@ -1,0 +1,2852 @@
+{
+  "total_records":765920,
+  "total_searched":5302778,
+  "articles":[
+    {
+      "doi":"10.1109/TPAMI.2007.70798",
+      "title":"A CNN-based face detector with a simple feature map and a coarse-to-fine classifier - Withdrawn",
+      "publisher":"IEEE",
+      "issue":"99",
+      "issn":"1939-3539",
+      "rank":1,
+      "volume":"PP",
+      "authors":{
+        "authors":[
+          {
+            "authorUrl":"https://ieeexplore.ieee.org/author/37600583700",
+            "id":37600583700,
+            "full_name":"Ying-Nong Chen",
+            "author_order":1
+          },
+          {
+            "authorUrl":"https://ieeexplore.ieee.org/author/37290294700",
+            "id":37290294700,
+            "full_name":"Chin-Chuan Han",
+            "author_order":2
+          },
+          {
+            "authorUrl":"https://ieeexplore.ieee.org/author/37599169800",
+            "id":37599169800,
+            "full_name":"Cheng-Tzu Wang",
+            "author_order":3
+          },
+          {
+            "authorUrl":"https://ieeexplore.ieee.org/author/37268599700",
+            "id":37268599700,
+            "full_name":"Bor-Shenn Jeng",
+            "author_order":4
+          },
+          {
+            "authorUrl":"https://ieeexplore.ieee.org/author/37269439500",
+            "id":37269439500,
+            "full_name":"Kuo-Chin Fan",
+            "author_order":5
+          }
+        ]
+      },
+      "access_type":"LOCKED",
+      "content_type":"Early Access Articles",
+      "abstract":"Withdrawn.",
+      "article_number":"4378386",
+      "pdf_url":"https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=4378386",
+      "abstract_url":"https://ieeexplore.ieee.org/document/4378386/",
+      "publication_title":"IEEE Transactions on Pattern Analysis and Machine Intelligence",
+      "publication_number":34,
+      "is_number":4359286,
+      "publication_year":2020,
+      "start_page":"1",
+      "end_page":"1",
+      "citing_paper_count":9,
+      "citing_patent_count":0,
+      "index_terms":{
+        "ieee_terms":{
+          "terms":[
+            "IEEE publications"
+          ]
+        }
+      }
+    },
+    {
+      "doi":"10.1109/TMTT.2010.2077891",
+      "title":"A 5.8 GHz Integrated CMOS Dedicated Short Range Communication Transceiver for the Korea/Japan Electronic Toll Collection System",
+      "publisher":"IEEE",
+      "issue":"11",
+      "issn":"1557-9670",
+      "rank":2,
+      "volume":"58",
+      "authors":{
+        "authors":[
+          
+        ]
+      },
+      "access_type":"LOCKED",
+      "content_type":"Early Access Articles",
+      "abstract":"In this paper, a RF front-end of the 5.8 GHz integrated CMOS dedicated short range communication (DSRC) transceiver for the Korea/Japan electronic toll collection system is presented. The receiver uses low-IF conversion architecture for high sensitivity and low-power consumption while the transmitter uses direct up-conversion architecture for its simple structure and reliability. To solve image problem in the low-IF receiver, 10 MHz IF and 40 MHz IF are chosen for Korean and Japanese DSRC standards, respectively, since they make no image signals exist in image band. A single-quadrature mixer with the proposed transconductor-type quadrature generator in RF signal path is also adopted which has accurate quadrature characteristic in 5.8 GHz frequency. When the RF front-end of the integrated 5.8 GHz DSRC transceiver is implemented using 0.13 μm CMOS technology, the receiver achieves the overall noise figure of less than 5 dB with image rejection ratio of more than 30 dB, and the transmitter carries an output peak power of 10 dBm with the adjacent channel power ratio of -43 dBc. The RF front-end of the 5.8 GHz DSRC transceiver dissipates 45 mA with 1.2 V supply voltage and 142 mA with 1.2/3.3 V dual supply voltage during RXand TX-modes, respectively.",
+      "article_number":"5604341",
+      "pdf_url":"https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=5604341",
+      "html_url":"https://ieeexplore.ieee.org/document/5604341/",
+      "abstract_url":"https://ieeexplore.ieee.org/document/5604341/",
+      "publication_title":"IEEE Transactions on Microwave Theory and Techniques",
+      "publication_number":22,
+      "is_number":5629940,
+      "publication_year":2020,
+      "start_page":"1",
+      "end_page":"13",
+      "citing_paper_count":31,
+      "citing_patent_count":0,
+      "index_terms":{
+        "ieee_terms":{
+          "terms":[
+            "Receivers",
+            "Transceivers",
+            "Radio frequency",
+            "CMOS integrated circuits",
+            "Generators",
+            "Voltage-controlled oscillators",
+            "Noise"
+          ]
+        },
+        "author_terms":{
+          "terms":[
+            "Dedicated short range communication (DSRC)",
+            "electronic toll collection system (ETCS)",
+            "image rejection",
+            "output peak power",
+            "quadrature generator",
+            "single-quadrature mixer"
+          ]
+        }
+      }
+    },
+    {
+      "doi":"10.1109/LCOMM.2014.2344047",
+      "title":"On the Performance of Multi-Message Algebraic Gossip Algorithms in Dynamic Random Geometric Graphs",
+      "publisher":"IEEE",
+      "issue":"3",
+      "issn":"2373-7891",
+      "rank":3,
+      "volume":"22",
+      "authors":{
+        "authors":[
+          {
+            "affiliation":"School of Electronics and Information Engineering, Beihang University, Beijing, China",
+            "authorUrl":"https://ieeexplore.ieee.org/author/37536954600",
+            "id":37536954600,
+            "full_name":"Gang Wang",
+            "author_order":1
+          },
+          {
+            "affiliation":"School of Electronics and Information Engineering, Beihang University, Beijing, China",
+            "authorUrl":"https://ieeexplore.ieee.org/author/37085875985",
+            "id":37085875985,
+            "full_name":"Zun Lin",
+            "author_order":2
+          }
+        ]
+      },
+      "access_type":"LOCKED",
+      "content_type":"Journals",
+      "abstract":"In this letter, we investigate the performance of algebraic gossip algorithms for information dissemination in mobile ad hoc networks (MANETs). In the gossip algorithms, in each time slot, each node communicates with a neighboring node, which is randomly selected by an Exchange algorithm, to exchange their information. The goal of the algorithm is to efficiently disseminate all the messages to all the nodes as fast as possible. We analyze the convergence time of network coding (NC) based gossip algorithm by taking into account the node mobility in MANETs, and derived a lower bound on the convergence time. It showed that the convergence time of the NC gossip algorithm with node mobility can be reduced by the order of O(n1/2/log3/2n) over that without considering node mobility. But it is only O(log n) quicker than the gossip algorithm with node mobility but no NC.",
+      "article_number":"6868190",
+      "pdf_url":"https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=6868190",
+      "html_url":"https://ieeexplore.ieee.org/document/6868190/",
+      "abstract_url":"https://ieeexplore.ieee.org/document/6868190/",
+      "publication_title":"IEEE Communications Letters",
+      "publication_number":4234,
+      "is_number":8309483,
+      "publication_year":2018,
+      "publication_date":"March 2018",
+      "start_page":"470",
+      "end_page":"473",
+      "citing_paper_count":1,
+      "citing_patent_count":0,
+      "index_terms":{
+        "ieee_terms":{
+          "terms":[
+            "Mobile communication",
+            "Convergence",
+            "Network coding",
+            "Mobile computing",
+            "Ad hoc networks",
+            "Information technology"
+          ]
+        },
+        "author_terms":{
+          "terms":[
+            "Information dissemination",
+            "gossip",
+            "network coding",
+            "mobility",
+            "random geometric graph (RGG)"
+          ]
+        }
+      }
+    },
+     {
+      "doi":"10.1109/ASPDAC.2018.8297258",
+      "title":"Welcome to ASP-DAC 2018",
+      "publisher":"IEEE",
+      "isbn":"978-1-5090-0603-8",
+      "issn":"2153-697X",
+      "rank":2,
+      "authors":{
+        "authors":[
+          
+        ]
+      },
+      "access_type":"EPHEMERA",
+      "content_type":"Conferences",
+      "abstract":"Presents the introductory welcome message from the conference proceedings. May include the conference officers' congratulations to all involved with the conference event and publication of the proceedings record.",
+      "article_number":"8297258",
+      "pdf_url":"https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8297258",
+      "abstract_url":"https://ieeexplore.ieee.org/document/8297258/",
+      "publication_title":"2018 23rd Asia and South Pacific Design Automation Conference (ASP-DAC)",
+      "conference_location":"Jeju",
+      "conference_dates":"22-25 Jan. 2018",
+      "publication_number":8291862,
+      "is_number":8297256,
+      "publication_year":2018,
+      "publication_date":"22-25 Jan. 2018",
+      "start_page":"6",
+      "end_page":"6",
+      "citing_paper_count":0,
+      "citing_patent_count":0,
+      "index_terms":{
+        
+      },
+      "isbn_formats":{
+        "isbns":[
+          {
+            "format":"Print on Demand(PoD) ISBN",
+            "value":"978-1-5090-0603-8",
+            "isbnType":"New-2005"
+          },
+          {
+            "format":"Electronic ISBN",
+            "value":"978-1-5090-0602-1",
+            "isbnType":"New-2005"
+          }
+        ]
+      }
+    },
+    {
+      "doi":"10.1109/ASPDAC.2018.8297259",
+      "title":"Message from the technical program committee",
+      "publisher":"IEEE",
+      "isbn":"978-1-5090-0603-8",
+      "issn":"2153-697X",
+      "rank":3,
+      "authors":{
+        "authors":[
+          
+        ]
+      },
+      "access_type":"EPHEMERA",
+      "content_type":"Conferences",
+      "abstract":"Presents the introductory welcome message from the conference proceedings. May include the conference officers' congratulations to all involved with the conference event and publication of the proceedings record.",
+      "article_number":"8297259",
+      "pdf_url":"https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8297259",
+      "abstract_url":"https://ieeexplore.ieee.org/document/8297259/",
+      "publication_title":"2018 23rd Asia and South Pacific Design Automation Conference (ASP-DAC)",
+      "conference_location":"Jeju",
+      "conference_dates":"22-25 Jan. 2018",
+      "publication_number":8291862,
+      "is_number":8297256,
+      "publication_year":2018,
+      "publication_date":"22-25 Jan. 2018",
+      "start_page":"7",
+      "end_page":"7",
+      "citing_paper_count":0,
+      "citing_patent_count":0,
+      "index_terms":{
+        
+      },
+      "isbn_formats":{
+        "isbns":[
+          {
+            "format":"Print on Demand(PoD) ISBN",
+            "value":"978-1-5090-0603-8",
+            "isbnType":"New-2005"
+          },
+          {
+            "format":"Electronic ISBN",
+            "value":"978-1-5090-0602-1",
+            "isbnType":"New-2005"
+          }
+        ]
+      }
+    },
+    {
+      "doi":"10.1109/ASPDAC.2018.8297260",
+      "title":"Sponsorship",
+      "publisher":"IEEE",
+      "isbn":"978-1-5090-0603-8",
+      "issn":"2153-697X",
+      "rank":4,
+      "authors":{
+        "authors":[
+          
+        ]
+      },
+      "access_type":"EPHEMERA",
+      "content_type":"Conferences",
+      "abstract":"The conference organizers greatly appreciate the support of the various corporate sponsors listed.",
+      "article_number":"8297260",
+      "pdf_url":"https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8297260",
+      "abstract_url":"https://ieeexplore.ieee.org/document/8297260/",
+      "publication_title":"2018 23rd Asia and South Pacific Design Automation Conference (ASP-DAC)",
+      "conference_location":"Jeju",
+      "conference_dates":"22-25 Jan. 2018",
+      "publication_number":8291862,
+      "is_number":8297256,
+      "publication_year":2018,
+      "publication_date":"22-25 Jan. 2018",
+      "start_page":"8",
+      "end_page":"8",
+      "citing_paper_count":0,
+      "citing_patent_count":0,
+      "index_terms":{
+        
+      },
+      "isbn_formats":{
+        "isbns":[
+          {
+            "format":"Print on Demand(PoD) ISBN",
+            "value":"978-1-5090-0603-8",
+            "isbnType":"New-2005"
+          },
+          {
+            "format":"Electronic ISBN",
+            "value":"978-1-5090-0602-1",
+            "isbnType":"New-2005"
+          }
+        ]
+      }
+    },
+    {
+      "doi":"10.1109/TETC.2014.2369957",
+      "title":"Disaster Rescue Task Scheduling: An Evolutionary Multiobjective Optimization Approach",
+      "publisher":"IEEE",
+      "issue":"2",
+      "issn":"2376-4562",
+      "rank":4,
+      "volume":"6",
+      "authors":{
+        "authors":[
+          {
+            "affiliation":"College of Computer Science and Technology, Zhejiang University of Technology, Hangzhou, China",
+            "authorUrl":"https://ieeexplore.ieee.org/author/37293341300",
+            "id":37293341300,
+            "full_name":"Yu-Jun Zheng",
+            "author_order":1
+          },
+          {
+            "affiliation":"College of Field Engineering, People’s Liberation Army University of Science and Technology, Nanjing, China",
+            "authorUrl":"https://ieeexplore.ieee.org/author/37085452515",
+            "id":37085452515,
+            "full_name":"Hai-Feng Ling",
+            "author_order":2
+          },
+          {
+            "affiliation":"Jiangxi Provincial Laboratory of High-Performance Computing, Jiangxi Normal University, Nanchang, China",
+            "authorUrl":"https://ieeexplore.ieee.org/author/37085550845",
+            "id":37085550845,
+            "full_name":"Jin-Yun Xue",
+            "author_order":3
+          }
+        ]
+      },
+      "access_type":"OPEN_ACCESS",
+      "content_type":"Journals",
+      "abstract":"Efficient rescue task scheduling plays a key role in disaster rescue operations. In real-world applications, such an emergency scheduling problem often involves multiple objectives, complex constraints, inherent uncertainty, and limited response time requirement. In this paper, we propose a fuzzy multiobjective optimization problem of rescue task scheduling, the aim of which is to simultaneously maximize the task scheduling efficiency and minimize the operation risk for the rescue team. We then develop an efficient multiobjective biogeography-based optimization (EMOBBO) algorithm for solving the problem. To cope with the uncertainty, we employ three correlated fuzzy ranking criteria, and use the concept of fuzzy dominance for comparing the dominance relation of solutions. In EMOBBO, we define new migration and mutation operators for effectively evolving the permutation-based solutions, use a problem-specific solution rearrangement mechanism for filtering out inefficient solutions, and employ a local neighborhood structure to suppress premature convergence. Computational experiments show that the proposed EMOBBO algorithm outperforms some state-of-the-art evolutionary multiobjective optimization algorithms, and our algorithm has been successfully applied to several real-world disaster rescue operations in recent years.",
+      "article_number":"6977929",
+      "pdf_url":"https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=6977929",
+      "html_url":"https://ieeexplore.ieee.org/document/6977929/",
+      "abstract_url":"https://ieeexplore.ieee.org/document/6977929/",
+      "publication_title":"IEEE Transactions on Emerging Topics in Computing",
+      "publication_number":6245516,
+      "is_number":8372818,
+      "publication_year":2018,
+      "publication_date":"April-June 2018",
+      "start_page":"288",
+      "end_page":"300",
+      "citing_paper_count":1,
+      "citing_patent_count":0,
+      "index_terms":{
+        "ieee_terms":{
+          "terms":[
+            "Optimization",
+            "Processor scheduling",
+            "Genetic algorithms",
+            "Sociology",
+            "Statistics",
+            "Schedules",
+            "Biogeography"
+          ]
+        },
+        "author_terms":{
+          "terms":[
+            "Disaster rescue",
+            "task scheduling",
+            "evolutionary multiobjective optimization (EMO)",
+            "fuzzy optimization",
+            "biogeography-based optimization (BBO)",
+            "permutation flowshop scheduling problem (PFSP)"
+          ]
+        }
+      }
+    },
+    {
+      "doi":"10.1109/TCBB.2014.2388311",
+      "title":"A Copula-Based Granger Causality Measure for the Analysis of Neural Spike Train Data",
+      "publisher":"IEEE",
+      "issue":"2",
+      "issn":"2374-0043",
+      "rank":5,
+      "volume":"15",
+      "authors":{
+        "authors":[
+          {
+            "affiliation":"School of Biomedical Engineering, Science and Health Systems, Drexel University, Philadelphia, PA",
+            "authorUrl":"https://ieeexplore.ieee.org/author/37402582800",
+            "id":37402582800,
+            "full_name":"Meng Hu",
+            "author_order":1
+          },
+          {
+            "affiliation":"State Key Laboratory of Cognitive Neuroscience and Learning and IDG/McGovern Institute for Brain Research, Beijing Normal University, Beijing, China",
+            "authorUrl":"https://ieeexplore.ieee.org/author/37086355881",
+            "id":37086355881,
+            "full_name":"Wu Li",
+            "author_order":2
+          },
+          {
+            "affiliation":"School of Biomedical Engineering, Science and Health Systems, Drexel University, Philadelphia, PA",
+            "authorUrl":"https://ieeexplore.ieee.org/author/37086353479",
+            "id":37086353479,
+            "full_name":"Hualou Liang",
+            "author_order":3
+          }
+        ]
+      },
+      "access_type":"LOCKED",
+      "content_type":"Journals",
+      "abstract":"In systems neuroscience, it is becoming increasingly common to record the activity of hundreds of neurons simultaneously via electrode arrays. The ability to accurately measure the causal interactions among multiple neurons in the brain is crucial to understanding how neurons work in concert to generate specific brain functions. The development of new statistical methods for assessing causal influence between spike trains is still an active field of neuroscience research. Here, we suggest a copula-based Granger causality measure for the analysis of neural spike train data. This method is built upon our recent work on copula Granger causality for the analysis of continuous-valued time series by extending it to point-process neural spike train data. The proposed method is therefore able to reveal nonlinear and high-order causality in the spike trains while retaining all the computational advantages such as model-free, efficient estimation, and variability assessment of Granger causality. The performance of our algorithm can be further boosted with time-reversed data. Our method performed well on extensive simulations, and was then demonstrated on neural activity simultaneously recorded from primary visual cortex of a monkey performing a contour detection task.",
+      "article_number":"7001041",
+      "pdf_url":"https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7001041",
+      "html_url":"https://ieeexplore.ieee.org/document/7001041/",
+      "abstract_url":"https://ieeexplore.ieee.org/document/7001041/",
+      "publication_title":"IEEE/ACM Transactions on Computational Biology and Bioinformatics",
+      "publication_number":8857,
+      "is_number":8329158,
+      "publication_year":2018,
+      "publication_date":"1 March-April 2018",
+      "start_page":"562",
+      "end_page":"569",
+      "citing_paper_count":0,
+      "citing_patent_count":0,
+      "index_terms":{
+        "ieee_terms":{
+          "terms":[
+            "Time series analysis",
+            "Neurons",
+            "Data models",
+            "History",
+            "Firing",
+            "Estimation",
+            "Computational modeling"
+          ]
+        },
+        "author_terms":{
+          "terms":[
+            "Granger causality",
+            "copula",
+            "contour integration",
+            "multielectrode recordings",
+            "neural spike train analysis"
+          ]
+        }
+      }
+    },
+    {
+      "doi":"10.1109/TCBB.2015.2389226",
+      "title":"Modeling the Geometry and Dynamics of the Endoplasmic Reticulum Network",
+      "publisher":"IEEE",
+      "issue":"2",
+      "issn":"2374-0043",
+      "rank":6,
+      "volume":"15",
+      "authors":{
+        "authors":[
+          {
+            "affiliation":"Mathematics at the University of Exeter, United Kingdom",
+            "authorUrl":"https://ieeexplore.ieee.org/author/37086356303",
+            "id":37086356303,
+            "full_name":"Congping Lin",
+            "author_order":1
+          },
+          {
+            "affiliation":"Lab-STICC UMR 6285, UBO-Université Européenne de Bretagne, Brest, France.",
+            "authorUrl":"https://ieeexplore.ieee.org/author/37869396500",
+            "id":37869396500,
+            "full_name":"Laurent Lemarchand",
+            "author_order":2
+          },
+          {
+            "affiliation":"Lab-STICC UMR 6285, UBO-Université Européenne de Bretagne, Brest, France.",
+            "authorUrl":"https://ieeexplore.ieee.org/author/38242677200",
+            "id":38242677200,
+            "full_name":"Reinhardt Euler",
+            "author_order":3
+          },
+          {
+            "affiliation":"Biosciences at the University of Exeter, United Kingdom",
+            "authorUrl":"https://ieeexplore.ieee.org/author/37086354577",
+            "id":37086354577,
+            "full_name":"Imogen Sparkes",
+            "author_order":4
+          }
+        ]
+      },
+      "access_type":"LOCKED",
+      "content_type":"Journals",
+      "abstract":"The endoplasmic reticulum (ER) is an intricate network that pervades the entire cortex of plant cells and its geometric shape undergoes drastic changes. This paper proposes a mathematical model to reconstruct geometric network dynamics by combining the node movements within the network and topological changes engendered by these nodes. The network topology in the model is determined by a modified optimization procedure from the work (Lemarchand, et al. 2014) which minimizes the total length taking into account both degree and angle constraints, beyond the conditions of connectedness and planarity. A novel feature for solving our optimization problem is the use of “lifted” angle constraints, which allows one to considerably reduce the solution runtimes. Using this optimization technique and a Langevin approach for the branching node movement, the simulated network dynamics represent the ER network dynamics observed under latrunculin B treated condition and recaptures features such as the appearance/disappearance of loops within the ER under the native condition. The proposed modeling approach allows quantitative comparison of networks between the model and experimental data based on topological changes induced by node dynamics. An increased temporal resolution of experimental data will allow a more detailed comparison of network dynamics using this modeling approach.",
+      "article_number":"7006715",
+      "pdf_url":"https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7006715",
+      "html_url":"https://ieeexplore.ieee.org/document/7006715/",
+      "abstract_url":"https://ieeexplore.ieee.org/document/7006715/",
+      "publication_title":"IEEE/ACM Transactions on Computational Biology and Bioinformatics",
+      "publication_number":8857,
+      "is_number":8329158,
+      "publication_year":2018,
+      "publication_date":"1 March-April 2018",
+      "start_page":"377",
+      "end_page":"386",
+      "citing_paper_count":0,
+      "citing_patent_count":0,
+      "index_terms":{
+        "ieee_terms":{
+          "terms":[
+            "Erbium",
+            "Optimization",
+            "Network topology",
+            "Runtime",
+            "Topology",
+            "IEEE transactions",
+            "Computational biology"
+          ]
+        },
+        "author_terms":{
+          "terms":[
+            "Endoplasmic reticulum",
+            "network dynamics",
+            "0-1 programming",
+            "cutting planes"
+          ]
+        }
+      }
+    },
+    {
+      "doi":"10.1109/TCC.2015.2396072",
+      "title":"Space-Efficient Verifiable Secret Sharing Using Polynomial Interpolation",
+      "publisher":"IEEE",
+      "issue":"2",
+      "issn":"2372-0018",
+      "rank":7,
+      "volume":"6",
+      "authors":{
+        "authors":[
+          {
+            "affiliation":"Department of Engineering for Innovation, University of Salento, Lecce, Italy.",
+            "authorUrl":"https://ieeexplore.ieee.org/author/37326617500",
+            "id":37326617500,
+            "full_name":"Massimo Cafaro",
+            "author_order":1
+          },
+          {
+            "affiliation":"Department of Engineering for Innovation, University of Salento, Lecce, Italy.",
+            "authorUrl":"https://ieeexplore.ieee.org/author/37085682606",
+            "id":37085682606,
+            "full_name":"Piergiuseppe Pellè",
+            "author_order":2
+          }
+        ]
+      },
+      "access_type":"LOCKED",
+      "content_type":"Journals",
+      "abstract":"Preserving data confidentiality in clouds is a key issue. Secret Sharing, a cryptographic primitive for the distribution of a secret among a group of n participants designed so that only subsets of shareholders of cardinality 0 <; t ≤ n are allowed to reconstruct the secret by pooling their shares, can help mitigating and minimizing the problem. A desirable feature of Secret Sharing schemes is cheater detection, i.e., the ability to detect one or more malicious shareholders trying to reconstruct the secret by obtaining legal shares from the other shareholders while providing them with fake shares. Verifiable Secret Sharing schemes solve this problem by allowing shareholders verifying the others' shares. We present new verification algorithms providing arbitrary secret sharing schemes with cheater detection capabilities, and prove their space efficiency with regard to other schemes appeared in the literature. We also introduce, in one of our schemes, the Exponentiating Polynomial Root Problem (EPRP), which is believed to be NP-Intermediate and therefore difficult.",
+      "article_number":"7018923",
+      "pdf_url":"https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7018923",
+      "html_url":"https://ieeexplore.ieee.org/document/7018923/",
+      "abstract_url":"https://ieeexplore.ieee.org/document/7018923/",
+      "publication_title":"IEEE Transactions on Cloud Computing",
+      "publication_number":6245519,
+      "is_number":8372844,
+      "publication_year":2018,
+      "publication_date":"1 April-June 2018",
+      "start_page":"453",
+      "end_page":"463",
+      "citing_paper_count":0,
+      "citing_patent_count":0,
+      "index_terms":{
+        "ieee_terms":{
+          "terms":[
+            "Cryptography",
+            "Polynomials",
+            "Cloud computing",
+            "Protocols",
+            "Histograms",
+            "Interpolation"
+          ]
+        },
+        "author_terms":{
+          "terms":[
+            "Security and privacy protection",
+            "cryptographic controls",
+            "verification"
+          ]
+        }
+      }
+    },
+    {
+      "doi":"10.1109/TSC.2015.2399312",
+      "title":"An Inter-Cloud Meta-Scheduling (ICMS) Simulation Framework: Architecture and Evaluation",
+      "publisher":"IEEE",
+      "issue":"1",
+      "issn":"2372-0204",
+      "rank":8,
+      "volume":"11",
+      "authors":{
+        "authors":[
+          {
+            "affiliation":"Technical University of Crete (TUC), Chania, Crete, Greece",
+            "authorUrl":"https://ieeexplore.ieee.org/author/37397503300",
+            "id":37397503300,
+            "full_name":"Stelios Sotiriadis",
+            "author_order":1
+          },
+          {
+            "affiliation":"Department of Computer Science, Edge Hill University, United Kingdom",
+            "authorUrl":"https://ieeexplore.ieee.org/author/38495322600",
+            "id":38495322600,
+            "full_name":"Nik Bessis",
+            "author_order":2
+          },
+          {
+            "affiliation":"University of Derby, Kedleston Road, Derby, United Kingdom",
+            "authorUrl":"https://ieeexplore.ieee.org/author/37283284900",
+            "id":37283284900,
+            "full_name":"Ashiq Anjum",
+            "author_order":3
+          },
+          {
+            "affiliation":"University of Melbourne, Australia",
+            "authorUrl":"https://ieeexplore.ieee.org/author/37267557900",
+            "id":37267557900,
+            "full_name":"Rajkumar Buyya",
+            "author_order":4
+          }
+        ]
+      },
+      "access_type":"LOCKED",
+      "content_type":"Journals",
+      "abstract":"Inter-cloud is an approach that facilitates scalable resource provisioning across multiple cloud infrastructures. In this paper, we focus on the performance optimization of Infrastructure as a Service (IaaS) using the meta-scheduling paradigm to achieve an improved job scheduling across multiple clouds. We propose a novel inter-cloud job scheduling framework and implement policies to optimize performance of participating clouds. The framework, named as Inter-Cloud Meta-Scheduling (ICMS), is based on a novel message exchange mechanism to allow optimization of job scheduling metrics. The resulting system offers improved flexibility, robustness and decentralization. We implemented a toolkit named “Simulating the Inter-Cloud” (SimIC) to perform the design and implementation of different inter-cloud entities and policies in the ICMS framework. An experimental analysis is produced for job executions in inter-cloud and a performance is presented for a number of parameters such as job execution, makespan, and turnaround times. The results highlight that the overall performance of individual clouds for selected parameters and configuration is improved when these are brought together under the proposed ICMS framework.",
+      "article_number":"7029675",
+      "pdf_url":"https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7029675",
+      "html_url":"https://ieeexplore.ieee.org/document/7029675/",
+      "abstract_url":"https://ieeexplore.ieee.org/document/7029675/",
+      "publication_title":"IEEE Transactions on Services Computing",
+      "publication_number":4629386,
+      "is_number":8281124,
+      "publication_year":2018,
+      "publication_date":"1 Jan.-Feb. 2018",
+      "start_page":"5",
+      "end_page":"19",
+      "citing_paper_count":15,
+      "citing_patent_count":0,
+      "index_terms":{
+        "ieee_terms":{
+          "terms":[
+            "Resource management",
+            "Dynamic scheduling",
+            "Computer architecture",
+            "Availability",
+            "Cloud computing",
+            "Heuristic algorithms",
+            "Load management"
+          ]
+        },
+        "author_terms":{
+          "terms":[
+            "Cloud computing",
+            "interoperable clouds",
+            "inter-clouds",
+            "meta-scheduling systems"
+          ]
+        }
+      }
+    },
+    {
+      "doi":"10.1109/TCC.2015.2400460",
+      "title":"DROPS: Division and Replication of Data in Cloud for Optimal Performance and Security",
+      "publisher":"IEEE",
+      "issue":"2",
+      "issn":"2372-0018",
+      "rank":9,
+      "volume":"6",
+      "authors":{
+        "authors":[
+          {
+            "affiliation":"Department of Computer Science, COMSATS Institute of Information Technology, Abbottabad, Pakistan",
+            "authorUrl":"https://ieeexplore.ieee.org/author/37085843747",
+            "id":37085843747,
+            "full_name":"Mazhar Ali",
+            "author_order":1
+          },
+          {
+            "affiliation":"Department of Computer Science, COMSATS Institute of Information Technology, Abbottabad, Pakistan",
+            "authorUrl":"https://ieeexplore.ieee.org/author/38093904000",
+            "id":38093904000,
+            "full_name":"Kashif Bilal",
+            "author_order":2
+          },
+          {
+            "affiliation":"Department of Electrical and Computer Engineering, North Dakota State University, Fargo, ND",
+            "authorUrl":"https://ieeexplore.ieee.org/author/37286195400",
+            "id":37286195400,
+            "full_name":"Samee U. Khan",
+            "author_order":3
+          },
+          {
+            "affiliation":"Department of Electrical and Computer EngineeringThe National University of Singapore",
+            "authorUrl":"https://ieeexplore.ieee.org/author/37274109000",
+            "id":37274109000,
+            "full_name":"Bharadwaj Veeravalli",
+            "author_order":4
+          },
+          {
+            "affiliation":"Department of Computer Science, State University of New York, New Paltz, NY",
+            "authorUrl":"https://ieeexplore.ieee.org/author/37277618700",
+            "id":37277618700,
+            "full_name":"Keqin Li",
+            "author_order":5
+          },
+          {
+            "affiliation":"School of Information Technologies, The University of Sydney, Sydney, NSW, Australia",
+            "authorUrl":"https://ieeexplore.ieee.org/author/37268553900",
+            "id":37268553900,
+            "full_name":"Albert Y. Zomaya",
+            "author_order":6
+          }
+        ]
+      },
+      "access_type":"LOCKED",
+      "content_type":"Journals",
+      "abstract":"Outsourcing data to a third-party administrative control, as is done in cloud computing, gives rise to security concerns. The data compromise may occur due to attacks by other users and nodes within the cloud. Therefore, high security measures are required to protect data within the cloud. However, the employed security strategy must also take into account the optimization of the data retrieval time. In this paper, we propose division and replication of data in the cloud for optimal performance and security (DROPS) that collectively approaches the security and performance issues. In the DROPS methodology, we divide a file into fragments, and replicate the fragmented data over the cloud nodes. Each of the nodes stores only a single fragment of a particular data file that ensures that even in case of a successful attack, no meaningful information is revealed to the attacker. Moreover, the nodes storing the fragments, are separated with certain distance by means of graph T-coloring to prohibit an attacker of guessing the locations of the fragments. Furthermore, the DROPS methodology does not rely on the traditional cryptographic techniques for the data security; thereby relieving the system of computationally expensive methodologies. We show that the probability to locate and compromise all of the nodes storing the fragments of a single file is extremely low. We also compare the performance of the DROPS methodology with 10 other schemes. The higher level of security with slight performance overhead was observed.",
+      "article_number":"7031887",
+      "pdf_url":"https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7031887",
+      "html_url":"https://ieeexplore.ieee.org/document/7031887/",
+      "abstract_url":"https://ieeexplore.ieee.org/document/7031887/",
+      "publication_title":"IEEE Transactions on Cloud Computing",
+      "publication_number":6245519,
+      "is_number":8372844,
+      "publication_year":2018,
+      "publication_date":"1 April-June 2018",
+      "start_page":"303",
+      "end_page":"315",
+      "citing_paper_count":10,
+      "citing_patent_count":0,
+      "index_terms":{
+        "ieee_terms":{
+          "terms":[
+            "Cloud computing",
+            "Silicon",
+            "Color",
+            "Cryptography",
+            "Educational institutions"
+          ]
+        },
+        "author_terms":{
+          "terms":[
+            "Centrality",
+            "cloud security",
+            "fragmentation",
+            "replication",
+            "performance"
+          ]
+        }
+      }
+    },
+    {
+      "doi":"10.1109/TCBB.2015.2404819",
+      "title":"Optimal Fault Detection and Diagnosis in Transcriptional Circuits Using Next-Generation Sequencing",
+      "publisher":"IEEE",
+      "issue":"2",
+      "issn":"2374-0043",
+      "rank":10,
+      "volume":"15",
+      "authors":{
+        "authors":[
+          {
+            "affiliation":"Department of Electrical and Computer Engineering, Texas A&M University, College Station, TX",
+            "authorUrl":"https://ieeexplore.ieee.org/author/38234273800",
+            "id":38234273800,
+            "full_name":"Arghavan Bahadorinejad",
+            "author_order":1
+          },
+          {
+            "affiliation":"Department of Electrical and Computer Engineering, Texas A&M University, College Station, TX",
+            "authorUrl":"https://ieeexplore.ieee.org/author/38274105400",
+            "id":38274105400,
+            "full_name":"Ulisses M. Braga-Neto",
+            "author_order":2
+          }
+        ]
+      },
+      "access_type":"LOCKED",
+      "content_type":"Journals",
+      "abstract":"We propose a methodology for model-based fault detection and diagnosis for stochastic Boolean dynamical systems indirectly observed through a single time series of transcriptomic measurements using Next Generation Sequencing (NGS) data. The fault detection consists of an innovations filter followed by a fault certification step, and requires no knowledge about the possible system faults. The innovations filter uses the optimal Boolean state estimator, called the Boolean Kalman Filter (BKF). In the presence of knowledge about the possible system faults, we propose an additional step of fault diagnosis based on a multiple model adaptive estimation (MMAE) method consisting of a bank of BKFs running in parallel. Performance is assessed by means of false detection and misdiagnosis rates, as well as average times until correct detection and diagnosis. The efficacy of the proposed methodology is demonstrated via numerical experiments using a p53-MDM2 negative feedback loop Boolean network with stuck-at faults that model molecular events commonly found in cancer.",
+      "article_number":"7045509",
+      "pdf_url":"https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7045509",
+      "html_url":"https://ieeexplore.ieee.org/document/7045509/",
+      "abstract_url":"https://ieeexplore.ieee.org/document/7045509/",
+      "publication_title":"IEEE/ACM Transactions on Computational Biology and Bioinformatics",
+      "publication_number":8857,
+      "is_number":8329158,
+      "publication_year":2018,
+      "publication_date":"1 March-April 2018",
+      "start_page":"516",
+      "end_page":"525",
+      "citing_paper_count":7,
+      "citing_patent_count":0,
+      "index_terms":{
+        "ieee_terms":{
+          "terms":[
+            "DNA",
+            "Vectors",
+            "Bioinformatics",
+            "Technological innovation",
+            "Fault detection",
+            "IEEE transactions",
+            "Computational biology"
+          ]
+        },
+        "author_terms":{
+          "terms":[
+            "Boolean networks",
+            "optimal estimation",
+            "Boolean Kalman filter",
+            "fault detection and diagnosis",
+            "next generation sequencing"
+          ]
+        }
+      }
+    },
+    {
+      "doi":"10.1109/ASPDAC.2018.8297261",
+      "title":"Organizing committee",
+      "publisher":"IEEE",
+      "isbn":"978-1-5090-0603-8",
+      "issn":"2153-697X",
+      "rank":5,
+      "authors":{
+        "authors":[
+          
+        ]
+      },
+      "access_type":"EPHEMERA",
+      "content_type":"Conferences",
+      "abstract":"Provides a listing of current committee members and society officers.",
+      "article_number":"8297261",
+      "pdf_url":"https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8297261",
+      "abstract_url":"https://ieeexplore.ieee.org/document/8297261/",
+      "publication_title":"2018 23rd Asia and South Pacific Design Automation Conference (ASP-DAC)",
+      "conference_location":"Jeju",
+      "conference_dates":"22-25 Jan. 2018",
+      "publication_number":8291862,
+      "is_number":8297256,
+      "publication_year":2018,
+      "publication_date":"22-25 Jan. 2018",
+      "start_page":"9",
+      "end_page":"9",
+      "citing_paper_count":0,
+      "citing_patent_count":0,
+      "index_terms":{
+        
+      },
+      "isbn_formats":{
+        "isbns":[
+          {
+            "format":"Print on Demand(PoD) ISBN",
+            "value":"978-1-5090-0603-8",
+            "isbnType":"New-2005"
+          },
+          {
+            "format":"Electronic ISBN",
+            "value":"978-1-5090-0602-1",
+            "isbnType":"New-2005"
+          }
+        ]
+      }
+    },
+    {
+      "doi":"10.1109/ASPDAC.2018.8297262",
+      "title":"Technical Program Committee",
+      "publisher":"IEEE",
+      "isbn":"978-1-5090-0603-8",
+      "issn":"2153-697X",
+      "rank":6,
+      "authors":{
+        "authors":[
+          
+        ]
+      },
+      "access_type":"EPHEMERA",
+      "content_type":"Conferences",
+      "abstract":"Provides a listing of current committee members and society officers.",
+      "article_number":"8297262",
+      "pdf_url":"https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8297262",
+      "abstract_url":"https://ieeexplore.ieee.org/document/8297262/",
+      "publication_title":"2018 23rd Asia and South Pacific Design Automation Conference (ASP-DAC)",
+      "conference_location":"Jeju",
+      "conference_dates":"22-25 Jan. 2018",
+      "publication_number":8291862,
+      "is_number":8297256,
+      "publication_year":2018,
+      "publication_date":"22-25 Jan. 2018",
+      "start_page":"10",
+      "end_page":"12",
+      "citing_paper_count":0,
+      "citing_patent_count":0,
+      "index_terms":{
+        
+      },
+      "isbn_formats":{
+        "isbns":[
+          {
+            "format":"Print on Demand(PoD) ISBN",
+            "value":"978-1-5090-0603-8",
+            "isbnType":"New-2005"
+          },
+          {
+            "format":"Electronic ISBN",
+            "value":"978-1-5090-0602-1",
+            "isbnType":"New-2005"
+          }
+        ]
+      }
+    },
+    {
+      "doi":"10.1109/ASPDAC.2018.8297263",
+      "title":"University LSI design contest committee",
+      "publisher":"IEEE",
+      "isbn":"978-1-5090-0603-8",
+      "issn":"2153-697X",
+      "rank":7,
+      "authors":{
+        "authors":[
+          
+        ]
+      },
+      "access_type":"EPHEMERA",
+      "content_type":"Conferences",
+      "abstract":"Provides a listing of current committee members and society officers.",
+      "article_number":"8297263",
+      "pdf_url":"https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8297263",
+      "abstract_url":"https://ieeexplore.ieee.org/document/8297263/",
+      "publication_title":"2018 23rd Asia and South Pacific Design Automation Conference (ASP-DAC)",
+      "conference_location":"Jeju",
+      "conference_dates":"22-25 Jan. 2018",
+      "publication_number":8291862,
+      "is_number":8297256,
+      "publication_year":2018,
+      "publication_date":"22-25 Jan. 2018",
+      "start_page":"13",
+      "end_page":"13",
+      "citing_paper_count":0,
+      "citing_patent_count":0,
+      "index_terms":{
+        
+      },
+      "isbn_formats":{
+        "isbns":[
+          {
+            "format":"Print on Demand(PoD) ISBN",
+            "value":"978-1-5090-0603-8",
+            "isbnType":"New-2005"
+          },
+          {
+            "format":"Electronic ISBN",
+            "value":"978-1-5090-0602-1",
+            "isbnType":"New-2005"
+          }
+        ]
+      }
+    },
+    {
+      "doi":"10.1109/ASPDAC.2018.8297264",
+      "title":"Steering committee",
+      "publisher":"IEEE",
+      "isbn":"978-1-5090-0603-8",
+      "issn":"2153-697X",
+      "rank":8,
+      "authors":{
+        "authors":[
+          
+        ]
+      },
+      "access_type":"EPHEMERA",
+      "content_type":"Conferences",
+      "abstract":"Provides a listing of current committee members and society officers.",
+      "article_number":"8297264",
+      "pdf_url":"https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8297264",
+      "abstract_url":"https://ieeexplore.ieee.org/document/8297264/",
+      "publication_title":"2018 23rd Asia and South Pacific Design Automation Conference (ASP-DAC)",
+      "conference_location":"Jeju",
+      "conference_dates":"22-25 Jan. 2018",
+      "publication_number":8291862,
+      "is_number":8297256,
+      "publication_year":2018,
+      "publication_date":"22-25 Jan. 2018",
+      "start_page":"14",
+      "end_page":"14",
+      "citing_paper_count":0,
+      "citing_patent_count":0,
+      "index_terms":{
+        
+      },
+      "isbn_formats":{
+        "isbns":[
+          {
+            "format":"Print on Demand(PoD) ISBN",
+            "value":"978-1-5090-0603-8",
+            "isbnType":"New-2005"
+          },
+          {
+            "format":"Electronic ISBN",
+            "value":"978-1-5090-0602-1",
+            "isbnType":"New-2005"
+          }
+        ]
+      }
+    },
+    {
+      "doi":"10.1109/TCBB.2015.2403355",
+      "title":"MeTDiff: A Novel Differential RNA Methylation Analysis for MeRIP-Seq Data",
+      "publisher":"IEEE",
+      "issue":"2",
+      "issn":"2374-0043",
+      "rank":11,
+      "volume":"15",
+      "authors":{
+        "authors":[
+          {
+            "affiliation":"Department of Electrical Engineering, University of Texas at San Antonio, San Antonio, TX",
+            "authorUrl":"https://ieeexplore.ieee.org/author/37085552066",
+            "id":37085552066,
+            "full_name":"Xiaodong Cui",
+            "author_order":1
+          },
+          {
+            "affiliation":"Department of Information Engineering, China University of Mining and Technology, Xuzhou, Jiangsu, China",
+            "authorUrl":"https://ieeexplore.ieee.org/author/37538579700",
+            "id":37538579700,
+            "full_name":"Lin Zhang",
+            "author_order":2
+          },
+          {
+            "affiliation":"Department of Biological Sciences, Xi'an Jiaotong-Liverpool University, Suzhou, Jiangsu, China.",
+            "authorUrl":"https://ieeexplore.ieee.org/author/37605742300",
+            "id":37605742300,
+            "full_name":"Jia Meng",
+            "author_order":3
+          },
+          {
+            "affiliation":"Greehey Children's Cancer Research Institute, San Antonio, TX",
+            "authorUrl":"https://ieeexplore.ieee.org/author/37086353157",
+            "id":37086353157,
+            "full_name":"Manjeet K. Rao",
+            "author_order":4
+          },
+          {
+            "affiliation":"Greehey Children's Cancer Research Institute, San Antonio, TX",
+            "authorUrl":"https://ieeexplore.ieee.org/author/37086355477",
+            "id":37086355477,
+            "full_name":"Yidong Chen",
+            "author_order":5
+          },
+          {
+            "affiliation":"Department of Electrical Engineering, University of Texas at San Antonio, San Antonio, TX",
+            "authorUrl":"https://ieeexplore.ieee.org/author/37278783800",
+            "id":37278783800,
+            "full_name":"Yufei Huang",
+            "author_order":6
+          }
+        ]
+      },
+      "access_type":"LOCKED",
+      "content_type":"Journals",
+      "abstract":"N6-Methyladenosine (m6A) transcriptome methylation is an exciting new research area that just captures the attention of research community. We present in this paper, MeTDiff, a novel computational tool for predicting differential m6A methylation sites from Methylated RNA immunoprecipitation sequencing (MeRIP-Seq) data. Compared with the existing algorithm exomePeak, the advantages of MeTDiff are that it explicitly models the reads variation in data and also devices a more power likelihood ratio test for differential methylation site prediction. Comprehensive evaluation of MeTDiff's performance using both simulated and real datasets showed that MeTDiff is much more robust and achieved much higher sensitivity and specificity over exomePeak.",
+      "article_number":"7052329",
+      "pdf_url":"https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7052329",
+      "html_url":"https://ieeexplore.ieee.org/document/7052329/",
+      "abstract_url":"https://ieeexplore.ieee.org/document/7052329/",
+      "publication_title":"IEEE/ACM Transactions on Computational Biology and Bioinformatics",
+      "publication_number":8857,
+      "is_number":8329158,
+      "publication_year":2018,
+      "publication_date":"1 March-April 2018",
+      "start_page":"526",
+      "end_page":"534",
+      "citing_paper_count":1,
+      "citing_patent_count":0,
+      "index_terms":{
+        "ieee_terms":{
+          "terms":[
+            "IP networks",
+            "Robustness",
+            "Computational modeling",
+            "Sequential analysis",
+            "IEEE transactions",
+            "Computational biology",
+            "Bioinformatics"
+          ]
+        },
+        "author_terms":{
+          "terms":[
+            "N6-Methyladenosine (m6A)",
+            "beta-binomial modeling",
+            "differential RNA methylation",
+            "MeTDiff"
+          ]
+        }
+      }
+    },
+    {
+      "doi":"10.1109/TCC.2015.2415813",
+      "title":"Statistical Learning for Anomaly Detection in Cloud Server Systems: A Multi-Order Markov Chain Framework",
+      "publisher":"IEEE",
+      "issue":"2",
+      "issn":"2372-0018",
+      "rank":12,
+      "volume":"6",
+      "authors":{
+        "authors":[
+          {
+            "affiliation":"School of Microelectronics, Shanghai Jiao Tong University, Shanghai, China",
+            "authorUrl":"https://ieeexplore.ieee.org/author/37074704900",
+            "id":37074704900,
+            "full_name":"Wenyao Sha",
+            "author_order":1
+          },
+          {
+            "affiliation":"School of Microelectronics, Shanghai Jiao Tong University, Shanghai, China",
+            "authorUrl":"https://ieeexplore.ieee.org/author/37310652700",
+            "id":37310652700,
+            "full_name":"Yongxin Zhu",
+            "author_order":2
+          },
+          {
+            "affiliation":"School of Computer Science and Technology, Huazhong University of Science and Technology, Wuhan, Hubei, China",
+            "authorUrl":"https://ieeexplore.ieee.org/author/37407022500",
+            "id":37407022500,
+            "full_name":"Min Chen",
+            "author_order":3
+          },
+          {
+            "affiliation":"School of Microelectronics, Shanghai Jiao Tong University, Shanghai, China",
+            "authorUrl":"https://ieeexplore.ieee.org/author/38003563800",
+            "id":38003563800,
+            "full_name":"Tian Huang",
+            "author_order":4
+          }
+        ]
+      },
+      "access_type":"LOCKED",
+      "content_type":"Journals",
+      "abstract":"As a major strategy to ensure the safety of IT infrastructure, anomaly detection plays a more important role in cloud computing platform which hosts the entire applications and data. On top of the classic Markov chain model, we proposed in this paper a feasible multi-order Markov chain based framework for anomaly detection. In this approach, both the high-order Markov chain and multivariate time series are adopted to compose a scheme described in algorithms along with the training procedure in the form of statistical learning framework. To curb time and space complexity, the algorithms are designed and implemented with non-zero value table and logarithm values in initial and transition matrices. For validation, the series of system calls and the corresponding return values are extracted from classic Defense Advanced Research Projects Agency (DARPA) intrusion detection evaluation data set to form a two-dimensional test input set. The testing results show that the multi-order approach is able to produce more effective indicators: in addition to the absolute values given by an individual single-order model, the changes in ranking positions of outputs from different-order ones also correlate closely with abnormal behaviours.",
+      "article_number":"7065233",
+      "pdf_url":"https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7065233",
+      "html_url":"https://ieeexplore.ieee.org/document/7065233/",
+      "abstract_url":"https://ieeexplore.ieee.org/document/7065233/",
+      "publication_title":"IEEE Transactions on Cloud Computing",
+      "publication_number":6245519,
+      "is_number":8372844,
+      "publication_year":2018,
+      "publication_date":"1 April-June 2018",
+      "start_page":"401",
+      "end_page":"413",
+      "citing_paper_count":9,
+      "citing_patent_count":0,
+      "index_terms":{
+        "ieee_terms":{
+          "terms":[
+            "Markov processes",
+            "Training",
+            "Cloud computing",
+            "Algorithm design and analysis",
+            "Mathematical model",
+            "Equations",
+            "Servers"
+          ]
+        },
+        "author_terms":{
+          "terms":[
+            "Kth-order Markov chain",
+            "multivariate time series",
+            "anomaly detection",
+            "statistical learning"
+          ]
+        }
+      }
+    },
+    {
+      "doi":"10.1109/TETC.2015.2420353",
+      "title":"Massively Parallel Analog Computing: Ariadne’s Thread Was Made of Memristors",
+      "publisher":"IEEE",
+      "issue":"1",
+      "issn":"2376-4562",
+      "rank":13,
+      "volume":"6",
+      "authors":{
+        "authors":[
+          {
+            "affiliation":"Department of Electrical and Computer Engineering, Democritus University of Thrace, Xanthi, Greece",
+            "authorUrl":"https://ieeexplore.ieee.org/author/37888434500",
+            "id":37888434500,
+            "full_name":"Ioannis Vourkas",
+            "author_order":1
+          },
+          {
+            "affiliation":"Department of Electrical and Computer Engineering, Democritus University of Thrace, Xanthi, Greece",
+            "authorUrl":"https://ieeexplore.ieee.org/author/37085422947",
+            "id":37085422947,
+            "full_name":"Dimitrios Stathis",
+            "author_order":2
+          },
+          {
+            "affiliation":"Department of Electrical and Computer Engineering, Democritus University of Thrace, Xanthi, Greece",
+            "authorUrl":"https://ieeexplore.ieee.org/author/37304018300",
+            "id":37304018300,
+            "full_name":"Georgios CH. Sirakoulis",
+            "author_order":3
+          }
+        ]
+      },
+      "access_type":"LOCKED",
+      "content_type":"Journals",
+      "abstract":"This paper explores memristive grids where emergent computation arises through collective device interactions. Computing efficiency of the grids is studied in several scenarios and new composite memristive structures are utilized in shortest path and maze-solving computations. The dependence of the computing medium behavior on the symmetry of both the underlying geometry and the employed devices, is validated through SPICE-level circuit simulations, which highlight important computing inefficiencies. Particular circuit-models of memristive connections enable precise mapping of the target application on the computing medium. Extraordinary functionalities emerge when novel memristive computing components, comprising different electrical characteristics from their structural elements, are introduced in the grid. Applying assisted-computation, by incorporating the concept of Ariadne's thread, leaded to better computing results, which could find application in routing and path computing problems.",
+      "article_number":"7080907",
+      "pdf_url":"https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7080907",
+      "html_url":"https://ieeexplore.ieee.org/document/7080907/",
+      "abstract_url":"https://ieeexplore.ieee.org/document/7080907/",
+      "publication_title":"IEEE Transactions on Emerging Topics in Computing",
+      "publication_number":6245516,
+      "is_number":8306164,
+      "publication_year":2018,
+      "publication_date":"Jan.-March 2018",
+      "start_page":"145",
+      "end_page":"155",
+      "citing_paper_count":2,
+      "citing_patent_count":0,
+      "index_terms":{
+        "ieee_terms":{
+          "terms":[
+            "Memristors",
+            "Switches",
+            "Computational modeling",
+            "Resistance",
+            "Instruction sets",
+            "SPICE"
+          ]
+        },
+        "author_terms":{
+          "terms":[
+            "Memristor",
+            "memristive grid",
+            "programmable circuits",
+            "computing",
+            "shortest path",
+            "maze solving"
+          ]
+        }
+      }
+    },
+    {
+      "doi":"10.1109/JSYST.2015.2411745",
+      "title":"The Critical Patients Localization Algorithm Using Sparse Representation for Mixed Signals in Emergency Healthcare System",
+      "publisher":"IEEE",
+      "issue":"1",
+      "issn":"2373-7816",
+      "rank":14,
+      "volume":"12",
+      "authors":{
+        "authors":[
+          {
+            "affiliation":"Department of Information and Communication Systems, Hohai University, Changzhou, China",
+            "authorUrl":"https://ieeexplore.ieee.org/author/38548201600",
+            "id":38548201600,
+            "full_name":"Liangtian Wan",
+            "author_order":1
+          },
+          {
+            "affiliation":"Department of Information and Communication Systems, Hohai University, Changzhou, China",
+            "authorUrl":"https://ieeexplore.ieee.org/author/37530679800",
+            "id":37530679800,
+            "full_name":"Guangjie Han",
+            "author_order":2
+          },
+          {
+            "affiliation":"Guangdong Petrochemical Equipment Fault Diagnosis Key Laboratory, Guangdong University of Petrochemical Technology, Guangdong, China",
+            "authorUrl":"https://ieeexplore.ieee.org/author/37391704000",
+            "id":37391704000,
+            "full_name":"Lei Shu",
+            "author_order":3
+          },
+          {
+            "affiliation":"Institute of Electromagnetics and Acoustics, Xiamen University, Xiamen, China",
+            "authorUrl":"https://ieeexplore.ieee.org/author/37710476400",
+            "id":37710476400,
+            "full_name":"Naixing Feng",
+            "author_order":4
+          }
+        ]
+      },
+      "access_type":"LOCKED",
+      "content_type":"Journals",
+      "abstract":"In this paper, a new architecture for the emergency healthcare system based on mobile cloud computation (MCC) and fifth-generation (5G) wireless link is proposed. Based on the processing speed of MCC and the communication rate of 5G scheme, this system can monitor and locate patients in real time. Multiple base stations of the massive multiple input multiple output cooperate with each other to locate the patients using cross-location method. Then, a new direction-of-arrival (DOA) estimation algorithm is proposed in the presence of unknown mutual coupling. The uncorrelated signals are first estimated using the estimation of signal parameters via rotational invariance technique algorithm. Then, these estimators construct the manifold matrix of uncorrelated signals to estimate the mutual coupling coefficients. The information about uncorrelated signals and mutual coupling is eliminated based on oblique projection technique in order to estimate the DOAs of coherent signals using the original array. Finally, the DOAs of coherent signals are achieved based on sparse representation theory. Simulation results demonstrate the effectiveness and performance of the proposed algorithm.",
+      "article_number":"7084608",
+      "pdf_url":"https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7084608",
+      "html_url":"https://ieeexplore.ieee.org/document/7084608/",
+      "abstract_url":"https://ieeexplore.ieee.org/document/7084608/",
+      "publication_title":"IEEE Systems Journal",
+      "publication_number":4267003,
+      "is_number":8323440,
+      "publication_year":2018,
+      "publication_date":"March 2018",
+      "start_page":"52",
+      "end_page":"63",
+      "citing_paper_count":18,
+      "citing_patent_count":0,
+      "index_terms":{
+        "ieee_terms":{
+          "terms":[
+            "Medical services",
+            "Mutual coupling",
+            "Mobile handsets",
+            "Direction-of-arrival estimation",
+            "Biomedical monitoring",
+            "MIMO",
+            "Estimation"
+          ]
+        },
+        "author_terms":{
+          "terms":[
+            "Direction-of-arrival (DOA) estimation",
+            "emergency healthcare system",
+            "fifth-generation (5G) wireless link",
+            "mobile cloud computation (MCC)"
+          ]
+        }
+      }
+    },
+    {
+      "doi":"10.1109/TCC.2015.2424882",
+      "title":"Audit-Free Cloud Storage via Deniable Attribute-Based Encryption",
+      "publisher":"IEEE",
+      "issue":"2",
+      "issn":"2372-0018",
+      "rank":15,
+      "volume":"6",
+      "authors":{
+        "authors":[
+          {
+            "affiliation":"Distributed Computing and Network Security (DCNS) Laboratory, Department of Electrical Engineering, National Taiwan University, Taiwan",
+            "authorUrl":"https://ieeexplore.ieee.org/author/37085430108",
+            "id":37085430108,
+            "full_name":"Po-Wen Chi",
+            "author_order":1
+          },
+          {
+            "affiliation":"Distributed Computing and Network Security (DCNS) Laboratory, Department of Electrical Engineering, National Taiwan University, Taiwan",
+            "authorUrl":"https://ieeexplore.ieee.org/author/37085450997",
+            "id":37085450997,
+            "full_name":"Chin-Laung Lei",
+            "author_order":2
+          }
+        ]
+      },
+      "access_type":"LOCKED",
+      "content_type":"Journals",
+      "abstract":"Cloud storage services have become increasingly popular. Because of the importance of privacy, many cloud storage encryption schemes have been proposed to protect data from those who do not have access. All such schemes assumed that cloud storage providers are safe and cannot be hacked; however, in practice, some authorities (i.e., coercers) may force cloud storage providers to reveal user secrets or confidential data on the cloud, thus altogether circumventing storage encryption schemes. In this paper, we present our design for a new cloud storage encryption scheme that enables cloud storage providers to create convincing fake user secrets to protect user privacy. Since coercers cannot tell if obtained secrets are true or not, the cloud storage providers ensure that user privacy is still securely protected.",
+      "article_number":"7090980",
+      "pdf_url":"https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7090980",
+      "html_url":"https://ieeexplore.ieee.org/document/7090980/",
+      "abstract_url":"https://ieeexplore.ieee.org/document/7090980/",
+      "publication_title":"IEEE Transactions on Cloud Computing",
+      "publication_number":6245519,
+      "is_number":8372844,
+      "publication_year":2018,
+      "publication_date":"1 April-June 2018",
+      "start_page":"414",
+      "end_page":"427",
+      "citing_paper_count":8,
+      "citing_patent_count":0,
+      "index_terms":{
+        "ieee_terms":{
+          "terms":[
+            "Encryption",
+            "Cloud computing",
+            "Receivers",
+            "Public key",
+            "Generators"
+          ]
+        },
+        "author_terms":{
+          "terms":[
+            "Deniable encryption",
+            "composite order bilinear group",
+            "attribute-based encryption",
+            "cloud storage"
+          ]
+        }
+      }
+    },
+    {
+      "doi":"10.1109/TETC.2015.2424593",
+      "title":"A Neuromorphic VLSI Circuit for Spike-Based Random Sampling",
+      "publisher":"IEEE",
+      "issue":"1",
+      "issn":"2376-4562",
+      "rank":16,
+      "volume":"6",
+      "authors":{
+        "authors":[
+          {
+            "affiliation":"Institute of Neuroinformatics, University of Zurich, Zurich, Switzerland",
+            "authorUrl":"https://ieeexplore.ieee.org/author/37085724595",
+            "id":37085724595,
+            "full_name":"Chen-Han Chien",
+            "author_order":1
+          },
+          {
+            "affiliation":"Institute of Neuroinformatics, University of Zurich, Zurich, Switzerland",
+            "authorUrl":"https://ieeexplore.ieee.org/author/37085681321",
+            "id":37085681321,
+            "full_name":"Shih-Chii Liu",
+            "author_order":2
+          },
+          {
+            "affiliation":"Department of Neurology, Inselspital Bern, University Hospital, University Bern, Bern, Switzerland",
+            "authorUrl":"https://ieeexplore.ieee.org/author/37086341934",
+            "id":37086341934,
+            "full_name":"Andreas Steimer",
+            "author_order":3
+          }
+        ]
+      },
+      "access_type":"LOCKED",
+      "content_type":"Journals",
+      "abstract":"This paper presents a novel, neuromorphic circuit that produces a continuous stream of analog random samples. The circuit encodes these samples by the temporal difference between the onset times of two subsequent voltage jumps, which mimic action potentials of biological neurons. By combining elegantly concepts from renewal theory and analog very large scale integrated technology, the circuit is principally able to sample from arbitrary distributions of positive, real random variables. Moreover, these distributions can be defined online by the circuit-user in terms of an input current time-series, without the need to reconfigure the circuit. We show results from this circuit fabricated in a CMOS 0.35-μm technology process. Random sampling is demonstrated for the uniform, exponential, and-by means of circuit simulation-also for a more complex bimodal distribution.",
+      "article_number":"7097031",
+      "pdf_url":"https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7097031",
+      "html_url":"https://ieeexplore.ieee.org/document/7097031/",
+      "abstract_url":"https://ieeexplore.ieee.org/document/7097031/",
+      "publication_title":"IEEE Transactions on Emerging Topics in Computing",
+      "publication_number":6245516,
+      "is_number":8306164,
+      "publication_year":2018,
+      "publication_date":"Jan.-March 2018",
+      "start_page":"135",
+      "end_page":"144",
+      "citing_paper_count":1,
+      "citing_patent_count":0,
+      "index_terms":{
+        "ieee_terms":{
+          "terms":[
+            "Hazards",
+            "Transistors",
+            "Very large scale integration",
+            "Firing",
+            "Approximation methods",
+            "Generators",
+            "Clocks"
+          ]
+        },
+        "author_terms":{
+          "terms":[
+            "Hazard function",
+            "random sampling",
+            "renewal theory",
+            "interspike interval",
+            "spike-based",
+            "real-time"
+          ]
+        }
+      }
+    },
+    {
+      "doi":"10.1109/TCC.2015.2430316",
+      "title":"Towards Privacy Preserving Publishing of Set-Valued Data on Hybrid Cloud",
+      "publisher":"IEEE",
+      "issue":"2",
+      "issn":"2372-0018",
+      "rank":17,
+      "volume":"6",
+      "authors":{
+        "authors":[
+          {
+            "affiliation":"Harbin Institute of Technology, Harbin, China",
+            "authorUrl":"https://ieeexplore.ieee.org/author/37280797200",
+            "id":37280797200,
+            "full_name":"Hongli Zhang",
+            "author_order":1
+          },
+          {
+            "affiliation":"Harbin Institute of Technology, Harbin, China",
+            "authorUrl":"https://ieeexplore.ieee.org/author/37536763800",
+            "id":37536763800,
+            "full_name":"Zhigang Zhou",
+            "author_order":2
+          },
+          {
+            "affiliation":"Harbin Institute of Technology, Harbin, China",
+            "authorUrl":"https://ieeexplore.ieee.org/author/38100848500",
+            "id":38100848500,
+            "full_name":"Lin Ye",
+            "author_order":3
+          },
+          {
+            "affiliation":"Temple University, Philadelphia, PA",
+            "authorUrl":"https://ieeexplore.ieee.org/author/37086264053",
+            "id":37086264053,
+            "full_name":"Xiaojiang Du",
+            "author_order":4
+          }
+        ]
+      },
+      "access_type":"LOCKED",
+      "content_type":"Journals",
+      "abstract":"Storage as a service has become an important paradigm in cloud computing for its great flexibility and economic savings. However, the development is hampered by data privacy concerns: data owners no longer physically possess the storage of their data. In this work, we study the issue of privacy-preserving set-valued data publishing. Existing data privacy-preserving techniques (such as encryption, suppression, generalization) are not applicable in many real scenes, since they would incur large overhead for data query or high information loss. Motivated by this observation, we present a suite of new techniques that make privacy-aware set-valued data publishing feasible on hybrid cloud. On data publishing phase, we propose a data partition technique, named extended quasi-identifierpartitioning (EQI-partitioning), which disassociates record terms that participate in identifying combinations. This way the cloud server cannot associate with high probability a record with rare term combinations. We prove the privacy guarantee of our mechanism. On data querying phase, we adopt interactive differential privacy strategy to resist privacy breaches from statistical queries. We finally evaluate its performance using real-life data sets on our cloud test-bed. Our extensive experiments demonstrate the validity and practicality of the proposed scheme.",
+      "article_number":"7103035",
+      "pdf_url":"https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7103035",
+      "html_url":"https://ieeexplore.ieee.org/document/7103035/",
+      "abstract_url":"https://ieeexplore.ieee.org/document/7103035/",
+      "publication_title":"IEEE Transactions on Cloud Computing",
+      "publication_number":6245519,
+      "is_number":8372844,
+      "publication_year":2018,
+      "publication_date":"1 April-June 2018",
+      "start_page":"316",
+      "end_page":"329",
+      "citing_paper_count":6,
+      "citing_patent_count":0,
+      "index_terms":{
+        "ieee_terms":{
+          "terms":[
+            "Cloud computing",
+            "Data privacy",
+            "Publishing",
+            "Security",
+            "Privacy",
+            "Measurement",
+            "Outsourcing"
+          ]
+        },
+        "author_terms":{
+          "terms":[
+            "Cloud computing",
+            "differential privacy",
+            "data partition",
+            "data privacy",
+            "hybrid cloud",
+            "set-valued data"
+          ]
+        }
+      }
+    },
+    {
+      "doi":"10.1109/JSYST.2015.2428620",
+      "title":"Certificateless Public Auditing Scheme for Cloud-Assisted Wireless Body Area Networks",
+      "publisher":"IEEE",
+      "issue":"1",
+      "issn":"2373-7816",
+      "rank":18,
+      "volume":"12",
+      "authors":{
+        "authors":[
+          {
+            "affiliation":"State Key Laboratory of Software Engineering, School of Computer, Fujian Provincial Key Laboratory of Network Security and Cryptology, Wuhan University, Fujian Normal University, Wuhan, Fuzhou, China,China",
+            "authorUrl":"https://ieeexplore.ieee.org/author/37085390446",
+            "id":37085390446,
+            "full_name":"Debiao He",
+            "author_order":1
+          },
+          {
+            "affiliation":"College of Communication and Information, University of Kentucky, Lexington, KY, USA",
+            "authorUrl":"https://ieeexplore.ieee.org/author/37271608700",
+            "id":37271608700,
+            "full_name":"Sherali Zeadally",
+            "author_order":2
+          },
+          {
+            "affiliation":"School of Computer, Wuhan University, Wuhan, China",
+            "authorUrl":"https://ieeexplore.ieee.org/author/37402839400",
+            "id":37402839400,
+            "full_name":"Libing Wu",
+            "author_order":3
+          }
+        ]
+      },
+      "access_type":"LOCKED",
+      "content_type":"Journals",
+      "abstract":"Wireless body area networks (WBANs) consist of many small low-power sensors, through which users could monitor the real-time parameters of patients' physiology remotely. This capability could improve medical care and the monitoring of patients. WBAN devices typically have limited computing, storage, power, and communication capabilities. These limitations restrict the applications that WBANs can support. To enhance the capabilities of WBANs, the concept of cloud-assisted WBANs has been introduced recently. By using cloud computing technologies, cloud-assisted WBANs can provide more efficient processing of patients' physiology parameters and support richer services. In cloud-assisted WBANs, the data of patients' physiology are stored in the cloud. The integrity of the data is very important because these data will be used to provide a medical diagnosis and other medical treatments. To address the issue of integrity in cloud-assisted WBANs, we propose an efficient certificateless public auditing (CLPA) scheme. A security analysis of our proposed CLPA scheme shows that it is provably secure against two types of adversaries (i.e., a type-I adversary can replace users' public keys, and a type-II adversary can access the master key) in an environment of certificateless cryptography. A detailed performance analysis demonstrates that the proposed CLPA scheme yields better performance over a previously proposed CLPA scheme.",
+      "article_number":"7111218",
+      "pdf_url":"https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7111218",
+      "html_url":"https://ieeexplore.ieee.org/document/7111218/",
+      "abstract_url":"https://ieeexplore.ieee.org/document/7111218/",
+      "publication_title":"IEEE Systems Journal",
+      "publication_number":4267003,
+      "is_number":8323440,
+      "publication_year":2018,
+      "publication_date":"March 2018",
+      "start_page":"64",
+      "end_page":"73",
+      "citing_paper_count":29,
+      "citing_patent_count":0,
+      "index_terms":{
+        "ieee_terms":{
+          "terms":[
+            "Cloud computing",
+            "Public key",
+            "Medical diagnostic imaging",
+            "Servers",
+            "Sensors"
+          ]
+        },
+        "author_terms":{
+          "terms":[
+            "Auditing",
+            "cloud computing",
+            "protocol",
+            "security",
+            "wireless body area networks (WBANs)"
+          ]
+        }
+      }
+    },
+    {
+      "doi":"10.1109/TCC.2015.2440242",
+      "title":"CSR: Classified Source Routing in Distributed Networks",
+      "publisher":"IEEE",
+      "issue":"2",
+      "issn":"2372-0018",
+      "rank":19,
+      "volume":"6",
+      "authors":{
+        "authors":[
+          {
+            "affiliation":"National Laboratory for Parallel and Distributed Processing (PDL), School of Computer, National University of Defense Technology, Changsha, China",
+            "authorUrl":"https://ieeexplore.ieee.org/author/37086189717",
+            "id":37086189717,
+            "full_name":"Yiming Zhang",
+            "author_order":1
+          },
+          {
+            "affiliation":"National Laboratory for Parallel and Distributed Processing (PDL), School of Computer, National University of Defense Technology, Changsha, China",
+            "authorUrl":"https://ieeexplore.ieee.org/author/37535505400",
+            "id":37535505400,
+            "full_name":"Dongsheng Li",
+            "author_order":2
+          },
+          {
+            "affiliation":"Institute of Network and Information Security, School of Computer, National University of Defense Technology, Changsha, China",
+            "authorUrl":"https://ieeexplore.ieee.org/author/37085395699",
+            "id":37085395699,
+            "full_name":"Dongsheng Li",
+            "author_order":3
+          },
+          {
+            "affiliation":"Institute of Network and Information Security, School of Computer, National University of Defense Technology, Changsha, China",
+            "authorUrl":"https://ieeexplore.ieee.org/author/37290571800",
+            "id":37290571800,
+            "full_name":"Feng Zhao",
+            "author_order":4
+          },
+          {
+            "affiliation":"Institute of Network and Information Security, School of Computer, National University of Defense Technology, Changsha, China",
+            "authorUrl":"https://ieeexplore.ieee.org/author/37311469100",
+            "id":37311469100,
+            "full_name":"Jinshu Su",
+            "author_order":5
+          },
+          {
+            "affiliation":"National Laboratory for Parallel and Distributed Processing (PDL), School of Computer, National University of Defense Technology, Changsha, China",
+            "authorUrl":"https://ieeexplore.ieee.org/author/37279986600",
+            "id":37279986600,
+            "full_name":"Xicheng Lu",
+            "author_order":6
+          }
+        ]
+      },
+      "access_type":"LOCKED",
+      "content_type":"Journals",
+      "abstract":"In recent years cloud computing provides a new way to address the constraints of limited energy, capabilities, and resources. Distributed hash table (DHT) based distributed networks have become increasingly important for efficient communication in large-scale cloud systems. Previous studies mainly focus on improving the performance such as latency, scalability and robustness, but seldom consider the security demands on the routing paths, for example, bypassing untrusted intermediate nodes. Inspired by Internet source routing, in which the source nodes specify the routing paths taken by their packets, this paper presents CSR, a tag-based, Classified Source Routing scheme in distributed networks to satisfy the security demands on the routing paths. Different from Internet source routing which requires some map of the overall network, CSR operates in a distributed manner where nodes with certain security level are tagged with a label and routing messages requiring that level of security are forwarded only to the qualified next-hops. We show how this can be achieved efficiently, by simple extensions of the traditional routing structures, and safely, so that the routing is uniformly convergent. The effectiveness of our proposals is demonstrated through theoretical analysis and extensive simulations.",
+      "article_number":"7116526",
+      "pdf_url":"https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7116526",
+      "html_url":"https://ieeexplore.ieee.org/document/7116526/",
+      "abstract_url":"https://ieeexplore.ieee.org/document/7116526/",
+      "publication_title":"IEEE Transactions on Cloud Computing",
+      "publication_number":6245519,
+      "is_number":8372844,
+      "publication_year":2018,
+      "publication_date":"1 April-June 2018",
+      "start_page":"464",
+      "end_page":"477",
+      "citing_paper_count":4,
+      "citing_patent_count":0,
+      "index_terms":{
+        "ieee_terms":{
+          "terms":[
+            "Servers",
+            "Routing",
+            "Cloud computing",
+            "Security",
+            "Topology",
+            "Robustness"
+          ]
+        },
+        "author_terms":{
+          "terms":[
+            "CSR (classified source routing)",
+            "tag",
+            "path diversity",
+            "distributed hash table (DHT)",
+            "DLG-de Bruijn (DdB)"
+          ]
+        }
+      }
+    },
+    {
+      "doi":"10.1109/TCBB.2015.2440232",
+      "title":"Computational Prediction of Pathogenic Network Modules in Fusarium verticillioides",
+      "publisher":"IEEE",
+      "issue":"2",
+      "issn":"2374-0043",
+      "rank":20,
+      "volume":"15",
+      "authors":{
+        "authors":[
+          {
+            "affiliation":"Department of Electrical and Computer Engineering, Texas A&M University, College Station, TX",
+            "authorUrl":"https://ieeexplore.ieee.org/author/38239191200",
+            "id":38239191200,
+            "full_name":"Mansuck Kim",
+            "author_order":1
+          },
+          {
+            "affiliation":"Department of Plant Pathology & Microbiology, Texas A&M University, College Station, TX",
+            "authorUrl":"https://ieeexplore.ieee.org/author/37086355972",
+            "id":37086355972,
+            "full_name":"Huan Zhang",
+            "author_order":2
+          },
+          {
+            "affiliation":"Department of Botany & Plant Pathology, Purdue University, West Lafayette, IN",
+            "authorUrl":"https://ieeexplore.ieee.org/author/37086354651",
+            "id":37086354651,
+            "full_name":"Charles Woloshuk",
+            "author_order":3
+          },
+          {
+            "affiliation":"Department of Plant Pathology & Microbiology, Texas A&M University, College Station, TX",
+            "authorUrl":"https://ieeexplore.ieee.org/author/37086355027",
+            "id":37086355027,
+            "full_name":"Won-Bo Shim",
+            "author_order":4
+          },
+          {
+            "affiliation":"Department of Electrical and Computer Engineering, Texas A&M University, College Station, TX",
+            "authorUrl":"https://ieeexplore.ieee.org/author/37273556100",
+            "id":37273556100,
+            "full_name":"Byung-Jun Yoon",
+            "author_order":5
+          }
+        ]
+      },
+      "access_type":"LOCKED",
+      "content_type":"Journals",
+      "abstract":"Fusarium verticillioides is a fungal pathogen that triggers stalk rots and ear rots in maize. In this study, we performed a comparative analysis of wild type and loss-of-virulence mutant F. verticillioides co-expression networks to identify subnetwork modules that are associated with its pathogenicity. We constructed the F. verticillioides co-expression networks from RNA-Seq data and searched through these networks to identify subnetwork modules that are differentially activated between the wild type and mutant F. verticillioides, which considerably differ in terms of pathogenic potentials. A greedy seed-and-extend approach was utilized in our search, where we also used an efficient branch-out technique for reliable prediction of functional subnetwork modules in the fungus. Through our analysis, we identified four potential pathogenicity-associated subnetwork modules, each of which consists of interacting genes with coordinated expression patterns, but whose activation level is significantly different in the wild type and the mutant. The predicted modules were comprised of functionally coherent genes and topologically cohesive. Furthermore, they contained several orthologs of known pathogenic genes in other fungi, which may play important roles in the fungal pathogenesis.",
+      "article_number":"7118172",
+      "pdf_url":"https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7118172",
+      "html_url":"https://ieeexplore.ieee.org/document/7118172/",
+      "abstract_url":"https://ieeexplore.ieee.org/document/7118172/",
+      "publication_title":"IEEE/ACM Transactions on Computational Biology and Bioinformatics",
+      "publication_number":8857,
+      "is_number":8329158,
+      "publication_year":2018,
+      "publication_date":"1 March-April 2018",
+      "start_page":"506",
+      "end_page":"515",
+      "citing_paper_count":0,
+      "citing_patent_count":0,
+      "index_terms":{
+        "ieee_terms":{
+          "terms":[
+            "Gene expression",
+            "Bioinformatics",
+            "Correlation",
+            "IEEE transactions",
+            "Computational biology",
+            "Fungi",
+            "Sequential analysis"
+          ]
+        },
+        "author_terms":{
+          "terms":[
+            "RNA-Seq",
+            "co-expresion network",
+            "network module prediction",
+            "Fusarium verticillioides",
+            "pathogenic network modules"
+          ]
+        }
+      }
+    },
+    {
+      "doi":"10.1109/TCC.2015.2441715",
+      "title":"Cross-Layer Multi-Cloud Real-Time Application QoS Monitoring and Benchmarking As-a-Service Framework",
+      "publisher":"IEEE",
+      "issue":"1",
+      "issn":"2372-0018",
+      "rank":21,
+      "volume":"7",
+      "authors":{
+        "authors":[
+          {
+            "affiliation":"School of Computer Science and Engineering, University of New South Wales, Sydney, Australia",
+            "authorUrl":"https://ieeexplore.ieee.org/author/38548010700",
+            "id":38548010700,
+            "full_name":"Khalid Alhamazani",
+            "author_order":1
+          },
+          {
+            "affiliation":"Newcastle University, U.K.",
+            "authorUrl":"https://ieeexplore.ieee.org/author/38547753100",
+            "id":38547753100,
+            "full_name":"Rajiv Ranjan",
+            "author_order":2
+          },
+          {
+            "affiliation":"Royal Melbourne Instituteo of Technology, Melbourne, Australia",
+            "authorUrl":"https://ieeexplore.ieee.org/author/37085861558",
+            "id":37085861558,
+            "full_name":"Prem Prakash Jayaraman",
+            "author_order":3
+          },
+          {
+            "affiliation":"Luleå University of Technology, Skellefteå, Sweden",
+            "authorUrl":"https://ieeexplore.ieee.org/author/37684111400",
+            "id":37684111400,
+            "full_name":"Karan Mitra",
+            "author_order":4
+          },
+          {
+            "affiliation":"University of Technology Sydney, Sydney, Australia",
+            "authorUrl":"https://ieeexplore.ieee.org/author/37066596500",
+            "id":37066596500,
+            "full_name":"Chang Liu",
+            "author_order":5
+          },
+          {
+            "affiliation":"School of Computer Science and Engineering, University of New South Wales, Sydney, Australia",
+            "authorUrl":"https://ieeexplore.ieee.org/author/37396605600",
+            "id":37396605600,
+            "full_name":"Fethi Rabhi",
+            "author_order":6
+          },
+          {
+            "affiliation":"Royal Melbourne Instituteo of Technology, Melbourne, VIC, Australia",
+            "authorUrl":"https://ieeexplore.ieee.org/author/38520348900",
+            "id":38520348900,
+            "full_name":"Dimitrios Georgakopoulos",
+            "author_order":7
+          },
+          {
+            "affiliation":"Chinese Academy of Sciences, Beijing, China",
+            "authorUrl":"https://ieeexplore.ieee.org/author/37311077100",
+            "id":37311077100,
+            "full_name":"Lizhe Wang",
+            "author_order":8
+          }
+        ]
+      },
+      "access_type":"LOCKED",
+      "content_type":"Journals",
+      "abstract":"Cloud computing provides on-demand access to affordable hardware (e.g., multi-core CPUs, GPUs, disks, and networking equipment) and software (e.g., databases, application servers and data processing frameworks) platforms with features such as elasticity, pay-per-use, low upfront investment and low time to market. This has led to the proliferation of business critical applications that leverage various cloud platforms. Such applications hosted on single/multiple cloud provider platforms have diverse characteristics requiring extensive monitoring and benchmarking mechanisms to ensure run-time Quality of Service (QoS) (e.g., latency and throughput). This paper proposes, develops and validates CLAMBS-Cross-Layer Multi-Cloud Application Monitoring and Benchmarking as-a-Service for efficient QoS monitoring and benchmarking of cloud applications hosted on multi-clouds environments. The major highlight of CLAMBS is its capability of monitoring and benchmarking individual application components such as databases and web servers, distributed across cloud layers (*-aaS), spread among multiple cloud providers. We validate CLAMBS using prototype implementation and extensive experimentation and show that CLAMBS efficiently monitors and benchmarks application components on multi-cloud platforms including Amazon EC2 and Microsoft Azure.",
+      "article_number":"7126933",
+      "pdf_url":"https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7126933",
+      "html_url":"https://ieeexplore.ieee.org/document/7126933/",
+      "abstract_url":"https://ieeexplore.ieee.org/document/7126933/",
+      "publication_title":"IEEE Transactions on Cloud Computing",
+      "publication_number":6245519,
+      "is_number":8661573,
+      "publication_year":2019,
+      "publication_date":"1 Jan.-March 2019",
+      "start_page":"48",
+      "end_page":"61",
+      "citing_paper_count":9,
+      "citing_patent_count":0,
+      "index_terms":{
+        "ieee_terms":{
+          "terms":[
+            "Monitoring",
+            "Benchmark testing",
+            "Quality of service",
+            "Cloud computing",
+            "Servers",
+            "Databases"
+          ]
+        },
+        "author_terms":{
+          "terms":[
+            "Cloud benchmarking, cloud computing",
+            "multi-clouds",
+            "cross-layer monitoring",
+            "QoS",
+            "prototyping"
+          ]
+        }
+      }
+    },
+    {
+      "doi":"10.1109/TCBB.2015.2440244",
+      "title":"Bayesian Multiresolution Variable Selection for Ultra-High Dimensional Neuroimaging Data",
+      "publisher":"IEEE",
+      "issue":"2",
+      "issn":"2374-0043",
+      "rank":22,
+      "volume":"15",
+      "authors":{
+        "authors":[
+          {
+            "affiliation":"Statistical and Applied Mathematical Sciences Institute, Research Triangle Park, NC",
+            "authorUrl":"https://ieeexplore.ieee.org/author/37086355573",
+            "id":37086355573,
+            "full_name":"Yize Zhao",
+            "author_order":1
+          },
+          {
+            "affiliation":"Department of Biostatistics, University of Michigan, Ann Arbor, MI",
+            "authorUrl":"https://ieeexplore.ieee.org/author/37086208042",
+            "id":37086208042,
+            "full_name":"Jian Kang",
+            "author_order":2
+          },
+          {
+            "affiliation":"Department of Biostatistics and Bioinformatics, Emory University, Atlanta, GA",
+            "authorUrl":"https://ieeexplore.ieee.org/author/37085993815",
+            "id":37085993815,
+            "full_name":"Qi Long",
+            "author_order":3
+          }
+        ]
+      },
+      "access_type":"LOCKED",
+      "content_type":"Journals",
+      "abstract":"Ultra-high dimensional variable selection has become increasingly important in analysis of neuroimaging data. For example, in the Autism Brain Imaging Data Exchange (ABIDE) study, neuroscientists are interested in identifying important biomarkers for early detection of the autism spectrum disorder (ASD) using high resolution brain images that include hundreds of thousands voxels. However, most existing methods are not feasible for solving this problem due to their extensive computational costs. In this work, we propose a novel multiresolution variable selection procedure under a Bayesian probit regression framework. It recursively uses posterior samples for coarser-scale variable selection to guide the posterior inference on finer-scale variable selection, leading to very efficient Markov chain Monte Carlo (MCMC) algorithms. The proposed algorithms are computationally feasible for ultra-high dimensional data. Also, our model incorporates two levels of structural information into variable selection using Ising priors: the spatial dependence between voxels and the functional connectivity between anatomical brain regions. Applied to the resting state functional magnetic resonance imaging (R-fMRI) data in the ABIDE study, our methods identify voxel-level imaging biomarkers highly predictive of the ASD, which are biologically meaningful and interpretable. Extensive simulations also show that our methods achieve better performance in variable selection compared to existing methods.",
+      "article_number":"7126946",
+      "pdf_url":"https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7126946",
+      "html_url":"https://ieeexplore.ieee.org/document/7126946/",
+      "abstract_url":"https://ieeexplore.ieee.org/document/7126946/",
+      "publication_title":"IEEE/ACM Transactions on Computational Biology and Bioinformatics",
+      "publication_number":8857,
+      "is_number":8329158,
+      "publication_year":2018,
+      "publication_date":"1 March-April 2018",
+      "start_page":"537",
+      "end_page":"550",
+      "citing_paper_count":1,
+      "citing_patent_count":0,
+      "index_terms":{
+        "ieee_terms":{
+          "terms":[
+            "Input variables",
+            "Computational modeling",
+            "Imaging",
+            "Biological system modeling",
+            "Bayes methods",
+            "Spatial resolution"
+          ]
+        },
+        "author_terms":{
+          "terms":[
+            "Multiresolution variable selection",
+            "Bayesian Spatial Probit Model",
+            "Ising priors",
+            "ultra-high dimensional imaging data",
+            "block Gibbs sampler"
+          ]
+        }
+      }
+    },
+    {
+      "doi":"10.1109/TCBB.2015.2446478",
+      "title":"Examining De Novo Transcriptome Assemblies via a Quality Assessment Pipeline",
+      "publisher":"IEEE",
+      "issue":"2",
+      "issn":"2374-0043",
+      "rank":23,
+      "volume":"15",
+      "authors":{
+        "authors":[
+          {
+            "affiliation":"AgriLife Genomics and Bioinformatics, Texas A&M AgriLife Research, Texas A&M University, College Station, TX, USA",
+            "authorUrl":"https://ieeexplore.ieee.org/author/37395929400",
+            "id":37395929400,
+            "full_name":"Noushin Ghaffari",
+            "author_order":1
+          },
+          {
+            "affiliation":"Department of Electrical and Computer Engineering, Texas A&M University, College Station, TX, USA",
+            "authorUrl":"https://ieeexplore.ieee.org/author/37085462781",
+            "id":37085462781,
+            "full_name":"Osama A. Arshad",
+            "author_order":2
+          },
+          {
+            "affiliation":"Department of Electrical and Computer Engineering, Texas A&M University, College Station, TX, USA",
+            "authorUrl":"https://ieeexplore.ieee.org/author/37085466806",
+            "id":37085466806,
+            "full_name":"Hyundoo Jeong",
+            "author_order":3
+          },
+          {
+            "affiliation":"AgriLife Genomics and Bioinformatics, Texas A&M AgriLife Research, Texas A&M University, College Station, TX, USA",
+            "authorUrl":"https://ieeexplore.ieee.org/author/37085469640",
+            "id":37085469640,
+            "full_name":"John Thiltges",
+            "author_order":4
+          },
+          {
+            "affiliation":"Comparative Immunogenetics Laboratory, Departments of Veterinary Pathobiology and Microbial Pathogenesis and Immunology, Texas A&M University, College Station, TX, USA",
+            "authorUrl":"https://ieeexplore.ieee.org/author/37085457798",
+            "id":37085457798,
+            "full_name":"Michael F. Criscitiello",
+            "author_order":5
+          },
+          {
+            "affiliation":"College of Science and Engineering, Hamad bin Khalifa University (HBKU), Doha, Qatar",
+            "authorUrl":"https://ieeexplore.ieee.org/author/37085474877",
+            "id":37085474877,
+            "full_name":"Byung-Jun Yoon",
+            "author_order":6
+          },
+          {
+            "affiliation":"Department of Electrical and Computer Engineering, Texas A&M University, College Station, TX, USA",
+            "authorUrl":"https://ieeexplore.ieee.org/author/37085454706",
+            "id":37085454706,
+            "full_name":"Aniruddha Datta",
+            "author_order":7
+          },
+          {
+            "affiliation":"AgriLife Genomics and Bioinformatics, Texas A&M AgriLife Research, Texas A&M University, College Station, TX, USA",
+            "authorUrl":"https://ieeexplore.ieee.org/author/38666904100",
+            "id":38666904100,
+            "full_name":"Charles D. Johnson",
+            "author_order":8
+          }
+        ]
+      },
+      "access_type":"LOCKED",
+      "content_type":"Journals",
+      "abstract":"New de novo transcriptome assembly and annotation methods provide an incredible opportunity to study the transcriptome of organisms that lack an assembled and annotated genome. There are currently a number of de novo transcriptome assembly methods, but it has been difficult to evaluate the quality of these assemblies. In order to assess the quality of the transcriptome assemblies, we composed a workflow of multiple quality check measurements that in combination provide a clear evaluation of the assembly performance. We presented novel transcriptome assemblies and functional annotations for Pacific Whiteleg Shrimp (Litopenaeus vannamei), a mariculture species with great national and international interest, and no solid transcriptome/genome reference. We examined Pacific Whiteleg transcriptome assemblies via multiple metrics, and provide an improved gene annotation. Our investigations show that assessing the quality of an assembly purely based on the assembler's statistical measurements can be misleading; we propose a hybrid approach that consists of statistical quality checks and further biological-based evaluations.",
+      "article_number":"7126949",
+      "pdf_url":"https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7126949",
+      "html_url":"https://ieeexplore.ieee.org/document/7126949/",
+      "abstract_url":"https://ieeexplore.ieee.org/document/7126949/",
+      "publication_title":"IEEE/ACM Transactions on Computational Biology and Bioinformatics",
+      "publication_number":8857,
+      "is_number":8329158,
+      "publication_year":2018,
+      "publication_date":"1 March-April 2018",
+      "start_page":"494",
+      "end_page":"505",
+      "citing_paper_count":1,
+      "citing_patent_count":0,
+      "index_terms":{
+        "ieee_terms":{
+          "terms":[
+            "Assembly",
+            "Bioinformatics",
+            "Genomics",
+            "Quality assessment",
+            "Pipelines",
+            "Immune system"
+          ]
+        },
+        "author_terms":{
+          "terms":[
+            "Bioinformatics",
+            "Pacific Whiteleg Shrimp",
+            " Litopenaeus vannamei",
+            "transcriptome assembly",
+            "workflow evaluation"
+          ]
+        }
+      }
+    },
+    {
+      "doi":"10.1109/TCBB.2015.2448081",
+      "title":"Gender Identification of Human Brain Image with A Novel 3D Descriptor",
+      "publisher":"IEEE",
+      "issue":"2",
+      "issn":"2374-0043",
+      "rank":24,
+      "volume":"15",
+      "authors":{
+        "authors":[
+          {
+            "affiliation":"Department of Automatic Control, College of Mechatronics and Automation, National University of Defense Technology, Changsha, Hunan, China",
+            "authorUrl":"https://ieeexplore.ieee.org/author/37085530122",
+            "id":37085530122,
+            "full_name":"Lin Yuan",
+            "author_order":1
+          },
+          {
+            "affiliation":"Department of Automatic Control, College of Mechatronics and Automation, National University of Defense Technology, Changsha, Hunan, China",
+            "authorUrl":"https://ieeexplore.ieee.org/author/37536946900",
+            "id":37536946900,
+            "full_name":"Fanglin Chen",
+            "author_order":2
+          },
+          {
+            "affiliation":"Department of Automatic Control, College of Mechatronics and Automation, National University of Defense Technology, Changsha, Hunan, China",
+            "authorUrl":"https://ieeexplore.ieee.org/author/37085538678",
+            "id":37085538678,
+            "full_name":"Ling-Li Zeng",
+            "author_order":3
+          },
+          {
+            "affiliation":"Beijing Institute of Basic Medical Sciences, Beijing, China",
+            "authorUrl":"https://ieeexplore.ieee.org/author/37086357268",
+            "id":37086357268,
+            "full_name":"Lubin Wang",
+            "author_order":4
+          },
+          {
+            "affiliation":"Department of Automatic Control, College of Mechatronics and Automation, National University of Defense Technology, Changsha, Hunan, China",
+            "authorUrl":"https://ieeexplore.ieee.org/author/37085529989",
+            "id":37085529989,
+            "full_name":"Dewen Hu",
+            "author_order":5
+          }
+        ]
+      },
+      "access_type":"LOCKED",
+      "content_type":"Journals",
+      "abstract":"Determining gender by examining the human brain is not a simple task because the spatial structure of the human brain is complex, and no obvious differences can be seen by the naked eyes. In this paper, we propose a novel three-dimensional feature descriptor, the three-dimensional weighted histogram of gradient orientation (3D WHGO) to describe this complex spatial structure. The descriptor combines local information for signal intensity and global three-dimensional spatial information for the whole brain. We also improve a framework to address the classification of three-dimensional images based on MRI. This framework, three-dimensional spatial pyramid, uses additional information regarding the spatial relationship between features. The proposed method can be used to distinguish gender at the individual level. We examine our method by using the gender identification of individual magnetic resonance imaging (MRI) scans of a large sample of healthy adults across four research sites, resulting in up to individual-level accuracies under the optimized parameters for distinguishing between females and males. Compared with previous methods, the proposed method obtains higher accuracy, which suggests that this technology has higher discriminative power. With its improved performance in gender identification, the proposed method may have the potential to inform clinical practice and aid in research on neurological and psychiatric disorders.",
+      "article_number":"7130613",
+      "pdf_url":"https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7130613",
+      "html_url":"https://ieeexplore.ieee.org/document/7130613/",
+      "abstract_url":"https://ieeexplore.ieee.org/document/7130613/",
+      "publication_title":"IEEE/ACM Transactions on Computational Biology and Bioinformatics",
+      "publication_number":8857,
+      "is_number":8329158,
+      "publication_year":2018,
+      "publication_date":"1 March-April 2018",
+      "start_page":"551",
+      "end_page":"561",
+      "citing_paper_count":3,
+      "citing_patent_count":0,
+      "index_terms":{
+        "ieee_terms":{
+          "terms":[
+            "Three-dimensional displays",
+            "Histograms",
+            "Kernel",
+            "Spatial resolution",
+            "Magnetic resonance imaging",
+            "Computational biology"
+          ]
+        },
+        "author_terms":{
+          "terms":[
+            "Three-dimensional descriptor",
+            "gender identification",
+            "neuroimaging data analysis",
+            "pattern classification"
+          ]
+        }
+      }
+    },
+    {
+      "doi":"10.1109/JSYST.2015.2441637",
+      "title":"A Spectrum Allocation Scheme Between Smart Grid Communication and Neighbor Communication Networks",
+      "publisher":"IEEE",
+      "issue":"1",
+      "issn":"2373-7816",
+      "rank":25,
+      "volume":"12",
+      "authors":{
+        "authors":[
+          {
+            "affiliation":"Department of Electrical Engineering, Faculty of Engineering, University of Kurdistan, Sanandaj, Iran",
+            "authorUrl":"https://ieeexplore.ieee.org/author/37532483900",
+            "id":37532483900,
+            "full_name":"Mohammad Fathi",
+            "author_order":1
+          }
+        ]
+      },
+      "access_type":"LOCKED",
+      "content_type":"Journals",
+      "abstract":"One key requirement of a smart grid communication network (SGCN) is to provide wireless-enabled devices with a frequency spectrum for data transmission. This spectrum can be partially supplied from existing neighboring communication networks (NCNs) via spectrum ordering. The scope of this paper is to propose a coexistence scheme, in which NCNs declare their own price per frequency channel and allow an SGCN to make decisions on the number of channels to be ordered. Due to dynamic NCN conditions and, accordingly, time-varying channel pricing, the spectrum ordering by an SGCN over a time horizon is formulated as a stochastic optimization problem. Having decoupled the problem over time, a dynamic spectrum allocation scheme is proposed. As a result of this scheme, the required data transmission rate of an SGCN is provided statistically. Numerical results demonstrate the effectiveness of the proposed scheme from the viewpoint of the grid operational cost.",
+      "article_number":"7131478",
+      "pdf_url":"https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7131478",
+      "html_url":"https://ieeexplore.ieee.org/document/7131478/",
+      "abstract_url":"https://ieeexplore.ieee.org/document/7131478/",
+      "publication_title":"IEEE Systems Journal",
+      "publication_number":4267003,
+      "is_number":8323440,
+      "publication_year":2018,
+      "publication_date":"March 2018",
+      "start_page":"465",
+      "end_page":"472",
+      "citing_paper_count":1,
+      "citing_patent_count":0,
+      "index_terms":{
+        "ieee_terms":{
+          "terms":[
+            "Greedy algorithms",
+            "Resource management",
+            "Wireless communication",
+            "Quality of service",
+            "Signal to noise ratio",
+            "Data communication",
+            "Optimization"
+          ]
+        },
+        "author_terms":{
+          "terms":[
+            "Coexistence",
+            "optimization",
+            "smart grid communication",
+            "spectrum allocation"
+          ]
+        }
+      }
+    },
+    {
+      "doi":"10.1109/TCC.2015.2449993",
+      "title":"Three-Server Swapping for Access Confidentiality",
+      "publisher":"IEEE",
+      "issue":"2",
+      "issn":"2372-0018",
+      "rank":26,
+      "volume":"6",
+      "authors":{
+        "authors":[
+          {
+            "affiliation":"Dipartimento di Informatica, Università degli Studi di Milano, Crema, Italy",
+            "authorUrl":"https://ieeexplore.ieee.org/author/37271668700",
+            "id":37271668700,
+            "full_name":"Sabrina De Capitani di Vimercati",
+            "author_order":1
+          },
+          {
+            "affiliation":"Dipartimento di Informatica, Università degli Studi di Milano, Crema, Italy",
+            "authorUrl":"https://ieeexplore.ieee.org/author/37580239300",
+            "id":37580239300,
+            "full_name":"Sara Foresti",
+            "author_order":2
+          },
+          {
+            "affiliation":"Dipartimento di Ingegneria Gestionale dell'Informazione e della Produzione, Università degli Studi di Bergamo, Dalmine, Italy",
+            "authorUrl":"https://ieeexplore.ieee.org/author/37271670400",
+            "id":37271670400,
+            "full_name":"Stefano Paraboschi",
+            "author_order":3
+          },
+          {
+            "affiliation":"Dipartimento di Elettronica, Informazione e Bioingegneria, Politecnico di Milano, Milan, Italy",
+            "authorUrl":"https://ieeexplore.ieee.org/author/37292885200",
+            "id":37292885200,
+            "full_name":"Gerardo Pelosi",
+            "author_order":4
+          },
+          {
+            "affiliation":"Dipartimento di Informatica, Università degli Studi di Milano, Crema, Italy",
+            "authorUrl":"https://ieeexplore.ieee.org/author/37271670600",
+            "id":37271670600,
+            "full_name":"Pierangela Samarati",
+            "author_order":5
+          }
+        ]
+      },
+      "access_type":"LOCKED",
+      "content_type":"Journals",
+      "abstract":"We propose an approach to protect confidentiality of data and accesses to them when data are stored and managed by external providers, and hence not under direct control of their owner. Our approach is based on the use of distributed data allocation among three independent servers and on a dynamic re-allocation of data at every access. Dynamic re-allocation is enforced by swapping data involved in an access across the servers in such a way that accessing a given node implies re-allocating it to a different server, then destroying the ability of servers to build knowledge by observing accesses. The use of three servers provides uncertainty, to the eyes of the servers, of the result of the swapping operation, even in presence of collusion among them.",
+      "article_number":"7134727",
+      "pdf_url":"https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7134727",
+      "html_url":"https://ieeexplore.ieee.org/document/7134727/",
+      "abstract_url":"https://ieeexplore.ieee.org/document/7134727/",
+      "publication_title":"IEEE Transactions on Cloud Computing",
+      "publication_number":6245519,
+      "is_number":8372844,
+      "publication_year":2018,
+      "publication_date":"1 April-June 2018",
+      "start_page":"492",
+      "end_page":"505",
+      "citing_paper_count":2,
+      "citing_patent_count":0,
+      "index_terms":{
+        "ieee_terms":{
+          "terms":[
+            "Servers",
+            "Indexes",
+            "Resource management",
+            "Cloud computing",
+            "Data structures",
+            "Encryption"
+          ]
+        },
+        "author_terms":{
+          "terms":[
+            "Shuffle index",
+            "content confidentiality",
+            "access confidentiality",
+            "pattern confidentiality",
+            "distributed swapping"
+          ]
+        }
+      }
+    },
+    {
+      "doi":"10.1109/TCC.2015.2449855",
+      "title":"A Holistic Approach for Distributed Dimensionality Reduction of Big Data",
+      "publisher":"IEEE",
+      "issue":"2",
+      "issn":"2372-0018",
+      "rank":27,
+      "volume":"6",
+      "authors":{
+        "authors":[
+          {
+            "affiliation":"School of Computer Science and Technology, Huazhong University of Science and Technology, Wuhan, China",
+            "authorUrl":"https://ieeexplore.ieee.org/author/37085463907",
+            "id":37085463907,
+            "full_name":"Liwei Kuang",
+            "author_order":1
+          },
+          {
+            "affiliation":"School of Computer Science and Technology, Huazhong University of Science and Technology, Wuhan, China",
+            "authorUrl":"https://ieeexplore.ieee.org/author/37085365505",
+            "id":37085365505,
+            "full_name":"Laurence T. Yang",
+            "author_order":2
+          },
+          {
+            "affiliation":"Faculty of Engineering and Information Technology, University of Technology, Sydney., Australia",
+            "authorUrl":"https://ieeexplore.ieee.org/author/37085739377",
+            "id":37085739377,
+            "full_name":"Jinjun Chen",
+            "author_order":3
+          },
+          {
+            "affiliation":"School of Computer Science and Technology, Huazhong University of Science and Technology, Wuhan, China",
+            "authorUrl":"https://ieeexplore.ieee.org/author/38666444400",
+            "id":38666444400,
+            "full_name":"Fei Hao",
+            "author_order":4
+          },
+          {
+            "affiliation":"School of Computer Science and Technology, Huazhong University of Science and Technology, Wuhan, China",
+            "authorUrl":"https://ieeexplore.ieee.org/author/37405532600",
+            "id":37405532600,
+            "full_name":"Changqing Luo",
+            "author_order":5
+          }
+        ]
+      },
+      "access_type":"LOCKED",
+      "content_type":"Journals",
+      "abstract":"With the exponential growth of data volume, big data have placed an unprecedented burden on current computing infrastructure. Dimensionality reduction of big data attracts a great deal of attention in recent years as an efficient method to extract the core data which is smaller to store and faster to process. This paper aims at addressing the three fundamental problems closely related to distributed dimensionality reduction of big data, i.e., big data fusion, dimensionality reduction algorithm and construction of distributed computing platform. A chunk tensor method is presented to fuse the unstructured, semi-structured and structured data as a unified model in which all characteristics of the heterogeneous data are appropriately arranged along the tensor orders. A Lanczos based high order singular value decomposition algorithm is proposed to reduce dimensionality of the unified model. Theoretical analyses of the algorithm are provided in terms of storage scheme, convergence property and computation cost. To execute the dimensionality reduction task, this paper employs the transparent computing paradigm to construct a distributed computing platform as well as utilizes a four-objectives optimization model to schedule the tasks. Experimental results demonstrate that the proposed holistic approach is efficient for distributed dimensionality reduction of big data.",
+      "article_number":"7134729",
+      "pdf_url":"https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7134729",
+      "html_url":"https://ieeexplore.ieee.org/document/7134729/",
+      "abstract_url":"https://ieeexplore.ieee.org/document/7134729/",
+      "publication_title":"IEEE Transactions on Cloud Computing",
+      "publication_number":6245519,
+      "is_number":8372844,
+      "publication_year":2018,
+      "publication_date":"1 April-June 2018",
+      "start_page":"506",
+      "end_page":"518",
+      "citing_paper_count":5,
+      "citing_patent_count":0,
+      "index_terms":{
+        "ieee_terms":{
+          "terms":[
+            "Tensile stress",
+            "Big data",
+            "Symmetric matrices",
+            "Distributed databases",
+            "Computational modeling",
+            "Data models"
+          ]
+        },
+        "author_terms":{
+          "terms":[
+            "Big data",
+            "tensor",
+            "dimensionality reduction",
+            "transparent computing"
+          ]
+        }
+      }
+    },
+    {
+      "doi":"10.1109/TCC.2015.2451649",
+      "title":"A Cost-Effective Deadline-Constrained Dynamic Scheduling Algorithm for Scientific Workflows in a Cloud Environment",
+      "publisher":"IEEE",
+      "issue":"1",
+      "issn":"2372-0018",
+      "rank":28,
+      "volume":"6",
+      "authors":{
+        "authors":[
+          {
+            "affiliation":"Jawaharlal Nehru University, New Delhi, India",
+            "authorUrl":"https://ieeexplore.ieee.org/author/37086342407",
+            "id":37086342407,
+            "full_name":"Jyoti Sahni",
+            "author_order":1
+          },
+          {
+            "affiliation":"Jawaharlal Nehru University, New Delhi, India",
+            "authorUrl":"https://ieeexplore.ieee.org/author/37671325500",
+            "id":37671325500,
+            "full_name":"Deo Prakash Vidyarthi",
+            "author_order":2
+          }
+        ]
+      },
+      "access_type":"LOCKED",
+      "content_type":"Journals",
+      "abstract":"Cloud computing, a distributed computing paradigm, enables delivery of IT resources over the Internet and follows the pay-as-you-go billing model. Workflow scheduling is one of the most challenging problems in cloud computing. Although, workflow scheduling on distributed systems like grids and clusters have been extensively studied, however, these solutions are not viable for a cloud environment. It is because, a cloud environment differs from other distributed environment in two major ways: on-demand resource provisioning and pay-as-you-go pricing model. Thus, to achieve the true benefits of workflow orchestration onto cloud resources novel approaches that can capitalize the advantages and address the challenges specific to a cloud environment needs to be developed. This work proposes a dynamic cost-effective deadline-constrained heuristic algorithm for scheduling a scientific workflow in a public cloud. The proposed technique aims to exploit the advantages offered by cloud computing while taking into account the virtual machine (VM) performance variability and instance acquisition delay to identify a just-in-time schedule of a deadline constrained scientific workflow at lesser costs. Performance evaluation on some well-known scientific workflows exhibit that the proposed algorithm delivers better performance in comparison to the current state-of-the-art heuristics.",
+      "article_number":"7145406",
+      "pdf_url":"https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7145406",
+      "html_url":"https://ieeexplore.ieee.org/document/7145406/",
+      "abstract_url":"https://ieeexplore.ieee.org/document/7145406/",
+      "publication_title":"IEEE Transactions on Cloud Computing",
+      "publication_number":6245519,
+      "is_number":8307205,
+      "publication_year":2018,
+      "publication_date":"1 Jan.-March 2018",
+      "start_page":"2",
+      "end_page":"18",
+      "citing_paper_count":25,
+      "citing_patent_count":0,
+      "index_terms":{
+        "ieee_terms":{
+          "terms":[
+            "Cloud computing",
+            "Processor scheduling",
+            "Computational modeling",
+            "Data models",
+            "Delays",
+            "Dynamic scheduling",
+            "Schedules"
+          ]
+        },
+        "author_terms":{
+          "terms":[
+            "Cloud computing",
+            "quality of service (QoS)",
+            "resource provisioning",
+            "scheduling",
+            "scientific workflows"
+          ]
+        }
+      }
+    },
+    {
+      "doi":"10.1109/JSYST.2015.2428700",
+      "title":"Optimal Control of Double Probing in Delay-Tolerant Network",
+      "publisher":"IEEE",
+      "issue":"1",
+      "issn":"2373-7816",
+      "rank":29,
+      "volume":"12",
+      "authors":{
+        "authors":[
+          {
+            "affiliation":"Science and Technology on Information Systems Engineering Laboratory, National University of Defense Technology, Changsha, China",
+            "authorUrl":"https://ieeexplore.ieee.org/author/37085657406",
+            "id":37085657406,
+            "full_name":"Yahui Wu",
+            "author_order":1
+          },
+          {
+            "affiliation":"Science and Technology on Information Systems Engineering Laboratory, National University of Defense Technology, Changsha, China",
+            "authorUrl":"https://ieeexplore.ieee.org/author/37289497800",
+            "id":37289497800,
+            "full_name":"Hongbin Huang",
+            "author_order":2
+          },
+          {
+            "affiliation":"Science and Technology on Information Systems Engineering Laboratory, National University of Defense Technology, Changsha, China",
+            "authorUrl":"https://ieeexplore.ieee.org/author/37536075500",
+            "id":37536075500,
+            "full_name":"Su Deng",
+            "author_order":3
+          }
+        ]
+      },
+      "access_type":"LOCKED",
+      "content_type":"Journals",
+      "abstract":"Nodes in delay-tolerant network exchange messages only when they meet each other, so detecting the contact efficiently is an important problem. At present, some works explore this problem, but they often assume that only the nodes without messages probe the contacts. In this paper, we study the double probing problem. In particular, at time t, if a node has the message, it detects the contact with probability p(t). Otherwise, the probability is u(t). Then, this paper defines this problem as an optimization problem and solves it by Pontryagin's maximal principle. In addition, this paper proves that the both optimal policies conform to the threshold form. This result means that exploring the double probing policy is necessary.",
+      "article_number":"7147806",
+      "pdf_url":"https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7147806",
+      "html_url":"https://ieeexplore.ieee.org/document/7147806/",
+      "abstract_url":"https://ieeexplore.ieee.org/document/7147806/",
+      "publication_title":"IEEE Systems Journal",
+      "publication_number":4267003,
+      "is_number":8323440,
+      "publication_year":2018,
+      "publication_date":"March 2018",
+      "start_page":"497",
+      "end_page":"505",
+      "citing_paper_count":0,
+      "citing_patent_count":0,
+      "index_terms":{
+        "ieee_terms":{
+          "terms":[
+            "Energy consumption",
+            "Probes",
+            "Peer-to-peer computing",
+            "Optimal control",
+            "Optimization",
+            "Routing protocols"
+          ]
+        },
+        "author_terms":{
+          "terms":[
+            "Delay-tolerant network (DTN)",
+            "optimal control",
+            "Pontryagin's maximal principle",
+            "probing problem"
+          ]
+        }
+      }
+    },
+    {
+      "doi":"10.1109/TCBB.2015.2453948",
+      "title":"REPA: Applying Pathway Analysis to Genome-Wide Transcription Factor Binding Data",
+      "publisher":"IEEE",
+      "issue":"4",
+      "issn":"2374-0043",
+      "rank":30,
+      "volume":"15",
+      "authors":{
+        "authors":[
+          {
+            "affiliation":"Department of Computer Science, Memorial University of Newfoundland, St. John's, Newfoundland, Canada",
+            "authorUrl":"https://ieeexplore.ieee.org/author/37086428073",
+            "id":37086428073,
+            "full_name":"Pranjal Patra",
+            "author_order":1
+          },
+          {
+            "affiliation":"Department of Biology, Memorial University of Newfoundland, St. John’s, Newfoundland, Canada",
+            "authorUrl":"https://ieeexplore.ieee.org/author/37086424848",
+            "id":37086424848,
+            "full_name":"Tatsuo Izawa",
+            "author_order":2
+          },
+          {
+            "affiliation":"Departments of Computer Science and Biology, Memorial University of Newfoundland, St. John’s, Newfoundland, Canada",
+            "authorUrl":"https://ieeexplore.ieee.org/author/37086280788",
+            "id":37086280788,
+            "full_name":"Lourdes Peña-Castillo",
+            "author_order":3
+          }
+        ]
+      },
+      "access_type":"LOCKED",
+      "content_type":"Journals",
+      "abstract":"Pathway analysis has been extensively applied to aid in the interpretation of the results of genome-wide transcription profiling studies, and has been shown to successfully find associations between the biological phenomena under study and biological pathways. There are two widely used approaches of pathway analysis: over-representation analysis, and gene set analysis. Recently genome-wide transcription factor binding data has become widely available allowing for the application of pathway analysis to this type of data. In this work, we developed regulatory enrichment pathway analysis (REPA) to apply gene set analysis to genome-wide transcription factor binding data to infer associations between transcription factors and biological pathways. We used the transcription factor binding data generated by the ENCODE project, and gene sets from the Molecular Signatures and KEGG databases. Our results showed that 54 percent of the predictions examined have literature support and that REPA's recall is roughly 54 percent. This level of precision is promising as several of REPA's predictions are expected to be novel and can be used to guide new research avenues. In addition, the results of our case studies showed that REPA enhances the interpretation of genome-wide transcription profiling studies by suggesting putative regulators behind the observed transcriptional responses.",
+      "article_number":"7152849",
+      "pdf_url":"https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7152849",
+      "html_url":"https://ieeexplore.ieee.org/document/7152849/",
+      "abstract_url":"https://ieeexplore.ieee.org/document/7152849/",
+      "publication_title":"IEEE/ACM Transactions on Computational Biology and Bioinformatics",
+      "publication_number":8857,
+      "is_number":8428575,
+      "publication_year":2018,
+      "publication_date":"1 July-Aug. 2018",
+      "start_page":"1270",
+      "end_page":"1283",
+      "citing_paper_count":0,
+      "citing_patent_count":0,
+      "index_terms":{
+        "ieee_terms":{
+          "terms":[
+            "Bioinformatics",
+            "Genomics",
+            "Gene expression",
+            "Biological information theory",
+            "RNA",
+            "Diseases",
+            "IEEE transactions"
+          ]
+        },
+        "author_terms":{
+          "terms":[
+            "Transcription factor binding data",
+            "pathway analysis",
+            "gene set analysis"
+          ]
+        }
+      }
+    },
+    {
+      "doi":"10.1109/TCC.2015.2453981",
+      "title":"Risk-Aware Management of Virtual Resources in Access Controlled Service-Oriented Cloud Datacenters",
+      "publisher":"IEEE",
+      "issue":"1",
+      "issn":"2372-0018",
+      "rank":31,
+      "volume":"6",
+      "authors":{
+        "authors":[
+          {
+            "affiliation":"School of Electrical and Computer Engineering and Purdue's Center for Education and Research in Information Assurance and Security (CERIAS), Purdue University, West Lafayette, IN",
+            "authorUrl":"https://ieeexplore.ieee.org/author/38242642400",
+            "id":38242642400,
+            "full_name":"Abdulrahman Almutairi",
+            "author_order":1
+          },
+          {
+            "affiliation":"School of Electrical and Computer Engineering and Purdue's Center for Education and Research in Information Assurance and Security (CERIAS), Purdue University, West Lafayette, IN",
+            "authorUrl":"https://ieeexplore.ieee.org/author/38235620000",
+            "id":38235620000,
+            "full_name":"Muhammad Ihsanulhaq Sarfraz",
+            "author_order":2
+          },
+          {
+            "affiliation":"School of Electrical and Computer Engineering and Purdue's Center for Education and Research in Information Assurance and Security (CERIAS), Purdue University, West Lafayette, IN",
+            "authorUrl":"https://ieeexplore.ieee.org/author/37085334573",
+            "id":37085334573,
+            "full_name":"Arif Ghafoor",
+            "author_order":3
+          }
+        ]
+      },
+      "access_type":"LOCKED",
+      "content_type":"Journals",
+      "abstract":"For economic benefits and efficient management of resources, organizations are increasingly moving towards the paradigm of “cloud computing” by which they are allowed on-demand delivery of hardware, software and data as services. However, there are many security challenges which are particularly exacerbated by the multitenancy and virtualization features of cloud computing that allow sharing of resources among potentially untrusted tenants in access controlled cloud data centers. This can result in increased risk of data leakage. To address this risk vulnerability, we propose an efficient risk-aware virtual resource assignment mechanism for clouds multitenant environment. In particular, we introduce the notion of sensitivity in data centers and the objective is to minimize the risk of data leakage. In addition, the risk should not exceed in high sensitivity data centers in comparison to low sensitivity data centers. We present three assignment heuristics and compare their relative performance.",
+      "article_number":"7152855",
+      "pdf_url":"https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7152855",
+      "html_url":"https://ieeexplore.ieee.org/document/7152855/",
+      "abstract_url":"https://ieeexplore.ieee.org/document/7152855/",
+      "publication_title":"IEEE Transactions on Cloud Computing",
+      "publication_number":6245519,
+      "is_number":8307205,
+      "publication_year":2018,
+      "publication_date":"1 Jan.-March 2018",
+      "start_page":"168",
+      "end_page":"181",
+      "citing_paper_count":3,
+      "citing_patent_count":0,
+      "index_terms":{
+        "ieee_terms":{
+          "terms":[
+            "Cloud computing",
+            "Sensitivity",
+            "Access control",
+            "Estimation",
+            "Software as a service",
+            "Mathematical model"
+          ]
+        },
+        "author_terms":{
+          "terms":[
+            "Cloud services",
+            "access control",
+            "risk assessment",
+            "vulnerability"
+          ]
+        }
+      }
+    },
+    {
+      "doi":"10.1109/TCC.2015.2453945",
+      "title":"A Multi-Layered Scheme for Distributed Simulations on the Cloud Environment",
+      "publisher":"IEEE",
+      "issue":"1",
+      "issn":"2372-0018",
+      "rank":32,
+      "volume":"7",
+      "authors":{
+        "authors":[
+          {
+            "affiliation":"PARADISE Research Laboratory, University of Ottawa, Canada",
+            "authorUrl":"https://ieeexplore.ieee.org/author/37085502678",
+            "id":37085502678,
+            "full_name":"Shichao Guan",
+            "author_order":1
+          },
+          {
+            "affiliation":"PARADISE Research Laboratory, University of Ottawa, Canada",
+            "authorUrl":"https://ieeexplore.ieee.org/author/37545780400",
+            "id":37545780400,
+            "full_name":"Robson Eduardo De Grande",
+            "author_order":2
+          },
+          {
+            "affiliation":"PARADISE Research Laboratory, University of Ottawa, Canada",
+            "authorUrl":"https://ieeexplore.ieee.org/author/37279514400",
+            "id":37279514400,
+            "full_name":"Azzedine Boukerche",
+            "author_order":3
+          }
+        ]
+      },
+      "access_type":"LOCKED",
+      "content_type":"Journals",
+      "abstract":"In order to improve simulation performance and to integrate simulation resources among geographically distributed locations, the concept of distributed simulation is proposed. Several types of distributed simulation standards, such as DIS and HLA, are established to formalize simulations and achieve reusability and interoperability of simulation components. To implement these distributed simulation standards and to manage the underlying system of distributed simulation applications, we employ grid computing and cloud computing technologies. These tackle the details of operation, configuration, and maintenance of simulation platforms in which simulation applications are deployed. However, for modelers who may not be familiar with the management of distributed systems, it is challenging to make a simulation-run-ready environment among different types of computing resources and network environments. In this article, a new multi-layered cloud-based scheme is proposed for enabling modeling and simulation based on different distributed simulation standards. This scheme is designed to ease the management of underlying resources and to achieve rapid elasticity that can provide unlimited computing capability to end users; it considers energy consumption, security, multi-user availability, scalability, and deployment issues. A mechanism for handling diverse network environments is described; by adopting it, idle public resources can be easily configured as additional computing capabilities for the local resource pool. A fast deployment model is built to relieve the migration and installation process of this platform. An energy-saving strategy is utilized to reduce the consumption of computing resources. Security components are implemented to protect sensitive information and block malicious attacks in the cloud. In the experiments, the proposed scheme is compared with its corresponding grid computing platform; the cloud computing platform achieves similar performance, but incorporates many advantages that the Cloud can provide.",
+      "article_number":"7152867",
+      "pdf_url":"https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7152867",
+      "html_url":"https://ieeexplore.ieee.org/document/7152867/",
+      "abstract_url":"https://ieeexplore.ieee.org/document/7152867/",
+      "publication_title":"IEEE Transactions on Cloud Computing",
+      "publication_number":6245519,
+      "is_number":8661573,
+      "publication_year":2019,
+      "publication_date":"1 Jan.-March 2019",
+      "start_page":"5",
+      "end_page":"18",
+      "citing_paper_count":2,
+      "citing_patent_count":0,
+      "index_terms":{
+        "ieee_terms":{
+          "terms":[
+            "Computational modeling",
+            "Cloud computing",
+            "Security",
+            "Load modeling",
+            "Energy consumption",
+            "Standards",
+            "Analytical models"
+          ]
+        },
+        "author_terms":{
+          "terms":[
+            "Cloud computing",
+            "DIS",
+            "HLA",
+            "availability",
+            "energy consumption",
+            "usability",
+            "elasticity",
+            "distributed simulations"
+          ]
+        }
+      }
+    },
+    {
+      "doi":"10.1109/TSC.2015.2481900",
+      "title":"Privacy-Preserving Top-k Spatial Keyword Queries in Untrusted Cloud Environments",
+      "publisher":"IEEE",
+      "issue":"5",
+      "issn":"2372-0204",
+      "rank":100,
+      "volume":"11",
+      "authors":{
+        "authors":[
+          {
+            "affiliation":"State Key Laboratory of Networking and Switching Technology, Beijing University of Posts and Telecommunications, Beijing, China",
+            "authorUrl":"https://ieeexplore.ieee.org/author/37406996900",
+            "id":37406996900,
+            "full_name":"Sen Su",
+            "author_order":1
+          },
+          {
+            "affiliation":"State Key Laboratory of Networking and Switching Technology, Beijing University of Posts and Telecommunications, Beijing, China",
+            "authorUrl":"https://ieeexplore.ieee.org/author/37086069857",
+            "id":37086069857,
+            "full_name":"Yiping Teng",
+            "author_order":2
+          },
+          {
+            "affiliation":"State Key Laboratory of Networking and Switching Technology, Beijing University of Posts and Telecommunications, Beijing, China",
+            "authorUrl":"https://ieeexplore.ieee.org/author/38020896800",
+            "id":38020896800,
+            "full_name":"Xiang Cheng",
+            "author_order":3
+          },
+          {
+            "affiliation":"State Key Laboratory of Networking and Switching Technology, Beijing University of Posts and Telecommunications, Beijing, China",
+            "authorUrl":"https://ieeexplore.ieee.org/author/37085806424",
+            "id":37085806424,
+            "full_name":"Ke Xiao",
+            "author_order":4
+          },
+          {
+            "affiliation":"Department of Computer Science and Technology, Tsinghua University, Beijing, China",
+            "authorUrl":"https://ieeexplore.ieee.org/author/37405540900",
+            "id":37405540900,
+            "full_name":"Guoliang Li",
+            "author_order":5
+          },
+          {
+            "affiliation":"State Key Laboratory of Networking and Switching Technology, Beijing University of Posts and Telecommunications, Beijing, China",
+            "authorUrl":"https://ieeexplore.ieee.org/author/37085461066",
+            "id":37085461066,
+            "full_name":"Junliang Chen",
+            "author_order":6
+          }
+        ]
+      },
+      "access_type":"LOCKED",
+      "content_type":"Journals",
+      "abstract":"With the rapid development of location-based services in mobile Internet, spatial keyword queries have been widely employed in various real-life applications in recent years. To realize the great flexibility and cost savings, more and more data owners are motivated to outsource their spatio-textual data services to the cloud. However, directly outsourcing such services to the untrusted cloud may arise serious privacy concerns. In this paper, we study the privacy-preserving top-$k$  spatial keyword query problem in untrusted cloud environments. Existing studies primarily focus on the design of privacy-preserving schemes for either spatial or keyword queries, and they cannot be applied to solve the privacy-preserving spatial keyword query problem. To address this problem, we present a novel privacy-preserving top-$k$  spatial keyword query scheme. In particular, we build an encrypted tree index to facilitate privacy-preserving top- $k$  spatial keyword queries, where spatial and textual data are encrypted in a unified way. To search with the encrypted tree index, we propose two effective techniques for the similarity computations between queries and tree nodes under encryption. To improve query performance on large-scale spatio-textual data, we further propose a keyword-based secure pruning method. Thorough analysis shows the validity and security of our scheme. Extensive experimental results on real datasets demonstrate our scheme achieves high efficiency and good scalability.",
+      "article_number":"7275181",
+      "pdf_url":"https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7275181",
+      "html_url":"https://ieeexplore.ieee.org/document/7275181/",
+      "abstract_url":"https://ieeexplore.ieee.org/document/7275181/",
+      "publication_title":"IEEE Transactions on Services Computing",
+      "publication_number":4629386,
+      "is_number":8482268,
+      "publication_year":2018,
+      "publication_date":"1 Sept.-Oct. 2018",
+      "start_page":"796",
+      "end_page":"809",
+      "citing_paper_count":3,
+      "citing_patent_count":0,
+      "index_terms":{
+        "ieee_terms":{
+          "terms":[
+            "Indexes",
+            "Encryption",
+            "Servers",
+            "Noise",
+            "Spatial databases",
+            "Privacy"
+          ]
+        },
+        "author_terms":{
+          "terms":[
+            "Cloud computing",
+            "location-based services",
+            "privacy",
+            "spatial keyword query",
+            "data outsourcing"
+          ]
+        }
+      }
+    }
+  ]
+}
