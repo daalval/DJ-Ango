@@ -1,0 +1,29 @@
+{
+    "feyjoo1769theatro": {
+        "ano": "1769",
+        "url": "https://books.google.es/books?hl=es&lr=&id=ol03W1wU6J4C&oi=fnd&pg=PR3&ots=kkR1PYRbXu&sig=snfBt_QAp9oAmmjIfXlwcyTALp8",
+        "escrita_por": [
+            {
+                "nombre": [
+                    "D"
+                ],
+                "apellidos": [
+                    "FR",
+                    "BENITO",
+                    "GERONYMO",
+                    "FEYJOO"
+                ]
+            },
+            {
+                "nombre": [],
+                "apellidos": [
+                    "others"
+                ]
+            }
+        ],
+        "titulo": "Theatro cr\u00edtico universal",
+        "tipo": "libro",
+        "paginas": null,
+        "editorial": null
+    }
+}
