@@ -4,6 +4,11 @@ import requests
 def fromJson(url, file, params):
     data = requests.get(url, verify=False, params = params).json()
 
+    for article in data['articles']:
+        print(article['title'])
+        print(article['rank'])
+    
+
     with open(file, 'w') as outfile:
         json.dump(data, outfile)
 
