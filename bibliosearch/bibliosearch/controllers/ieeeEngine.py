@@ -23,8 +23,20 @@ def query(url, file, our_content_types, our_start_year, our_end_year):
                 personas = []
 
                 for author in book['authors']['authors']:
+
+                    full_name = author['full_name'].split()
+
+                    name = full_name[0]
+                    last_name = ''
+                
+                    if len(full_name) > 1:
+                        full_name = full_name[1:len(full_name)]
+                        for ln in full_name:
+                            last_name = last_name + ln + ' '
+
                     persona = {
-                        'nombre': author['full_name'].split()[0],
+                        'nombre': name,
+                        'apellidos': last_name.strip()
                     }
                     personas.append(persona)
 
@@ -48,8 +60,20 @@ def query(url, file, our_content_types, our_start_year, our_end_year):
                 personas = []
 
                 for author in conference['authors']['authors']:
+
+                    full_name = author['full_name'].split()
+
+                    name = full_name[0]
+                    last_name = ''
+                
+                    if len(full_name) > 1:
+                        full_name = full_name[1:len(full_name)]
+                        for ln in full_name:
+                            last_name = last_name + ln + ' '
+
                     persona = {
-                        'nombre': author['full_name'].split()[0],
+                        'nombre': name,
+                        'apellidos': last_name.strip()
                     }
                     personas.append(persona)
 
@@ -80,16 +104,17 @@ def query(url, file, our_content_types, our_start_year, our_end_year):
 
                     full_name = author['full_name'].split()
 
-                    print(full_name)
-
                     name = full_name[0]
-                    last_name = None
-                    
-                    # if len(full_name) > 1:
-                    
+                    last_name = ''
+                
+                    if len(full_name) > 1:
+                        full_name = full_name[1:len(full_name)]
+                        for ln in full_name:
+                            last_name = last_name + ln + ' '
+
                     persona = {
                         'nombre': name,
-                        'apellidos': last_name
+                        'apellidos': last_name.strip()
                     }
                     personas.append(persona)
 
@@ -119,7 +144,7 @@ def query(url, file, our_content_types, our_start_year, our_end_year):
     
 
 def main():
-    result = query("https://ieeexploreapi.ieee.org/api/v1/search/articles?parameter&apikey=efv84mzqq6ydx4dbd59jhdcn", 'static/ieeeXplore.json', ['Books', 'Conferences', 'Journals'], '2010', '2015')
+    result = query("https://ieeexploreapi.ieee.org/api/v1/search/articles?parameter&apikey=efv84mzqq6ydx4dbd59jhdcn", 'static/ieeeXplore.json', ['Conferences'], '2010', '2015')
     with open('static/ieeeXplore.json', 'w') as json_file:
         json.dump(result, json_file)
     json_file.close()

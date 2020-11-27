@@ -11,7 +11,7 @@ def query(path, file, our_content_types, our_start_year, our_end_year):
 
         for article in data['articles']:
 
-            if type == 'Books' and article['content_type'] == "Books":
+            if type == 'Books' and article['content_type'] == "Books" and article['publication_year'] >= our_start_year and article['publication_year'] <= our_end_year:
 
                 book_id = article['article_number']
 
@@ -47,7 +47,7 @@ def query(path, file, our_content_types, our_start_year, our_end_year):
                 
                 })
 
-            if type == 'Conferences' and article['content_type'] == "Conferences":
+            if type == 'Conferences' and article['content_type'] == "Conferences" and article['publication_year'] >= our_start_year and article['publication_year'] <= our_end_year:
 
                 conference_id = article['article_number']
 
@@ -87,7 +87,7 @@ def query(path, file, our_content_types, our_start_year, our_end_year):
             
             })
 
-            if type == 'Journals' and article['content_type'] == "Journals":
+            if type == 'Journals' and article['content_type'] == "Journals" and article['publication_year'] >= our_start_year and article['publication_year'] <= our_end_year:
 
                 
                 journal_id = article['article_number']
@@ -136,7 +136,7 @@ def query(path, file, our_content_types, our_start_year, our_end_year):
     
 
 def main():
-    result = query("bibliosearch\controllers\pobre.json", 'static/ieeeXplore.json', ['Journals'], '2010', '2015')
+    result = query("bibliosearch\controllers\pobre.json", 'static/ieeeXplore.json', ['Journals'], 2018, 2020)
     with open('static/ieeeXplore.json', 'w') as json_file:
         json.dump(result, json_file)
     json_file.close()
