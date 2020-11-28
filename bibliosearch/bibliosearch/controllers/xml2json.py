@@ -1,7 +1,10 @@
+from bibliosearch.bibliosearch.models.articulo import Articulo
+from bibliosearch.bibliosearch.controllers.dbController import insert_articulo, insert_publicacion
 import collections
 import json
 from typing import OrderedDict
 import xmltodict
+
 
 
 def xml_parser(xml_file, json_file, year_st, year_end):
@@ -77,7 +80,7 @@ def xml_parser(xml_file, json_file, year_st, year_end):
                 # pagina_inicio
                 new_dict['pagina_inicio'] = p[0]
                 # pagina_fin
-                if(len(p)>1):
+                if len(p)>1:
                     new_dict['pagina_fin'] = article_dict[PAGINA_FIN].split('-')[1]
                 else:
                     new_dict['pagina_fin'] = None
@@ -103,6 +106,7 @@ def xml_parser(xml_file, json_file, year_st, year_end):
             }
             new_dict['revista'] = revista
             articles[key] = new_dict
+            
 
     json_data = json.dumps(articles, indent=4)
     
