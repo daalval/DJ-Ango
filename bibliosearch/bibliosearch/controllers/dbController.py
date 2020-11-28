@@ -54,13 +54,12 @@ def insert_publicacion(conn, publicacion):
     """
     Inserts an article in "bbdd_publicacion" table
     """
-    # sql = '''INSERT INTO bbdd_publicacion(id_publicacion, titulo, anyo, URL)
-    #         VALUES(?,?,?,?)''' % (publicacion.get_id(), publicacion.get_titulo(), publicacion.get_anyo(), publicacion.get_url())
+    sql = '''INSERT INTO bbdd_publicacion(
+            id_publicacion, titulo, anyo, URL) VALUES
+            (?,?,?,?)'''
     cur = conn.cursor()
     values = [publicacion.get_id(), publicacion.get_titulo(), publicacion.get_anyo(), publicacion.get_url()]
-    cur.execute('''INSERT INTO bbdd_publicacion(
-            id_publicacion, titulo, anyo, URL) VALUES
-            (?,?,?,?)''', values)
+    cur.execute(sql, values)
     conn.commit()
     return cur.lastrowid   
 
@@ -68,14 +67,12 @@ def insert_libro(conn, libro):
     """
     Inserts a libro in "bbdd_libro" table
     """
-    # sql = ''' INSERT INTO bbdd_libro(editorial, publicacion_id)
-    #         VALUES(%s, %s) ''' % (libro.get_editorial(), libro.get_id())
+    sql = '''INSERT INTO bbdd_libro(editorial, publicacion_id)
+            VALUES(?,?)'''
     values = [libro.get_editorial(), libro.get_id()]
     insert_publicacion(conn, libro)
     cur = conn.cursor()
-    cur.execute('''INSERT INTO bbdd_libro(
-            editorial, publicacion_id) VALUES
-            (?,?)''', values)
+    cur.execute(sql, values)
     conn.commit()
     return cur.lastrowid
 
@@ -83,13 +80,12 @@ def insert_comCon(conn, com_con):
     """
     Inserts a com_con in "bbdd_com_con" table
     """
-    # sql = ''' INSERT INTO bbdd_libro(editorial, publicacion_id)
-    #         VALUES(%s, %s) ''' % (libro.get_editorial(), libro.get_id())
+    sql = '''INSERT INTO bbdd_com_con(
+            congreso, edicion, lugar, pagina_inicio, pagina_fin, publicacion_id) VALUES
+            (?,?,?,?,?,?)'''
     values = [com_con.get_congreso(), com_con.get_edicion(), com_con.get_lugar(), com_con.get_pagina_inicio(), com_con.get_pagina_fin(), com_con.get_id()]
     insert_publicacion(conn, com_con)
     cur = conn.cursor()
-    cur.execute('''INSERT INTO bbdd_com_con(
-            congreso, edicion, lugar, pagina_inicio, pagina_fin, publicacion_id) VALUES
-            (?,?,?,?,?,?)''', values)
+    cur.execute(sql, values)
     conn.commit()
     return cur.lastrowid
