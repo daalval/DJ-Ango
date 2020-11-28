@@ -1,5 +1,7 @@
 import json
 import requests
+import sqlite3
+from sqlite3 import Error
 
 def query(url, file, our_content_types, our_start_year, our_end_year):
 
@@ -146,20 +148,6 @@ def query(url, file, our_content_types, our_start_year, our_end_year):
         
 
     return result
-    
-    
-
-# def main():
-#     result = query("https://ieeexploreapi.ieee.org/api/v1/search/articles?parameter&apikey=efv84mzqq6ydx4dbd59jhdcn", 'static/ieeeXplore.json', ['Conferences', 'Journals', 'Books'], '2010', '2015')
-#     with open('static/ieeeXplore.json', 'w') as json_file:
-#         json.dump(result, json_file)
-#     json_file.close()
-
-# if __name__ == "__main__":
-#     main()
-
-import sqlite3
-from sqlite3 import Error
 
 def sql_connection():
 
@@ -173,7 +161,7 @@ def sql_connection():
 
         print(Error)
 
-def sql_table(con):
+def insert_in_database(con):
 
     cursorObj = con.cursor()
 
@@ -196,19 +184,22 @@ def sql_table(con):
     cursorObj.execute("CREATE TABLE IF NOT EXISTS ejemplar(id_ejemplar integer PRIMARY KEY, volumen integer, numero integer, mes integer, revista integer, FOREIGN KEY(revista) REFERENCES revista(id_revista))")
     cursorObj.execute("CREATE TABLE IF NOT EXISTS articulo(pagina_inicio integer, pagina_fin integer, ejemplar integer, publicacion integer PRIMARY KEY, FOREIGN KEY(ejemplar) REFERENCES ejemplar(id_ejemplar), FOREIGN KEY(publicacion) REFERENCES publicacion(id_publicacion))")
 
-    cont = 0
-
     for article in jsondata['articles']:
         id = jsondata['articles'][article]['id']
         titulo = jsondata['articles'][article]['titulo']
         anyo = jsondata['articles'][article]['anyo']
         url = jsondata['articles'][article]['url']
-        cursorObj.execute("""INSERT INTO publicacion VALUES (
-            str(cont) + ", " + 'hola' + ", " + str(192) + ", " + 'wqrwr' + ")")"""
-        cont = cont + 1
+        print(id)
+        print(titulo)
+        print(anyo)
+        print(url)
+        values = [id, titulo, anyo, url]
+        cursorObj.execute('''INSERT INTO publicacion(
+            id_publicacion, titulo, anyo, url) VALUES
+            (?,?,?,?)''', values)
 
     con.commit()
 
 con = sql_connection()
 
-sql_table(con)
+insert_in_database(con)
