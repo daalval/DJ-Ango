@@ -3,7 +3,11 @@ import requests
 
 def query(url, file, our_content_types, our_start_year, our_end_year):
 
-    result = {}
+    result = {
+        'articles': {
+
+        }
+    }
     data = {}
 
     for type in our_content_types:
@@ -40,17 +44,17 @@ def query(url, file, our_content_types, our_start_year, our_end_year):
                     }
                     personas.append(persona)
 
-                result.update({
-                book_id: {
-                    'tipo': 'libro',
-                    'titulo': book['title'],
-                    'anyo': book['publication_year'],
-                    'url': book['pdf_url'],
-                    'escrito_por': personas,
-                    'editorial': book['publisher']
-                }
-                
-            })
+                result['articles'].update({
+                    book_id: {
+                        'id': book_id,
+                        'tipo': 'libro',
+                        'titulo': book['title'],
+                        'anyo': book['publication_year'],
+                        'url': book['pdf_url'],
+                        'escrito_por': personas,
+                        'editorial': book['publisher']
+                    }
+                })
 
         if type == 'Conferences':
 
@@ -77,9 +81,10 @@ def query(url, file, our_content_types, our_start_year, our_end_year):
                     }
                     personas.append(persona)
 
-                result.update({
+                result['articles'].update({
                 conference_id: {
-                    'tipo': 'conferencia',
+                    'id': conference_id,
+                    'tipo': 'com_con',
                     'titulo': conference['title'],
                     'anyo': conference['publication_year'],
                     'url': conference['pdf_url'],
@@ -118,8 +123,9 @@ def query(url, file, our_content_types, our_start_year, our_end_year):
                     }
                     personas.append(persona)
 
-                result.update({
+                result['articles'].update({
                 journal_id: {
+                    'id': journal_id,
                     'tipo': 'articulo',
                     'titulo': journal['title'],
                     'anyo': journal['publication_year'],
@@ -143,11 +149,66 @@ def query(url, file, our_content_types, our_start_year, our_end_year):
     
     
 
-def main():
-    result = query("https://ieeexploreapi.ieee.org/api/v1/search/articles?parameter&apikey=efv84mzqq6ydx4dbd59jhdcn", 'static/ieeeXplore.json', ['Conferences'], '2010', '2015')
+# def main():
+#     result = query("https://ieeexploreapi.ieee.org/api/v1/search/articles?parameter&apikey=efv84mzqq6ydx4dbd59jhdcn", 'static/ieeeXplore.json', ['Conferences', 'Journals', 'Books'], '2010', '2015')
+#     with open('static/ieeeXplore.json', 'w') as json_file:
+#         json.dump(result, json_file)
+#     json_file.close()
+
+# if __name__ == "__main__":
+#     main()
+
+import sqlite3
+from sqlite3 import Error
+
+def sql_connection():
+
+    try:
+
+        con = sqlite3.connect('mydatabase.db')
+
+        return con
+
+    except Error:
+
+        print(Error)
+
+def sql_table(con):
+
+    cursorObj = con.cursor()
+
+    result = query("https://ieeexploreapi.ieee.org/api/v1/search/articles?parameter&apikey=efv84mzqq6ydx4dbd59jhdcn", 'static/ieeeXplore.json', ['Books', 'Conferences', 'Journals'], '2010', '2015')
+
     with open('static/ieeeXplore.json', 'w') as json_file:
         json.dump(result, json_file)
     json_file.close()
 
-if __name__ == "__main__":
-    main()
+    with open ('static/ieeeXplore.json','r') as f:
+        jsondata = json.loads(f.read())
+        # print(jsondata)
+
+    cursorObj.execute("CREATE TABLE IF NOT EXISTS publicacion(id_publicacion integer PRIMARY KEY, titulo text, anyo integer, url text)")
+    cursorObj.execute("CREATE TABLE IF NOT EXISTS persona(id_persona integer PRIMARY KEY, nombre text, apellidos text)")
+    cursorObj.execute("CREATE TABLE IF NOT EXISTS personaPublicacion(persona NOT NULL, publicacion NOT NULL, FOREIGN KEY(persona) REFERENCES persona(id_persona))")
+    cursorObj.execute("CREATE TABLE IF NOT EXISTS com_con(congreso text, edicion text, lugar text, pagina_inicio integer, pagina_fin integer, publicacion integer PRIMARY KEY, FOREIGN KEY(publicacion) REFERENCES publicacion(id_publicacion))")
+    cursorObj.execute("CREATE TABLE IF NOT EXISTS libro(editorial text, publicacion integer PRIMARY KEY, FOREIGN KEY(publicacion) REFERENCES publicacion(id_publicacion))")
+    cursorObj.execute("CREATE TABLE IF NOT EXISTS revista(id_revista integer PRIMARY KEY, nombre text)")
+    cursorObj.execute("CREATE TABLE IF NOT EXISTS ejemplar(id_ejemplar integer PRIMARY KEY, volumen integer, numero integer, mes integer, revista integer, FOREIGN KEY(revista) REFERENCES revista(id_revista))")
+    cursorObj.execute("CREATE TABLE IF NOT EXISTS articulo(pagina_inicio integer, pagina_fin integer, ejemplar integer, publicacion integer PRIMARY KEY, FOREIGN KEY(ejemplar) REFERENCES ejemplar(id_ejemplar), FOREIGN KEY(publicacion) REFERENCES publicacion(id_publicacion))")
+
+    cont = 0
+
+    for article in jsondata['articles']:
+        id = jsondata['articles'][article]['id']
+        titulo = jsondata['articles'][article]['titulo']
+        anyo = jsondata['articles'][article]['anyo']
+        url = jsondata['articles'][article]['url']
+        cursorObj.execute("""INSERT INTO publicacion VALUES (
+            str(cont) + ", " + 'hola' + ", " + str(192) + ", " + 'wqrwr' + ")")"""
+        cont = cont + 1
+
+    con.commit()
+
+con = sql_connection()
+
+sql_table(con)
