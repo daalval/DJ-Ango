@@ -59,5 +59,16 @@ def insert_publicacion(conn, publicacion):
     cur = conn.cursor()
     cur.execute(sql, dict)
     conn.commit()
-    return cur.lastrowid    
-    
+    return cur.lastrowid   
+
+def insert_libro(conn, libro): 
+    """
+    Inserts a libro in "bbdd_libro" table
+    """
+    sql = ''' INSERT INTO bbdd_libro(editorial, publicacion_id)
+            VALUES(%s, %s) ''' % (libro.get_editorial(), libro.get_id())
+    insert_publicacion(conn, libro)
+    cur = conn.cursor()
+    cur.execute(sql)
+    conn.commit()
+    return cur.lastrowid

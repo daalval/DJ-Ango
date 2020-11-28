@@ -1,4 +1,4 @@
-from models.publicacion import Publicacion
+from bibliosearch.models.publicacion import Publicacion
 
 class Articulo(Publicacion):
     """
