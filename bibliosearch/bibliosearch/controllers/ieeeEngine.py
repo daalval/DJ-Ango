@@ -1,4 +1,5 @@
-from bibliosearch.controllers.dbController import insert_libro
+from bibliosearch.models.Com_con import Com_con
+from bibliosearch.controllers.dbController import insert_comCon, insert_libro
 from bibliosearch.models.Libro import Libro
 import json
 import requests
@@ -166,7 +167,7 @@ def sql_connection():
 
 def insert_in_database(con):
 
-    result = query("https://ieeexploreapi.ieee.org/api/v1/search/articles?parameter&apikey=efv84mzqq6ydx4dbd59jhdcn", 'static/ieeeXplore.json', ['Books'], '2010', '2015')
+    result = query("https://ieeexploreapi.ieee.org/api/v1/search/articles?parameter&apikey=efv84mzqq6ydx4dbd59jhdcn", 'static/ieeeXplore.json', ['Books', 'Conferences'], '2010', '2015')
 
     with open('static/ieeeXplore.json', 'w') as json_file:
         json.dump(result, json_file)
@@ -178,8 +179,10 @@ def insert_in_database(con):
     for article in jsondata['articles']:
         if jsondata['articles'][article]['tipo'] == 'libro':
             libro = Libro(jsondata['articles'][article]['editorial'], jsondata['articles'][article]['id'], jsondata['articles'][article]['titulo'], jsondata['articles'][article]['anyo'], jsondata['articles'][article]['url'], jsondata['articles'][article]['escrito_por'])
-            print(libro.get_anyo())
             insert_libro(con, libro)
+        if jsondata['articles'][article]['tipo'] == 'com_con':
+            com_con = Com_con(jsondata['articles'][article]['congreso'], jsondata['articles'][article]['edicion'], jsondata['articles'][article]['lugar'], jsondata['articles'][article]['pagina_inicio'], jsondata['articles'][article]['pagina_fin'], jsondata['articles'][article]['id'], jsondata['articles'][article]['titulo'], jsondata['articles'][article]['anyo'], jsondata['articles'][article]['url'], jsondata['articles'][article]['escrito_por'])
+            insert_comCon(con, com_con)
 
     con.commit()
 

@@ -78,3 +78,18 @@ def insert_libro(conn, libro):
             (?,?)''', values)
     conn.commit()
     return cur.lastrowid
+
+def insert_comCon(conn, com_con): 
+    """
+    Inserts a com_con in "bbdd_com_con" table
+    """
+    # sql = ''' INSERT INTO bbdd_libro(editorial, publicacion_id)
+    #         VALUES(%s, %s) ''' % (libro.get_editorial(), libro.get_id())
+    values = [com_con.get_congreso(), com_con.get_edicion(), com_con.get_lugar(), com_con.get_pagina_inicio(), com_con.get_pagina_fin(), com_con.get_id()]
+    insert_publicacion(conn, com_con)
+    cur = conn.cursor()
+    cur.execute('''INSERT INTO bbdd_com_con(
+            congreso, edicion, lugar, pagina_inicio, pagina_fin, publicacion_id) VALUES
+            (?,?,?,?,?,?)''', values)
+    conn.commit()
+    return cur.lastrowid
