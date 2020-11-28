@@ -54,10 +54,13 @@ def insert_publicacion(conn, publicacion):
     """
     Inserts an article in "bbdd_publicacion" table
     """
-    sql = ''' INSERT INTO bbdd_publicacion(id_publicacion, titulo, anyo, URL)
-            VALUES(%s,%s,%s,%s) ''' % (publicacion.get_id(), publicacion.get_titulo(), publicacion.get_anyo(), publicacion.get_url())
+    # sql = '''INSERT INTO bbdd_publicacion(id_publicacion, titulo, anyo, URL)
+    #         VALUES(?,?,?,?)''' % (publicacion.get_id(), publicacion.get_titulo(), publicacion.get_anyo(), publicacion.get_url())
     cur = conn.cursor()
-    cur.execute(sql, dict)
+    values = [publicacion.get_id(), publicacion.get_titulo(), publicacion.get_anyo(), publicacion.get_url()]
+    cur.execute('''INSERT INTO bbdd_publicacion(
+            id_publicacion, titulo, anyo, URL) VALUES
+            (?,?,?,?)''', values)
     conn.commit()
     return cur.lastrowid   
 
@@ -65,10 +68,13 @@ def insert_libro(conn, libro):
     """
     Inserts a libro in "bbdd_libro" table
     """
-    sql = ''' INSERT INTO bbdd_libro(editorial, publicacion_id)
-            VALUES(%s, %s) ''' % (libro.get_editorial(), libro.get_id())
+    # sql = ''' INSERT INTO bbdd_libro(editorial, publicacion_id)
+    #         VALUES(%s, %s) ''' % (libro.get_editorial(), libro.get_id())
+    values = [libro.get_editorial(), libro.get_id()]
     insert_publicacion(conn, libro)
     cur = conn.cursor()
-    cur.execute(sql)
+    cur.execute('''INSERT INTO bbdd_libro(
+            editorial, publicacion_id) VALUES
+            (?,?)''', values)
     conn.commit()
     return cur.lastrowid

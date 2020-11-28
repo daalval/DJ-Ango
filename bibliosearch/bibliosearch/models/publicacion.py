@@ -1,15 +1,14 @@
 class Publicacion(object):
 
-    def __init__(self, id, titulo, anyo, url, autores):
-        self._id = id
+    def __init__(self, id_publicacion, titulo, anyo, url, autores):
+        self._id = id_publicacion
         self._titulo = titulo
         self._anyo = anyo
         self._url = url
         self._autores = autores
 
-
     def get_id(self):
-        return(self.id)
+        return(self._id)
 
     def get_titulo(self):
         return(self._titulo)

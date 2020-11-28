@@ -1,4 +1,4 @@
-from bibliosearch.models
+from bibliosearch.controllers.dbController import insert_libro
 from bibliosearch.models.Libro import Libro
 import json
 import requests
@@ -156,7 +156,7 @@ def sql_connection():
 
     try:
 
-        con = sqlite3.connect('dbsqlite3')
+        con = sqlite3.connect('db.sqlite3')
 
         return con
 
@@ -166,9 +166,7 @@ def sql_connection():
 
 def insert_in_database(con):
 
-    cursorObj = con.cursor()
-
-    result = query("https://ieeexploreapi.ieee.org/api/v1/search/articles?parameter&apikey=efv84mzqq6ydx4dbd59jhdcn", 'static/ieeeXplore.json', ['Books', 'Conferences', 'Journals'], '2010', '2015')
+    result = query("https://ieeexploreapi.ieee.org/api/v1/search/articles?parameter&apikey=efv84mzqq6ydx4dbd59jhdcn", 'static/ieeeXplore.json', ['Books'], '2010', '2015')
 
     with open('static/ieeeXplore.json', 'w') as json_file:
         json.dump(result, json_file)
@@ -176,36 +174,15 @@ def insert_in_database(con):
 
     with open ('static/ieeeXplore.json','r') as f:
         jsondata = json.loads(f.read())
-        # print(jsondata)
-
-    # cursorObj.execute("CREATE TABLE IF NOT EXISTS publicacion(id_publicacion integer PRIMARY KEY, titulo text, anyo integer, url text)")
-    # cursorObj.execute("CREATE TABLE IF NOT EXISTS persona(id_persona integer PRIMARY KEY, nombre text, apellidos text)")
-    # cursorObj.execute("CREATE TABLE IF NOT EXISTS personaPublicacion(persona NOT NULL, publicacion NOT NULL, FOREIGN KEY(persona) REFERENCES persona(id_persona))")
-    # cursorObj.execute("CREATE TABLE IF NOT EXISTS com_con(congreso text, edicion text, lugar text, pagina_inicio integer, pagina_fin integer, publicacion integer PRIMARY KEY, FOREIGN KEY(publicacion) REFERENCES publicacion(id_publicacion))")
-    # cursorObj.execute("CREATE TABLE IF NOT EXISTS libro(editorial text, publicacion integer PRIMARY KEY, FOREIGN KEY(publicacion) REFERENCES publicacion(id_publicacion))")
-    # cursorObj.execute("CREATE TABLE IF NOT EXISTS revista(id_revista integer PRIMARY KEY, nombre text)")
-    # cursorObj.execute("CREATE TABLE IF NOT EXISTS ejemplar(id_ejemplar integer PRIMARY KEY, volumen integer, numero integer, mes integer, revista integer, FOREIGN KEY(revista) REFERENCES revista(id_revista))")
-    # cursorObj.execute("CREATE TABLE IF NOT EXISTS articulo(pagina_inicio integer, pagina_fin integer, ejemplar integer, publicacion integer PRIMARY KEY, FOREIGN KEY(ejemplar) REFERENCES ejemplar(id_ejemplar), FOREIGN KEY(publicacion) REFERENCES publicacion(id_publicacion))")
 
     for article in jsondata['articles']:
         if jsondata['articles'][article]['tipo'] == 'libro':
-            libro = Libro(jsondata['articles'][article]['editorial'], jsondata['articles'][article]['titulo'], jsondata['articles'][article]['anyo'], jsondata['articles'][article]['url'], jsondata['articles'][article]['escrito_por'])
+            libro = Libro(jsondata['articles'][article]['editorial'], jsondata['articles'][article]['id'], jsondata['articles'][article]['titulo'], jsondata['articles'][article]['anyo'], jsondata['articles'][article]['url'], jsondata['articles'][article]['escrito_por'])
+            print(libro.get_anyo())
             insert_libro(con, libro)
-        # id = jsondata['articles'][article]['id']
-        # titulo = jsondata['articles'][article]['titulo']
-        # anyo = jsondata['articles'][article]['anyo']
-        # url = jsondata['articles'][article]['url']
-        # print(id)
-        # print(titulo)
-        # print(anyo)
-        # print(url)
-        # values = [id, titulo, anyo, url]
-        # cursorObj.execute('''INSERT INTO publicacion(
-        #     id_publicacion, titulo, anyo, url) VALUES
-        #     (?,?,?,?)''', values)
 
     con.commit()
 
 con = sql_connection()
 
-insert_in_database(con)
+insert_in_database(con)   

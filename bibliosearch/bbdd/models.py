@@ -14,7 +14,7 @@ class Ejemplar(models.Model):
     revista = models.ForeignKey(Revista, on_delete = models.CASCADE)
 
 class Publicacion(models.Model):
-    id_publicacion = models.IntegerField(primary_key = True, null = False)
+    id_publicacion = models.IntegerField(primary_key = True, null = False, unique=True)
     titulo = models.CharField(null = True, max_length = 45)
     anyo = anyo = models.IntegerField(null = True)
     URL = models.CharField(null = True, max_length = 45)

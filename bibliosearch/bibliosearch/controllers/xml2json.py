@@ -1,5 +1,5 @@
-from bibliosearch.bibliosearch.models.articulo import Articulo
-from bibliosearch.bibliosearch.controllers.dbController import insert_articulo, insert_publicacion
+from bibliosearch.models.articulo import Articulo
+from bibliosearch.controllers.dbController import insert_articulo, insert_publicacion
 import collections
 import json
 from typing import OrderedDict
