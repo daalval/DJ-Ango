@@ -1,28 +1,23 @@
 import json
 import requests
 
-def query(url, file, our_content_types, our_start_year, our_end_year):
+def query(path, file, our_content_types, our_start_year, our_end_year):
 
     result = {}
-    data = {}
+    with open(path, "r", encoding='utf-8') as jsonFile:
+        data = json.load(jsonFile)
 
     for type in our_content_types:
-        params = dict(
-            content_type = type,
-            start_year = our_start_year,
-            end_year = our_end_year,
-            max_records = '200',
-        )
-        data = requests.get(url, verify=False, params=params).json()
 
-        if type == 'Books':
+        for article in data['articles']:
 
-            for book in data['articles']:
-                book_id = book['article_number']
+            if type == 'Books' and article['content_type'] == "Books" and article['publication_year'] >= our_start_year and article['publication_year'] <= our_end_year:
+
+                book_id = article['article_number']
 
                 personas = []
 
-                for author in book['authors']['authors']:
+                for author in article['authors']['authors']:
 
                     full_name = author['full_name'].split()
 
@@ -40,26 +35,25 @@ def query(url, file, our_content_types, our_start_year, our_end_year):
                     }
                     personas.append(persona)
 
-                result.update({
-                book_id: {
-                    'tipo': 'libro',
-                    'titulo': book['title'],
-                    'anyo': book['publication_year'],
-                    'url': book['pdf_url'],
-                    'escrito_por': personas,
-                    'editorial': book['publisher']
-                }
+                    result.update({
+                    book_id: {
+                        'tipo': 'libro',
+                        'titulo': article['title'],
+                        'anyo': article['publication_year'],
+                        'url': article['pdf_url'],
+                        'escrito_por': personas,
+                        'editorial': article['publisher']
+                    }
                 
-            })
+                })
 
-        if type == 'Conferences':
+            if type == 'Conferences' and article['content_type'] == "Conferences" and article['publication_year'] >= our_start_year and article['publication_year'] <= our_end_year:
 
-            for conference in data['articles']:
-                conference_id = conference['article_number']
+                conference_id = article['article_number']
 
                 personas = []
 
-                for author in conference['authors']['authors']:
+                for author in article['authors']['authors']:
 
                     full_name = author['full_name'].split()
 
@@ -80,27 +74,27 @@ def query(url, file, our_content_types, our_start_year, our_end_year):
                 result.update({
                 conference_id: {
                     'tipo': 'conferencia',
-                    'titulo': conference['title'],
-                    'anyo': conference['publication_year'],
-                    'url': conference['pdf_url'],
+                    'titulo': article['title'],
+                    'anyo': article['publication_year'],
+                    'url': article['pdf_url'],
                     'escrito_por': personas,
-                    'congreso': conference['publication_title'],
-                    'edicion': conference['publication_year'],
-                    'lugar': conference['conference_location'],
-                    'pagina_inicio': conference['start_page'],
-                    'pagina_fin': conference['end_page'],
+                    'congreso': article['publication_title'],
+                    'edicion': article['publication_year'],
+                    'lugar': article['conference_location'],
+                    'pagina_inicio': article['start_page'],
+                    'pagina_fin': article['end_page'],
                 }
-                
+            
             })
 
-        if type == 'Journals':
+            if type == 'Journals' and article['content_type'] == "Journals" and article['publication_year'] >= our_start_year and article['publication_year'] <= our_end_year:
 
-            for journal in data['articles']:
-                journal_id = journal['article_number']
+                
+                journal_id = article['article_number']
 
                 personas = []
 
-                for author in journal['authors']['authors']:
+                for author in article['authors']['authors']:
 
                     full_name = author['full_name'].split()
 
@@ -121,30 +115,28 @@ def query(url, file, our_content_types, our_start_year, our_end_year):
                 result.update({
                 journal_id: {
                     'tipo': 'articulo',
-                    'titulo': journal['title'],
-                    'anyo': journal['publication_year'],
-                    'url': journal['pdf_url'],
+                    'titulo': article['title'],
+                    'anyo': article['publication_year'],
+                    'url': article['pdf_url'],
                     'escrito_por': personas,
-                    'pagina_inicio': journal['start_page'],
-                    'pagina_fin': journal['end_page'],
+                    'pagina_inicio': article['start_page'],
+                    'pagina_fin': article['end_page'],
                     'ejemplar': {
-                        'volumen': journal['volume'],
-                        'numero': journal['is_number'],
+                        'volumen': article['volume'],
+                        'numero': article['is_number'],
                         'mes': None,
-                        'revista': journal['publisher']
+                        'revista': article['publisher']
                     }
                 }
-                
+            
             })
-
-        
 
     return result
     
     
 
 def main():
-    result = query("https://ieeexploreapi.ieee.org/api/v1/search/articles?parameter&apikey=efv84mzqq6ydx4dbd59jhdcn", 'static/ieeeXplore.json', ['Conferences'], '2010', '2015')
+    result = query("bibliosearch\controllers\pobre.json", 'static/ieeeXplore.json', ['Journals'], 2018, 2020)
     with open('static/ieeeXplore.json', 'w') as json_file:
         json.dump(result, json_file)
     json_file.close()
