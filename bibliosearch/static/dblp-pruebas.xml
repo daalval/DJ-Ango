@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE dblp SYSTEM "F:/out/dblp.dtd">
 <dblp>
 	<article mdate="2020-06-25" key="tr/meltdown/s18" publtype="informal">
 		<author>Paul Kocher</author>
@@ -33,6 +32,46 @@
 		<ee type="oa">https://meltdownattack.com/meltdown.pdf</ee>
 		<year>2018</year>
 	</article>
+	<article mdate="2020-03-24" key="tr/unicamp/IC-12-08" publtype="informal">
+		<author>Jacques Wainer</author>
+		<author>Michael Eckmann</author>
+		<author>Siome Goldenstein</author>
+		<author>Anderson Rocha 0001</author>
+		<title>Differences in productivity and impact across the different computer science subareas.</title>
+		<journal>Technical Report</journal>
+		<volume>IC-12-08</volume>
+		<year>2012</year>
+		<publisher>Institute of Computing, University of Campinas, Campinas, Brazil</publisher>
+		<ee type="oa">http://www.ic.unicamp.br/~reltech/2012/12-08.pdf</ee>
+		<note>In English, 30 pages</note>
+	</article>
+	<article mdate="2020-02-04" key="persons/LeyCHM11">
+		<author>Rita Ley</author>
+		<author orcid="0000-0002-1163-8988">Markus Casper</author>
+		<author>Hugo Hellebrand</author>
+		<author>Ralf Merz</author>
+		<title>Catchment classification by runoff behaviour with self-organizing maps (SOM)</title>
+		<journal>Hydrology and Earth System Sciences</journal>
+		<volume>15</volume>
+		<pages>2947-2962</pages>
+		<year>2011</year>
+		<ee type="oa">https://doi.org/10.5194/hess-15-2947-2011</ee>
+	</article>
+	<article mdate="2020-02-04" key="persons/CasperGGGHLR12">
+		<author orcid="0000-0002-1163-8988">Markus Casper</author>
+		<author>Gayane Grigoryan</author>
+		<author>Oliver Gronz</author>
+		<author>Oliver Gutjahr</author>
+		<author orcid="0000-0002-4831-9016">Günther Heinemann</author>
+		<author>Rita Ley</author>
+		<author>Andreas Rock</author>
+		<title>Analysis of projected hydrological behavior of catchments based on signature indices</title>
+		<journal>Hydrology and Earth System Sciences</journal>
+		<volume>16</volume>
+		<pages>409-421</pages>
+		<year>2012</year>
+		<ee type="oa">https://doi.org/10.5194/hess-16-409-2012</ee>
+	</article>
 	<article mdate="2020-07-09" key="journals/see/Davies19">
 		<author orcid="0000-0002-2113-9103">Sarah R. Davies</author>
 		<title>An Ethics of the System: Talking to Scientists About Research Integrity.</title>
@@ -44,6 +83,18 @@
 		<ee>https://doi.org/10.1007/s11948-018-0064-y</ee>
 		<ee>https://www.wikidata.org/entity/Q58657000</ee>
 		<url>db/journals/see/see25.html#Davies19</url>
+	</article>
+	<article mdate="2020-07-09" key="journals/see/Smith12">
+		<author>Steven R. Smith</author>
+		<title>Neuroscience, Ethics and Legal Responsibility: The Problem of the Insanity Defense - Commentary on "The Ethics of Neuroscience and the Neuroscience of Ethics: A Phenomenological-Existential Approach".</title>
+		<pages>475-481</pages>
+		<year>2012</year>
+		<volume>18</volume>
+		<journal>Sci. Eng. Ethics</journal>
+		<number>3</number>
+		<ee>https://doi.org/10.1007/s11948-012-9390-7</ee>
+		<ee>https://www.wikidata.org/entity/Q44045116</ee>
+		<url>db/journals/see/see18.html#Smith12</url>
 	</article>
 	<article mdate="2020-07-09" key="journals/see/NairB20">
 		<author>Indira Nair</author>
@@ -82,31 +133,16 @@
 		<ee>https://www.wikidata.org/entity/Q47776669</ee>
 		<url>db/journals/see/see24.html#Punzi18</url>
 	</article>
-	<article mdate="2020-07-09" key="journals/see/DehalKKS18">
-		<author>Neelam Dehal</author>
-		<author orcid="0000-0001-5321-0958">Kewal Krishan</author>
-		<author orcid="0000-0003-0346-1075">Tanuj Kanchan</author>
-		<author>Amarjeet Singh 0004</author>
-		<title>Mandatory Publications: An Approach to Kill 'Lack of Will' or 'Lack of Skill'?</title>
-		<pages>773-777</pages>
-		<year>2018</year>
-		<volume>24</volume>
+	<article mdate="2020-07-09" key="journals/see/Koepsell10">
+		<author>David Koepsell</author>
+		<title>On Genies and Bottles: Scientists' Moral Responsibility and Dangerous Technology R&amp;D.</title>
+		<pages>119-133</pages>
+		<year>2010</year>
+		<volume>16</volume>
 		<journal>Sci. Eng. Ethics</journal>
-		<number>2</number>
-		<ee>https://doi.org/10.1007/s11948-017-9903-5</ee>
-		<ee>https://www.wikidata.org/entity/Q47225481</ee>
-		<url>db/journals/see/see24.html#DehalKKS18</url>
+		<number>1</number>
+		<ee>https://doi.org/10.1007/s11948-009-9158-x</ee>
+		<ee>https://www.wikidata.org/entity/Q33706687</ee>
+		<url>db/journals/see/see16.html#Koepsell10</url>
 	</article>
-	<article mdate="2020-07-09" key="journals/see/Houdek20">
-		<author orcid="0000-0001-9755-6635">Petr Houdek</author>
-		<title>Fraud and Understanding the Moral Mind: Need for Implementation of Organizational Characteristics into Behavioral Ethics.</title>
-		<pages>691-707</pages>
-		<year>2020</year>
-		<volume>26</volume>
-		<journal>Sci. Eng. Ethics</journal>
-		<number>2</number>
-		<ee>https://doi.org/10.1007/s11948-019-00117-z</ee>
-		<ee>https://www.wikidata.org/entity/Q92736437</ee>
-		<url>db/journals/see/see26.html#Houdek20</url>
-	</article>
-</dblp>
+	</dblp>
