@@ -148,14 +148,14 @@ class Selenium(object):
         personas = []
 
         for author in authors:
-            persona = {'nombre': author.first_names,
-                       'apellidos': author.middle_names + author.last_names,
+            persona = {'nombre': ' '.join(author.first_names),
+                       'apellidos':  ' '.join(author.last_names),
                        }
             personas.append(persona)
 
         result = {
 
-            'ano': year,
+            'anyo': year,
             'escrita_por': personas,
             'titulo': title,
         }
@@ -185,7 +185,7 @@ class Selenium(object):
             result.update({
                 'tipo': 'articulo',
                 'pagina_inicio': initial_page,
-                'pagina_final': final_page,
+                'pagina_fin': final_page,
                 'publicado_en': publicado_en
             })
         # --------------------------------------------LIBROS------------------------------------------
@@ -214,7 +214,7 @@ class Selenium(object):
             result.update({
                 'tipo': 'con_con',
                 'pagina_inicio': initial_page,
-                'pagina_final': final_page,
+                'pagina_fin': final_page,
                 'editorial': publisher,
                 'congreso': organization,
                 'lugar': place
@@ -269,7 +269,7 @@ def main():
     result = selenium.search(
         '1000', '1500', '', [ARTICLE, BOOK, INPROCEEDINGS])
 
-    with open('results/google_schoolar.json', 'w') as json_file:
+    with open('static/google_schoolar.json', 'w') as json_file:
         json.dump(result, json_file)
     json_file.close()
 
