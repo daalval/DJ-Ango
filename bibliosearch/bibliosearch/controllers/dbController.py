@@ -3,6 +3,7 @@ from bibliosearch.models.Com_con import Com_con
 from bibliosearch.models.Libro import Libro
 from bibliosearch.models.Articulo import Articulo
 from bibliosearch.models.Revista import Revista
+from bibliosearch.models.Persona import Persona
 import json
 import sqlite3
 from sqlite3.dbapi2 import Error
@@ -147,15 +148,19 @@ def insert_in_database(con, path):
 
     for article_id in jsondata:
         article = jsondata[article_id]
+        personas = []
+        for escrita_por in article['escrita_por']:
+            personas.append(Persona(None,escrita_por['nombre'],escrita_por['apellidos']))
+
         if article['tipo'] == 'libro':
-            libro = Libro(article['editorial'], article_id, article['titulo'], article['anyo'], article['url'], article['escrita_por'])
+            libro = Libro(article['editorial'], article_id, article['titulo'], article['anyo'], article['url'], personas)
             insert_libro(con, libro)
         if article['tipo'] == 'com_con':
-            com_con = Com_con(article['congreso'], article['edicion'], article['lugar'], article['pagina_inicio'], article['pagina_fin'], article_id, article['titulo'], article['anyo'], article['url'], article['escrita_por'])
+            com_con = Com_con(article['congreso'], article['edicion'], article['lugar'], article['pagina_inicio'], article['pagina_fin'], article_id, article['titulo'], article['anyo'], article['url'], personas)
             insert_comCon(con, com_con)
         if article['tipo'] == 'articulo':
             publicado_en = article['publicado_en'] 
-            articulo = Articulo(article['pagina_inicio'], article['pagina_fin'], article_id, article['titulo'], article['anyo'], article['url'], article['escrita_por'], Ejemplar(None, publicado_en['volumen'], publicado_en['numero'], publicado_en['mes'], Revista(None, publicado_en['revista']['nombre'])))
+            articulo = Articulo(article['pagina_inicio'], article['pagina_fin'], article_id, article['titulo'], article['anyo'], article['url'], personas, Ejemplar(None, publicado_en['volumen'], publicado_en['numero'], publicado_en['mes'], Revista(None, publicado_en['revista']['nombre'])))
             insert_articulo(con, articulo)
 
     con.commit()  
