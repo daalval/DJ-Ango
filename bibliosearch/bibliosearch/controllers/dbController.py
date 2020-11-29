@@ -1,4 +1,4 @@
-from bibliosearch.controllers.ieeeEngine import get_result
+
 from bibliosearch.models.Com_con import Com_con
 from bibliosearch.models.Libro import Libro
 from bibliosearch.models.Articulo import Articulo
@@ -69,6 +69,9 @@ def insert_publicacion(conn, publicacion):
     values = [None, publicacion.get_titulo(), publicacion.get_anyo(), publicacion.get_url()]
     cur.execute(sql, values)
     conn.commit()
+    for persona in publicacion.get_autores():
+        id_persona = insert_persona(conn, persona)
+        insert_persona_publicacion(conn, id_persona,cur.lastrowid)
     return cur.lastrowid   
 
 def insert_libro(conn, libro): 
@@ -93,6 +96,32 @@ def insert_comCon(conn, com_con):
             (?,?,?,?,?,?)'''
     values = [com_con.get_congreso(), com_con.get_edicion(), com_con.get_lugar(), com_con.get_pagina_inicio(), com_con.get_pagina_fin(), com_con.get_id()]
     insert_publicacion(conn, com_con)
+    cur = conn.cursor()
+    cur.execute(sql, values)
+    conn.commit()
+    return cur.lastrowid
+
+def insert_persona(conn, persona): 
+    """
+    Inserts a com_con in "bbdd_person" table
+    """
+    sql = '''INSERT INTO bbdd_persona(
+            id_persona,nombre,apellidos) VALUES
+            (?,?,?)'''
+    values = [None,persona.get_nombre(),persona.get_apellidos()]
+    cur = conn.cursor()
+    cur.execute(sql, values)
+    conn.commit()
+    return cur.lastrowid
+
+def insert_persona_publicacion(conn, persona_id,publicacion_id): 
+    """
+    Inserts a com_con in "bbdd_personapublicacion" table
+    """
+    sql = '''INSERT INTO bbdd_personapublicacion(
+            id,publicacion_id,persona_id) VALUES
+            (?,?,?)'''
+    values = [None,persona_id,publicacion_id]
     cur = conn.cursor()
     cur.execute(sql, values)
     conn.commit()
