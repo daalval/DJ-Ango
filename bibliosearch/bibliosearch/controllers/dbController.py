@@ -67,8 +67,6 @@ def insert_publicacion(conn, publicacion):
             id_publicacion, titulo, anyo, URL) VALUES
             (?,?,?,?)'''
     cur = conn.cursor()
-    print(publicacion.get_anyo())
-    print(type(publicacion.get_anyo()))
     values = [None, publicacion.get_titulo(), publicacion.get_anyo(), publicacion.get_url()]
     cur.execute(sql, values)
     conn.commit()
@@ -134,7 +132,7 @@ def insert_in_database(con, path):
     con.commit()  
 
 def main():
-    path = 'static/dblp.json'
+    path = 'static/ieeeXplore.json'
     con = sql_connection() 
     insert_in_database(con, path)
 
