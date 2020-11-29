@@ -72,14 +72,17 @@ def xml_parser(xml_file, json_file, year_st, year_end):
 
 
             # url
+            añadir_url = ""
             if URL in list(article_dict.keys()):
-                if type(url):
-
-                if type(url):
-
-                if type(url):
-            else:
-                new_dict['url'] = None
+                url = article_dict[URL]
+                if type(url) == type(collections.OrderedDict()):
+                    añadir_url = url['#text']
+                if type(url) == type([]):
+                    añadir_url = url[0]
+                if type(url) == type(""):
+                    añadir_url = url
+            
+            new_dict['url'] = añadir_url
 
             if (PAGINA_FIN) in list(article_dict.keys()):
                 p = article_dict[PAGINA_INICIO].split('-')
