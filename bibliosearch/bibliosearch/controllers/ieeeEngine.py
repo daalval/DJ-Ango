@@ -1,19 +1,9 @@
-from bibliosearch.models.Com_con import Com_con
-from bibliosearch.controllers.dbController import insert_comCon, insert_libro
-from bibliosearch.models.Libro import Libro
 import json
 import requests
-import sqlite3
-from sqlite3 import Error
-
 
 def query(url, file, our_content_types, our_start_year, our_end_year):
 
-    result = {
-        'articles': {
-
-        }
-    }
+    result = {}
     data = {}
 
     for type in our_content_types:
@@ -28,6 +18,7 @@ def query(url, file, our_content_types, our_start_year, our_end_year):
         if type == 'Books':
 
             for book in data['articles']:
+
                 book_id = book['article_number']
 
                 personas = []
@@ -50,14 +41,13 @@ def query(url, file, our_content_types, our_start_year, our_end_year):
                     }
                     personas.append(persona)
 
-                result['articles'].update({
+                result.update({
                     book_id: {
-                        'id': book_id,
                         'tipo': 'libro',
                         'titulo': book['title'],
                         'anyo': book['publication_year'],
                         'url': book['pdf_url'],
-                        'escrito_por': personas,
+                        'escrita_por': personas,
                         'editorial': book['publisher']
                     }
                 })
@@ -65,6 +55,7 @@ def query(url, file, our_content_types, our_start_year, our_end_year):
         if type == 'Conferences':
 
             for conference in data['articles']:
+                
                 conference_id = conference['article_number']
 
                 personas = []
@@ -87,14 +78,13 @@ def query(url, file, our_content_types, our_start_year, our_end_year):
                     }
                     personas.append(persona)
 
-                result['articles'].update({
+                result.update({
                 conference_id: {
-                    'id': conference_id,
                     'tipo': 'com_con',
                     'titulo': conference['title'],
                     'anyo': conference['publication_year'],
                     'url': conference['pdf_url'],
-                    'escrito_por': personas,
+                    'escrita_por': personas,
                     'congreso': conference['publication_title'],
                     'edicion': conference['publication_year'],
                     'lugar': conference['conference_location'],
@@ -107,6 +97,7 @@ def query(url, file, our_content_types, our_start_year, our_end_year):
         if type == 'Journals':
 
             for journal in data['articles']:
+                
                 journal_id = journal['article_number']
 
                 personas = []
@@ -129,63 +120,39 @@ def query(url, file, our_content_types, our_start_year, our_end_year):
                     }
                     personas.append(persona)
 
-                result['articles'].update({
+                result.update({
                 journal_id: {
-                    'id': journal_id,
                     'tipo': 'articulo',
                     'titulo': journal['title'],
                     'anyo': journal['publication_year'],
                     'url': journal['pdf_url'],
-                    'escrito_por': personas,
+                    'escrita_por': personas,
                     'pagina_inicio': journal['start_page'],
                     'pagina_fin': journal['end_page'],
-                    'ejemplar': {
+                    'publicado_en': {
                         'volumen': journal['volume'],
                         'numero': journal['is_number'],
                         'mes': None,
-                        'revista': journal['publisher']
+                        'revista': {
+                            'nombre': journal['publisher']
+                        }
                     }
                 }
                 
             })
 
-        
-
     return result
 
-def sql_connection():
+def get_result():
 
-    try:
-
-        con = sqlite3.connect('db.sqlite3')
-
-        return con
-
-    except Error:
-
-        print(Error)
-
-def insert_in_database(con):
-
-    result = query("https://ieeexploreapi.ieee.org/api/v1/search/articles?parameter&apikey=efv84mzqq6ydx4dbd59jhdcn", 'static/ieeeXplore.json', ['Books', 'Conferences'], '2010', '2015')
+    result = query("https://ieeexploreapi.ieee.org/api/v1/search/articles?parameter&apikey=efv84mzqq6ydx4dbd59jhdcn", 'static/ieeeXplore.json', ['Books', 'Conferences', 'Journals'], '2010', '2015')
 
     with open('static/ieeeXplore.json', 'w') as json_file:
         json.dump(result, json_file)
     json_file.close()
 
-    with open ('static/ieeeXplore.json','r') as f:
-        jsondata = json.loads(f.read())
+def main():
+    get_result()
 
-    for article in jsondata['articles']:
-        if jsondata['articles'][article]['tipo'] == 'libro':
-            libro = Libro(jsondata['articles'][article]['editorial'], jsondata['articles'][article]['id'], jsondata['articles'][article]['titulo'], jsondata['articles'][article]['anyo'], jsondata['articles'][article]['url'], jsondata['articles'][article]['escrito_por'])
-            insert_libro(con, libro)
-        if jsondata['articles'][article]['tipo'] == 'com_con':
-            com_con = Com_con(jsondata['articles'][article]['congreso'], jsondata['articles'][article]['edicion'], jsondata['articles'][article]['lugar'], jsondata['articles'][article]['pagina_inicio'], jsondata['articles'][article]['pagina_fin'], jsondata['articles'][article]['id'], jsondata['articles'][article]['titulo'], jsondata['articles'][article]['anyo'], jsondata['articles'][article]['url'], jsondata['articles'][article]['escrito_por'])
-            insert_comCon(con, com_con)
-
-    con.commit()
-
-con = sql_connection()
-
-insert_in_database(con)   
+if __name__ == '__main__':
+    main()

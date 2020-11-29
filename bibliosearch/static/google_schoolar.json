@@ -1,44 +1,29 @@
 {
     "dumont1006practical": {
-        "ano": "1006",
+        "anyo": "1006",
         "escrita_por": [
             {
-                "nombre": [
-                    "LJ"
-                ],
-                "apellidos": [
-                    "Dumont"
-                ]
+                "nombre": "LJ",
+                "apellidos":"Dumont"
+                
             },
             {
-                "nombre": [
-                    "QH"
-                ],
-                "apellidos": [
-                    "Dzik"
-                ]
+                "nombre": "QH",
+                "apellidos": "Dzik"
             },
             {
-                "nombre": [
-                    "P"
-                ],
-                "apellidos": [
-                    "Rebulla"
-                ]
+                "nombre": "P",
+                "apellidos": "Rebulla"
             },
             {
-                "nombre": [
-                    "H"
-                ],
-                "apellidos": [
-                    "Brandwein"
-                ]
+                "nombre": "H",
+                "apellidos": "Brandwein"
             }
         ],
         "titulo": "Practical guidelines for process control and validation of leukoreduced components: Report of the BEST Working Party of the ISBT",
         "tipo": "articulo",
         "pagina_inicio": "76",
-        "pagina_final": "95",
+        "pagina_fin": "95",
         "publicado_en": {
             "volumen": "1006",
             "numero": "36",
@@ -50,21 +35,18 @@
         "url": "http://hermes-ir.lib.hit-u.ac.jp/da/handle/123456789/5715"
     },
     "sabuncuoglu1465cerahiyet": {
-        "ano": "1465",
+        "anyo": "1465",
         "escrita_por": [
             {
-                "nombre": [
-                    "S"
-                ],
-                "apellidos": [
-                    "Sabuncuoglu"
-                ]
+                "nombre": "S",
+                "apellidos": "Sabuncuoglu"
+
             }
         ],
         "titulo": "Cerahiyet al-Haniye",
         "tipo": "articulo",
         "pagina_inicio": null,
-        "pagina_final": null,
+        "pagina_fin": null,
         "publicado_en": {
             "volumen": null,
             "numero": "693",
@@ -76,28 +58,21 @@
         "url": "http://hermes-ir.lib.hit-u.ac.jp/da/handle/123456789/5715"
     },
     "crescenzi1471ruralia": {
-        "ano": "1471",
+        "anyo": "1471",
         "escrita_por": [
             {
-                "nombre": [
-                    "Pietro"
-                ],
-                "apellidos": [
-                    "de'",
-                    "Crescenzi"
-                ]
+                "nombre": "Pietro",
+                "apellidos": "de' Crescenzi"
             },
             {
-                "nombre": [],
-                "apellidos": [
-                    "others"
-                ]
+                "nombre": "",
+                "apellidos": "others"
             }
         ],
         "titulo": "Ruralia commoda.",
         "tipo": "articulo",
         "pagina_inicio": null,
-        "pagina_final": null,
+        "pagina_fin": null,
         "publicado_en": {
             "volumen": null,
             "numero": null,
