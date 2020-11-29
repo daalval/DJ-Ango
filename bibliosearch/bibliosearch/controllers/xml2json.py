@@ -25,7 +25,7 @@ def xml_parser(xml_file, json_file, year_st, year_end):
     for article_dict in data_dict['dblp']['article']:
         new_dict = {}
         # ano
-        if article_dict[ANO]>year_st and article_dict[ANO]<year_end:
+        if int(article_dict[ANO])>=year_st and int(article_dict[ANO])<=year_end:
             new_dict['anyo'] = article_dict[ANO]
             # key
             key = article_dict[KEY]
@@ -67,11 +67,13 @@ def xml_parser(xml_file, json_file, year_st, year_end):
                     for ap in nom_ap[1:len(nom_ap)]:
                         apellidos += f'{ap} '
                     escrita_por.append({'nombre': nombre, 'apellidos': apellidos})
-
+            
             new_dict['escrita_por'] = escrita_por
             # url
             if URL in list(article_dict.keys()):
                 new_dict['url'] = article_dict[URL]
+            else:
+                new_dict['url'] = None
 
             if (PAGINA_FIN) in list(article_dict.keys()):
                 p = article_dict[PAGINA_INICIO].split('-')
@@ -82,14 +84,21 @@ def xml_parser(xml_file, json_file, year_st, year_end):
                     new_dict['pagina_fin'] = article_dict[PAGINA_FIN].split('-')[1]
                 else:
                     new_dict['pagina_fin'] = None
+            else:
+                new_dict['pagina_inicio'] = None
+                new_dict['pagina_fin'] = None
 
             publicado_en = {}
             if (VOLUMEN) in list(article_dict.keys()):
                 # publicado_en.volumen
                 publicado_en['volumen'] = article_dict[VOLUMEN]
+            else:
+                publicado_en['numero'] = None
             if (NUMBER) in list(article_dict.keys()):
                 # publicado_en.numero
                 publicado_en['numero'] = article_dict[NUMBER]
+            else:
+                publicado_en['numero'] = None
             # publicado_en.mes
             publicado_en['mes'] = None
             # Revista.nombre
@@ -122,7 +131,7 @@ def main():
     """
     Main IEI parser
     """
-    xml_parser("../../static/DBLP-SOLO_ARTICLE.XML", "../../static/dblp.json", 2005, 2006)
+    xml_parser("../../static/dblp-pruebas.xml", "../../static/dblp.json", 2005, 2020)
 
 
 if __name__ == "__main__":
