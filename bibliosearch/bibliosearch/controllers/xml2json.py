@@ -1,10 +1,7 @@
-from bibliosearch.models.articulo import Articulo
-from bibliosearch.controllers.dbController import insert_articulo, insert_publicacion
 import collections
 import json
 from typing import OrderedDict
 import xmltodict
-
 
 
 def xml_parser(xml_file, json_file, year_st, year_end):
@@ -29,9 +26,10 @@ def xml_parser(xml_file, json_file, year_st, year_end):
         new_dict = {}
         # ano
         if article_dict[ANO]>year_st and article_dict[ANO]<year_end:
-            new_dict['ano'] = article_dict[ANO]
+            new_dict['anyo'] = article_dict[ANO]
             # key
             key = article_dict[KEY]
+            new_dict['tipo'] = "articulo"
             # titulo
             new_dict['titulo'] = article_dict[TITULO]
 
@@ -73,14 +71,14 @@ def xml_parser(xml_file, json_file, year_st, year_end):
             new_dict['escrita_por'] = escrita_por
             # url
             if URL in list(article_dict.keys()):
-                new_dict['URL'] = article_dict[URL]
+                new_dict['url'] = article_dict[URL]
 
             if (PAGINA_FIN) in list(article_dict.keys()):
                 p = article_dict[PAGINA_INICIO].split('-')
                 # pagina_inicio
                 new_dict['pagina_inicio'] = p[0]
                 # pagina_fin
-                if len(p)>1:
+                if(len(p)>1):
                     new_dict['pagina_fin'] = article_dict[PAGINA_FIN].split('-')[1]
                 else:
                     new_dict['pagina_fin'] = None
@@ -94,19 +92,23 @@ def xml_parser(xml_file, json_file, year_st, year_end):
                 publicado_en['numero'] = article_dict[NUMBER]
             # publicado_en.mes
             publicado_en['mes'] = None
-            new_dict['publicado_en'] = publicado_en
-            # Ejemplar.tiene.nombre
-            ejemplar = {
+            # Revista.nombre
+            revista = {
                 'nombre': article_dict[NOMBRE]
             }
-            new_dict['ejemplar'] = ejemplar
+            publicado_en['revista'] = revista
+            new_dict['publicado_en'] = publicado_en
+            # Ejemplar.tiene.nombre
+            #ejemplar = {
+            #    'nombre': article_dict[NOMBRE]
+            #}
+            #new_dict['ejemplar'] = ejemplar
             # Revista.nombre
             revista = {
                 'nombre': article_dict[NOMBRE]
             }
             new_dict['revista'] = revista
             articles[key] = new_dict
-            
 
     json_data = json.dumps(articles, indent=4)
     
