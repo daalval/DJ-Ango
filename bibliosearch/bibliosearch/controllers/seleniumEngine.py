@@ -185,7 +185,7 @@ class Selenium(object):
             result.update({
                 'tipo': 'articulo',
                 'pagina_inicio': initial_page,
-                'pagina_final': final_page,
+                'pagina_fin': final_page,
                 'publicado_en': publicado_en
             })
         # --------------------------------------------LIBROS------------------------------------------

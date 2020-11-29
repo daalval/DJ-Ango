@@ -22,7 +22,7 @@
         "titulo": "Practical guidelines for process control and validation of leukoreduced components: Report of the BEST Working Party of the ISBT",
         "tipo": "articulo",
         "pagina_inicio": "76",
-        "pagina_final": "95",
+        "pagina_fin": "95",
         "publicado_en": {
             "volumen": "1006",
             "numero": "36",
@@ -44,13 +44,39 @@
         "titulo": "Cerahiyet al-Haniye",
         "tipo": "articulo",
         "pagina_inicio": null,
-        "pagina_final": null,
+        "pagina_fin": null,
         "publicado_en": {
             "volumen": null,
             "numero": "693",
             "mes": null,
             "revista": {
                 "nombre": "Amasya. Ms"
+            }
+        },
+        "url": "http://hermes-ir.lib.hit-u.ac.jp/da/handle/123456789/5715"
+    },
+    "crescenzi1471ruralia": {
+        "anyo": "1471",
+        "escrita_por": [
+            {
+                "nombre": "Pietro",
+                "apellidos": "Crescenzi"
+            },
+            {
+                "nombre": "",
+                "apellidos": "others"
+            }
+        ],
+        "titulo": "Ruralia commoda.",
+        "tipo": "articulo",
+        "pagina_inicio": null,
+        "pagina_fin": null,
+        "publicado_en": {
+            "volumen": null,
+            "numero": null,
+            "mes": null,
+            "revista": {
+                "nombre": "[Augsburg]: Johann Schussler, about 16 Feb. 1471"
             }
         },
         "url": "http://hermes-ir.lib.hit-u.ac.jp/da/handle/123456789/5715"
