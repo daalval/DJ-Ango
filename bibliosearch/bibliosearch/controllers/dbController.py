@@ -1,7 +1,8 @@
-
+from bibliosearch.models.Ejemplar import Ejemplar
 from bibliosearch.models.Com_con import Com_con
 from bibliosearch.models.Libro import Libro
 from bibliosearch.models.Articulo import Articulo
+from bibliosearch.models.Revista import Revista
 import json
 import sqlite3
 from sqlite3.dbapi2 import Error
@@ -25,10 +26,10 @@ def insert_articulo(conn, articulo):
     """
     sql_art = '''INSERT INTO bbdd_articulo(pagina_inicio, pagina_fin, publicacion_id, ejemplar_id)
                 VALUES(?,?,?,?)'''
-    insert_publicacion(conn, articulo)
-    insert_ejemplar(conn, articulo.get_ejemplar())
+    id_publicacion = insert_publicacion(conn, articulo)
+    id_ejemplar = insert_ejemplar(conn, articulo.get_ejemplar())
     cur = conn.cursor()
-    values = [articulo.get_pagina_inicio(), articulo.get_pagina_fin(), None, articulo.get_ejemplar().get_id()]
+    values = [articulo.get_pagina_inicio(), articulo.get_pagina_fin(), id_publicacion, id_ejemplar]
     cur.execute(sql_art, values)
     conn.commit()
     return cur.lastrowid
@@ -38,10 +39,10 @@ def insert_ejemplar(conn, ejemplar):
     Inserts an ejemplar in "bbdd_ejemplar" table
     """
     sql_ejemplar = '''INSERT INTO bbdd_ejemplar(id_ejemplar, volumen, numero, mes, revista_id)
-                    VALUES(?,?,?,?)'''
-    insert_revista(ejemplar.get_revista())
+                    VALUES(?,?,?,?,?)'''
+    id_revista = insert_revista(conn, ejemplar.get_revista())
     cur = conn.cursor()
-    values = [None, ejemplar.get_volumen(), ejemplar.get_numero(), ejemplar.get_mes(), ejemplar.get_revista().get_id()]
+    values = [None, ejemplar.get_volumen(), ejemplar.get_numero(), ejemplar.get_mes(), id_revista]
     cur.execute(sql_ejemplar, values)
     conn.commit()
     return cur.lastrowid
@@ -53,7 +54,7 @@ def insert_revista(conn, revista):
     sql_revista = '''INSERT INTO bbdd_revista(id_revista, nombre)
                     VALUES(?,?)'''
     cur = conn.cursor()
-    values = [None, revista.get_nombre]
+    values = [None, revista.get_nombre()]
     cur.execute(sql_revista, values)
     conn.commit()
     return cur.lastrowid
@@ -80,8 +81,8 @@ def insert_libro(conn, libro):
     """
     sql = '''INSERT INTO bbdd_libro(editorial, publicacion_id)
             VALUES(?,?)'''
-    values = [libro.get_editorial(), None]
-    insert_publicacion(conn, libro)
+    id_publicacion = insert_publicacion(conn, libro)
+    values = [libro.get_editorial(), id_publicacion]
     cur = conn.cursor()
     cur.execute(sql, values)
     conn.commit()
@@ -94,8 +95,8 @@ def insert_comCon(conn, com_con):
     sql = '''INSERT INTO bbdd_com_con(
             congreso, edicion, lugar, pagina_inicio, pagina_fin, publicacion_id) VALUES
             (?,?,?,?,?,?)'''
-    values = [com_con.get_congreso(), com_con.get_edicion(), com_con.get_lugar(), com_con.get_pagina_inicio(), com_con.get_pagina_fin(), com_con.get_id()]
-    insert_publicacion(conn, com_con)
+    id_publicacion = insert_publicacion(conn, com_con)
+    values = [com_con.get_congreso(), com_con.get_edicion(), com_con.get_lugar(), com_con.get_pagina_inicio(), com_con.get_pagina_fin(), id_publicacion]
     cur = conn.cursor()
     cur.execute(sql, values)
     conn.commit()
@@ -153,13 +154,14 @@ def insert_in_database(con, path):
             com_con = Com_con(article['congreso'], article['edicion'], article['lugar'], article['pagina_inicio'], article['pagina_fin'], article_id, article['titulo'], article['anyo'], article['url'], article['escrita_por'])
             insert_comCon(con, com_con)
         if article['tipo'] == 'articulo':
-            articulo = Articulo(article['pagina_inicio'], article['pagina_fin'], article_id, article['titulo'], article['anyo'], article['url'], article['escrita_por'], article['publicado_en'])
+            publicado_en = article['publicado_en'] 
+            articulo = Articulo(article['pagina_inicio'], article['pagina_fin'], article_id, article['titulo'], article['anyo'], article['url'], article['escrita_por'], Ejemplar(None, publicado_en['volumen'], publicado_en['numero'], publicado_en['mes'], Revista(None, publicado_en['revista']['nombre'])))
             insert_articulo(con, articulo)
 
     con.commit()  
 
 def main():
-    path = 'static/google_schoolar.json'
+    path = 'static/ieeeXplore.json'
     con = sql_connection() 
     insert_in_database(con, path)
 

@@ -1,1 +1,401 @@
-{"dblp": {"article": [{"@mdate": "2020-06-25", "@key": "tr/meltdown/s18", "@publtype": "informal", "author": ["Paul Kocher", "Daniel Genkin", "Daniel Gruss", "Werner Haas 0004", "Mike Hamburg", "Moritz Lipp", "Stefan Mangard", "Thomas Prescher 0002", "Michael Schwarz 0001", "Yuval Yarom"], "title": "Spectre Attacks: Exploiting Speculative Execution.", "journal": "meltdownattack.com", "year": "2018", "ee": {"@type": "oa", "#text": "https://spectreattack.com/spectre.pdf"}}, {"@mdate": "2020-06-25", "@key": "tr/meltdown/m18", "@publtype": "informal", "author": ["Moritz Lipp", "Michael Schwarz 0001", "Daniel Gruss", "Thomas Prescher 0002", "Werner Haas 0004", "Stefan Mangard", "Paul Kocher", "Daniel Genkin", "Yuval Yarom", "Mike Hamburg"], "title": "Meltdown", "journal": "meltdownattack.com", "ee": {"@type": "oa", "#text": "https://meltdownattack.com/meltdown.pdf"}, "year": "2018"}, {"@mdate": "2020-07-09", "@key": "journals/see/Davies19", "author": {"@orcid": "0000-0002-2113-9103", "#text": "Sarah R. Davies"}, "title": "An Ethics of the System: Talking to Scientists About Research Integrity.", "pages": "1235-1253", "year": "2019", "volume": "25", "journal": "Sci. Eng. Ethics", "number": "4", "ee": ["https://doi.org/10.1007/s11948-018-0064-y", "https://www.wikidata.org/entity/Q58657000"], "url": "db/journals/see/see25.html#Davies19"}, {"@mdate": "2020-07-09", "@key": "journals/see/NairB20", "author": ["Indira Nair", "William M. Bulleit"], "title": "Pragmatism and Care in Engineering Ethics.", "pages": "65-87", "year": "2020", "volume": "26", "journal": "Sci. Eng. Ethics", "number": "1", "ee": ["https://doi.org/10.1007/s11948-018-0080-y", "https://www.wikidata.org/entity/Q90930992"], "url": "db/journals/see/see26.html#NairB20"}, {"@mdate": "2020-07-09", "@key": "journals/see/Silva18", "author": "Jaime A. Teixeira da Silva", "title": "Reflection on the Fazlul Sarkar versus PubPeer (\"John Doe\") Case.", "pages": "323-325", "year": "2018", "volume": "24", "journal": "Sci. Eng. Ethics", "number": "1", "ee": ["https://doi.org/10.1007/s11948-016-9863-1", "https://www.wikidata.org/entity/Q53750216"], "url": "db/journals/see/see24.html#Silva18"}, {"@mdate": "2020-07-09", "@key": "journals/see/Punzi18", "author": {"@orcid": "0000-0002-3689-8970", "#text": "Vito L. Punzi"}, "title": "A Social Responsibility Guide for Engineering Students and Professionals of all Faith Traditions: An Overview.", "pages": "1253-1277", "year": "2018", "volume": "24", "journal": "Sci. Eng. Ethics", "number": "4", "ee": ["https://doi.org/10.1007/s11948-017-9948-5", "https://www.wikidata.org/entity/Q47776669"], "url": "db/journals/see/see24.html#Punzi18"}, {"@mdate": "2020-07-09", "@key": "journals/see/DehalKKS18", "author": ["Neelam Dehal", {"@orcid": "0000-0001-5321-0958", "#text": "Kewal Krishan"}, {"@orcid": "0000-0003-0346-1075", "#text": "Tanuj Kanchan"}, "Amarjeet Singh 0004"], "title": "Mandatory Publications: An Approach to Kill 'Lack of Will' or 'Lack of Skill'?", "pages": "773-777", "year": "2018", "volume": "24", "journal": "Sci. Eng. Ethics", "number": "2", "ee": ["https://doi.org/10.1007/s11948-017-9903-5", "https://www.wikidata.org/entity/Q47225481"], "url": "db/journals/see/see24.html#DehalKKS18"}, {"@mdate": "2020-07-09", "@key": "journals/see/Houdek20", "author": {"@orcid": "0000-0001-9755-6635", "#text": "Petr Houdek"}, "title": "Fraud and Understanding the Moral Mind: Need for Implementation of Organizational Characteristics into Behavioral Ethics.", "pages": "691-707", "year": "2020", "volume": "26", "journal": "Sci. Eng. Ethics", "number": "2", "ee": ["https://doi.org/10.1007/s11948-019-00117-z", "https://www.wikidata.org/entity/Q92736437"], "url": "db/journals/see/see26.html#Houdek20"}]}}
+{
+    "tr/meltdown/s18": {
+        "anyo": "2018",
+        "tipo": "articulo",
+        "titulo": "Spectre Attacks: Exploiting Speculative Execution.",
+        "escrita_por": [
+            {
+                "nombre": "Paul",
+                "apellidos": "Kocher "
+            },
+            {
+                "nombre": "Daniel",
+                "apellidos": "Genkin "
+            },
+            {
+                "nombre": "Daniel",
+                "apellidos": "Gruss "
+            },
+            {
+                "nombre": "Werner",
+                "apellidos": "Haas 0004 "
+            },
+            {
+                "nombre": "Mike",
+                "apellidos": "Hamburg "
+            },
+            {
+                "nombre": "Moritz",
+                "apellidos": "Lipp "
+            },
+            {
+                "nombre": "Stefan",
+                "apellidos": "Mangard "
+            },
+            {
+                "nombre": "Thomas",
+                "apellidos": "Prescher 0002 "
+            },
+            {
+                "nombre": "Michael",
+                "apellidos": "Schwarz 0001 "
+            },
+            {
+                "nombre": "Yuval",
+                "apellidos": "Yarom "
+            }
+        ],
+        "url": "https://spectreattack.com/spectre.pdf",
+        "pagina_inicio": null,
+        "pagina_fin": null,
+        "publicado_en": {
+            "volumen": null,
+            "numero": null,
+            "mes": null,
+            "revista": {
+                "nombre": "meltdownattack.com"
+            }
+        },
+        "revista": {
+            "nombre": "meltdownattack.com"
+        }
+    },
+    "tr/meltdown/m18": {
+        "anyo": "2018",
+        "tipo": "articulo",
+        "titulo": "Meltdown",
+        "escrita_por": [
+            {
+                "nombre": "Moritz",
+                "apellidos": "Lipp "
+            },
+            {
+                "nombre": "Michael",
+                "apellidos": "Schwarz 0001 "
+            },
+            {
+                "nombre": "Daniel",
+                "apellidos": "Gruss "
+            },
+            {
+                "nombre": "Thomas",
+                "apellidos": "Prescher 0002 "
+            },
+            {
+                "nombre": "Werner",
+                "apellidos": "Haas 0004 "
+            },
+            {
+                "nombre": "Stefan",
+                "apellidos": "Mangard "
+            },
+            {
+                "nombre": "Paul",
+                "apellidos": "Kocher "
+            },
+            {
+                "nombre": "Daniel",
+                "apellidos": "Genkin "
+            },
+            {
+                "nombre": "Yuval",
+                "apellidos": "Yarom "
+            },
+            {
+                "nombre": "Mike",
+                "apellidos": "Hamburg "
+            }
+        ],
+        "url": "https://meltdownattack.com/meltdown.pdf",
+        "pagina_inicio": null,
+        "pagina_fin": null,
+        "publicado_en": {
+            "volumen": null,
+            "numero": null,
+            "mes": null,
+            "revista": {
+                "nombre": "meltdownattack.com"
+            }
+        },
+        "revista": {
+            "nombre": "meltdownattack.com"
+        }
+    },
+    "tr/unicamp/IC-12-08": {
+        "anyo": "2012",
+        "tipo": "articulo",
+        "titulo": "Differences in productivity and impact across the different computer science subareas.",
+        "escrita_por": [
+            {
+                "nombre": "Jacques",
+                "apellidos": "Wainer "
+            },
+            {
+                "nombre": "Michael",
+                "apellidos": "Eckmann "
+            },
+            {
+                "nombre": "Siome",
+                "apellidos": "Goldenstein "
+            },
+            {
+                "nombre": "Anderson",
+                "apellidos": "Rocha 0001 "
+            }
+        ],
+        "url": "http://www.ic.unicamp.br/~reltech/2012/12-08.pdf",
+        "pagina_inicio": null,
+        "pagina_fin": null,
+        "publicado_en": {
+            "volumen": "IC-12-08",
+            "numero": null,
+            "mes": null,
+            "revista": {
+                "nombre": "Technical Report"
+            }
+        },
+        "revista": {
+            "nombre": "Technical Report"
+        }
+    },
+    "persons/LeyCHM11": {
+        "anyo": "2011",
+        "tipo": "articulo",
+        "titulo": "Catchment classification by runoff behaviour with self-organizing maps (SOM)",
+        "escrita_por": [
+            {
+                "nombre": "Rita",
+                "apellidos": "Ley "
+            },
+            {
+                "nombre": "Markus",
+                "apellidos": "Casper "
+            },
+            {
+                "nombre": "Hugo",
+                "apellidos": "Hellebrand "
+            },
+            {
+                "nombre": "Ralf",
+                "apellidos": "Merz "
+            }
+        ],
+        "url": "https://doi.org/10.5194/hess-15-2947-2011",
+        "pagina_inicio": "2947",
+        "pagina_fin": "2962",
+        "publicado_en": {
+            "volumen": "15",
+            "numero": null,
+            "mes": null,
+            "revista": {
+                "nombre": "Hydrology and Earth System Sciences"
+            }
+        },
+        "revista": {
+            "nombre": "Hydrology and Earth System Sciences"
+        }
+    },
+    "persons/CasperGGGHLR12": {
+        "anyo": "2012",
+        "tipo": "articulo",
+        "titulo": "Analysis of projected hydrological behavior of catchments based on signature indices",
+        "escrita_por": [
+            {
+                "nombre": "Markus",
+                "apellidos": "Casper "
+            },
+            {
+                "nombre": "Gayane",
+                "apellidos": "Grigoryan "
+            },
+            {
+                "nombre": "Oliver",
+                "apellidos": "Gronz "
+            },
+            {
+                "nombre": "Oliver",
+                "apellidos": "Gutjahr "
+            },
+            {
+                "nombre": "G\u00fcnther",
+                "apellidos": "Heinemann "
+            },
+            {
+                "nombre": "Rita",
+                "apellidos": "Ley "
+            },
+            {
+                "nombre": "Andreas",
+                "apellidos": "Rock "
+            }
+        ],
+        "url": "https://doi.org/10.5194/hess-16-409-2012",
+        "pagina_inicio": "409",
+        "pagina_fin": "421",
+        "publicado_en": {
+            "volumen": "16",
+            "numero": null,
+            "mes": null,
+            "revista": {
+                "nombre": "Hydrology and Earth System Sciences"
+            }
+        },
+        "revista": {
+            "nombre": "Hydrology and Earth System Sciences"
+        }
+    },
+    "journals/see/Davies19": {
+        "anyo": "2019",
+        "tipo": "articulo",
+        "titulo": "An Ethics of the System: Talking to Scientists About Research Integrity.",
+        "escrita_por": [
+            {
+                "nombre": "Sarah",
+                "apellidos": "R. Davies "
+            }
+        ],
+        "url": "https://doi.org/10.1007/s11948-018-0064-y",
+        "pagina_inicio": "1235",
+        "pagina_fin": "1253",
+        "publicado_en": {
+            "volumen": "25",
+            "numero": "4",
+            "mes": null,
+            "revista": {
+                "nombre": "Sci. Eng. Ethics"
+            }
+        },
+        "revista": {
+            "nombre": "Sci. Eng. Ethics"
+        }
+    },
+    "journals/see/Smith12": {
+        "anyo": "2012",
+        "tipo": "articulo",
+        "titulo": "Neuroscience, Ethics and Legal Responsibility: The Problem of the Insanity Defense - Commentary on \"The Ethics of Neuroscience and the Neuroscience of Ethics: A Phenomenological-Existential Approach\".",
+        "escrita_por": [
+            {
+                "nombre": "Steven",
+                "apellidos": "R. Smith "
+            }
+        ],
+        "url": "https://doi.org/10.1007/s11948-012-9390-7",
+        "pagina_inicio": "475",
+        "pagina_fin": "481",
+        "publicado_en": {
+            "volumen": "18",
+            "numero": "3",
+            "mes": null,
+            "revista": {
+                "nombre": "Sci. Eng. Ethics"
+            }
+        },
+        "revista": {
+            "nombre": "Sci. Eng. Ethics"
+        }
+    },
+    "journals/see/NairB20": {
+        "anyo": "2020",
+        "tipo": "articulo",
+        "titulo": "Pragmatism and Care in Engineering Ethics.",
+        "escrita_por": [
+            {
+                "nombre": "Indira",
+                "apellidos": "Nair "
+            },
+            {
+                "nombre": "William",
+                "apellidos": "M. Bulleit "
+            }
+        ],
+        "url": "https://doi.org/10.1007/s11948-018-0080-y",
+        "pagina_inicio": "65",
+        "pagina_fin": "87",
+        "publicado_en": {
+            "volumen": "26",
+            "numero": "1",
+            "mes": null,
+            "revista": {
+                "nombre": "Sci. Eng. Ethics"
+            }
+        },
+        "revista": {
+            "nombre": "Sci. Eng. Ethics"
+        }
+    },
+    "journals/see/Silva18": {
+        "anyo": "2018",
+        "tipo": "articulo",
+        "titulo": "Reflection on the Fazlul Sarkar versus PubPeer (\"John Doe\") Case.",
+        "escrita_por": [
+            {
+                "nombre": "Jaime",
+                "apellidos": "A. Teixeira da Silva "
+            }
+        ],
+        "url": "https://doi.org/10.1007/s11948-016-9863-1",
+        "pagina_inicio": "323",
+        "pagina_fin": "325",
+        "publicado_en": {
+            "volumen": "24",
+            "numero": "1",
+            "mes": null,
+            "revista": {
+                "nombre": "Sci. Eng. Ethics"
+            }
+        },
+        "revista": {
+            "nombre": "Sci. Eng. Ethics"
+        }
+    },
+    "journals/see/Punzi18": {
+        "anyo": "2018",
+        "tipo": "articulo",
+        "titulo": "A Social Responsibility Guide for Engineering Students and Professionals of all Faith Traditions: An Overview.",
+        "escrita_por": [
+            {
+                "nombre": "Vito",
+                "apellidos": "L. Punzi "
+            }
+        ],
+        "url": "https://doi.org/10.1007/s11948-017-9948-5",
+        "pagina_inicio": "1253",
+        "pagina_fin": "1277",
+        "publicado_en": {
+            "volumen": "24",
+            "numero": "4",
+            "mes": null,
+            "revista": {
+                "nombre": "Sci. Eng. Ethics"
+            }
+        },
+        "revista": {
+            "nombre": "Sci. Eng. Ethics"
+        }
+    },
+    "journals/see/Koepsell10": {
+        "anyo": "2010",
+        "tipo": "articulo",
+        "titulo": "On Genies and Bottles: Scientists' Moral Responsibility and Dangerous Technology R&D.",
+        "escrita_por": [
+            {
+                "nombre": "David",
+                "apellidos": "Koepsell "
+            }
+        ],
+        "url": "https://doi.org/10.1007/s11948-009-9158-x",
+        "pagina_inicio": "119",
+        "pagina_fin": "133",
+        "publicado_en": {
+            "volumen": "16",
+            "numero": "1",
+            "mes": null,
+            "revista": {
+                "nombre": "Sci. Eng. Ethics"
+            }
+        },
+        "revista": {
+            "nombre": "Sci. Eng. Ethics"
+        }
+    }
+}

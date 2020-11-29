@@ -1,6 +1,6 @@
 class Ejemplar(object):
-    def __init__(self, id, volumen, numero, mes, revista):
-        self._id = id
+    def __init__(self, id_ejemplar, volumen, numero, mes, revista):
+        self._id = id_ejemplar
         self._volumen = volumen
         self._numero = numero
         self._mes = mes
