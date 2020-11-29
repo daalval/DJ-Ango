@@ -26,7 +26,7 @@ def xml_parser(xml_file, json_file, year_st, year_end):
         new_dict = {}
         # ano
         if int(article_dict[ANO])>=year_st and int(article_dict[ANO])<=year_end:
-            new_dict['anyo'] = article_dict[ANO]
+            new_dict['anyo'] = str(article_dict[ANO])
             # key
             key = article_dict[KEY]
             new_dict['tipo'] = "articulo"
@@ -69,9 +69,15 @@ def xml_parser(xml_file, json_file, year_st, year_end):
                     escrita_por.append({'nombre': nombre, 'apellidos': apellidos})
             
             new_dict['escrita_por'] = escrita_por
+
+
             # url
             if URL in list(article_dict.keys()):
-                new_dict['url'] = article_dict[URL]
+                if type(url):
+
+                if type(url):
+
+                if type(url):
             else:
                 new_dict['url'] = None
 
@@ -93,7 +99,7 @@ def xml_parser(xml_file, json_file, year_st, year_end):
                 # publicado_en.volumen
                 publicado_en['volumen'] = article_dict[VOLUMEN]
             else:
-                publicado_en['numero'] = None
+                publicado_en['volumen'] = None
             if (NUMBER) in list(article_dict.keys()):
                 # publicado_en.numero
                 publicado_en['numero'] = article_dict[NUMBER]
@@ -131,7 +137,7 @@ def main():
     """
     Main IEI parser
     """
-    xml_parser("../../static/dblp-pruebas.xml", "../../static/dblp.json", 2005, 2020)
+    xml_parser("static/dblp-pruebas.xml", "static/dblp.json", 2005, 2020)
 
 
 if __name__ == "__main__":

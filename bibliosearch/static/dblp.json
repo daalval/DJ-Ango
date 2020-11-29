@@ -52,6 +52,7 @@
         "pagina_inicio": null,
         "pagina_fin": null,
         "publicado_en": {
+            "volumen": null,
             "numero": null,
             "mes": null,
             "revista": {
@@ -115,6 +116,7 @@
         "pagina_inicio": null,
         "pagina_fin": null,
         "publicado_en": {
+            "volumen": null,
             "numero": null,
             "mes": null,
             "revista": {
@@ -227,7 +229,7 @@
                 "apellidos": "Gutjahr "
             },
             {
-                "nombre": "G\u00fcnther",
+                "nombre": "G\u00c3\u00bcnther",
                 "apellidos": "Heinemann "
             },
             {
