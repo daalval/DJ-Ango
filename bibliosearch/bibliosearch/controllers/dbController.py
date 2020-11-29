@@ -107,7 +107,7 @@ def insert_persona(conn, persona):
     """
     Inserts a com_con in "bbdd_person" table
     """
-    sql = '''INSERT INTO bbdd_persona(
+    sql = '''INSERT OR IGNORE INTO bbdd_persona(
             id_persona,nombre,apellidos) VALUES
             (?,?,?)'''
     values = [None,persona.get_nombre(),persona.get_apellidos()]

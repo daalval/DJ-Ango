@@ -42,6 +42,9 @@ class Persona(models.Model):
     nombre = models.CharField(null = True, max_length = 45)
     apellidos = models.CharField(null = True, max_length = 45)
 
+    class Meta:
+        unique_together = (("nombre", "apellidos"))
+
 class PersonaPublicacion(models.Model):
-    persona = models.OneToOneField(Persona, on_delete = models.CASCADE, null = False)
-    publicacion = models.OneToOneField(Publicacion, on_delete = models.CASCADE, null = False)
+    persona = models.ForeignKey(Persona, on_delete = models.CASCADE, null = False)
+    publicacion = models.ForeignKey(Publicacion, on_delete = models.CASCADE, null = False)
