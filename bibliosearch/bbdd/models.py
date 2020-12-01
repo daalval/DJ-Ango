@@ -2,16 +2,16 @@ from django.db import models
 
 # Create your models here.
 
-class Revista(models.Model):
-    id_revista = models.IntegerField(primary_key = True, null = False)
-    nombre = models.CharField(null = True, max_length = 45)
-
 class Ejemplar(models.Model):
     id_ejemplar = models.IntegerField(primary_key = True, null = False)
     volumen = models.IntegerField(null = True)
     numero = models.IntegerField(null = True)
     mes = models.IntegerField(null = True)
-    revista = models.ForeignKey(Revista, on_delete = models.CASCADE)
+
+class Revista(models.Model):
+    id_revista = models.IntegerField(primary_key = True, null = False)
+    nombre = models.CharField(null = True, max_length = 45)
+    ejemplar = models.ForeignKey(Ejemplar, on_delete = models.CASCADE, null = False)
 
 class Publicacion(models.Model):
     id_publicacion = models.IntegerField(primary_key = True, null = False, unique=True)

@@ -39,23 +39,23 @@ def insert_ejemplar(conn, ejemplar):
     """
     Inserts an ejemplar in "bbdd_ejemplar" table
     """
-    sql_ejemplar = '''INSERT INTO bbdd_ejemplar(id_ejemplar, volumen, numero, mes, revista_id)
-                    VALUES(?,?,?,?,?)'''
-    id_revista = insert_revista(conn, ejemplar.get_revista())
+    sql_ejemplar = '''INSERT INTO bbdd_ejemplar(id_ejemplar, volumen, numero, mes)
+                    VALUES(?,?,?,?)'''
     cur = conn.cursor()
-    values = [None, ejemplar.get_volumen(), ejemplar.get_numero(), ejemplar.get_mes(), id_revista]
+    values = [None, ejemplar.get_volumen(), ejemplar.get_numero(), ejemplar.get_mes()]
     cur.execute(sql_ejemplar, values)
     conn.commit()
+    insert_revista(conn, ejemplar.get_revista(), cur.lastrowid)
     return cur.lastrowid
 
-def insert_revista(conn, revista):
+def insert_revista(conn, revista, id_ejemplar):
     """
     Inserts a revista in "bbdd_revista" table
     """
-    sql_revista = '''INSERT INTO bbdd_revista(id_revista, nombre)
-                    VALUES(?,?)'''
+    sql_revista = '''INSERT INTO bbdd_revista(id_revista, nombre, ejemplar_id)
+                    VALUES(?,?,?)'''
     cur = conn.cursor()
-    values = [None, revista.get_nombre()]
+    values = [None, revista.get_nombre(), id_ejemplar]
     cur.execute(sql_revista, values)
     conn.commit()
     return cur.lastrowid
@@ -123,7 +123,7 @@ def insert_persona_publicacion(conn, persona_id,publicacion_id):
     sql = '''INSERT INTO bbdd_personapublicacion(
             id,publicacion_id,persona_id) VALUES
             (?,?,?)'''
-    values = [None,persona_id,publicacion_id]
+    values = [None,publicacion_id,persona_id]
     cur = conn.cursor()
     cur.execute(sql, values)
     conn.commit()

@@ -11,7 +11,7 @@ def query(url, file, our_content_types, our_start_year, our_end_year):
             content_type = type,
             start_year = our_start_year,
             end_year = our_end_year,
-            max_records = '200',
+            max_records = '10',
         )
         data = requests.get(url, verify=False, params=params).json()
 
@@ -103,8 +103,10 @@ def query(url, file, our_content_types, our_start_year, our_end_year):
                 personas = []
 
                 for author in journal['authors']['authors']:
-
-                    full_name = author['full_name'].split()
+                    if ('full_name' in author.keys()) :
+                        full_name = author['full_name'].split()
+                    else:
+                        full_name = ['']
 
                     name = full_name[0]
                     last_name = ''
@@ -145,7 +147,7 @@ def query(url, file, our_content_types, our_start_year, our_end_year):
 
 def get_result():
 
-    result = query("https://ieeexploreapi.ieee.org/api/v1/search/articles?parameter&apikey=efv84mzqq6ydx4dbd59jhdcn", 'static/ieeeXplore.json', ['Books', 'Conferences', 'Journals'], '2010', '2015')
+    result = query("https://ieeexploreapi.ieee.org/api/v1/search/articles?parameter&apikey=efv84mzqq6ydx4dbd59jhdcn", 'static/ieeeXplore.json', ['Books', 'Conferences', 'Journals'], '2015', '2020')
 
     with open('static/ieeeXplore.json', 'w') as json_file:
         json.dump(result, json_file)
