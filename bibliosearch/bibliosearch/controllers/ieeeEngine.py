@@ -11,7 +11,7 @@ def query(url, file, our_content_types, our_start_year, our_end_year):
             content_type = type,
             start_year = our_start_year,
             end_year = our_end_year,
-            max_records = '10',
+            max_records = '20',
         )
         data = requests.get(url, verify=False, params=params).json()
 
