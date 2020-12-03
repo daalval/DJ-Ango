@@ -294,7 +294,7 @@
             "numero": 8138931,
             "mes": null,
             "revista": {
-                "nombre": "OUP"
+                "nombre": "ITNOW"
             }
         }
     },
@@ -320,7 +320,7 @@
             "numero": 8132773,
             "mes": null,
             "revista": {
-                "nombre": "OUP"
+                "nombre": "IMA Journal of Applied Mathematics"
             }
         }
     },
@@ -354,7 +354,7 @@
             "numero": 8157667,
             "mes": null,
             "revista": {
-                "nombre": "OUP"
+                "nombre": "Law, Probability and Risk"
             }
         }
     },
@@ -371,29 +371,7 @@
             "numero": 9240188,
             "mes": null,
             "revista": {
-                "nombre": "IET"
-            }
-        }
-    },
-    "9246897": {
-        "tipo": "articulo",
-        "titulo": "Thinking outside the box: How does the brain work? It is the most complex computer in the known universe yet its secrets have remained elusive and fascinating. Now techniques are being developed that are helping us to unravel its mysteries",
-        "anyo": 2020,
-        "url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9246897",
-        "escrita_por": [
-            {
-                "nombre": "Alison",
-                "apellidos": "Ebbage"
-            }
-        ],
-        "pagina_inicio": "68",
-        "pagina_fin": "71",
-        "publicado_en": {
-            "volumen": "15",
-            "numero": 9246871,
-            "mes": null,
-            "revista": {
-                "nombre": "IET"
+                "nombre": "IET Nanobiotechnology"
             }
         }
     },
@@ -427,7 +405,7 @@
             "numero": 8130162,
             "mes": null,
             "revista": {
-                "nombre": "OUP"
+                "nombre": "The Computer Journal"
             }
         }
     },
@@ -444,7 +422,7 @@
             "numero": 8883412,
             "mes": null,
             "revista": {
-                "nombre": "OUP"
+                "nombre": "Astronomy & Geophysics"
             }
         }
     },
@@ -470,7 +448,7 @@
             "numero": 8211377,
             "mes": null,
             "revista": {
-                "nombre": "OUP"
+                "nombre": "International Mathematics Research Notices"
             }
         }
     },
@@ -492,7 +470,7 @@
             "numero": 8139099,
             "mes": null,
             "revista": {
-                "nombre": "OUP"
+                "nombre": "ITNOW"
             }
         }
     },
@@ -518,7 +496,29 @@
             "numero": 8132773,
             "mes": null,
             "revista": {
-                "nombre": "OUP"
+                "nombre": "IMA Journal of Applied Mathematics"
+            }
+        }
+    },
+    "9014474": {
+        "tipo": "articulo",
+        "titulo": "X-ray UK",
+        "anyo": 2020,
+        "url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9014474",
+        "escrita_por": [
+            {
+                "nombre": "Ken",
+                "apellidos": "Pounds"
+            }
+        ],
+        "pagina_inicio": "1.32",
+        "pagina_fin": "1.37",
+        "publicado_en": {
+            "volumen": "61",
+            "numero": 9014464,
+            "mes": null,
+            "revista": {
+                "nombre": "Astronomy & Geophysics"
             }
         }
     }

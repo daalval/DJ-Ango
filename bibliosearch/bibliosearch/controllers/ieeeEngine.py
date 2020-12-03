@@ -136,7 +136,7 @@ def query(url, file, our_content_types, our_start_year, our_end_year):
                         'numero': journal['is_number'],
                         'mes': None,
                         'revista': {
-                            'nombre': journal['publisher']
+                            'nombre': journal['publication_title']
                         }
                     }
                 }
