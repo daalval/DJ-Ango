@@ -1,74 +1,76 @@
 {
-    "dumont1006practical": {
-        "anyo": "1006",
+    "belon1555histoire": {
+        "anyo": "1555",
         "escrita_por": [
             {
-                "nombre": "LJ",
-                "apellidos":"Dumont"
-                
+                "nombre": "Pierre",
+                "apellidos": "Belon"
             },
             {
-                "nombre": "QH",
-                "apellidos": "Dzik"
+                "nombre": "Gilles",
+                "apellidos": "Corrozet"
             },
             {
-                "nombre": "P",
-                "apellidos": "Rebulla"
-            },
-            {
-                "nombre": "H",
-                "apellidos": "Brandwein"
+                "nombre": "Beno{\\^\\i}t",
+                "apellidos": "Pr{\\'e}vost"
             }
         ],
-        "titulo": "Practical guidelines for process control and validation of leukoreduced components: Report of the BEST Working Party of the ISBT",
-        "tipo": "articulo",
-        "pagina_inicio": "76",
-        "pagina_fin": "95",
-        "publicado_en": {
-            "volumen": "1006",
-            "numero": "36",
-            "mes": null,
-            "revista": {
-                "nombre": "Transfu-sion"
-            }
-        },
-        "url": "http://hermes-ir.lib.hit-u.ac.jp/da/handle/123456789/5715"
+        "titulo": "L'histoire de la nature des oyseaux, avec leurs descriptions, \\& naifs portraicts retirez du naturel",
+        "tipo": "libro",
+        "paginas": null,
+        "editorial": "On les vend en la grand salle du palais, en la boutique de Gilles Corrozet~\u2026"
     },
-    "sabuncuoglu1465cerahiyet": {
-        "anyo": "1465",
+    "luther1524councilmen": {
+        "anyo": "1524",
         "escrita_por": [
             {
-                "nombre": "S",
-                "apellidos": "Sabuncuoglu"
+                "nombre": "Martin",
+                "apellidos": "Luther"
             }
         ],
-        "titulo": "Cerahiyet al-Haniye",
+        "titulo": "To the Councilmen of All Cities in Germany That They Establish and Maintain Christian Schools, 1524",
         "tipo": "articulo",
         "pagina_inicio": null,
         "pagina_fin": null,
         "publicado_en": {
-            "volumen": null,
-            "numero": "693",
+            "volumen": "11",
+            "numero": null,
             "mes": null,
             "revista": {
-                "nombre": "Amasya. Ms"
+                "nombre": "The Christian in Society"
             }
-        },
-        "url": "http://hermes-ir.lib.hit-u.ac.jp/da/handle/123456789/5715"
+        }
     },
-    "crescenzi1471ruralia": {
-        "anyo": "1471",
+    "vesalius1543humani": {
+        "anyo": "1543",
         "escrita_por": [
             {
-                "nombre": "Pietro",
-                "apellidos": "de' Crescenzi"
-            },
-            {
-                "nombre": "",
-                "apellidos": "others"
+                "nombre": "A",
+                "apellidos": "Vesalius"
             }
         ],
-        "titulo": "Ruralia commoda.",
+        "titulo": "De humani corporis",
+        "tipo": "articulo",
+        "pagina_inicio": null,
+        "pagina_fin": null,
+        "publicado_en": {
+            "volumen": "1547",
+            "numero": null,
+            "mes": null,
+            "revista": {
+                "nombre": "Basel: Fabrica"
+            }
+        }
+    },
+    "gessner1585historia": {
+        "anyo": "1585",
+        "escrita_por": [
+            {
+                "nombre": "Conrad",
+                "apellidos": "GESSNER"
+            }
+        ],
+        "titulo": "Historia animalium, liber III",
         "tipo": "articulo",
         "pagina_inicio": null,
         "pagina_fin": null,
@@ -77,9 +79,63 @@
             "numero": null,
             "mes": null,
             "revista": {
-                "nombre": "[Augsburg]: Johann Schussler, about 16 Feb. 1471"
+                "nombre": "Neudruck. Zurich"
             }
-        },
-        "url": "http://hermes-ir.lib.hit-u.ac.jp/da/handle/123456789/5715"
+        }
+    },
+    "olaus1555historia": {
+        "anyo": "1555",
+        "escrita_por": [
+            {
+                "nombre": "Olaus",
+                "apellidos": "(Magnus)"
+            }
+        ],
+        "titulo": "Historia de gentibvs Septentrionalibvs",
+        "tipo": "libro",
+        "paginas": null,
+        "editorial": "Ex officina Christophori Plantini"
+    },
+    "aeginitis1528seven": {
+        "anyo": "1528",
+        "escrita_por": [
+            {
+                "nombre": "P",
+                "apellidos": "Aeginitis"
+            }
+        ],
+        "titulo": "Seven books",
+        "tipo": "articulo",
+        "pagina_inicio": "33",
+        "pagina_fin": "38",
+        "publicado_en": {
+            "volumen": "1528",
+            "numero": null,
+            "mes": null,
+            "revista": {
+                "nombre": "Venice: Aldus"
+            }
+        }
+    },
+    "de1588voyage": {
+        "anyo": "1588",
+        "escrita_por": [
+            {
+                "nombre": "Cesare",
+                "apellidos": "Federici"
+            }
+        ],
+        "titulo": "The Voyage and Travaile of M. Caesar Frederick, Merchant of Venice, into the East India, the Indyes, and beyond the Indyes",
+        "tipo": "articulo",
+        "pagina_inicio": "1588",
+        "pagina_fin": null,
+        "publicado_en": {
+            "volumen": "1588",
+            "numero": null,
+            "mes": null,
+            "revista": {
+                "nombre": "TransThomas Hickock. London: Richard Jones and Edward White"
+            }
+        }
     }
 }

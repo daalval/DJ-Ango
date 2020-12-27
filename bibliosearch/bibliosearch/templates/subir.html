@@ -6,23 +6,24 @@
 
 <div class="card mx-auto d-block p-5 shadow-sm" style="width: 40rem;">
     <div class="card-body">
-      <form class="row">
+      <form class="row" method="post">
+      {% csrf_token %}
         <div class="col">
           <label class="font-weight-bold text-muted">Tipo de publicación</label>
           <div class="mt-2 ml-5">
             <div class="input-group">
-              <input type="checkbox" name="checkbox" id="article" value="value">
-              <label for="article" class="ml-3">Artículo</label>
+              <input type="checkbox" name="articulo" id="articulo" value="value">
+              <label class="ml-3">Artículo</label>
             </div>
 
             <div class="input-group">
-              <input type="checkbox" name="checkbox" id="book" value="value">
-              <label for="book" class="ml-3">Libro</label>
+              <input type="checkbox" name="libro" id="libro" value="value">
+              <label class="ml-3">Libro</label>
             </div>
 
             <div class="input-group">
-              <input type="checkbox" name="checkbox" id="congress" value="value">
-              <label for="congress" class="ml-3">Comunicación en congreso</label>
+              <input type="checkbox" name="con_con" id="con_con" value="value">
+              <label class="ml-3">Comunicación en congreso</label>
             </div>
           </div>
 
@@ -34,7 +35,7 @@
                     class="material-icons md-48 mr-2">today</i>
                 </div>
               </span>
-              <input type="text" class="form-control py-2 border-left-0 border" placeholder="Desde"
+              <input type="text" name="desde" id="desde" maxlength="4" class="form-control py-2 border-left-0 border" placeholder="Desde""
                 aria-label="Username" aria-describedby="basic-addon1">
             </div>
 
@@ -44,13 +45,13 @@
                     class="material-icons md-48 mr-2">today</i>
                 </div>
               </span>
-              <input type="text" class="form-control py-2 border-left-0 border" placeholder="Hasta"
+              <input type="text" name="hasta" id="hasta" class="form-control py-2 border-left-0 border" placeholder="Hasta"
                 aria-label="Username" aria-describedby="basic-addon1">
             </div>
           </div>
           <div class="d-flex flex-row justify-content-around mt-5">
             <button type="reset" class="btn btn-danger"><i class="material-icons d-flex">clear</i></button>
-            <a class="btn btn-success w-50" href="/resultados_subida/1/2/3/4/">Subir</a>
+            <input type="submit" class="btn btn-success w-50" value="Subir"></button>
         </div>
         </div>
 
