@@ -141,39 +141,53 @@ def sql_connection():
 
         print(Error)
 
-def insert_in_database(con, path):
+def insert_in_database(con, paths):
 
-    with open (path,'r') as f:
-        jsondata = json.loads(f.read())
+    for path in paths:
+        with open (path,'r') as f:
+            jsondata = json.loads(f.read())
 
-    for article_id in jsondata:
-        article = jsondata[article_id]
-        personas = []
-        for escrita_por in article['escrita_por']:
-            personas.append(Persona(None,escrita_por['nombre'],escrita_por['apellidos']))
+        for article_id in jsondata:
+            article = jsondata[article_id]
+            personas = []
+            for escrita_por in article['escrita_por']:
+                personas.append(Persona(None,escrita_por['nombre'],escrita_por['apellidos']))
 
-        if article['tipo'] == 'libro':
-            libro = Libro(article['editorial'], article_id, article['titulo'], article['anyo'], article['url'], personas)
-            insert_libro(con, libro)
-        if article['tipo'] == 'com_con':
-            com_con = Com_con(article['congreso'], article['edicion'], article['lugar'], article['pagina_inicio'], article['pagina_fin'], article_id, article['titulo'], article['anyo'], article['url'], personas)
-            insert_comCon(con, com_con)
-        if article['tipo'] == 'articulo':
-            publicado_en = article['publicado_en'] 
-            articulo = Articulo(article['pagina_inicio'], article['pagina_fin'], article_id, article['titulo'], article['anyo'], article['url'], personas, Ejemplar(None, publicado_en['volumen'], publicado_en['numero'], publicado_en['mes'], Revista(None, publicado_en['revista']['nombre'])))
-            insert_articulo(con, articulo)
+            if article['tipo'] == 'libro':
+                libro = Libro(article['editorial'], article_id, article['titulo'], article['anyo'], article['url'], personas)
+                insert_libro(con, libro)
+            if article['tipo'] == 'com_con':
+                com_con = Com_con(article['congreso'], article['edicion'], article['lugar'], article['pagina_inicio'], article['pagina_fin'], article_id, article['titulo'], article['anyo'], article['url'], personas)
+                insert_comCon(con, com_con)
+            if article['tipo'] == 'articulo':
+                publicado_en = article['publicado_en'] 
+                articulo = Articulo(article['pagina_inicio'], article['pagina_fin'], article_id, article['titulo'], article['anyo'], article['url'], personas, Ejemplar(None, publicado_en['volumen'], publicado_en['numero'], publicado_en['mes'], Revista(None, publicado_en['revista']['nombre'])))
+                insert_articulo(con, articulo)
 
-    con.commit()
+        con.commit()
 
 def select_data(fecha_desde, fecha_hasta, tipos):
     con = sql_connection()
     cursor = con.cursor()
 
+    for tipo in tipos:
+        sql = '''SELECT * from ''' + tipo + ''' WHERE anyo >= ''' + fecha_desde + ''' AND 
+        anyo <= ''' + fecha_hasta
+        
+        #values = [tipo, fecha_desde, fecha_hasta]
+        cursor.execute(sql)
+        rows = cursor.fetchall()
+        con.commit()
+        for row in rows:
+            print(row)
+        
+        
 
 def main():
-    path = 'static/ieeeXplore.json'
-    con = sql_connection() 
-    insert_in_database(con, path)
+    #paths = ['static/ieeeXplore.json', 'static/google_schoolar.json', 'static/dblp.json']
+    #con = sql_connection() 
+    #insert_in_database(con, paths)
+    select_data('2000', '2015', ['bbdd_publicacion'])
 
 if __name__ == '__main__':
     main()
