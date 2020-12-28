@@ -163,7 +163,12 @@ def insert_in_database(con, path):
             articulo = Articulo(article['pagina_inicio'], article['pagina_fin'], article_id, article['titulo'], article['anyo'], article['url'], personas, Ejemplar(None, publicado_en['volumen'], publicado_en['numero'], publicado_en['mes'], Revista(None, publicado_en['revista']['nombre'])))
             insert_articulo(con, articulo)
 
-    con.commit()  
+    con.commit()
+
+def select_data(fecha_desde, fecha_hasta, tipos):
+    con = sql_connection()
+    cursor = con.cursor()
+
 
 def main():
     path = 'static/ieeeXplore.json'
