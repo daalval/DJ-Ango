@@ -166,20 +166,31 @@ def insert_in_database(con, paths):
 
         con.commit()
 
-def select_data(fecha_desde, fecha_hasta, tipos):
+def select_data(titulo, autor, fecha_desde, fecha_hasta, tipos):
     con = sql_connection()
     cursor = con.cursor()
 
-    for tipo in tipos:
-        sql = '''SELECT * from ''' + tipo + ''' WHERE anyo >= ''' + fecha_desde + ''' AND 
-        anyo <= ''' + fecha_hasta
-        
-        #values = [tipo, fecha_desde, fecha_hasta]
-        cursor.execute(sql)
-        rows = cursor.fetchall()
-        con.commit()
-        for row in rows:
-            print(row)
+    articulos = []
+    conferencias = []
+    libros = []
+
+    if titulo == "" and autor == "":
+        for tipo in tipos:
+            if tipo == 'bbdd_articulo':
+
+                #sql = '''SELECT * from bbdd_articulo AS a WHERE publicacion_id = (SELECT id_publicacion from bbdd_publicacion WHERE anyo >= ''' + fecha_desde + ''' AND
+                 #anyo <= ''' + fecha_hasta + ''')'''
+
+                sql = '''SELECT * from bbdd_articulo AS a INNER JOIN bbdd_publicacion AS p ON a.publicacion_id = p.id_publicacion'''
+
+                cursor.execute(sql)
+
+                rows = cursor.fetchall()
+
+                for row in rows:
+                    print(row)
+
+                con.commit()
         
         
 
@@ -187,7 +198,7 @@ def main():
     #paths = ['static/ieeeXplore.json', 'static/google_schoolar.json', 'static/dblp.json']
     #con = sql_connection() 
     #insert_in_database(con, paths)
-    select_data('2000', '2015', ['bbdd_publicacion'])
+    select_data("", "", '2000', '2020', ['bbdd_articulo', 'bbdd_com_con', 'bbdd_libro'])
 
 if __name__ == '__main__':
     main()
