@@ -120,10 +120,10 @@ def insert_persona_publicacion(conn, persona_id,publicacion_id):
     """
     Inserts a com_con in "bbdd_personapublicacion" table
     """
-    sql = '''INSERT INTO bbdd_personapublicacion(
-            id,publicacion_id,persona_id) VALUES
+    sql = '''INSERT OR IGNORE INTO bbdd_personapublicacion(
+            id_personapublicacion, persona_id,publicacion_id) VALUES
             (?,?,?)'''
-    values = [None,persona_id,publicacion_id]
+    values = [None, persona_id,publicacion_id]
     cur = conn.cursor()
     cur.execute(sql, values)
     conn.commit()
@@ -166,34 +166,89 @@ def insert_in_database(con, paths):
 
         con.commit()
 
-def select_data(titulo, autor, fecha_desde, fecha_hasta, tipos):
+def select_data(mi_titulo, autor, fecha_desde, fecha_hasta, tipos):
     con = sql_connection()
     cursor = con.cursor()
 
-    articulos = []
-    conferencias = []
-    libros = []
+    for tipo in tipos:
+        if tipo == 'bbdd_articulo':
 
-    if titulo == "" and autor == "":
-        for tipo in tipos:
-            if tipo == 'bbdd_articulo':
+            sql = '''SELECT persona.nombre, persona.apellidos, titulo, r.nombre, volumen, numero, mes, anyo, pagina_inicio, pagina_fin, url from bbdd_articulo AS a 
+            INNER JOIN bbdd_publicacion AS p 
+            ON a.publicacion_id = p.id_publicacion
+            INNER JOIN bbdd_personapublicacion AS pp
+            ON p.id_publicacion = pp.publicacion_id
+            INNER JOIN bbdd_persona AS persona
+            ON pp.persona_id = persona.id_persona
+            INNER JOIN bbdd_ejemplar AS e
+            ON a.ejemplar_id = e.id_ejemplar
+            INNER JOIN bbdd_revista AS r
+            ON e.revista_id = r.id_revista
+            WHERE anyo >= ''' + fecha_desde + ''' AND anyo <= ''' + fecha_hasta + ''' AND
+            titulo LIKE '% ''' + mi_titulo + ''' %' OR
+            titulo LIKE ''' + mi_titulo + ''' %' OR
+            titulo LIKE '% ''' + mi_titulo + ''' OR
+            titulo LIKE ''' + mi_titulo
 
-                #sql = '''SELECT * from bbdd_articulo AS a WHERE publicacion_id = (SELECT id_publicacion from bbdd_publicacion WHERE anyo >= ''' + fecha_desde + ''' AND
-                 #anyo <= ''' + fecha_hasta + ''')'''
+            print(sql)
 
-                sql = '''SELECT * from bbdd_articulo AS a 
-                INNER JOIN bbdd_publicacion AS p ON a.publicacion_id = p.id_publicacion
-                INNER JOIN bbdd_
-                '''
+            cursor.execute(sql)
 
-                cursor.execute(sql)
+            articulos = cursor.fetchall()
 
-                rows = cursor.fetchall()
+            for articulo in articulos:
+                print(articulo)
+            
+            con.commit()
+        
+        if tipo == 'bbdd_com_con':
 
-                for row in rows:
-                    print(row)
+            sql = '''SELECT persona.nombre, persona.apellidos, titulo, edicion, congreso, lugar, anyo, pagina_inicio, pagina_fin, url  from bbdd_com_con AS c 
+            INNER JOIN bbdd_publicacion AS p 
+            ON c.publicacion_id = p.id_publicacion
+            INNER JOIN bbdd_personapublicacion AS pp
+            ON p.id_publicacion = pp.publicacion_id
+            INNER JOIN bbdd_persona AS persona
+            ON pp.persona_id = persona.id_persona
+            WHERE anyo >= ''' + fecha_desde + ''' AND anyo <= ''' + fecha_hasta + ''' AND
+            titulo LIKE '% ''' + mi_titulo + ''' %' OR
+            titulo LIKE ''' + mi_titulo + ''' %' OR
+            titulo LIKE '% ''' + mi_titulo + ''' OR
+            titulo LIKE ''' + mi_titulo
 
-                con.commit()
+            cursor.execute(sql)
+
+            articulos = cursor.fetchall()
+
+            for articulo in articulos:
+                print(articulo)
+            
+            con.commit()
+
+        if tipo == 'bbdd_libro':
+
+            sql = '''SELECT persona.nombre, persona.apellidos, titulo, editorial, anyo, url  from bbdd_libro AS c 
+            INNER JOIN bbdd_publicacion AS p 
+            ON c.publicacion_id = p.id_publicacion
+            INNER JOIN bbdd_personapublicacion AS pp
+            ON p.id_publicacion = pp.publicacion_id
+            INNER JOIN bbdd_persona AS persona
+            ON pp.persona_id = persona.id_persona
+            WHERE anyo >= ''' + fecha_desde + ''' AND anyo <= ''' + fecha_hasta + ''' AND
+            titulo LIKE '% ''' + mi_titulo + ''' %' OR
+            titulo LIKE ''' + mi_titulo + ''' %' OR
+            titulo LIKE '% ''' + mi_titulo + ''' OR
+            titulo LIKE ''' + mi_titulo
+
+            cursor.execute(sql)
+
+            articulos = cursor.fetchall()
+
+            for articulo in articulos:
+                print(articulo)
+            
+            con.commit()
+            
         
         
 
@@ -201,7 +256,7 @@ def main():
     #paths = ['static/ieeeXplore.json', 'static/google_schoolar.json', 'static/dblp.json']
     #con = sql_connection() 
     #insert_in_database(con, paths)
-    select_data("", "", '2000', '2020', ['bbdd_articulo', 'bbdd_com_con', 'bbdd_libro'])
+    select_data('ch', '', '2000', '2020', ['bbdd_articulo', 'bbdd_com_con', 'bbdd_libro'])
 
 if __name__ == '__main__':
     main()

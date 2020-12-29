@@ -46,5 +46,9 @@ class Persona(models.Model):
         unique_together = (("nombre", "apellidos"))
 
 class PersonaPublicacion(models.Model):
+    id_personapublicacion = models.IntegerField(primary_key= True, null = False)
     persona = models.ForeignKey(Persona, on_delete = models.CASCADE, null = False)
     publicacion = models.ForeignKey(Publicacion, on_delete = models.CASCADE, null = False)
+
+    class Meta:
+        unique_together = (("persona", "publicacion"))
