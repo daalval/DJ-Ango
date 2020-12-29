@@ -181,7 +181,10 @@ def select_data(titulo, autor, fecha_desde, fecha_hasta, tipos):
                 #sql = '''SELECT * from bbdd_articulo AS a WHERE publicacion_id = (SELECT id_publicacion from bbdd_publicacion WHERE anyo >= ''' + fecha_desde + ''' AND
                  #anyo <= ''' + fecha_hasta + ''')'''
 
-                sql = '''SELECT * from bbdd_articulo AS a INNER JOIN bbdd_publicacion AS p ON a.publicacion_id = p.id_publicacion'''
+                sql = '''SELECT * from bbdd_articulo AS a 
+                INNER JOIN bbdd_publicacion AS p ON a.publicacion_id = p.id_publicacion
+                INNER JOIN bbdd_
+                '''
 
                 cursor.execute(sql)
 
