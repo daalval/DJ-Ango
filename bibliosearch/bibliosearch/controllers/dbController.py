@@ -263,9 +263,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
-# + ''' AND
-#            titulo LIKE '% ''' + mi_titulo + ''' %' OR
-#            titulo LIKE ''' + mi_titulo + ''' %' OR
-#            titulo LIKE '% ''' + mi_titulo + ''' OR
-#            titulo LIKE ''' + mi_titulo
