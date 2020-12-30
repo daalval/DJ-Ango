@@ -259,7 +259,7 @@ def main():
     #insert_in_database(con, paths)
 
     #-----------------------------PRUEBAS CONSULTAS A LA BASE DE DATOS--------------------------------#
-    select_data('', 'ang', '2018', '2020', ['bbdd_articulo', 'bbdd_com_con', 'bbdd_libro'])
+    select_data('performance', 'ang', '2011', '2020', ['bbdd_articulo', 'bbdd_com_con', 'bbdd_libro'])
 
 if __name__ == '__main__':
     main()
