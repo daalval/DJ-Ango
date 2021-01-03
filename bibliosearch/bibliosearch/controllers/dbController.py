@@ -191,14 +191,14 @@ def select_data(titulo, autor, fecha_desde, fecha_hasta, tipos):
             persona.apellidos LIKE '%''' + autor + '''%')
             '''
 
-            print(sql)
+            #print(sql)
 
             cursor.execute(sql)
 
             articulos = cursor.fetchall()
 
             for articulo in articulos:
-                print(articulo)
+                #print(articulo)
                 data.append(articulo)
             
             con.commit()
@@ -224,7 +224,7 @@ def select_data(titulo, autor, fecha_desde, fecha_hasta, tipos):
 
 
             for conferencia in conferencias:
-                print(conferencia)
+                #print(conferencia)
                 data.append(conferencia)
             
             con.commit()
@@ -249,7 +249,7 @@ def select_data(titulo, autor, fecha_desde, fecha_hasta, tipos):
             libros = cursor.fetchall()
 
             for libro in libros:
-                print(libro)
+                #print(libro)
                 data.append(libro)
             
             con.commit()
@@ -266,7 +266,8 @@ def main():
     #insert_in_database(con, paths)
 
     #-----------------------------PRUEBAS CONSULTAS A LA BASE DE DATOS--------------------------------#
-    select_data('performance', 'ang', '2011', '2020', ['bbdd_articulo', 'bbdd_com_con', 'bbdd_libro'])
+    data = select_data('performance', 'ang', '2011', '2020', ['bbdd_articulo', 'bbdd_com_con', 'bbdd_libro'])
+    print(data)
 
 if __name__ == '__main__':
     main()
