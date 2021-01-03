@@ -169,6 +169,7 @@ def insert_in_database(con, paths):
 def select_data(titulo, autor, fecha_desde, fecha_hasta, tipos):
     con = sql_connection()
     cursor = con.cursor()
+    data = []
 
     for tipo in tipos:
         if tipo == 'bbdd_articulo':
@@ -198,6 +199,7 @@ def select_data(titulo, autor, fecha_desde, fecha_hasta, tipos):
 
             for articulo in articulos:
                 print(articulo)
+                data.append(articulo)
             
             con.commit()
         
@@ -220,8 +222,10 @@ def select_data(titulo, autor, fecha_desde, fecha_hasta, tipos):
 
             conferencias = cursor.fetchall()
 
+
             for conferencia in conferencias:
                 print(conferencia)
+                data.append(conferencia)
             
             con.commit()
 
@@ -246,8 +250,11 @@ def select_data(titulo, autor, fecha_desde, fecha_hasta, tipos):
 
             for libro in libros:
                 print(libro)
+                data.append(libro)
             
             con.commit()
+    
+    return data
 
             
         

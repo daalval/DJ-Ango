@@ -6,7 +6,7 @@
 
 <div class="card mx-auto d-block p-5 shadow-sm" style="width: 60rem;">
     <div class="card-body">
-      <form class="row">
+      <form class="row" action="/resultados/" method="GET">
 
         <div class="col">
           <label class="font-weight-bold text-muted">Titulo</label>
@@ -16,7 +16,7 @@
               </div>
             </span>
             <input type="text" class="form-control py-2 border-left-0 border" placeholder="Escribe un titulo"
-              aria-label="Username" aria-describedby="basic-addon1">
+              aria-label="Username" aria-describedby="basic-addon1" name="title">
           </div>
 
           <label class="font-weight-bold text-muted">Autor</label>
@@ -27,10 +27,11 @@
               </div>
             </span>
             <input type="text" class="form-control py-2 border-left-0 border"
-              placeholder="Escribe el nombre de un autor" aria-label="Username" aria-describedby="basic-addon1">
+              placeholder="Escribe el nombre de un autor" aria-label="Username" aria-describedby="basic-addon1"
+              name="author">
           </div>
 
-          <label class="font-weight-bold text-muted">Fecha</label>
+          <label class="font-weight-bold text-muted">Año</label>
           <div class="row">
             <div class="input-group mb-3 col">
               <span class="input-group-prepend">
@@ -39,7 +40,7 @@
                 </div>
               </span>
               <input type="text" class="form-control py-2 border-left-0 border" placeholder="Desde"
-                aria-label="Username" aria-describedby="basic-addon1">
+                aria-label="Username" aria-describedby="basic-addon1" name="ano_ini">
             </div>
 
             <div class="input-group mb-3 col">
@@ -49,7 +50,7 @@
                 </div>
               </span>
               <input type="text" class="form-control py-2 border-left-0 border" placeholder="Hasta"
-                aria-label="Username" aria-describedby="basic-addon1">
+                aria-label="Username" aria-describedby="basic-addon1" name="ano_fin">
             </div>
           </div>
         </div>
@@ -59,25 +60,37 @@
           <label class="font-weight-bold text-muted">Tipo de publicación</label>
           <div class="mt-2 ml-5">
             <div class="input-group">
-              <input type="checkbox" name="checkbox" id="article" value="value">
+              <input type="checkbox" id="article" value="value" name="check_articulo">
               <label for="article" class="ml-3">Artículo</label>
             </div>
 
             <div class="input-group">
-              <input type="checkbox" name="checkbox" id="book" value="value">
+              <input type="checkbox" id="book" value="value" name="check_book">
               <label for="book" class="ml-3">Libro</label>
             </div>
 
             <div class="input-group">
-              <input type="checkbox" name="checkbox" id="congress" value="value">
+              <input type="checkbox" id="congress" value="value" name="check_con">
               <label for="congress" class="ml-3">Comunicación en congreso</label>
             </div>
           </div>
 
           <div class="d-flex flex-row justify-content-around mt-5">
-
-            <button type="reset" class="btn btn-danger"><i class="material-icons d-flex">clear</i></button>
-            <a class="btn btn-success w-50" href="/resultados/1/2/3/4/1/">Buscar</a>
+            <button id="boton_buscar" type="reset" class="btn btn-danger"><i class="material-icons d-flex">clear</i></button>
+            <script type="text/javascript">
+              console.log(document==null + "");
+              document.getElementById("boton_buscar").onclick = function() {
+                var title = document.getElementById("title");
+                var author = document.getElementById("author");
+                var ano_ini = document.getElementById("ano_ini");
+                var ano_fin = document.getElementById("ano_fin");
+                var check_articulo = document.getElementById("check_articulo");
+                var check_book = document.getElementById("check_book");
+                var check_con = document.getElementById("check_con");
+                alert();
+              }
+            </script>
+            <input type="submit" class="btn btn-success w-50" value="Buscar">
           </div>
 
         </div>
