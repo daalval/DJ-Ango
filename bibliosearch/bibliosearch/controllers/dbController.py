@@ -174,21 +174,24 @@ def select_data(titulo, autor, fecha_desde, fecha_hasta, tipos):
     for tipo in tipos:
         if tipo == 'bbdd_articulo':
 
-            sql = '''SELECT persona.nombre, persona.apellidos, titulo, r.nombre, volumen, numero, mes, anyo, pagina_inicio, pagina_fin, url from bbdd_articulo AS a 
-            INNER JOIN bbdd_publicacion AS p 
+            sql = '''SELECT a.publicacion_id,
+            group_concat(persona.nombre || " " || persona.apellidos, ', ') as autores,
+            titulo, r.nombre, volumen, numero, mes, anyo, pagina_inicio, pagina_fin, url from bbdd_articulo AS a 
+            JOIN bbdd_publicacion AS p 
             ON a.publicacion_id = p.id_publicacion
-            INNER JOIN bbdd_personapublicacion AS pp
+            JOIN bbdd_personapublicacion AS pp
             ON p.id_publicacion = pp.publicacion_id
-            INNER JOIN bbdd_persona AS persona
+            JOIN bbdd_persona AS persona
             ON pp.persona_id = persona.id_persona
-            INNER JOIN bbdd_ejemplar AS e
+            JOIN bbdd_ejemplar AS e
             ON a.ejemplar_id = e.id_ejemplar
-            INNER JOIN bbdd_revista AS r
+            JOIN bbdd_revista AS r
             ON e.revista_id = r.id_revista
             WHERE titulo LIKE '%''' + titulo + '''%' AND
             anyo >= ''' + fecha_desde + ''' AND anyo <= ''' + fecha_hasta +''' AND
             (persona.nombre LIKE '%''' + autor + '''%' OR
             persona.apellidos LIKE '%''' + autor + '''%')
+            GROUP BY a.publicacion_id
             '''
 
             #print(sql)
@@ -202,6 +205,7 @@ def select_data(titulo, autor, fecha_desde, fecha_hasta, tipos):
             articulos = cursor.fetchall()
 
             for data_articulo in articulos:
+                print(data_articulo)
                 dictionary = dict(zip(columns, data_articulo))
                 articulo = dict_2_articulo(dictionary)
                 data.append(articulo)
@@ -210,7 +214,9 @@ def select_data(titulo, autor, fecha_desde, fecha_hasta, tipos):
         
         if tipo == 'bbdd_com_con':
 
-            sql = '''SELECT persona.nombre, persona.apellidos, titulo, edicion, congreso, lugar, anyo, pagina_inicio, pagina_fin, url  from bbdd_com_con AS c 
+            sql = '''SELECT c.publicacion_id,
+            group_concat(persona.nombre || " " || persona.apellidos, ', ') as autores,
+            titulo, edicion, congreso, lugar, anyo, pagina_inicio, pagina_fin, url  from bbdd_com_con AS c 
             INNER JOIN bbdd_publicacion AS p 
             ON c.publicacion_id = p.id_publicacion
             INNER JOIN bbdd_personapublicacion AS pp
@@ -221,6 +227,7 @@ def select_data(titulo, autor, fecha_desde, fecha_hasta, tipos):
             anyo >= ''' + fecha_desde + ''' AND anyo <= ''' + fecha_hasta +''' AND
             (persona.nombre LIKE '%''' + autor + '''%' OR
             persona.apellidos LIKE '%''' + autor + '''%')
+            GROUP BY c.publicacion_id
             '''
 
             cursor.execute(sql)
@@ -232,6 +239,7 @@ def select_data(titulo, autor, fecha_desde, fecha_hasta, tipos):
             print(columns)
 
             for data_com_con in conferencias:
+                print(data_com_con)
                 dictionary = dict(zip(columns, data_com_con))
                 com_con = dict_2_com_con(dictionary)
                 data.append(com_con)
@@ -240,7 +248,10 @@ def select_data(titulo, autor, fecha_desde, fecha_hasta, tipos):
 
         if tipo == 'bbdd_libro':
 
-            sql = '''SELECT persona.nombre, persona.apellidos, titulo, editorial, anyo, url  from bbdd_libro AS c 
+            sql = '''SELECT c.publicacion_id, 
+            group_concat(persona.nombre || " " || persona.apellidos, ', ') as autores,
+            titulo, editorial, anyo, url
+            from bbdd_libro AS c 
             INNER JOIN bbdd_publicacion AS p 
             ON c.publicacion_id = p.id_publicacion
             INNER JOIN bbdd_personapublicacion AS pp
@@ -251,6 +262,7 @@ def select_data(titulo, autor, fecha_desde, fecha_hasta, tipos):
             anyo >= ''' + fecha_desde + ''' AND anyo <= ''' + fecha_hasta +''' AND
             (persona.nombre LIKE '%''' + autor + '''%' OR
             persona.apellidos LIKE '%''' + autor + '''%')
+            GROUP BY c.publicacion_id
             '''
 
             cursor.execute(sql)
@@ -262,7 +274,7 @@ def select_data(titulo, autor, fecha_desde, fecha_hasta, tipos):
             print(columns)
 
             for data_libro in libros:
-                #print(libro)
+                print(data_libro)
                 dictionary = dict(zip(columns, data_libro))
                 libro = dict_2_libro(dictionary)
                 data.append(libro)
@@ -281,8 +293,8 @@ def main():
     insert_in_database(con, paths)
 
     #-----------------------------PRUEBAS CONSULTAS A LA BASE DE DATOS--------------------------------#
-    # data = select_data('performance', 'ang', '2011', '2020', ['bbdd_articulo', 'bbdd_com_con', 'bbdd_libro'])
-    # print(data)
+    select_data('', '', '2010', '2020', ['bbdd_articulo'])
+    #print(data)
 
 if __name__ == '__main__':
     main()

@@ -11,4 +11,4 @@ class Libro(Publicacion):
         return self._editorial
 
 def dict_2_libro(dict):
-    return Libro(None,None,dict['titulo'],None,None,[])
+    return Libro(dict['editorial'],None,dict['titulo'],dict['anyo'],dict['URL'],dict['autores'])

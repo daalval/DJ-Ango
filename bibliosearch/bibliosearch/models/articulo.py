@@ -20,4 +20,4 @@ class Articulo(Publicacion):
         return(self._ejemplar)
 
 def dict_2_articulo(dict):
-    return Articulo(None,None,None,dict['titulo'],dict['anyo'],dict['URL'],dict['nombre'],None)
+    return Articulo(dict['pagina_inicio'],dict['pagina_fin'],None,dict['titulo'],dict['anyo'],dict['URL'],dict['autores'],dict['nombre'])
