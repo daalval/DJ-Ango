@@ -1,7 +1,7 @@
 from bibliosearch.models.Ejemplar import Ejemplar
-from bibliosearch.models.Com_con import Com_con
-from bibliosearch.models.Libro import Libro
-from bibliosearch.models.Articulo import Articulo
+from bibliosearch.models.Com_con import Com_con, dict_2_com_con
+from bibliosearch.models.Libro import Libro, dict_2_libro
+from bibliosearch.models.Articulo import Articulo, dict_2_articulo
 from bibliosearch.models.Revista import Revista
 from bibliosearch.models.Persona import Persona
 import json
@@ -201,9 +201,10 @@ def select_data(titulo, autor, fecha_desde, fecha_hasta, tipos):
 
             articulos = cursor.fetchall()
 
-            for articulo in articulos:
-                #print(articulo)
-                data.append(dict(zip(columns, articulo)))
+            for data_articulo in articulos:
+                dictionary = dict(zip(columns, data_articulo))
+                articulo = dict_2_articulo(dictionary)
+                data.append(articulo)
             
             con.commit()
         
@@ -230,9 +231,10 @@ def select_data(titulo, autor, fecha_desde, fecha_hasta, tipos):
 
             print(columns)
 
-            for conferencia in conferencias:
-                #print(conferencia)
-                data.append(dict(zip(columns, conferencia)))
+            for data_com_con in conferencias:
+                dictionary = dict(zip(columns, data_com_con))
+                com_con = dict_2_com_con(dictionary)
+                data.append(com_con)
             
             con.commit()
 
@@ -259,9 +261,11 @@ def select_data(titulo, autor, fecha_desde, fecha_hasta, tipos):
 
             print(columns)
 
-            for libro in libros:
+            for data_libro in libros:
                 #print(libro)
-                data.append(dict(zip(columns, libro)))
+                dictionary = dict(zip(columns, data_libro))
+                libro = dict_2_libro(dictionary)
+                data.append(libro)
             
             con.commit()
     
@@ -272,13 +276,13 @@ def select_data(titulo, autor, fecha_desde, fecha_hasta, tipos):
 
 def main():
     #-----------------------------CARGAR EN BASE DE DATOS--------------------------------------------#
-    #paths = ['static/ieeeXplore.json', 'static/google_schoolar.json', 'static/dblp.json']
-    #con = sql_connection() 
-    #insert_in_database(con, paths)
+    paths = ['static/ieeeXplore.json', 'static/google_schoolar.json', 'static/dblp.json']
+    con = sql_connection() 
+    insert_in_database(con, paths)
 
     #-----------------------------PRUEBAS CONSULTAS A LA BASE DE DATOS--------------------------------#
-    data = select_data('performance', 'ang', '2011', '2020', ['bbdd_articulo', 'bbdd_com_con', 'bbdd_libro'])
-    print(data)
+    # data = select_data('performance', 'ang', '2011', '2020', ['bbdd_articulo', 'bbdd_com_con', 'bbdd_libro'])
+    # print(data)
 
 if __name__ == '__main__':
     main()

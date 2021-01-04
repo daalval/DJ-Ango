@@ -26,3 +26,7 @@ def get_range( value ):
 @register.filter
 def multiply(value, arg):
     return value * arg
+
+@register.simple_tag
+def index(indexable, i,j):
+    return indexable[i * 3 + j]

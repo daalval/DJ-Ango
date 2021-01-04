@@ -36,12 +36,12 @@ def buscar(request):
 
             full_list = select_data(titulo, autor, desde, hasta, tipos)
 
-            print(full_list[0][0])
+            print(full_list)
 
             max_page = math.ceil(len(full_list) / MAX_ITEMS)
 
             first_index = (page - 1) * MAX_ITEMS
-            last_index = (page * MAX_ITEMS) - 1
+            last_index = page * MAX_ITEMS
 
             list = full_list[first_index:last_index]
 

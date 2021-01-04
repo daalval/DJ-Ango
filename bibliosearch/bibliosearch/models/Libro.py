@@ -9,3 +9,6 @@ class Libro(Publicacion):
 
     def get_editorial(self):
         return self._editorial
+
+def dict_2_libro(dict):
+    return Libro(None,None,dict['titulo'],None,None,[])

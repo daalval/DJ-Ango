@@ -26,3 +26,6 @@ class Com_con(Publicacion):
     
     def get_pagina_fin(self):
         return(self._pagina_fin)
+
+def dict_2_com_con(dict):
+    return Com_con(None,None,None,None,None,None,dict['titulo'],None,None,[])

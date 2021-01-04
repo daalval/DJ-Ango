@@ -18,3 +18,6 @@ class Articulo(Publicacion):
 
     def get_ejemplar(self):
         return(self._ejemplar)
+
+def dict_2_articulo(dict):
+    return Articulo(None,None,None,dict['titulo'],None,None,[],None)
