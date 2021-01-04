@@ -1,4 +1,6 @@
-from bibliosearch.controllers.dbController import insert_in_database, sql_connection
+from bibliosearch.controllers.ieeeEngine import query
+from bibliosearch.controllers.xml2json import xml_parser
+from bibliosearch.controllers.dbController import PATHS, insert_in_database, sql_connection
 from bibliosearch.controllers.seleniumEngine import ARTICLE, BOOK, INPROCEEDINGS, Selenium
 from django.shortcuts import  render
 from django import forms
@@ -10,7 +12,7 @@ def subir(request):
         if formulario.is_valid():
             data = formulario.cleaned_data
             
-            selenium = Selenium()
+            
             tipos = []
             if data['articulo']:
                 tipos.append(ARTICLE)
@@ -18,23 +20,57 @@ def subir(request):
                 tipos.append(BOOK)
             if data['con_con']:
                 tipos.append(INPROCEEDINGS)
-            result = selenium.search(
-                data['desde'], data['hasta'], '', tipos)
 
-            with open('static/google_schoolar.json', 'w') as json_file:
-                json.dump(result, json_file)
+            desde= data['desde']
+            hasta = data['hasta']
+
+            google_scholar_results = []
+            dblp_results = []
+            ieee_results = []
+            errors = []
+
+            if data['articulo']:
+                try:
+                    dblp_results = xml_parser("static/dblp-pruebas.xml", "static/dblp.json", desde, hasta)
+                except Exception as e:
+                    errors.append(e)
+                
+                with open('static/dblp.json', 'w') as json_file:
+                    json.dump(dblp_results, json_file)
+                json_file.close()
+
+            try:
+                ieee_results = query("https://ieeexploreapi.ieee.org/api/v1/search/articles?parameter&apikey=efv84mzqq6ydx4dbd59jhdcn", 'static/ieeeXplore.json', tipos, desde, hasta)
+            except Exception as e:
+                    errors.append(e)
+
+            with open('static/ieeeXplore.json', 'w') as json_file:
+                json.dump(ieee_results, json_file)
             json_file.close()
 
-            path = 'static/google_schoolar.json'
+            selenium = Selenium()
+
+            try:
+                google_scholar_results = selenium.search(
+                desde, hasta, '', tipos)
+            except Exception as e:
+                errors.append(e)
+            
+
+            with open('static/google_scholar.json', 'w') as json_file:
+                json.dump(google_scholar_results, json_file)
+            json_file.close()
+
             con = sql_connection() 
-            insert_in_database(con, path)
+            insert_in_database(con, PATHS)
+
             
             args = {
-                'desde': data['desde'],
-                'hasta':data['hasta'],
-                'articulo':data['articulo'],
-                'libro':data['libro'],
-                'con_con':data['con_con']
+                'google_scholar_results' : len(google_scholar_results),
+                'dblp_results':len(dblp_results),
+                'ieee_results':len(ieee_results),
+                'results': len(google_scholar_results) + len(dblp_results) + len(ieee_results),
+                'errors':errors
             }
             return render(request, 'resultados_subida.html', args)
         
@@ -49,5 +85,5 @@ class FormularioSubir(forms.Form):
     articulo = forms.BooleanField(label='articulo',required=False)
     libro = forms.BooleanField(label='libro',required=False)
     con_con = forms.BooleanField(label='con_con',required=False)
-    desde = forms.CharField(label='desde', max_length=4,min_length=4)
-    hasta = forms.CharField(label='hasta',max_length=4,min_length=4)
+    desde = forms.IntegerField(label='desde', min_value=1000,max_value=2020)
+    hasta = forms.IntegerField(label='hasta', min_value=1000,max_value=2020)

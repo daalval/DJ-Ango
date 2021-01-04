@@ -15,23 +15,27 @@ INPROCEEDINGS = 'inproceedings'
 class Selenium(object):
     def search(self, fecha_inicial, fecha_final, autor, tipos):
         result = {}
+        listElements = []
+        
         try:
             driver = webdriver.Chrome(
                 'bibliosearch/controllers/chromedriver.exe')
             driver.get('https://scholar.google.es/#d=gs_asd')
-            author_element = WebDriverWait(driver, 10).until(
+            author_element = WebDriverWait(driver, 4).until(
                 lambda driver: driver.find_element_by_id('gs_asd_sau'))
             author_element.send_keys(autor)
-            fecha_inicial_element = WebDriverWait(driver, 10).until(
+            fecha_inicial_element = WebDriverWait(driver, 4).until(
                 lambda driver: driver.find_element_by_id('gs_asd_ylo'))
-            fecha_inicial_element.send_keys(fecha_inicial)
+            fecha_inicial_element.send_keys(str(fecha_inicial))
             fecha_final_element = driver.find_element_by_id('gs_asd_yhi')
-            fecha_final_element.send_keys(fecha_final)
+            fecha_final_element.send_keys(str(fecha_final))
             fecha_final_element.send_keys(Keys.RETURN)
-
-            listElements = driver.find_elements_by_class_name(
-                'gs_or_cit.gs_nph')
-
+            
+            listElements = WebDriverWait(driver, 4).until(
+                lambda driver: driver.find_elements_by_class_name('gs_or_cit.gs_nph'))
+        except:
+            raise Exception("SeleniumEngine error: El navegador ha detectado que eres un robot, sin resultados")
+        try:
             if len(listElements) == 0:
                 return result
 
@@ -41,7 +45,7 @@ class Selenium(object):
                 result.update(self.extract_element(
                     listElements[index], driver, tipos))
                 index = index + 1
-                listElements = WebDriverWait(driver, 10).until(
+                listElements = WebDriverWait(driver, 4).until(
                     lambda driver: driver.find_elements_by_class_name('gs_or_cit.gs_nph'))
 
             mas_paginas = driver.find_element_by_xpath(
@@ -53,14 +57,14 @@ class Selenium(object):
 
                 while next_page.is_enabled():
                     next_page.click()
-                    listElements = WebDriverWait(driver, 10).until(
+                    listElements = WebDriverWait(driver, 4).until(
                         lambda driver: driver.find_elements_by_class_name('gs_or_cit.gs_nph'))
                     index = 0
                     while(index < len(listElements)):
                         result.update(self.extract_element(
                             listElements[index], driver, tipos))
                         index = index + 1
-                        listElements = WebDriverWait(driver, 10).until(
+                        listElements = WebDriverWait(driver, 4).until(
                             lambda driver: driver.find_elements_by_class_name('gs_or_cit.gs_nph'))
                     next_page = driver.find_element_by_xpath(
                         '//*[@id="gs_nm"]/button[2]')
@@ -267,9 +271,9 @@ class Selenium(object):
 def main():
     selenium = Selenium()
     result = selenium.search(
-        '1000', '1500', '', [ARTICLE, BOOK, INPROCEEDINGS])
+        2000, 2020, '', [ARTICLE, BOOK, INPROCEEDINGS])
 
-    with open('static/google_schoolar.json', 'w') as json_file:
+    with open('static/google_scholar.json', 'w') as json_file:
         json.dump(result, json_file)
     json_file.close()
 

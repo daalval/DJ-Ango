@@ -128,12 +128,14 @@ def xml_parser(xml_file, json_file, year_st, year_end):
             new_dict['revista'] = revista
             articles[key] = new_dict
 
-    json_data = json.dumps(articles, indent=4)
+    return articles
+
+    # json_data = json.dumps(articles, indent=4)
     
 
-    with open(json_file, "w") as json_file_opened:
-        json_file_opened.write(json_data)
-        json_file_opened.close()
+    # with open(json_file, "w") as json_file_opened:
+    #     json_file_opened.write(json_data)
+    #     json_file_opened.close()
 
 
 def main():

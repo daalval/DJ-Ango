@@ -8,6 +8,8 @@ import json
 import sqlite3
 from sqlite3.dbapi2 import Error
 
+PATHS = ['static/ieeeXplore.json', 'static/google_scholar.json', 'static/dblp.json']
+
 def create_connection(db_file):
     """
     creates a connection with the sqlite database
@@ -288,9 +290,9 @@ def select_data(titulo, autor, fecha_desde, fecha_hasta, tipos):
 
 def main():
     #-----------------------------CARGAR EN BASE DE DATOS--------------------------------------------#
-    paths = ['static/ieeeXplore.json', 'static/google_schoolar.json', 'static/dblp.json']
+    
     con = sql_connection() 
-    insert_in_database(con, paths)
+    insert_in_database(con, PATHS)
 
     #-----------------------------PRUEBAS CONSULTAS A LA BASE DE DATOS--------------------------------#
     select_data('', '', '2010', '2020', ['bbdd_articulo'])
