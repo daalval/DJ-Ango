@@ -23,7 +23,7 @@ from django.urls import include, path
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('buscar/', buscar,name='buscar'),
-    path('resultados/<str:titulo>/<str:autor>/<str:fecha>/<str:tipos>/<int:page>/', resultados),
+    path('resultados/<str:titulo>/<str:autor>/<str:desde>/<str:hasta>/<str:articulo>/<str:libro>/<str:com_con>/<int:page>/', resultados, name='resultados'),
     path('subir/', subir,name='subir'),
     path('resultados_subida/<str:desde>/', resultados_subida,name='resultados_subida'),
 ]

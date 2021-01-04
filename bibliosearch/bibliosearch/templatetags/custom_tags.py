@@ -21,7 +21,7 @@ def get_range( value ):
 
     Instead of 3 one may use the variable set in the views
   """
-  return range( value )
+  return range(value)
 
 @register.filter
 def multiply(value, arg):

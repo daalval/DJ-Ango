@@ -195,11 +195,15 @@ def select_data(titulo, autor, fecha_desde, fecha_hasta, tipos):
 
             cursor.execute(sql)
 
+            columns = [column[0] for column in cursor.description]
+
+            print(columns)
+
             articulos = cursor.fetchall()
 
             for articulo in articulos:
                 #print(articulo)
-                data.append(articulo)
+                data.append(dict(zip(columns, articulo)))
             
             con.commit()
         
@@ -222,10 +226,13 @@ def select_data(titulo, autor, fecha_desde, fecha_hasta, tipos):
 
             conferencias = cursor.fetchall()
 
+            columns = [column[0] for column in cursor.description]
+
+            print(columns)
 
             for conferencia in conferencias:
                 #print(conferencia)
-                data.append(conferencia)
+                data.append(dict(zip(columns, conferencia)))
             
             con.commit()
 
@@ -248,9 +255,13 @@ def select_data(titulo, autor, fecha_desde, fecha_hasta, tipos):
 
             libros = cursor.fetchall()
 
+            columns = [column[0] for column in cursor.description]
+
+            print(columns)
+
             for libro in libros:
                 #print(libro)
-                data.append(libro)
+                data.append(dict(zip(columns, libro)))
             
             con.commit()
     

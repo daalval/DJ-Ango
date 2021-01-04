@@ -6,7 +6,8 @@
 
 <div class="card mx-auto d-block p-5 shadow-sm" style="width: 60rem;">
     <div class="card-body">
-      <form class="row" action="/resultados/" method="GET">
+      <form class="row" method="post">
+        {% csrf_token %}
 
         <div class="col">
           <label class="font-weight-bold text-muted">Titulo</label>
@@ -16,7 +17,7 @@
               </div>
             </span>
             <input type="text" class="form-control py-2 border-left-0 border" placeholder="Escribe un titulo"
-              aria-label="Username" aria-describedby="basic-addon1" name="title">
+              aria-label="Username" aria-describedby="basic-addon1" name="titulo" id="titulo">
           </div>
 
           <label class="font-weight-bold text-muted">Autor</label>
@@ -28,7 +29,7 @@
             </span>
             <input type="text" class="form-control py-2 border-left-0 border"
               placeholder="Escribe el nombre de un autor" aria-label="Username" aria-describedby="basic-addon1"
-              name="author">
+              name="autor" id="autor">
           </div>
 
           <label class="font-weight-bold text-muted">Año</label>
@@ -40,7 +41,7 @@
                 </div>
               </span>
               <input type="text" class="form-control py-2 border-left-0 border" placeholder="Desde"
-                aria-label="Username" aria-describedby="basic-addon1" name="ano_ini">
+                aria-label="Username" aria-describedby="basic-addon1" name="desde" id="desde">
             </div>
 
             <div class="input-group mb-3 col">
@@ -50,7 +51,7 @@
                 </div>
               </span>
               <input type="text" class="form-control py-2 border-left-0 border" placeholder="Hasta"
-                aria-label="Username" aria-describedby="basic-addon1" name="ano_fin">
+                aria-label="Username" aria-describedby="basic-addon1" name="hasta" id="hasta">
             </div>
           </div>
         </div>
@@ -60,36 +61,23 @@
           <label class="font-weight-bold text-muted">Tipo de publicación</label>
           <div class="mt-2 ml-5">
             <div class="input-group">
-              <input type="checkbox" id="article" value="value" name="check_articulo">
+              <input type="checkbox" id="articulo" value="value" name="articulo">
               <label for="article" class="ml-3">Artículo</label>
             </div>
 
             <div class="input-group">
-              <input type="checkbox" id="book" value="value" name="check_book">
+              <input type="checkbox" id="libro" value="value" name="libro">
               <label for="book" class="ml-3">Libro</label>
             </div>
 
             <div class="input-group">
-              <input type="checkbox" id="congress" value="value" name="check_con">
+              <input type="checkbox" id="com_con" value="value" name="com_con">
               <label for="congress" class="ml-3">Comunicación en congreso</label>
             </div>
           </div>
 
           <div class="d-flex flex-row justify-content-around mt-5">
             <button id="boton_buscar" type="reset" class="btn btn-danger"><i class="material-icons d-flex">clear</i></button>
-            <script type="text/javascript">
-              console.log(document==null + "");
-              document.getElementById("boton_buscar").onclick = function() {
-                var title = document.getElementById("title");
-                var author = document.getElementById("author");
-                var ano_ini = document.getElementById("ano_ini");
-                var ano_fin = document.getElementById("ano_fin");
-                var check_articulo = document.getElementById("check_articulo");
-                var check_book = document.getElementById("check_book");
-                var check_con = document.getElementById("check_con");
-                alert();
-              }
-            </script>
             <input type="submit" class="btn btn-success w-50" value="Buscar">
           </div>
 
