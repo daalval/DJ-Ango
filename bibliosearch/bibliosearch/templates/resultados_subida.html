@@ -11,31 +11,29 @@
             <label class="font-weight-bold text-muted">Referencias cargadas</label>
             <div class="mt-2 ml-5">
             <div class="input-group">
-              <label for="article" class="ml-3">Artículo: </label>
+              <label class="ml-3">DBLP: {{dblp_results}} </label>
             </div>
 
             <div class="input-group">
-              <label for="book" class="ml-3">Libro:</label>
+              <label class="ml-3">Ieee Xplore: {{ieee_results}}</label>
+            </div>
+
+            <div class="row">
+              <label class="ml-3">Google Scholar: {{google_scholar_results}}</label>
             </div>
 
             <div class="input-group">
-              <label for="congress" class="ml-3">Comunicación en congreso:</label>
-            </div>
-
-            <div class="input-group">
-              <label for="congress" class="ml-3">Total:</label>
+              <label class="ml-3">Total: {{results}}</label>
             </div>
           </div>
         </div>
         <div class="col">
-            <label class="font-weight-bold text-muted">Errores: </label>
+            <label class="font-weight-bold text-muted">Errores:  {{ errors|length }}</label>
             <hr>
             <textarea class="form-control" rows="10" disabled="true">
-            {{desde}}
-            {{hasta}}
-            {{articulo}}
-            {{libro}}
-            {{con_con}}
+              {% for error in errors %}
+                {{error}}
+              {% endfor %}
             </textarea >
         </div>
       </form>
