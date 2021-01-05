@@ -210,6 +210,7 @@ def select_data(titulo, autor, fecha_desde, fecha_hasta, tipos):
                 print(data_articulo)
                 dictionary = dict(zip(columns, data_articulo))
                 articulo = dict_2_articulo(dictionary)
+                print(articulo.get_type())
                 data.append(articulo)
             
             con.commit()

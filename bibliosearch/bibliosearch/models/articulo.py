@@ -1,4 +1,6 @@
+from bibliosearch.models.Ejemplar import Ejemplar
 from bibliosearch.models.Publicacion import Publicacion
+from bibliosearch.models.Revista import Revista
 
 class Articulo(Publicacion):
     """
@@ -18,6 +20,11 @@ class Articulo(Publicacion):
 
     def get_ejemplar(self):
         return(self._ejemplar)
+    
+    def get_type(self):
+        return self.__class__.__name__
 
 def dict_2_articulo(dict):
-    return Articulo(dict['pagina_inicio'],dict['pagina_fin'],None,dict['titulo'],dict['anyo'],dict['URL'],dict['autores'],dict['nombre'])
+    revista = Revista(None, dict['nombre'])
+    ejemplar = Ejemplar(None, dict['volumen'], dict['numero'], dict['mes'], revista)
+    return Articulo(dict['pagina_inicio'],dict['pagina_fin'],None,dict['titulo'],dict['anyo'],dict['URL'],dict['autores'], ejemplar)
