@@ -1,5 +1,4 @@
 from bibliosearch.controllers.dbController import insert_in_database, select_data, sql_connection
-from bibliosearch.controllers.seleniumEngine import ARTICLE, BOOK, INPROCEEDINGS, Selenium
 from django.shortcuts import  render
 from django import forms
 import math

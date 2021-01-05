@@ -2,6 +2,8 @@ from bibliosearch.models.Ejemplar import Ejemplar
 from bibliosearch.models.Publicacion import Publicacion
 from bibliosearch.models.Revista import Revista
 
+ARTICULO = 'articulo'
+
 class Articulo(Publicacion):
     """
     Clase artículo

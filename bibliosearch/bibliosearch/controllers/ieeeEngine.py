@@ -1,5 +1,12 @@
+from bibliosearch.models.Com_con import COM_CON
+from bibliosearch.models.Articulo import  ARTICULO
+from bibliosearch.models.Libro import  LIBRO
 import json
 import requests
+
+IEEE_ARTICULO = 'Journals'
+IEEE_LIBRO = 'Books'
+IEEE_COM_CON = 'Conferences'
 
 def query(url, file, our_content_types, our_start_year, our_end_year):
 
@@ -15,7 +22,7 @@ def query(url, file, our_content_types, our_start_year, our_end_year):
         )
         data = requests.get(url, verify=False, params=params).json()
 
-        if type == 'Books':
+        if ieee_type_to_type(type) == LIBRO:
 
             for book in data['articles']:
 
@@ -43,7 +50,7 @@ def query(url, file, our_content_types, our_start_year, our_end_year):
 
                 result.update({
                     book_id: {
-                        'tipo': 'libro',
+                        'tipo': LIBRO,
                         'titulo': book['title'],
                         'anyo': book['publication_year'],
                         'url': book['pdf_url'],
@@ -52,7 +59,7 @@ def query(url, file, our_content_types, our_start_year, our_end_year):
                     }
                 })
 
-        if type == 'Conferences':
+        if ieee_type_to_type(type) == COM_CON:
 
             for conference in data['articles']:
                 
@@ -80,7 +87,7 @@ def query(url, file, our_content_types, our_start_year, our_end_year):
 
                 result.update({
                 conference_id: {
-                    'tipo': 'com_con',
+                    'tipo': COM_CON,
                     'titulo': conference['title'],
                     'anyo': conference['publication_year'],
                     'url': conference['pdf_url'],
@@ -94,7 +101,7 @@ def query(url, file, our_content_types, our_start_year, our_end_year):
                 
             })
 
-        if type == 'Journals':
+        if ieee_type_to_type(type) == ARTICULO:
 
             for journal in data['articles']:
                 
@@ -122,7 +129,7 @@ def query(url, file, our_content_types, our_start_year, our_end_year):
 
                 result.update({
                 journal_id: {
-                    'tipo': 'articulo',
+                    'tipo': ARTICULO,
                     'titulo': journal['title'],
                     'anyo': journal['publication_year'],
                     'url': journal['pdf_url'],
@@ -143,9 +150,18 @@ def query(url, file, our_content_types, our_start_year, our_end_year):
 
     return result
 
+def ieee_type_to_type(type):
+    if type == IEEE_LIBRO:
+        return LIBRO
+    if type == IEEE_ARTICULO:
+        return ARTICULO
+    if type == IEEE_COM_CON:
+        return COM_CON
+    raise Exception("IeeeEngine error: ieee_type_to_type tipo inexistente")
+
 def get_result():
 
-    result = query("https://ieeexploreapi.ieee.org/api/v1/search/articles?parameter&apikey=efv84mzqq6ydx4dbd59jhdcn", 'static/ieeeXplore.json', ['Books', 'Conferences', 'Journals'], '2010', '2015')
+    result = query("https://ieeexploreapi.ieee.org/api/v1/search/articles?parameter&apikey=efv84mzqq6ydx4dbd59jhdcn", 'static/ieeeXplore.json', [LIBRO,COM_CON,ARTICULO], '2010', '2015')
 
     with open('static/ieeeXplore.json', 'w') as json_file:
         json.dump(result, json_file)
