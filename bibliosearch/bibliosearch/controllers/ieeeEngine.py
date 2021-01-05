@@ -1,6 +1,6 @@
-from bibliosearch.models.Com_con import COM_CON, INPROCEEDING
-from bibliosearch.models.Articulo import ARTICLE, ARTICULO
-from bibliosearch.models.Libro import BOOK, LIBRO
+from bibliosearch.models.Com_con import COM_CON
+from bibliosearch.models.Articulo import  ARTICULO
+from bibliosearch.models.Libro import  LIBRO
 import json
 import requests
 

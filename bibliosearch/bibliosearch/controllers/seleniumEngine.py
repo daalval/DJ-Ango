@@ -1,8 +1,8 @@
 
 
-from bibliosearch.models.Libro import LIBRO, Libro
-from bibliosearch.models.Articulo import ARTICULO, Articulo
-from bibliosearch.models.Com_con import COM_CON, Com_con
+from bibliosearch.models.Libro import LIBRO
+from bibliosearch.models.Articulo import ARTICULO
+from bibliosearch.models.Com_con import COM_CON
 import json
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
