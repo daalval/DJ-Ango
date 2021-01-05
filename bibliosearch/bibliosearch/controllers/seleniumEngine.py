@@ -12,13 +12,14 @@ from selenium.webdriver.common.by import By
 from pybtex.database import parse_string
 
 GOOGLE_SCHOLAR_ARTICULO = 'article'
-GOOGLE_SCHOLAR_COM_CON = 'inproceeding'
+GOOGLE_SCHOLAR_COM_CON = 'inproceedings'
 GOOGLE_SCHOLAR_LIBRO = 'book'
 
 class Selenium(object):
     def search(self, fecha_inicial, fecha_final, autor, tipos):
         result = {}
         listElements = []
+        driver = None
         
         try:
             driver = webdriver.Chrome(
@@ -37,6 +38,7 @@ class Selenium(object):
             listElements = WebDriverWait(driver, 4).until(
                 lambda driver: driver.find_elements_by_class_name('gs_or_cit.gs_nph'))
         except:
+            driver.close()
             raise Exception("SeleniumEngine error: El navegador ha detectado que eres un robot, sin resultados")
         try:
             if len(listElements) == 0:
@@ -72,56 +74,11 @@ class Selenium(object):
                     next_page = driver.find_element_by_xpath(
                         '//*[@id="gs_nm"]/button[2]')
 
-        except Exception as e:
-            print(e)
+        except:
+            driver.close()
             return result
 
-        return result
-
-    def search_only_first_element(self, fecha_inicial, fecha_final, tipos):
-        result = {}
-        try:
-            driver = webdriver.Chrome(
-                'bibliosearch/controllers/chromedriver.exe')
-            driver.get('https://scholar.google.es/#d=gs_asd')
-            fecha_inicial_element = WebDriverWait(driver, 10).until(
-                lambda driver: driver.find_element_by_id('gs_asd_ylo'))
-            fecha_inicial_element.send_keys(fecha_inicial)
-            fecha_final_element = driver.find_element_by_id('gs_asd_yhi')
-            fecha_final_element.send_keys(fecha_final)
-            fecha_final_element.send_keys(Keys.RETURN)
-
-            listElements = driver.find_elements_by_class_name(
-                'gs_or_cit.gs_nph')
-
-            if len(listElements) == 0:
-                return result
-
-            result.update(self.extract_element(
-                listElements[0], driver, tipos))
-
-            mas_paginas = driver.find_element_by_xpath(
-                '/html/body/div/div[9]/div[3]/div').get_attribute('innerText')
-
-            print(mas_paginas)
-
-            if mas_paginas[0] == 'P' or mas_paginas[0] == 'A':
-                next_page = driver.find_element_by_xpath(
-                    '//*[@id="gs_nm"]/button[2]')
-
-                while next_page.is_enabled():
-                    next_page.click()
-                    listElements = WebDriverWait(driver, 10).until(
-                        lambda driver: driver.find_elements_by_class_name('gs_or_cit.gs_nph'))
-                    result.update(self.extract_element(
-                        listElements[0], driver, tipos))
-                    next_page = driver.find_element_by_xpath(
-                        '//*[@id="gs_nm"]/button[2]')
-
-        except Exception as e:
-            print(e)
-            return result
-
+        driver.close()
         return result
 
     def extract_element(self, element, driver, tipos):
@@ -135,7 +92,7 @@ class Selenium(object):
 
         entry = list(data.entries.values())[0]
 
-        type = entry.type
+        type = self.google_scholar_type_to_type(entry.type)
 
         key = entry.key
 
@@ -168,7 +125,7 @@ class Selenium(object):
         }
 
         # --------------------------------------------ARTICULOS------------------------------------------
-        if self.google_scholar_type_to_type(type) == ARTICULO:
+        if type == ARTICULO:
 
             volume = fields.get('volume')
             number = fields.get('number')
@@ -196,7 +153,7 @@ class Selenium(object):
                 'publicado_en': publicado_en
             })
         # --------------------------------------------LIBROS------------------------------------------
-        if self.google_scholar_type_to_type(type) == LIBRO:
+        if type == LIBRO:
             pages = fields.get('pages')
             result.update({
                 'tipo': LIBRO,
@@ -205,7 +162,7 @@ class Selenium(object):
             })
 
         # --------------------------------------------COMUNICACION-CONGRESO------------------------------------------
-        if self.google_scholar_type_to_type(type) == COM_CON:
+        if type == COM_CON:
             organization = self.fix_string_without_accent(
                 fields.get('organization'))
             pages = fields.get('pages')
@@ -258,7 +215,7 @@ class Selenium(object):
             return ARTICULO
         if type == GOOGLE_SCHOLAR_COM_CON:
             return COM_CON
-        raise Exception("IeeeEngine error: ieee_type_to_type tipo inexistente")
+        raise Exception("GoogleScholar error: google_scholar_type_to_type tipo inexistente")
 
     def fix_string_without_accent(self, string):
         if string == None:
@@ -282,6 +239,7 @@ class Selenium(object):
 
 def main():
     selenium = Selenium()
+    
     result = selenium.search(
         2000, 2020, '', [ARTICULO, LIBRO, COM_CON])
 
