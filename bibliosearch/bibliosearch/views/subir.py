@@ -1,7 +1,10 @@
+from bibliosearch.controllers.seleniumEngine import Selenium
+from bibliosearch.models.Com_con import COM_CON
+from bibliosearch.models.Libro import LIBRO
+from bibliosearch.models.Articulo import ARTICULO
 from bibliosearch.controllers.ieeeEngine import query
 from bibliosearch.controllers.xml2json import xml_parser
 from bibliosearch.controllers.dbController import PATHS, insert_in_database, sql_connection
-from bibliosearch.controllers.seleniumEngine import ARTICLE, BOOK, INPROCEEDINGS, Selenium
 from django.shortcuts import  render
 from django import forms
 import json
@@ -15,11 +18,11 @@ def subir(request):
             
             tipos = []
             if data['articulo']:
-                tipos.append(ARTICLE)
+                tipos.append(ARTICULO)
             if data['libro']:
-                tipos.append(BOOK)
+                tipos.append(LIBRO)
             if data['con_con']:
-                tipos.append(INPROCEEDINGS)
+                tipos.append(COM_CON)
 
             desde= data['desde']
             hasta = data['hasta']
