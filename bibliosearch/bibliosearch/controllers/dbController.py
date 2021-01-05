@@ -1,7 +1,7 @@
 from bibliosearch.models.Ejemplar import Ejemplar
-from bibliosearch.models.Com_con import Com_con, dict_2_com_con
-from bibliosearch.models.Libro import Libro, dict_2_libro
-from bibliosearch.models.Articulo import Articulo, dict_2_articulo
+from bibliosearch.models.Com_con import COM_CON, Com_con, dict_2_com_con
+from bibliosearch.models.Libro import LIBRO, Libro, dict_2_libro
+from bibliosearch.models.Articulo import ARTICULO, Articulo, dict_2_articulo
 from bibliosearch.models.Revista import Revista
 from bibliosearch.models.Persona import Persona
 import json
@@ -155,13 +155,13 @@ def insert_in_database(con, paths):
             for escrita_por in article['escrita_por']:
                 personas.append(Persona(None,escrita_por['nombre'],escrita_por['apellidos']))
 
-            if article['tipo'] == 'libro':
+            if article['tipo'] == LIBRO:
                 libro = Libro(article['editorial'], article_id, article['titulo'], article['anyo'], article['url'], personas)
                 insert_libro(con, libro)
-            if article['tipo'] == 'com_con':
+            if article['tipo'] == COM_CON:
                 com_con = Com_con(article['congreso'], article['edicion'], article['lugar'], article['pagina_inicio'], article['pagina_fin'], article_id, article['titulo'], article['anyo'], article['url'], personas)
                 insert_comCon(con, com_con)
-            if article['tipo'] == 'articulo':
+            if article['tipo'] == ARTICULO:
                 publicado_en = article['publicado_en'] 
                 articulo = Articulo(article['pagina_inicio'], article['pagina_fin'], article_id, article['titulo'], article['anyo'], article['url'], personas, Ejemplar(None, publicado_en['volumen'], publicado_en['numero'], publicado_en['mes'], Revista(None, publicado_en['revista']['nombre'])))
                 insert_articulo(con, articulo)
