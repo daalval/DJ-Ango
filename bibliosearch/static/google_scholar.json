@@ -1,1 +1,130 @@
-{}
+{
+    "weber2012etica": {
+        "anyo": "2012",
+        "escrita_por": [
+            {
+                "nombre": "Max",
+                "apellidos": "Weber"
+            }
+        ],
+        "titulo": "La etica protestante y el espiritu del capitalismo",
+        "tipo": "libro",
+        "paginas": null,
+        "editorial": "Fondo de cultura economica",
+        "url": "https://books.google.es/books?hl=es&lr=&id=FO2bDwAAQBAJ&oi=fnd&pg=PT4&ots=68E6tsfXp0&sig=fw3ioU_7qBd4OxQrOUK1Z--Uryk"
+    },
+    "chiavenato2011administracion": {
+        "anyo": "2011",
+        "escrita_por": [
+            {
+                "nombre": "Idalberto",
+                "apellidos": "Chiavenato"
+            }
+        ],
+        "titulo": "Administracion de recursos humanos. El capital humano de las organizaciones",
+        "tipo": "libro",
+        "paginas": null,
+        "editorial": "Mc Graw Hill",
+        "url": "https://books.google.es/books?hl=es&lr=&id=FO2bDwAAQBAJ&oi=fnd&pg=PT4&ots=68E6tsfXp0&sig=fw3ioU_7qBd4OxQrOUK1Z--Uryk"
+    },
+    "hernandez2010metodologia": {
+        "anyo": "2010",
+        "escrita_por": [
+            {
+                "nombre": "Roberto",
+                "apellidos": "Hern{\\'a}ndez"
+            },
+            {
+                "nombre": "Carlos",
+                "apellidos": "Fern{\\'a}ndez"
+            },
+            {
+                "nombre": "Pilar",
+                "apellidos": "Baptista"
+            }
+        ],
+        "titulo": "Metodologia de la",
+        "tipo": "articulo",
+        "pagina_inicio": "20",
+        "pagina_fin": null,
+        "publicado_en": {
+            "volumen": "12",
+            "numero": null,
+            "mes": null,
+            "revista": {
+                "nombre": "Ciudad de Mexico: Mc Graw Hill"
+            }
+        },
+        "url": "https://books.google.es/books?hl=es&lr=&id=FO2bDwAAQBAJ&oi=fnd&pg=PT4&ots=68E6tsfXp0&sig=fw3ioU_7qBd4OxQrOUK1Z--Uryk"
+    },
+    "goleman2011intel": {
+        "anyo": "2011",
+        "escrita_por": [
+            {
+                "nombre": "Daniel",
+                "apellidos": "Goleman"
+            }
+        ],
+        "titulo": "Inteletperiodcentered} lig{\\`e}ncia emocional",
+        "tipo": "libro",
+        "paginas": null,
+        "editorial": "Editorial Kairos",
+        "url": "https://books.google.es/books?hl=es&lr=&id=FO2bDwAAQBAJ&oi=fnd&pg=PT4&ots=68E6tsfXp0&sig=fw3ioU_7qBd4OxQrOUK1Z--Uryk"
+    },
+    "weber2020economia": {
+        "anyo": "2020",
+        "escrita_por": [
+            {
+                "nombre": "Max",
+                "apellidos": "Weber"
+            }
+        ],
+        "titulo": "Economia y sociedad",
+        "tipo": "libro",
+        "paginas": null,
+        "editorial": "Editorial Verbum",
+        "url": "https://books.google.es/books?hl=es&lr=&id=FO2bDwAAQBAJ&oi=fnd&pg=PT4&ots=68E6tsfXp0&sig=fw3ioU_7qBd4OxQrOUK1Z--Uryk"
+    },
+    "foucault2001historia": {
+        "anyo": "2001",
+        "escrita_por": [
+            {
+                "nombre": "Michel",
+                "apellidos": "Foucault"
+            }
+        ],
+        "titulo": "Historia de la sexualidad",
+        "tipo": "libro",
+        "paginas": null,
+        "editorial": "siglo XXI",
+        "url": "https://books.google.es/books?hl=es&lr=&id=FO2bDwAAQBAJ&oi=fnd&pg=PT4&ots=68E6tsfXp0&sig=fw3ioU_7qBd4OxQrOUK1Z--Uryk"
+    },
+    "robbins2004comportamiento": {
+        "anyo": "2004",
+        "escrita_por": [
+            {
+                "nombre": "Stephen",
+                "apellidos": "Robbins"
+            }
+        ],
+        "titulo": "Comportamiento organizacional",
+        "tipo": "libro",
+        "paginas": null,
+        "editorial": "Pearson educacion",
+        "url": "https://books.google.es/books?hl=es&lr=&id=FO2bDwAAQBAJ&oi=fnd&pg=PT4&ots=68E6tsfXp0&sig=fw3ioU_7qBd4OxQrOUK1Z--Uryk"
+    },
+    "torres2006metodolog": {
+        "anyo": "2006",
+        "escrita_por": [
+            {
+                "nombre": "C{\\'e}sar",
+                "apellidos": "Torres"
+            }
+        ],
+        "titulo": "Metodolog!` a de la investigaci{etcent}} n: para administraci{{\\textcent}} n, econom!` a, humanidades y ciencias sociales",
+        "tipo": "libro",
+        "paginas": null,
+        "editorial": "Pearson educacion",
+        "url": "https://books.google.es/books?hl=es&lr=&id=FO2bDwAAQBAJ&oi=fnd&pg=PT4&ots=68E6tsfXp0&sig=fw3ioU_7qBd4OxQrOUK1Z--Uryk"
+    }
+}

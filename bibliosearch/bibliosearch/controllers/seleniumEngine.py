@@ -92,7 +92,7 @@ class Selenium(object):
 
         entry = list(data.entries.values())[0]
 
-        type = entry.type
+        type = self.google_scholar_type_to_type(entry.type)
 
         key = entry.key
 
@@ -125,7 +125,7 @@ class Selenium(object):
         }
 
         # --------------------------------------------ARTICULOS------------------------------------------
-        if self.google_scholar_type_to_type(type) == ARTICULO:
+        if type == ARTICULO:
 
             volume = fields.get('volume')
             number = fields.get('number')
@@ -153,7 +153,7 @@ class Selenium(object):
                 'publicado_en': publicado_en
             })
         # --------------------------------------------LIBROS------------------------------------------
-        if self.google_scholar_type_to_type(type) == LIBRO:
+        if type == LIBRO:
             pages = fields.get('pages')
             result.update({
                 'tipo': LIBRO,
@@ -162,7 +162,7 @@ class Selenium(object):
             })
 
         # --------------------------------------------COMUNICACION-CONGRESO------------------------------------------
-        if self.google_scholar_type_to_type(type) == COM_CON:
+        if type == COM_CON:
             organization = self.fix_string_without_accent(
                 fields.get('organization'))
             pages = fields.get('pages')
@@ -239,8 +239,9 @@ class Selenium(object):
 
 def main():
     selenium = Selenium()
+    
     result = selenium.search(
-        1000, 1500, '', [ARTICULO, LIBRO, COM_CON])
+        2000, 2020, '', [ARTICULO, LIBRO, COM_CON])
 
     with open('static/google_scholar.json', 'w') as json_file:
         json.dump(result, json_file)
