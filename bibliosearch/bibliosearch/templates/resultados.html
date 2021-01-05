@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% load static %}
 
 {% block title %} Resultados {% endblock %}
 
@@ -14,26 +15,32 @@
 
 {% index list j i as publicacion %}
 
-<div class="card mx-auto d-block p-5 shadow-sm grid-item m-5" style="width: 35rem;">
+<div class="card mx-auto d-block p-3 shadow-sm grid-item m-5" style="width: 30rem;height:25rem">
     <div class="card-body">
-      <form class="row">
-        <ul>
+    <div class="row">
           {% if publicacion.get_type == 'Articulo' %}
-            <p>
-              Artículo
-            </p>
-            <ul>
-              <li>Autor/es: {{publicacion.get_autores}}</li>
-              <li>Título: {{publicacion.get_titulo}}</li>
-              <li>Revista: {{publicacion.get_ejemplar.get_revista.get_nombre}}</li>
-              <li>Volumen: {{publicacion.get_ejemplar.get_volumen}}</li>
-              <li>Número: {{publicacion.get_ejemplar.get_numero}}</li>
-              <li>Mes: {{publicacion.get_ejemplar.get_mes}}</li>
-              <li>Año: {{publicacion.get_anyo}}</li>
-              <li>Página inicio: {{publicacion.get_pagina_inicio}}</li>
-              <li>Página fin: {{publicacion.get_pagina_fin}}</li>
-              <li>URL: {{publicacion.get_url}}</li>
+              <div class="flex-col mr-3">
+               <img class="mx-auto d-block m-2" width="80" height="80" src="{% static 'articulo.png' %}">
+               <a href="{{publicacion.get_url}}">
+                <img class="mx-auto d-block m-2" width="40" height="40" src="{% static 'chains.png' %}">
+               </a>
+               
+              </div>
+              <div class="col">
+              <h6>{{publicacion.get_titulo}}</h6>
+               <ul>
+               
+                <li>Autor/es: {{publicacion.get_autores}}</li>
+                <li>Revista: {{publicacion.get_ejemplar.get_revista.get_nombre}}</li>
+                <li>Volumen: {{publicacion.get_ejemplar.get_volumen}}</li>
+                <li>Número: {{publicacion.get_ejemplar.get_numero}}</li>
+                <li>Mes: {{publicacion.get_ejemplar.get_mes}}</li>
+                <li>Año: {{publicacion.get_anyo}}</li>
+                <li>Página inicio: {{publicacion.get_pagina_inicio}}</li>
+                <li>Página fin: {{publicacion.get_pagina_fin}}</li>
             </ul>
+              </div>
+             
           {% endif %}
           
           {% if publicacion.get_type == 'Libro' %}
@@ -65,8 +72,7 @@
               <li>URL: {{publicacion.get_url}}</li>
             </ul>
           {% endif %}
-        </ul>
-      </form>
+      </div>
     </div>
 </div>
 
