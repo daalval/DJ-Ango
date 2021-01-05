@@ -1,5 +1,6 @@
 from bibliosearch.models.Publicacion import Publicacion
 
+LIBRO = 'libro'
 
 class Libro(Publicacion):
 

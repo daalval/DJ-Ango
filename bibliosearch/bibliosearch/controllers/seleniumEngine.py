@@ -1,4 +1,8 @@
 
+
+from bibliosearch.models.Libro import LIBRO, Libro
+from bibliosearch.models.Articulo import ARTICULO, Articulo
+from bibliosearch.models.Com_con import COM_CON, Com_con
 import json
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
@@ -7,10 +11,9 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 from pybtex.database import parse_string
 
-ARTICLE = 'article'
-BOOK = 'book'
-INPROCEEDINGS = 'inproceedings'
-
+GOOGLE_SCHOLAR_ARTICULO = 'article'
+GOOGLE_SCHOLAR_COM_CON = 'inproceeding'
+GOOGLE_SCHOLAR_LIBRO = 'book'
 
 class Selenium(object):
     def search(self, fecha_inicial, fecha_final, autor, tipos):
@@ -165,7 +168,7 @@ class Selenium(object):
         }
 
         # --------------------------------------------ARTICULOS------------------------------------------
-        if type == 'article':
+        if self.google_scholar_type_to_type(type) == ARTICULO:
 
             volume = fields.get('volume')
             number = fields.get('number')
@@ -187,22 +190,22 @@ class Selenium(object):
                 if len(pages) > 1:
                     final_page = pages[1]
             result.update({
-                'tipo': 'articulo',
+                'tipo': ARTICULO,
                 'pagina_inicio': initial_page,
                 'pagina_fin': final_page,
                 'publicado_en': publicado_en
             })
         # --------------------------------------------LIBROS------------------------------------------
-        if type == 'book':
+        if self.google_scholar_type_to_type(type) == LIBRO:
             pages = fields.get('pages')
             result.update({
-                'tipo': 'libro',
+                'tipo': LIBRO,
                 'paginas': pages,
                 'editorial': publisher
             })
 
         # --------------------------------------------COMUNICACION-CONGRESO------------------------------------------
-        if type == INPROCEEDINGS:
+        if self.google_scholar_type_to_type(type) == COM_CON:
             organization = self.fix_string_without_accent(
                 fields.get('organization'))
             pages = fields.get('pages')
@@ -216,7 +219,7 @@ class Selenium(object):
             place = None
 
             result.update({
-                'tipo': 'con_con',
+                'tipo': COM_CON,
                 'pagina_inicio': initial_page,
                 'pagina_fin': final_page,
                 'editorial': publisher,
@@ -248,6 +251,15 @@ class Selenium(object):
             key: result
         }
 
+    def google_scholar_type_to_type(self,type):
+        if type == GOOGLE_SCHOLAR_LIBRO:
+            return LIBRO
+        if type == GOOGLE_SCHOLAR_ARTICULO:
+            return ARTICULO
+        if type == GOOGLE_SCHOLAR_COM_CON:
+            return COM_CON
+        raise Exception("IeeeEngine error: ieee_type_to_type tipo inexistente")
+
     def fix_string_without_accent(self, string):
         if string == None:
             return None
@@ -271,7 +283,7 @@ class Selenium(object):
 def main():
     selenium = Selenium()
     result = selenium.search(
-        2000, 2020, '', [ARTICLE, BOOK, INPROCEEDINGS])
+        2000, 2020, '', [ARTICULO, LIBRO, COM_CON])
 
     with open('static/google_scholar.json', 'w') as json_file:
         json.dump(result, json_file)

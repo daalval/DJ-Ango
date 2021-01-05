@@ -1,5 +1,7 @@
 from bibliosearch.models.Publicacion import Publicacion
 
+COM_CON = 'com_con'
+
 class Com_con(Publicacion):
     """
     Clase comunicaciones-congresos
