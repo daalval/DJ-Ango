@@ -75,55 +75,10 @@ class Selenium(object):
                         '//*[@id="gs_nm"]/button[2]')
 
         except:
-            pass
-
-        driver.close()
-        return result
-
-    def search_only_first_element(self, fecha_inicial, fecha_final, tipos):
-        result = {}
-        try:
-            driver = webdriver.Chrome(
-                'bibliosearch/controllers/chromedriver.exe')
-            driver.get('https://scholar.google.es/#d=gs_asd')
-            fecha_inicial_element = WebDriverWait(driver, 10).until(
-                lambda driver: driver.find_element_by_id('gs_asd_ylo'))
-            fecha_inicial_element.send_keys(fecha_inicial)
-            fecha_final_element = driver.find_element_by_id('gs_asd_yhi')
-            fecha_final_element.send_keys(fecha_final)
-            fecha_final_element.send_keys(Keys.RETURN)
-
-            listElements = driver.find_elements_by_class_name(
-                'gs_or_cit.gs_nph')
-
-            if len(listElements) == 0:
-                return result
-
-            result.update(self.extract_element(
-                listElements[0], driver, tipos))
-
-            mas_paginas = driver.find_element_by_xpath(
-                '/html/body/div/div[9]/div[3]/div').get_attribute('innerText')
-
-            print(mas_paginas)
-
-            if mas_paginas[0] == 'P' or mas_paginas[0] == 'A':
-                next_page = driver.find_element_by_xpath(
-                    '//*[@id="gs_nm"]/button[2]')
-
-                while next_page.is_enabled():
-                    next_page.click()
-                    listElements = WebDriverWait(driver, 10).until(
-                        lambda driver: driver.find_elements_by_class_name('gs_or_cit.gs_nph'))
-                    result.update(self.extract_element(
-                        listElements[0], driver, tipos))
-                    next_page = driver.find_element_by_xpath(
-                        '//*[@id="gs_nm"]/button[2]')
-
-        except Exception as e:
-            print(e)
+            driver.close()
             return result
 
+        driver.close()
         return result
 
     def extract_element(self, element, driver, tipos):
@@ -285,7 +240,7 @@ class Selenium(object):
 def main():
     selenium = Selenium()
     result = selenium.search(
-        2000, 2020, '', [ARTICULO, LIBRO, COM_CON])
+        1000, 1500, '', [ARTICULO, LIBRO, COM_CON])
 
     with open('static/google_scholar.json', 'w') as json_file:
         json.dump(result, json_file)
