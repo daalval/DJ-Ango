@@ -12,13 +12,14 @@ from selenium.webdriver.common.by import By
 from pybtex.database import parse_string
 
 GOOGLE_SCHOLAR_ARTICULO = 'article'
-GOOGLE_SCHOLAR_COM_CON = 'inproceeding'
+GOOGLE_SCHOLAR_COM_CON = 'inproceedings'
 GOOGLE_SCHOLAR_LIBRO = 'book'
 
 class Selenium(object):
     def search(self, fecha_inicial, fecha_final, autor, tipos):
         result = {}
         listElements = []
+        driver = None
         
         try:
             driver = webdriver.Chrome(
@@ -37,6 +38,7 @@ class Selenium(object):
             listElements = WebDriverWait(driver, 4).until(
                 lambda driver: driver.find_elements_by_class_name('gs_or_cit.gs_nph'))
         except:
+            driver.close()
             raise Exception("SeleniumEngine error: El navegador ha detectado que eres un robot, sin resultados")
         try:
             if len(listElements) == 0:
@@ -72,10 +74,10 @@ class Selenium(object):
                     next_page = driver.find_element_by_xpath(
                         '//*[@id="gs_nm"]/button[2]')
 
-        except Exception as e:
-            print(e)
-            return result
+        except:
+            pass
 
+        driver.close()
         return result
 
     def search_only_first_element(self, fecha_inicial, fecha_final, tipos):
@@ -258,7 +260,7 @@ class Selenium(object):
             return ARTICULO
         if type == GOOGLE_SCHOLAR_COM_CON:
             return COM_CON
-        raise Exception("IeeeEngine error: ieee_type_to_type tipo inexistente")
+        raise Exception("GoogleScholar error: google_scholar_type_to_type tipo inexistente")
 
     def fix_string_without_accent(self, string):
         if string == None:
