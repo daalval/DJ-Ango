@@ -27,7 +27,7 @@ def insert_articulo(conn, articulo):
     """
     Inserts an article in "bbdd_articulo" table
     """
-    sql_art = '''INSERT INTO bbdd_articulo(pagina_inicio, pagina_fin, publicacion_id, ejemplar_id)
+    sql_art = '''INSERT OR REPLACE INTO bbdd_articulo(pagina_inicio, pagina_fin, publicacion_id, ejemplar_id)
                 VALUES(?,?,?,?)'''
     id_publicacion = insert_publicacion(conn, articulo)
     id_ejemplar = insert_ejemplar(conn, articulo.get_ejemplar())
@@ -66,7 +66,7 @@ def insert_publicacion(conn, publicacion):
     """
     Inserts an article in "bbdd_publicacion" table
     """
-    sql = '''INSERT INTO bbdd_publicacion(
+    sql = '''INSERT OR REPLACE INTO bbdd_publicacion(
             id_publicacion, titulo, anyo, URL) VALUES
             (?,?,?,?)'''
     cur = conn.cursor()
@@ -82,7 +82,7 @@ def insert_libro(conn, libro):
     """
     Inserts a libro in "bbdd_libro" table
     """
-    sql = '''INSERT INTO bbdd_libro(editorial, publicacion_id)
+    sql = '''INSERT OR REPLACE INTO bbdd_libro(editorial, publicacion_id)
             VALUES(?,?)'''
     id_publicacion = insert_publicacion(conn, libro)
     values = [libro.get_editorial(), id_publicacion]
@@ -95,7 +95,7 @@ def insert_comCon(conn, com_con):
     """
     Inserts a com_con in "bbdd_com_con" table
     """
-    sql = '''INSERT INTO bbdd_com_con(
+    sql = '''INSERT OR REPLACE INTO bbdd_com_con(
             congreso, edicion, lugar, pagina_inicio, pagina_fin, publicacion_id) VALUES
             (?,?,?,?,?,?)'''
     id_publicacion = insert_publicacion(conn, com_con)
@@ -109,7 +109,7 @@ def insert_persona(conn, persona):
     """
     Inserts a com_con in "bbdd_person" table
     """
-    sql = '''INSERT OR IGNORE INTO bbdd_persona(
+    sql = '''INSERT OR REPLACE INTO bbdd_persona(
             id_persona,nombre,apellidos) VALUES
             (?,?,?)'''
     values = [None,persona.get_nombre(),persona.get_apellidos()]
@@ -122,7 +122,7 @@ def insert_persona_publicacion(conn, persona_id,publicacion_id):
     """
     Inserts a com_con in "bbdd_personapublicacion" table
     """
-    sql = '''INSERT OR IGNORE INTO bbdd_personapublicacion(
+    sql = '''INSERT OR REPLACE INTO bbdd_personapublicacion(
             id_personapublicacion, persona_id,publicacion_id) VALUES
             (?,?,?)'''
     values = [None, persona_id,publicacion_id]
