@@ -27,7 +27,7 @@ def insert_articulo(conn, articulo):
     """
     Inserts an article in "bbdd_articulo" table
     """
-    sql_art = '''INSERT OR REPLACE INTO bbdd_articulo(pagina_inicio, pagina_fin, publicacion_id, ejemplar_id)
+    sql_art = '''INSERT INTO bbdd_articulo(pagina_inicio, pagina_fin, publicacion_id, ejemplar_id)
                 VALUES(?,?,?,?)'''
     id_publicacion = insert_publicacion(conn, articulo)
     id_ejemplar = insert_ejemplar(conn, articulo.get_ejemplar())
@@ -66,23 +66,39 @@ def insert_publicacion(conn, publicacion):
     """
     Inserts an article in "bbdd_publicacion" table
     """
-    sql = '''INSERT OR REPLACE INTO bbdd_publicacion(
-            id_publicacion, titulo, anyo, URL) VALUES
-            (?,?,?,?)'''
-    cur = conn.cursor()
+
     values = [None, publicacion.get_titulo(), publicacion.get_anyo(), publicacion.get_url()]
-    cur.execute(sql, values)
-    conn.commit()
-    for persona in publicacion.get_autores():
-        id_persona = insert_persona(conn, persona)
-        insert_persona_publicacion(conn, id_persona,cur.lastrowid)
-    return cur.lastrowid   
+
+    sql = '''INSERT INTO bbdd_publicacion(
+            id_publicacion, titulo, anyo, URL) VALUES
+            (?,?,?,?)
+            '''
+    cur = conn.cursor()
+    try:
+        result=cur.execute(sql, values)
+
+        print("hola")
+        for row in result:
+            print(row['rowid'])
+            print("hola")
+
+        conn.commit()
+    
+        for persona in publicacion.get_autores():
+            id_persona = insert_persona(conn, persona)
+            insert_persona_publicacion(conn, id_persona,cur.lastrowid)
+        return cur.lastrowid
+    except sqlite3.IntegrityError as err:
+        conn.rollback()
+        print(err)
+    
+    
 
 def insert_libro(conn, libro): 
     """
     Inserts a libro in "bbdd_libro" table
     """
-    sql = '''INSERT OR REPLACE INTO bbdd_libro(editorial, publicacion_id)
+    sql = '''INSERT INTO bbdd_libro(editorial, publicacion_id)
             VALUES(?,?)'''
     id_publicacion = insert_publicacion(conn, libro)
     values = [libro.get_editorial(), id_publicacion]
@@ -95,7 +111,7 @@ def insert_comCon(conn, com_con):
     """
     Inserts a com_con in "bbdd_com_con" table
     """
-    sql = '''INSERT OR REPLACE INTO bbdd_com_con(
+    sql = '''INSERT INTO bbdd_com_con(
             congreso, edicion, lugar, pagina_inicio, pagina_fin, publicacion_id) VALUES
             (?,?,?,?,?,?)'''
     id_publicacion = insert_publicacion(conn, com_con)
@@ -109,7 +125,7 @@ def insert_persona(conn, persona):
     """
     Inserts a com_con in "bbdd_person" table
     """
-    sql = '''INSERT OR REPLACE INTO bbdd_persona(
+    sql = '''INSERT OR IGNORE INTO bbdd_persona(
             id_persona,nombre,apellidos) VALUES
             (?,?,?)'''
     values = [None,persona.get_nombre(),persona.get_apellidos()]
@@ -122,7 +138,7 @@ def insert_persona_publicacion(conn, persona_id,publicacion_id):
     """
     Inserts a com_con in "bbdd_personapublicacion" table
     """
-    sql = '''INSERT OR REPLACE INTO bbdd_personapublicacion(
+    sql = '''INSERT INTO bbdd_personapublicacion(
             id_personapublicacion, persona_id,publicacion_id) VALUES
             (?,?,?)'''
     values = [None, persona_id,publicacion_id]
@@ -283,12 +299,12 @@ def select_data(titulo, autor, fecha_desde, fecha_hasta, tipos):
 def main():
     #-----------------------------CARGAR EN BASE DE DATOS--------------------------------------------#
     
-    # con = sql_connection() 
-    # insert_in_database(con, PATHS)
+    con = sql_connection() 
+    insert_in_database(con, PATHS)
 
     #-----------------------------PRUEBAS CONSULTAS A LA BASE DE DATOS--------------------------------#
-    data = select_data('', '', '1500', '2020', ['bbdd_articulo','bbdd_libro'])
-    print(len(data))
+    #data = select_data('', '', '1500', '2020', ['bbdd_articulo','bbdd_libro'])
+    #print(len(data))
 
 if __name__ == '__main__':
     main()
