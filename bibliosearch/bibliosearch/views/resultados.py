@@ -8,10 +8,6 @@ MAX_ROWS = 3
 
 
 def resultados(request,titulo,autor,desde,hasta,articulo,libro,com_con,page):
-
-    titulo = titulo or ' '
-    autor = autor or ' '
-
     tipos = []
 
     if articulo:

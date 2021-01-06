@@ -13,8 +13,8 @@ def buscar(request):
         if formulario.is_valid():
             data = formulario.cleaned_data
 
-            titulo = data['titulo'] or ' '
-            autor = data['autor'] or ' '
+            titulo = data['titulo'] or ''
+            autor = data['autor'] or ''
             desde = data['desde']
             hasta = data['hasta']
 

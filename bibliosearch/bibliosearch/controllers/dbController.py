@@ -283,12 +283,12 @@ def select_data(titulo, autor, fecha_desde, fecha_hasta, tipos):
 def main():
     #-----------------------------CARGAR EN BASE DE DATOS--------------------------------------------#
     
-    con = sql_connection() 
-    insert_in_database(con, PATHS)
+    # con = sql_connection() 
+    # insert_in_database(con, PATHS)
 
     #-----------------------------PRUEBAS CONSULTAS A LA BASE DE DATOS--------------------------------#
-    select_data('', '', '2010', '2020', ['bbdd_articulo'])
-    #print(data)
+    data = select_data('', '', '1500', '2020', ['bbdd_articulo','bbdd_libro'])
+    print(len(data))
 
 if __name__ == '__main__':
     main()
