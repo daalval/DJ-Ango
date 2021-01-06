@@ -24,7 +24,7 @@ class Articulo(Publicacion):
         return(self._ejemplar)
     
     def get_type(self):
-        return self.__class__.__name__
+        return ARTICULO
 
 def dict_2_articulo(dict):
     revista = Revista(None, dict['nombre'])

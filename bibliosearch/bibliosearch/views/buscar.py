@@ -1,5 +1,5 @@
 from bibliosearch.controllers.dbController import insert_in_database, select_data, sql_connection
-from django.shortcuts import  render
+from django.shortcuts import  redirect, render
 from django import forms
 import math
 
@@ -13,8 +13,8 @@ def buscar(request):
         if formulario.is_valid():
             data = formulario.cleaned_data
 
-            titulo = data['titulo']
-            autor = data['autor']
+            titulo = data['titulo'] or ' '
+            autor = data['autor'] or ' '
             desde = data['desde']
             hasta = data['hasta']
 
@@ -22,55 +22,15 @@ def buscar(request):
             libro = data['libro']
             com_con = data['com_con']
 
-            tipos = []
 
-            if articulo:
-                tipos.append('bbdd_articulo')
-            if libro:
-                tipos.append('bbdd_libro')
-            if com_con:
-                tipos.append('bbdd_com_con')
-
-            page = 1
-
-            full_list = select_data(titulo, autor, desde, hasta, tipos)
-
-            print(full_list)
-
-            max_page = math.ceil(len(full_list) / MAX_ITEMS)
-
-            first_index = (page - 1) * MAX_ITEMS
-            last_index = page * MAX_ITEMS
-
-            list = full_list[first_index:last_index]
-
-            rows = math.ceil(len(list) / MAX_ROWS)
-
-            url_previus = f"/resultados/{titulo}/{autor}/{desde}/{hasta}/{articulo}/{libro}/{com_con}/{page - 1}/" if page > 1 else None
-            url_next = f"/resultados/{titulo}/{autor}/{desde}/{hasta}/{articulo}/{libro}/{com_con}/{page + 1}/" if page < max_page else None
-
-            args = {
-                'list': list,
-                'page': page,
-                'max_page': max_page,
-                'titulo': data['titulo'],
-                'autor': data['autor'],
-                'desde': data['desde'],
-                'hasta':data['hasta'],
-                'articulo':data['articulo'],
-                'libro':data['libro'],
-                'com_con':data['com_con'],
-                'url_previus': url_previus,
-                'url_next': url_next,
-                'rows': rows
-            }
-
-            return render(request, 'resultados.html', args)
+            return redirect(f'/resultados/{titulo}/{autor}/{desde}/{hasta}/{articulo}/{libro}/{com_con}/1')
         
     else:
         formulario = FormularioBuscar()
 
     return render(request, 'buscar.html')
+
+    
 
 class FormularioBuscar(forms.Form):
     titulo = forms.CharField(label='titulo', required=False)

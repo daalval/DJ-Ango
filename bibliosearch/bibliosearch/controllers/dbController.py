@@ -202,15 +202,11 @@ def select_data(titulo, autor, fecha_desde, fecha_hasta, tipos):
 
             columns = [column[0] for column in cursor.description]
 
-            print(columns)
-
             articulos = cursor.fetchall()
 
             for data_articulo in articulos:
-                print(data_articulo)
                 dictionary = dict(zip(columns, data_articulo))
                 articulo = dict_2_articulo(dictionary)
-                print(articulo.get_type())
                 data.append(articulo)
             
             con.commit()
@@ -239,10 +235,8 @@ def select_data(titulo, autor, fecha_desde, fecha_hasta, tipos):
 
             columns = [column[0] for column in cursor.description]
 
-            print(columns)
 
             for data_com_con in conferencias:
-                print(data_com_con)
                 dictionary = dict(zip(columns, data_com_con))
                 com_con = dict_2_com_con(dictionary)
                 data.append(com_con)
@@ -274,10 +268,7 @@ def select_data(titulo, autor, fecha_desde, fecha_hasta, tipos):
 
             columns = [column[0] for column in cursor.description]
 
-            print(columns)
-
             for data_libro in libros:
-                print(data_libro)
                 dictionary = dict(zip(columns, data_libro))
                 libro = dict_2_libro(dictionary)
                 data.append(libro)

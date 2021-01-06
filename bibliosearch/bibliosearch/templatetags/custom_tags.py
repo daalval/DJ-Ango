@@ -1,26 +1,11 @@
+from bibliosearch.views.buscar import MAX_ROWS
 from django.template import Library
+import math
 
 register = Library()
 
 @register.filter
 def get_range( value ):
-  """
-    Filter - returns a list containing range made from given value
-    Usage (in template):
-
-    <ul>{% for i in 3|get_range %}
-      <li>{{ i }}. Do something</li>
-    {% endfor %}</ul>
-
-    Results with the HTML:
-    <ul>
-      <li>0. Do something</li>
-      <li>1. Do something</li>
-      <li>2. Do something</li>
-    </ul>
-
-    Instead of 3 one may use the variable set in the views
-  """
   return range(value)
 
 @register.filter
@@ -30,3 +15,7 @@ def multiply(value, arg):
 @register.simple_tag
 def index(indexable, i,j):
     return indexable[i * 3 + j]
+
+@register.simple_tag
+def columns(indexable,row):
+    return math.ceil(len(indexable) - row * 3)

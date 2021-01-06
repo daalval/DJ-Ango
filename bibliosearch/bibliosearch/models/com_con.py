@@ -30,7 +30,7 @@ class Com_con(Publicacion):
         return(self._pagina_fin)
 
     def get_type(self):
-        return self.__class__.__name__
+        return COM_CON
 
 def dict_2_com_con(dict):
     return Com_con(dict['congreso'],dict['edicion'],dict['lugar'],dict['pagina_inicio'],dict['pagina_fin'],None,dict['titulo'],dict['anyo'],dict['URL'],dict['autores'])

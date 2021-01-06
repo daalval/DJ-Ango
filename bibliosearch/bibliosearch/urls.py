@@ -13,7 +13,6 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
-from bibliosearch.views.resultados_subida import resultados_subida
 from bibliosearch.views.subir import subir
 from bibliosearch.views.buscar import buscar
 from bibliosearch.views.resultados import resultados
@@ -25,5 +24,4 @@ urlpatterns = [
     path('buscar/', buscar,name='buscar'),
     path('resultados/<str:titulo>/<str:autor>/<str:desde>/<str:hasta>/<str:articulo>/<str:libro>/<str:com_con>/<int:page>/', resultados, name='resultados'),
     path('subir/', subir,name='subir'),
-    path('resultados_subida/<str:desde>/', resultados_subida,name='resultados_subida'),
 ]

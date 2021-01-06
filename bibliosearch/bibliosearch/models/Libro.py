@@ -12,7 +12,7 @@ class Libro(Publicacion):
         return self._editorial
     
     def get_type(self):
-        return self.__class__.__name__
+        return LIBRO
 
 def dict_2_libro(dict):
     return Libro(dict['editorial'],None,dict['titulo'],dict['anyo'],dict['URL'],dict['autores'])
