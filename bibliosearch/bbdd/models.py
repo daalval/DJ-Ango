@@ -11,19 +11,28 @@ class Ejemplar(models.Model):
     volumen = models.IntegerField(null = True)
     numero = models.IntegerField(null = True)
     mes = models.IntegerField(null = True)
-    revista = models.ForeignKey(Revista, on_delete = models.CASCADE)
+    revista = models.OneToOneField(Revista, on_delete = models.CASCADE)
+
+    class Meta:
+        unique_together = (("volumen", "numero", "mes"))
 
 class Publicacion(models.Model):
     id_publicacion = models.IntegerField(primary_key = True, null = False, unique=True)
-    titulo = models.CharField(null = True, max_length = 45, unique=True)
+    titulo = models.CharField(null = True, max_length = 45)
     anyo = anyo = models.IntegerField(null = True)
     URL = models.CharField(null = True, max_length = 45)
+
+    class Meta:
+        unique_together = (("titulo", "anyo", "URL"))
 
 class Articulo(models.Model):
     pagina_inicio = models.IntegerField(null = True)
     pagina_fin = models.IntegerField(null = True)
-    ejemplar = models.ForeignKey(Ejemplar, on_delete = models.CASCADE, null = False)
+    ejemplar = models.OneToOneField(Ejemplar, on_delete = models.CASCADE, null = False)
     publicacion = models.OneToOneField(Publicacion, on_delete = models.CASCADE, null = False, primary_key = True)
+
+    class Meta:
+        unique_together = (("pagina_inicio", "pagina_fin", "ejemplar"))
 
 class Com_con(models.Model):
     congreso = models.CharField(null = True, max_length = 45)
@@ -32,6 +41,9 @@ class Com_con(models.Model):
     pagina_inicio = models.IntegerField(null = True)
     pagina_fin = models.IntegerField(null = True)
     publicacion = models.OneToOneField(Publicacion, on_delete = models.CASCADE, null = False, primary_key = True)
+
+    class Meta:
+        unique_together = (("congreso", "edicion", "lugar", "pagina_inicio", "pagina_fin"))
 
 class Libro(models.Model):
     editorial = models.CharField(null = True, max_length = 45)
