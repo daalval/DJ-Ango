@@ -1,0 +1,1 @@
+web: gunicorn bibliosearch.wsgi --log-file -
