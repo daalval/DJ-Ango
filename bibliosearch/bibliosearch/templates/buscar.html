@@ -4,8 +4,22 @@
 
 {% block content %}
 
-<div class="card mx-auto d-block p-5 shadow-sm" style="width: 60rem;">
+
+  <div class="row justify-content-center mb-5">
+          
+  <a href="/bibliosearch/subir/">
+  <button class="btn btn-secondary btn-lg active"><i class="material-icons">upload</i>
+  Ir a subir</button>
+  </a>
+
+  </div>
+  
+
+<div class="card mx-auto d-block p-4 shadow-sm" style="width: 60rem;">
     <div class="card-body">
+      <div class="row justify-content-center mb-4">
+        <h1>Buscar</h1>
+      </div>
       <form class="row" method="post">
         {% csrf_token %}
 
@@ -32,7 +46,7 @@
               name="autor" id="autor">
           </div>
 
-          <label class="font-weight-bold text-muted">Año</label>
+          <label class="font-weight-bold text-muted">Año*</label>
           <div class="row">
             <div class="input-group mb-3 col">
               <span class="input-group-prepend">
@@ -85,6 +99,8 @@
 
       </form>
     </div>
-  </div>
+    
+
+  
 
 {% endblock %}
