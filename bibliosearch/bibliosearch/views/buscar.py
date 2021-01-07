@@ -13,8 +13,8 @@ def buscar(request):
         if formulario.is_valid():
             data = formulario.cleaned_data
 
-            titulo = data['titulo'] or ''
-            autor = data['autor'] or ''
+            titulo = data['titulo']
+            autor = data['autor']
             desde = data['desde']
             hasta = data['hasta']
 
@@ -22,8 +22,13 @@ def buscar(request):
             libro = data['libro']
             com_con = data['com_con']
 
+            if titulo == '' and autor == '':return redirect(f'/resultados/desde:{desde}&hasta:{hasta}&articulo:{articulo}&libro:{libro}&com_con:{com_con}')
 
-            return redirect(f'/resultados/{titulo}/{autor}/{desde}/{hasta}/{articulo}/{libro}/{com_con}/1')
+            if titulo == '':return redirect(f'/resultados/autor:{autor}&desde:{desde}&hasta:{hasta}&articulo:{articulo}&libro:{libro}&com_con:{com_con}')
+
+            if autor == '':return redirect(f'/resultados/titulo:{titulo}&desde:{desde}&hasta:{hasta}&articulo:{articulo}&libro:{libro}&com_con:{com_con}')
+
+            return redirect(f'/resultados/titulo:{titulo}&autor:{autor}&desde:{desde}&hasta:{hasta}&articulo:{articulo}&libro:{libro}&com_con:{com_con}')
         
     else:
         formulario = FormularioBuscar()

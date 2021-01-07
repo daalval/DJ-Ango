@@ -15,13 +15,16 @@ Including another URLconf
 """
 from bibliosearch.views.subir import subir
 from bibliosearch.views.buscar import buscar
-from bibliosearch.views.resultados import resultados
+from bibliosearch.views.resultados import resultados, resultados_a, resultados_t, resultados_ta
 from django.contrib import admin
 from django.urls import include, path
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('buscar/', buscar,name='buscar'),
-    path('resultados/<str:titulo>/<str:autor>/<str:desde>/<str:hasta>/<str:articulo>/<str:libro>/<str:com_con>/<int:page>/', resultados, name='resultados'),
+    path('resultados/titulo:<str:titulo>&autor:<str:autor>&desde:<str:desde>&hasta:<str:hasta>&articulo:<str:articulo>&libro:<str:libro>&com_con:<str:com_con>', resultados_ta, name='resultados'),
+    path('resultados/autor:<str:autor>&desde:<str:desde>&hasta:<str:hasta>&articulo:<str:articulo>&libro:<str:libro>&com_con:<str:com_con>', resultados_a, name='resultados'),
+    path('resultados/titulo:<str:titulo>&desde:<str:desde>&hasta:<str:hasta>&articulo:<str:articulo>&libro:<str:libro>&com_con:<str:com_con>', resultados_t, name='resultados'),
+    path('resultados/desde:<str:desde>&hasta:<str:hasta>&articulo:<str:articulo>&libro:<str:libro>&com_con:<str:com_con>', resultados, name='resultados'),
     path('subir/', subir,name='subir'),
 ]
