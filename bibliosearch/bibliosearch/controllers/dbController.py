@@ -27,15 +27,22 @@ def insert_articulo(conn, articulo):
     """
     Inserts an article in "bbdd_articulo" table
     """
-    sql_art = '''INSERT OR REPLACE INTO bbdd_articulo(pagina_inicio, pagina_fin, publicacion_id, ejemplar_id)
+    sql_art = '''INSERT INTO bbdd_articulo(pagina_inicio, pagina_fin, publicacion_id, ejemplar_id)
                 VALUES(?,?,?,?)'''
-    id_publicacion = insert_publicacion(conn, articulo)
-    id_ejemplar = insert_ejemplar(conn, articulo.get_ejemplar())
+
     cur = conn.cursor()
-    values = [articulo.get_pagina_inicio(), articulo.get_pagina_fin(), id_publicacion, id_ejemplar]
-    cur.execute(sql_art, values)
-    conn.commit()
-    return cur.lastrowid
+    
+    try:
+        id_publicacion = insert_publicacion(conn, articulo)
+        id_ejemplar = insert_ejemplar(conn, articulo.get_ejemplar())
+        values = [articulo.get_pagina_inicio(), articulo.get_pagina_fin(), id_publicacion, id_ejemplar]
+        cur.execute("BEGIN")
+        cur.execute(sql_art, values)
+        cur.execute("COMMIT")
+        return cur.lastrowid
+    except sqlite3.IntegrityError as err:
+        cur.execute("ROLLBACK")
+        print(err)
 
 def insert_ejemplar(conn, ejemplar):
     """
@@ -43,12 +50,18 @@ def insert_ejemplar(conn, ejemplar):
     """
     sql_ejemplar = '''INSERT INTO bbdd_ejemplar(id_ejemplar, volumen, numero, mes, revista_id)
                     VALUES(?,?,?,?,?)'''
-    id_revista = insert_revista(conn, ejemplar.get_revista())
     cur = conn.cursor()
-    values = [None, ejemplar.get_volumen(), ejemplar.get_numero(), ejemplar.get_mes(), id_revista]
-    cur.execute(sql_ejemplar, values)
-    conn.commit()
-    return cur.lastrowid
+    try:
+        id_revista = insert_revista(conn, ejemplar.get_revista())
+        
+        values = [None, ejemplar.get_volumen(), ejemplar.get_numero(), ejemplar.get_mes(), id_revista]
+        cur.execute("BEGIN")
+        cur.execute(sql_ejemplar, values)
+        cur.execute("COMMIT")
+        return cur.lastrowid
+    except sqlite3.IntegrityError as err:
+        cur.execute("ROLLBACK")
+        print(err)
 
 def insert_revista(conn, revista):
     """
@@ -57,79 +70,123 @@ def insert_revista(conn, revista):
     sql_revista = '''INSERT INTO bbdd_revista(id_revista, nombre)
                     VALUES(?,?)'''
     cur = conn.cursor()
-    values = [None, revista.get_nombre()]
-    cur.execute(sql_revista, values)
-    conn.commit()
-    return cur.lastrowid
+
+    try:
+
+        values = [None, revista.get_nombre()]
+        cur.execute("BEGIN")
+        cur.execute(sql_revista, values)
+        cur.execute("COMMIT")
+        return cur.lastrowid
+    except sqlite3.IntegrityError as err:
+        cur.execute("ROLLBACK")
+        print(err)
 
 def insert_publicacion(conn, publicacion):
     """
     Inserts an article in "bbdd_publicacion" table
     """
-    sql = '''INSERT OR REPLACE INTO bbdd_publicacion(
-            id_publicacion, titulo, anyo, URL) VALUES
-            (?,?,?,?)'''
-    cur = conn.cursor()
+
     values = [None, publicacion.get_titulo(), publicacion.get_anyo(), publicacion.get_url()]
-    cur.execute(sql, values)
-    conn.commit()
-    for persona in publicacion.get_autores():
-        id_persona = insert_persona(conn, persona)
-        insert_persona_publicacion(conn, id_persona,cur.lastrowid)
-    return cur.lastrowid   
+
+    sql = '''INSERT INTO bbdd_publicacion(
+            id_publicacion, titulo, anyo, URL) VALUES
+            (?,?,?,?)
+            '''
+    cur = conn.cursor()
+    try:
+        cur.execute("BEGIN")
+        result=cur.execute(sql, values)
+        cur.execute("COMMIT")
+    
+        for persona in publicacion.get_autores():
+            id_persona = insert_persona(conn, persona)
+            insert_persona_publicacion(conn, id_persona,cur.lastrowid)
+        return cur.lastrowid
+
+    except sqlite3.IntegrityError as err:
+        cur.execute("ROLLBACK")
+        print(err)
+    
+    
 
 def insert_libro(conn, libro): 
     """
     Inserts a libro in "bbdd_libro" table
     """
-    sql = '''INSERT OR REPLACE INTO bbdd_libro(editorial, publicacion_id)
+    sql = '''INSERT INTO bbdd_libro(editorial, publicacion_id)
             VALUES(?,?)'''
-    id_publicacion = insert_publicacion(conn, libro)
-    values = [libro.get_editorial(), id_publicacion]
     cur = conn.cursor()
-    cur.execute(sql, values)
-    conn.commit()
-    return cur.lastrowid
+    try:
+
+        id_publicacion = insert_publicacion(conn, libro)
+        values = [libro.get_editorial(), id_publicacion]
+        cur.execute("BEGIN")
+        cur.execute(sql, values)
+        cur.execute("COMMIT")
+        return cur.lastrowid
+    except sqlite3.IntegrityError as err:
+        cur.execute("ROLLBACK")
+        print(err)
 
 def insert_comCon(conn, com_con): 
     """
     Inserts a com_con in "bbdd_com_con" table
     """
-    sql = '''INSERT OR REPLACE INTO bbdd_com_con(
+    sql = '''INSERT INTO bbdd_com_con(
             congreso, edicion, lugar, pagina_inicio, pagina_fin, publicacion_id) VALUES
             (?,?,?,?,?,?)'''
-    id_publicacion = insert_publicacion(conn, com_con)
-    values = [com_con.get_congreso(), com_con.get_edicion(), com_con.get_lugar(), com_con.get_pagina_inicio(), com_con.get_pagina_fin(), id_publicacion]
     cur = conn.cursor()
-    cur.execute(sql, values)
-    conn.commit()
-    return cur.lastrowid
+    try:
+
+        id_publicacion = insert_publicacion(conn, com_con)
+        values = [com_con.get_congreso(), com_con.get_edicion(), com_con.get_lugar(), com_con.get_pagina_inicio(), com_con.get_pagina_fin(), id_publicacion]
+        cur.execute("BEGIN")
+        cur.execute(sql, values)
+        cur.execute("COMMIT")
+        return cur.lastrowid
+    except sqlite3.IntegrityError as err:
+        cur.execute("ROLLBACK")
+        print(err)
+
 
 def insert_persona(conn, persona): 
     """
     Inserts a com_con in "bbdd_person" table
     """
-    sql = '''INSERT OR REPLACE INTO bbdd_persona(
+    sql = '''INSERT OR IGNORE INTO bbdd_persona(
             id_persona,nombre,apellidos) VALUES
             (?,?,?)'''
-    values = [None,persona.get_nombre(),persona.get_apellidos()]
     cur = conn.cursor()
-    cur.execute(sql, values)
-    conn.commit()
-    return cur.lastrowid
+
+    try:
+        values = [None,persona.get_nombre(),persona.get_apellidos()]
+        cur.execute("BEGIN")
+        cur.execute(sql, values)
+        cur.execute("COMMIT")
+        return cur.lastrowid
+    except sqlite3.IntegrityError as err:
+        cur.execute("ROLLBACK")
+        print(err)
 
 def insert_persona_publicacion(conn, persona_id,publicacion_id): 
     """
     Inserts a com_con in "bbdd_personapublicacion" table
     """
-    sql = '''INSERT OR REPLACE INTO bbdd_personapublicacion(
+    sql = '''INSERT INTO bbdd_personapublicacion(
             id_personapublicacion, persona_id,publicacion_id) VALUES
             (?,?,?)'''
-    values = [None, persona_id,publicacion_id]
     cur = conn.cursor()
-    cur.execute(sql, values)
-    conn.commit()
-    return cur.lastrowid
+
+    try:
+        values = [None, persona_id,publicacion_id]
+        cur.execute("BEGIN")
+        cur.execute(sql, values)
+        cur.execute("COMMIT")
+        return cur.lastrowid
+    except sqlite3.IntegrityError as err:
+        cur.execute("ROLLBACK")
+        print(err)
 
 def sql_connection():
 
@@ -283,12 +340,12 @@ def select_data(titulo, autor, fecha_desde, fecha_hasta, tipos):
 def main():
     #-----------------------------CARGAR EN BASE DE DATOS--------------------------------------------#
     
-    # con = sql_connection() 
-    # insert_in_database(con, PATHS)
+    #con = sql_connection() 
+    #insert_in_database(con, PATHS)
 
     #-----------------------------PRUEBAS CONSULTAS A LA BASE DE DATOS--------------------------------#
-    data = select_data('', '', '1500', '2020', ['bbdd_articulo','bbdd_libro'])
-    print(len(data))
+    data = select_data('', '', '2000', '2020', ['bbdd_articulo','bbdd_libro', 'bbdd_com_con'])
+    print(data)
 
 if __name__ == '__main__':
     main()
