@@ -49,7 +49,7 @@ class Selenium(object):
             listElements = WebDriverWait(driver, 4).until(
                 lambda driver: driver.find_elements_by_class_name('gs_or_cit.gs_nph'))
         except:
-            driver.close()
+            #driver.close()
             raise Exception("SeleniumEngine error: El navegador ha detectado que eres un robot, sin resultados")
         try:
             if len(listElements) == 0:
@@ -86,10 +86,10 @@ class Selenium(object):
                         '//*[@id="gs_nm"]/button[2]')
 
         except:
-            driver.close()
+            #driver.close()
             return result
 
-        driver.close()
+        #driver.close()
         return result
 
     def extract_element(self, element, driver, tipos):
