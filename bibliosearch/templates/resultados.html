@@ -32,8 +32,8 @@
     {% for publicacion in page_obj %}
       <div class="card mx-auto d-block p-3 shadow-sm grid-item" style="width: 50rem">
       <div class="card-body">
-        <div class="row">
-        {% if publicacion.get_type == 'articulo' %}
+      <div class="row">
+      {% if publicacion.get_type == 'articulo' %}
         <div class="flex-col mr-3">
           <img class="mx-auto d-block m-2" width="80" height="80" src="{% static 'articulo.png' %}">
           <a href="{{publicacion.get_url}}">
