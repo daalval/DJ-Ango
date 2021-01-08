@@ -16,9 +16,6 @@ GOOGLE_SCHOLAR_ARTICULO = 'article'
 GOOGLE_SCHOLAR_COM_CON = 'inproceedings'
 GOOGLE_SCHOLAR_LIBRO = 'book'
 
-GOOGLE_CHROME_PATH = '/app/.apt/usr/bin/google_chrome'
-CHROMEDRIVER_PATH = '/app/.chromedriver/bin/chromedriver'
-
 class Selenium(object):
 
 
@@ -34,8 +31,8 @@ class Selenium(object):
             chrome_options.add_argument("--headless")
             chrome_options.add_argument("--disable-dev-shm-usage")
             chrome_options.add_argument("--no-sandbox")
-            chrome_options.binary_location = os.environ.get(GOOGLE_CHROME_PATH)
-            driver = webdriver.Chrome(executable_path=os.environ.get(CHROMEDRIVER_PATH), chrome_options=chrome_options)
+            chrome_options.binary_location = os.environ.get("GOOGLE_CHROME_BIN")
+            driver = webdriver.Chrome(executable_path=os.environ.get("CHROMEDRIVER_PATH"), chrome_options=chrome_options)
             # driver = webdriver.Chrome(
             #     'bibliosearch/controllers/chromedriver.exe')
             driver.get('https://scholar.google.es/#d=gs_asd')
