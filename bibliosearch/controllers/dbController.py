@@ -96,7 +96,7 @@ def insert_publicacion(conn, publicacion):
     cur = conn.cursor()
     try:
         cur.execute("BEGIN")
-        result=cur.execute(sql, values)
+        cur.execute(sql, values)
         cur.execute("COMMIT")
     
         for persona in publicacion.get_autores():
