@@ -118,7 +118,11 @@ def resultados(request,desde,hasta,articulo,libro,com_con):
     if com_con == 'True':
         tipos.append('bbdd_com_con')
     
+    print(tipos)
+    
     publicaciones = select_data('', '', desde, hasta, tipos)
+
+    print(publicaciones)
 
     paginator = Paginator(publicaciones, 9)
 
