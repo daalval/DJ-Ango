@@ -15,15 +15,26 @@ GOOGLE_SCHOLAR_ARTICULO = 'article'
 GOOGLE_SCHOLAR_COM_CON = 'inproceedings'
 GOOGLE_SCHOLAR_LIBRO = 'book'
 
+GOOGLE_CHROME_PATH = '/app/.apt/usr/bin/google_chrome'
+CHROMEDRIVER_PATH = '/app/.chromedriver/bin/chromedriver'
+
 class Selenium(object):
+
+
+
     def search(self, fecha_inicial, fecha_final, autor, tipos):
         result = {}
         listElements = []
         driver = None
         
         try:
-            driver = webdriver.Chrome(
-                'bibliosearch/controllers/chromedriver.exe')
+
+            chrome_options = webdriver.ChromeOptions()
+            chrome_options.add_argument('--disable-gpu')
+            chrome_options.add_argument('--no-sandbox')
+            chrome_options.binary_location = GOOGLE_CHROME_PATH
+
+            driver = webdriver.Chrome(execution_path=CHROMEDRIVER_PATH, chrome_options=chrome_options)
             driver.get('https://scholar.google.es/#d=gs_asd')
             author_element = WebDriverWait(driver, 4).until(
                 lambda driver: driver.find_element_by_id('gs_asd_sau'))
