@@ -23,10 +23,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get('SECRET_KEY')
+#SECRET_KEY = os.environ.get('SECRET_KEY')
+SECRET_KEY = '1d-+jj0t-%c7x$je8n*c**u1k!#6ld&bw)oezh3u8+3phi&(7@'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+#DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ["bibliosearch.herokuapp.com", "127.0.0.1"]
 
@@ -81,19 +83,26 @@ WSGI_APPLICATION = 'bibliosearch.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'NAME': 'de87m6fd69nafp',
+#         'USER': 'wqqojggpdmuusb',
+#         'PASSWORD': '1bb9f790779e30d6be157574de33e275a95ab3341596c9628aad7f1c1b9e103b',
+#         'HOST': 'ec2-54-156-73-147.compute-1.amazonaws.com',
+#         'DATABASE_PORT': '5432'
+#     }
+# }
+
+# db_from_env = dj_database_url.config(conn_max_age=500)
+# DATABASES['default'].update(db_from_env)
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'de87m6fd69nafp',
-        'USER': 'wqqojggpdmuusb',
-        'PASSWORD': '1bb9f790779e30d6be157574de33e275a95ab3341596c9628aad7f1c1b9e103b',
-        'HOST': 'ec2-54-156-73-147.compute-1.amazonaws.com',
-        'DATABASE_PORT': '5432'
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3')
     }
 }
-
-db_from_env = dj_database_url.config(conn_max_age=500)
-DATABASES['default'].update(db_from_env)
 
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
@@ -131,9 +140,9 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+# STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
 
-STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'static'),
-)
+# STATICFILES_DIRS = (
+#     os.path.join(BASE_DIR, 'static'),
+# )
