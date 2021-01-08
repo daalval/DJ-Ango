@@ -29,12 +29,15 @@ class Selenium(object):
         driver = None
         
         try:
-            chrome_options = webdriver.ChromeOptions()
-            chrome_options.add_argument("--headless")
-            chrome_options.add_argument("--disable-dev-shm-usage")
-            chrome_options.add_argument("--no-sandbox")
-            chrome_options.binary_location = os.environ.get(GOOGLE_CHROME_PATH)
-            driver = webdriver.Chrome(executable_path=os.environ.get(CHROMEDRIVER_PATH), chrome_options=chrome_options)
+            #heroku
+            # chrome_options = webdriver.ChromeOptions()
+            # chrome_options.add_argument("--headless")
+            # chrome_options.add_argument("--disable-dev-shm-usage")
+            # chrome_options.add_argument("--no-sandbox")
+            # chrome_options.binary_location = os.environ.get(GOOGLE_CHROME_PATH)
+            # driver = webdriver.Chrome(executable_path=os.environ.get(CHROMEDRIVER_PATH), chrome_options=chrome_options)
+            driver = webdriver.Chrome(
+                'bibliosearch/controllers/chromedriver.exe')
             driver.get('https://scholar.google.es/#d=gs_asd')
             author_element = WebDriverWait(driver, 4).until(
                 lambda driver: driver.find_element_by_id('gs_asd_sau'))
@@ -49,7 +52,7 @@ class Selenium(object):
             listElements = WebDriverWait(driver, 4).until(
                 lambda driver: driver.find_elements_by_class_name('gs_or_cit.gs_nph'))
         except:
-            #driver.close()
+            driver.close()
             raise Exception("SeleniumEngine error: El navegador ha detectado que eres un robot, sin resultados")
         try:
             if len(listElements) == 0:
@@ -86,10 +89,10 @@ class Selenium(object):
                         '//*[@id="gs_nm"]/button[2]')
 
         except:
-            #driver.close()
+            driver.close()
             return result
 
-        #driver.close()
+        driver.close()
         return result
 
     def extract_element(self, element, driver, tipos):
