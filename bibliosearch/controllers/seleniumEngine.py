@@ -29,13 +29,12 @@ class Selenium(object):
         driver = None
         
         try:
-            chrome_bin = os.environ.get(GOOGLE_CHROME_PATH, CHROMEDRIVER_PATH)
-            options = webdriver.ChromeOptions()
-            options.binary_location = chrome_bin
-            options.add_argument('--disable-gpu')
-            options.add_argument('--no-sandbox')
-            options.add_argument('--headless')
-            driver = webdriver.Chrome(executable_path=CHROMEDRIVER_PATH, chrome_options=options)
+            chrome_options = webdriver.ChromeOptions()
+            chrome_options.add_argument("--headless")
+            chrome_options.add_argument("--disable-dev-shm-usage")
+            chrome_options.add_argument("--no-sandbox")
+            chrome_options.binary_location = os.environ.get(GOOGLE_CHROME_PATH)
+            driver = webdriver.Chrome(executable_path=os.environ.get(CHROMEDRIVER_PATH), chrome_options=chrome_options)
             driver.get('https://scholar.google.es/#d=gs_asd')
             author_element = WebDriverWait(driver, 4).until(
                 lambda driver: driver.find_element_by_id('gs_asd_sau'))
@@ -50,7 +49,7 @@ class Selenium(object):
             listElements = WebDriverWait(driver, 4).until(
                 lambda driver: driver.find_elements_by_class_name('gs_or_cit.gs_nph'))
         except:
-            driver.close()
+            driver.quit()
             raise Exception("SeleniumEngine error: El navegador ha detectado que eres un robot, sin resultados")
         try:
             if len(listElements) == 0:
@@ -87,10 +86,10 @@ class Selenium(object):
                         '//*[@id="gs_nm"]/button[2]')
 
         except:
-            driver.close()
+            driver.quit()
             return result
 
-        driver.close()
+        driver.quit()
         return result
 
     def extract_element(self, element, driver, tipos):
