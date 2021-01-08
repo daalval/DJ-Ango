@@ -36,6 +36,7 @@ class Selenium(object):
             # driver = webdriver.Chrome(
             #     'bibliosearch/controllers/chromedriver.exe')
             driver.get('https://scholar.google.es/#d=gs_asd')
+            print(driver.page_source)
             author_element = WebDriverWait(driver, 4).until(
                 lambda driver: driver.find_element_by_id('gs_asd_sau'))
             author_element.send_keys(autor)
