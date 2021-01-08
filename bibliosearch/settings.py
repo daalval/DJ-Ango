@@ -84,17 +84,13 @@ WSGI_APPLICATION = 'bibliosearch.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'bibliosearch',
-        'USER': 'postgres',
-        'PASSWORD': 'diyeiango',
-        'HOST': '127.0.0.1',
+        'NAME': 'de87m6fd69nafp',
+        'USER': 'wqqojggpdmuusb',
+        'PASSWORD': '1bb9f790779e30d6be157574de33e275a95ab3341596c9628aad7f1c1b9e103b',
+        'HOST': 'ec2-54-156-73-147.compute-1.amazonaws.com',
         'DATABASE_PORT': '5432'
     }
 }
-
-db_from_env = dj_database_url.config(conn_max_age=600)
-DATABASES['default'].update(db_from_env)
-
 
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
