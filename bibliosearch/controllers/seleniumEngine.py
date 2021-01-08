@@ -30,14 +30,14 @@ class Selenium(object):
         
         try:
             #heroku
-            # chrome_options = webdriver.ChromeOptions()
-            # chrome_options.add_argument("--headless")
-            # chrome_options.add_argument("--disable-dev-shm-usage")
-            # chrome_options.add_argument("--no-sandbox")
-            # chrome_options.binary_location = os.environ.get(GOOGLE_CHROME_PATH)
-            # driver = webdriver.Chrome(executable_path=os.environ.get(CHROMEDRIVER_PATH), chrome_options=chrome_options)
-            driver = webdriver.Chrome(
-                'bibliosearch/controllers/chromedriver.exe')
+            chrome_options = webdriver.ChromeOptions()
+            chrome_options.add_argument("--headless")
+            chrome_options.add_argument("--disable-dev-shm-usage")
+            chrome_options.add_argument("--no-sandbox")
+            chrome_options.binary_location = os.environ.get(GOOGLE_CHROME_PATH)
+            driver = webdriver.Chrome(executable_path=os.environ.get(CHROMEDRIVER_PATH), chrome_options=chrome_options)
+            # driver = webdriver.Chrome(
+            #     'bibliosearch/controllers/chromedriver.exe')
             driver.get('https://scholar.google.es/#d=gs_asd')
             author_element = WebDriverWait(driver, 4).until(
                 lambda driver: driver.find_element_by_id('gs_asd_sau'))
