@@ -31,72 +31,72 @@
     <div class="grid-container" style="display: grid;grid-column-gap: 10px;grid-row-gap: 20px;">
     {% for publicacion in page_obj %}
       <div class="card mx-auto d-block p-3 shadow-sm grid-item" style="width: 50rem">
-    <div class="card-body">
-      <div class="row">
-      {% if publicacion.get_type == 'articulo' %}
-      <div class="flex-col mr-3">
-        <img class="mx-auto d-block m-2" width="80" height="80" src="{% static 'articulo.png' %}">
-        <a href="{{publicacion.get_url}}">
-          <img class="mx-auto d-block m-2" width="40" height="40" src="{% static 'chains.png' %}">
-        </a>
+      <div class="card-body">
+        <div class="row">
+        {% if publicacion.get_type == 'articulo' %}
+        <div class="flex-col mr-3">
+          <img class="mx-auto d-block m-2" width="80" height="80" src="{% static 'articulo.png' %}">
+          <a href="{{publicacion.get_url}}">
+            <img class="mx-auto d-block m-2" width="40" height="40" src="{% static 'chains.png' %}">
+          </a>
 
-      </div>
-      <div class="col">
-        <h6>{{publicacion.get_titulo}}</h6>
-        <ul>
-          <li>Autor/es: {{publicacion.get_autores}}</li>
-          <li>Revista: {{publicacion.get_ejemplar.get_revista.get_nombre}}</li>
-          <li>Volumen: {{publicacion.get_ejemplar.get_volumen}}</li>
-          <li>Número: {{publicacion.get_ejemplar.get_numero}}</li>
-          <li>Mes: {{publicacion.get_ejemplar.get_mes}}</li>
-          <li>Año: {{publicacion.get_anyo}}</li>
-          <li>Página inicio: {{publicacion.get_pagina_inicio}}</li>
-          <li>Página fin: {{publicacion.get_pagina_fin}}</li>
-        </ul>
-      </div>
+        </div>
+        <div class="col">
+          <h6>{{publicacion.get_titulo}}</h6>
+          <ul>
+            <li>Autor/es: {{publicacion.get_autores}}</li>
+            <li>Revista: {{publicacion.get_ejemplar.get_revista.get_nombre}}</li>
+            <li>Volumen: {{publicacion.get_ejemplar.get_volumen}}</li>
+            <li>Número: {{publicacion.get_ejemplar.get_numero}}</li>
+            <li>Mes: {{publicacion.get_ejemplar.get_mes}}</li>
+            <li>Año: {{publicacion.get_anyo}}</li>
+            <li>Página inicio: {{publicacion.get_pagina_inicio}}</li>
+            <li>Página fin: {{publicacion.get_pagina_fin}}</li>
+          </ul>
+        </div>
 
       {% endif %}
 
       {% if publicacion.get_type == 'libro' %}
-      <div class="flex-col mr-3">
-        <img class="mx-auto d-block m-2" width="80" height="80" src="{% static 'libro.png' %}">
-        <a href="{{publicacion.get_url}}">
-          <img class="mx-auto d-block m-2" width="40" height="40" src="{% static 'chains.png' %}">
-        </a>
+        <div class="flex-col mr-3">
+          <img class="mx-auto d-block m-2" width="80" height="80" src="{% static 'libro.png' %}">
+          <a href="{{publicacion.get_url}}">
+            <img class="mx-auto d-block m-2" width="40" height="40" src="{% static 'chains.png' %}">
+          </a>
 
-      </div>
-      <div class="col">
-        <h6>{{publicacion.get_titulo}}</h6>
-        <ul>
-          <li>Autor/es: {{publicacion.get_autores}}</li>
-          <li>Título: {{publicacion.get_titulo}}</li>
-          <li>Editorial: {{publicacion.get_editorial}}</li>
-          <li>Año: {{publicacion.get_anyo}}</li>
-        </ul>
-      </div>
+        </div>
+        <div class="col">
+          <h6>{{publicacion.get_titulo}}</h6>
+          <ul>
+            <li>Autor/es: {{publicacion.get_autores}}</li>
+            <li>Título: {{publicacion.get_titulo}}</li>
+            <li>Editorial: {{publicacion.get_editorial}}</li>
+            <li>Año: {{publicacion.get_anyo}}</li>
+          </ul>
+        </div>
       {% endif %}
 
       {% if publicacion.get_type == 'com_con' %}
-      <div class="flex-col mr-3">
-        <img class="mx-auto d-block m-2" width="80" height="80" src="{% static 'com_con.png' %}">
-        <a href="{{publicacion.get_url}}">
-          <img class="mx-auto d-block m-2" width="40" height="40" src="{% static 'chains.png' %}">
-        </a>
+        <div class="flex-col mr-3">
+          <img class="mx-auto d-block m-2" width="80" height="80" src="{% static 'com_con.png' %}">
+          <a href="{{publicacion.get_url}}">
+            <img class="mx-auto d-block m-2" width="40" height="40" src="{% static 'chains.png' %}">
+          </a>
 
-      </div>
-      <div class="col">
-        <h6>{{publicacion.get_titulo}}</h6>
-        <ul>
-          <li>Autor/es: {{publicacion.get_autores}}</li>
-          <li>Título: {{publicacion.get_titulo}}</li>
-          <li>Edición: {{publicacion.get_edicion}}</li>
-          <li>Congreso: {{publicacion.get_congreso}}</li>
-          <li>Lugar: {{publicacion.get_lugar}}</li>
-          <li>Año: {{publicacion.get_anyo}}</li>
-          <li>Página inicio: {{publicacion.get_pagina_inicio}}</li>
-          <li>Página fin: {{publicacion.get_pagina_fin}}</li>
-        </ul>
-      </div>
+        </div>
+        <div class="col">
+          <h6>{{publicacion.get_titulo}}</h6>
+          <ul>
+            <li>Autor/es: {{publicacion.get_autores}}</li>
+            <li>Título: {{publicacion.get_titulo}}</li>
+            <li>Edición: {{publicacion.get_edicion}}</li>
+            <li>Congreso: {{publicacion.get_congreso}}</li>
+            <li>Lugar: {{publicacion.get_lugar}}</li>
+            <li>Año: {{publicacion.get_anyo}}</li>
+            <li>Página inicio: {{publicacion.get_pagina_inicio}}</li>
+            <li>Página fin: {{publicacion.get_pagina_fin}}</li>
+          </ul>
+        </div>
       {% endif %}
       </div>
       </div>
