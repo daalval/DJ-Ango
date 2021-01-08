@@ -122,7 +122,9 @@ def resultados(request,desde,hasta,articulo,libro,com_con):
     
     publicaciones = select_data('', '', desde, hasta, tipos)
 
-    print(publicaciones)
+    print(len(publicaciones))
+    for publicacion in publicaciones:
+        print(publicacion.get_type)
 
     paginator = Paginator(publicaciones, 9)
 
