@@ -18,7 +18,7 @@ class Ejemplar(models.Model):
 
 class Publicacion(models.Model):
     id_publicacion = models.IntegerField(primary_key = True, null = False, unique=True)
-    titulo = models.CharField(null = True, max_length = 45)
+    titulo = models.CharField(null = True, max_length = 45, unique=True)
     anyo = models.IntegerField(null = True)
     URL = models.CharField(null = True, max_length = 45)
 
