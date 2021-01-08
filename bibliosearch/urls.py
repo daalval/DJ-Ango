@@ -21,10 +21,10 @@ from django.urls import include, path
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('bibliosearch/buscar/', buscar,name='buscar'),
-    path('bibliosearch/resultados/titulo:<str:titulo>&autor:<str:autor>&desde:<str:desde>&hasta:<str:hasta>&articulo:<str:articulo>&libro:<str:libro>&com_con:<str:com_con>', resultados_ta, name='resultados'),
-    path('bibliosearch/resultados/autor:<str:autor>&desde:<str:desde>&hasta:<str:hasta>&articulo:<str:articulo>&libro:<str:libro>&com_con:<str:com_con>', resultados_a, name='resultados'),
-    path('bibliosearch/resultados/titulo:<str:titulo>&desde:<str:desde>&hasta:<str:hasta>&articulo:<str:articulo>&libro:<str:libro>&com_con:<str:com_con>', resultados_t, name='resultados'),
-    path('bibliosearch/resultados/desde:<str:desde>&hasta:<str:hasta>&articulo:<str:articulo>&libro:<str:libro>&com_con:<str:com_con>', resultados, name='resultados'),
-    path('bibliosearch/subir/', subir,name='subir'),
+    path('buscar/', buscar,name='buscar'),
+    path('resultados/titulo:<str:titulo>&autor:<str:autor>&desde:<str:desde>&hasta:<str:hasta>&articulo:<str:articulo>&libro:<str:libro>&com_con:<str:com_con>', resultados_ta, name='resultados'),
+    path('resultados/autor:<str:autor>&desde:<str:desde>&hasta:<str:hasta>&articulo:<str:articulo>&libro:<str:libro>&com_con:<str:com_con>', resultados_a, name='resultados'),
+    path('resultados/titulo:<str:titulo>&desde:<str:desde>&hasta:<str:hasta>&articulo:<str:articulo>&libro:<str:libro>&com_con:<str:com_con>', resultados_t, name='resultados'),
+    path('resultados/desde:<str:desde>&hasta:<str:hasta>&articulo:<str:articulo>&libro:<str:libro>&com_con:<str:com_con>', resultados, name='resultados'),
+    path('subir/', subir,name='subir'),
 ]

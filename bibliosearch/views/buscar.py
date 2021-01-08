@@ -22,13 +22,13 @@ def buscar(request):
             libro = data['libro']
             com_con = data['com_con']
 
-            if titulo == '' and autor == '':return redirect(f'/bibliosearch/resultados/desde:{desde}&hasta:{hasta}&articulo:{articulo}&libro:{libro}&com_con:{com_con}')
+            if titulo == '' and autor == '':return redirect(f'/resultados/desde:{desde}&hasta:{hasta}&articulo:{articulo}&libro:{libro}&com_con:{com_con}')
 
-            if titulo == '':return redirect(f'/bibliosearch/resultados/autor:{autor}&desde:{desde}&hasta:{hasta}&articulo:{articulo}&libro:{libro}&com_con:{com_con}')
+            if titulo == '':return redirect(f'/resultados/autor:{autor}&desde:{desde}&hasta:{hasta}&articulo:{articulo}&libro:{libro}&com_con:{com_con}')
 
-            if autor == '':return redirect(f'/bibliosearch/resultados/titulo:{titulo}&desde:{desde}&hasta:{hasta}&articulo:{articulo}&libro:{libro}&com_con:{com_con}')
+            if autor == '':return redirect(f'/resultados/titulo:{titulo}&desde:{desde}&hasta:{hasta}&articulo:{articulo}&libro:{libro}&com_con:{com_con}')
 
-            return redirect(f'/bibliosearch/resultados/titulo:{titulo}&autor:{autor}&desde:{desde}&hasta:{hasta}&articulo:{articulo}&libro:{libro}&com_con:{com_con}')
+            return redirect(f'/resultados/titulo:{titulo}&autor:{autor}&desde:{desde}&hasta:{hasta}&articulo:{articulo}&libro:{libro}&com_con:{com_con}')
         
     else:
         formulario = FormularioBuscar()
