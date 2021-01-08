@@ -1,5 +1,6 @@
 
 
+import os
 from bibliosearch.models.Libro import LIBRO
 from bibliosearch.models.Articulo import ARTICULO
 from bibliosearch.models.Com_con import COM_CON
@@ -28,13 +29,13 @@ class Selenium(object):
         driver = None
         
         try:
-
-            chrome_options = webdriver.ChromeOptions()
-            chrome_options.add_argument('--disable-gpu')
-            chrome_options.add_argument('--no-sandbox')
-            chrome_options.binary_location = GOOGLE_CHROME_PATH
-
-            driver = webdriver.Chrome(execution_path=CHROMEDRIVER_PATH, chrome_options=chrome_options)
+            chrome_bin = os.environ.get(GOOGLE_CHROME_PATH, CHROMEDRIVER_PATH)
+            options = webdriver.ChromeOptions()
+            options.binary_location = chrome_bin
+            options.add_argument('--disable-gpu')
+            options.add_argument('--no-sandbox')
+            options.add_argument('--headless')
+            driver = webdriver.Chrome(executable_path=CHROMEDRIVER_PATH, chrome_options=options)
             driver.get('https://scholar.google.es/#d=gs_asd')
             author_element = WebDriverWait(driver, 4).until(
                 lambda driver: driver.find_element_by_id('gs_asd_sau'))
