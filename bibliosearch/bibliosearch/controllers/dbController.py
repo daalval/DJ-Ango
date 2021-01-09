@@ -8,7 +8,7 @@ import json
 import sqlite3
 from sqlite3.dbapi2 import Error
 
-PATHS = ['static/ieeeXplore.json', 'static/google_scholar.json', 'static/dblp.json']
+PATHS = ['static/ieeeXplore.json', 'static/dblp.json', 'static/google_scholar.json']
 
 def insert_articulo(conn, articulo):
     """
@@ -39,35 +39,34 @@ def insert_ejemplar(conn, ejemplar):
     """
     Inserts an ejemplar in "bbdd_ejemplar" table
     """
-    sql_ejemplar = '''INSERT INTO bbdd_ejemplar(id_ejemplar, volumen, numero, mes, revista_id)
-                    VALUES(?,?,?,?,?)'''
+    sql_ejemplar = '''INSERT INTO bbdd_ejemplar(id_ejemplar, volumen, numero, mes)
+                    VALUES(?,?,?,?)'''
     cur = conn.cursor()
     try:
-
-        id_revista = insert_revista(conn, ejemplar.get_revista())
-        
-        values = [None, ejemplar.get_volumen(), ejemplar.get_numero(), ejemplar.get_mes(), id_revista]
+        values = [None, ejemplar.get_volumen(), ejemplar.get_numero(), ejemplar.get_mes()]
 
         cur.execute("BEGIN")
         cur.execute(sql_ejemplar, values)
         cur.execute("COMMIT")
+
+        insert_revista(conn, ejemplar.get_revista(), cur.lastrowid)
 
         return cur.lastrowid
     except sqlite3.IntegrityError as err:
         cur.execute("ROLLBACK")
         print(err)
 
-def insert_revista(conn, revista):
+def insert_revista(conn, revista, ejemplar):
     """
     Inserts a revista in "bbdd_revista" table
     """
-    sql_revista = '''INSERT OR IGNORE INTO bbdd_revista(id_revista, nombre)
-                    VALUES(?,?)'''
+    sql_revista = '''INSERT INTO bbdd_revista(id_revista, nombre, ejemplar_id)
+                    VALUES(?,?,?)'''
     cur = conn.cursor()
 
     try:
 
-        values = [None, revista.get_nombre()]
+        values = [None, revista.get_nombre(), ejemplar]
         cur.execute("BEGIN")
         cur.execute(sql_revista, values)
         cur.execute("COMMIT")
@@ -95,12 +94,16 @@ def insert_publicacion(conn, publicacion):
     
         for persona in publicacion.get_autores():
             id_persona = insert_persona(conn, persona)
+            if id_persona == 0:
+                raise Exception("ID = 0 persona")
             insert_persona_publicacion(conn, id_persona,cur.lastrowid)
         return cur.lastrowid
 
     except sqlite3.IntegrityError as err:
         cur.execute("ROLLBACK")
         print(err)
+    except Exception as e:
+        print(e)
     
     
 
@@ -241,18 +244,17 @@ def select_data(titulo, autor, fecha_desde, fecha_hasta, tipos):
             titulo, r.nombre, volumen, numero, mes, anyo, pagina_inicio, pagina_fin, url from bbdd_articulo AS a 
             JOIN bbdd_publicacion AS p 
             ON a.publicacion_id = p.id_publicacion
-            JOIN bbdd_personapublicacion AS pp
+            LEFT JOIN bbdd_personapublicacion AS pp
             ON p.id_publicacion = pp.publicacion_id
-            JOIN bbdd_persona AS persona
+            LEFT JOIN bbdd_persona AS persona
             ON pp.persona_id = persona.id_persona
             JOIN bbdd_ejemplar AS e
             ON a.ejemplar_id = e.id_ejemplar
             JOIN bbdd_revista AS r
-            ON e.revista_id = r.id_revista
+            ON a.ejemplar_id = r.ejemplar_id
             WHERE titulo LIKE '%''' + titulo + '''%' AND
             anyo >= ''' + fecha_desde + ''' AND anyo <= ''' + fecha_hasta +''' AND
-            (persona.nombre LIKE '%''' + autor + '''%' OR
-            persona.apellidos LIKE '%''' + autor + '''%')
+            (IFNULL(persona.nombre || " " || persona.apellidos, '') LIKE '%''' + autor + '''%')
             GROUP BY a.publicacion_id
             '''
 
@@ -276,16 +278,15 @@ def select_data(titulo, autor, fecha_desde, fecha_hasta, tipos):
             sql = '''SELECT c.publicacion_id,
             group_concat(persona.nombre || " " || persona.apellidos, ', ') as autores,
             titulo, edicion, congreso, lugar, anyo, pagina_inicio, pagina_fin, url  from bbdd_com_con AS c 
-            INNER JOIN bbdd_publicacion AS p 
+            JOIN bbdd_publicacion AS p 
             ON c.publicacion_id = p.id_publicacion
-            INNER JOIN bbdd_personapublicacion AS pp
+            LEFT JOIN bbdd_personapublicacion AS pp
             ON p.id_publicacion = pp.publicacion_id
-            INNER JOIN bbdd_persona AS persona
+            LEFT JOIN bbdd_persona AS persona
             ON pp.persona_id = persona.id_persona
             WHERE titulo LIKE '%''' + titulo + '''%' AND
             anyo >= ''' + fecha_desde + ''' AND anyo <= ''' + fecha_hasta +''' AND
-            (persona.nombre LIKE '%''' + autor + '''%' OR
-            persona.apellidos LIKE '%''' + autor + '''%')
+            (IFNULL(persona.nombre || " " || persona.apellidos, '') LIKE '%''' + autor + '''%')
             GROUP BY c.publicacion_id
             '''
 
@@ -309,16 +310,15 @@ def select_data(titulo, autor, fecha_desde, fecha_hasta, tipos):
             group_concat(persona.nombre || " " || persona.apellidos, ', ') as autores,
             titulo, editorial, anyo, url
             from bbdd_libro AS c 
-            INNER JOIN bbdd_publicacion AS p 
+            JOIN bbdd_publicacion AS p 
             ON c.publicacion_id = p.id_publicacion
-            INNER JOIN bbdd_personapublicacion AS pp
+            LEFT JOIN bbdd_personapublicacion AS pp
             ON p.id_publicacion = pp.publicacion_id
-            INNER JOIN bbdd_persona AS persona
+            LEFT JOIN bbdd_persona AS persona
             ON pp.persona_id = persona.id_persona
             WHERE titulo LIKE '%''' + titulo + '''%' AND
             anyo >= ''' + fecha_desde + ''' AND anyo <= ''' + fecha_hasta +''' AND
-            (persona.nombre LIKE '%''' + autor + '''%' OR
-            persona.apellidos LIKE '%''' + autor + '''%')
+            (IFNULL(persona.nombre || " " || persona.apellidos, '') LIKE '%''' + autor + '''%')
             GROUP BY c.publicacion_id
             '''
 
@@ -335,6 +335,7 @@ def select_data(titulo, autor, fecha_desde, fecha_hasta, tipos):
             
             con.commit()
     
+    data.sort(key=lambda x:x.get_titulo())
     return data
 
             
@@ -343,12 +344,13 @@ def select_data(titulo, autor, fecha_desde, fecha_hasta, tipos):
 def main():
     #-----------------------------CARGAR EN BASE DE DATOS--------------------------------------------#
     
-    con = sql_connection() 
-    insert_in_database(con, PATHS)
+    # con = sql_connection() 
+    # insert_in_database(con, PATHS)
 
     #-----------------------------PRUEBAS CONSULTAS A LA BASE DE DATOS--------------------------------#
-    # data = select_data('', '', '2000', '2020', ['bbdd_articulo','bbdd_libro', 'bbdd_com_con'])
-    # print(data)
+    data = select_data('', '', '1000', '2020', ['bbdd_articulo','bbdd_libro', 'bbdd_com_con'])
+    for publi in data:
+        print(publi.get_titulo())
 
 if __name__ == '__main__':
     main()

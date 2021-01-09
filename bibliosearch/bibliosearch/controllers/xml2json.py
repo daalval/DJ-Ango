@@ -122,10 +122,6 @@ def xml_parser(xml_file, json_file, year_st, year_end):
             #}
             #new_dict['ejemplar'] = ejemplar
             # Revista.nombre
-            revista = {
-                'nombre': article_dict[NOMBRE]
-            }
-            new_dict['revista'] = revista
             articles[key] = new_dict
 
     return articles
@@ -142,7 +138,12 @@ def main():
     """
     Main IEI parser
     """
-    xml_parser("static/dblp-pruebas.xml", "static/dblp.json", 2005, 2020)
+    result = xml_parser("static/dblp-pruebas.xml", "static/dblp.json", 2005, 2020)
+
+    with open('static/dblp.json', 'w') as json_file:
+        json.dump(result, json_file)
+    json_file.close()
+    
 
 
 if __name__ == "__main__":
