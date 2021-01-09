@@ -199,7 +199,7 @@ def type_to_ieee_type(type):
 
 def get_result():
 
-    result = query("https://ieeexploreapi.ieee.org/api/v1/search/articles?parameter&apikey=efv84mzqq6ydx4dbd59jhdcn", 'static/ieeeXplore.json', [COM_CON], '1000', '2020')
+    result = query("https://ieeexploreapi.ieee.org/api/v1/search/articles?parameter&apikey=efv84mzqq6ydx4dbd59jhdcn", 'static/ieeeXplore.json', [ARTICULO, LIBRO, COM_CON], '2000', '2020')
 
     with open('static/ieeeXplore.json', 'w') as json_file:
         json.dump(result, json_file)

@@ -10,19 +10,6 @@ from sqlite3.dbapi2 import Error
 
 PATHS = ['static/ieeeXplore.json', 'static/google_scholar.json', 'static/dblp.json']
 
-def create_connection(db_file):
-    """
-    creates a connection with the sqlite database
-    :param db_file: database file
-    :return Connection object or None
-    """
-    conn = None
-    try:
-        conn = sqlite3.connect(db_file)
-    except Error as e:
-        print(e)
-    return conn
-
 def insert_articulo(conn, articulo):
     """
     Inserts an article in "bbdd_articulo" table
@@ -34,6 +21,8 @@ def insert_articulo(conn, articulo):
     
     try:
         id_publicacion = insert_publicacion(conn, articulo)
+        if id_publicacion == 0:
+            raise Exception("ID = 0 articulo")
         id_ejemplar = insert_ejemplar(conn, articulo.get_ejemplar())
         values = [articulo.get_pagina_inicio(), articulo.get_pagina_fin(), id_publicacion, id_ejemplar]
         cur.execute("BEGIN")
@@ -43,6 +32,8 @@ def insert_articulo(conn, articulo):
     except sqlite3.IntegrityError as err:
         cur.execute("ROLLBACK")
         print(err)
+    except Exception as e:
+        print(e)
 
 def insert_ejemplar(conn, ejemplar):
     """
@@ -52,12 +43,15 @@ def insert_ejemplar(conn, ejemplar):
                     VALUES(?,?,?,?,?)'''
     cur = conn.cursor()
     try:
+
         id_revista = insert_revista(conn, ejemplar.get_revista())
         
         values = [None, ejemplar.get_volumen(), ejemplar.get_numero(), ejemplar.get_mes(), id_revista]
+
         cur.execute("BEGIN")
         cur.execute(sql_ejemplar, values)
         cur.execute("COMMIT")
+
         return cur.lastrowid
     except sqlite3.IntegrityError as err:
         cur.execute("ROLLBACK")
@@ -67,7 +61,7 @@ def insert_revista(conn, revista):
     """
     Inserts a revista in "bbdd_revista" table
     """
-    sql_revista = '''INSERT INTO bbdd_revista(id_revista, nombre)
+    sql_revista = '''INSERT OR IGNORE INTO bbdd_revista(id_revista, nombre)
                     VALUES(?,?)'''
     cur = conn.cursor()
 
@@ -89,7 +83,7 @@ def insert_publicacion(conn, publicacion):
 
     values = [None, publicacion.get_titulo(), publicacion.get_anyo(), publicacion.get_url()]
 
-    sql = '''INSERT INTO bbdd_publicacion(
+    sql = '''INSERT OR IGNORE INTO bbdd_publicacion(
             id_publicacion, titulo, anyo, URL) VALUES
             (?,?,?,?)
             '''
@@ -120,6 +114,8 @@ def insert_libro(conn, libro):
     try:
 
         id_publicacion = insert_publicacion(conn, libro)
+        if id_publicacion == 0:
+            raise Exception("ID = 0 libro")
         values = [libro.get_editorial(), id_publicacion]
         cur.execute("BEGIN")
         cur.execute(sql, values)
@@ -128,6 +124,8 @@ def insert_libro(conn, libro):
     except sqlite3.IntegrityError as err:
         cur.execute("ROLLBACK")
         print(err)
+    except Exception as e:
+        print(e)
 
 def insert_comCon(conn, com_con): 
     """
@@ -140,6 +138,8 @@ def insert_comCon(conn, com_con):
     try:
 
         id_publicacion = insert_publicacion(conn, com_con)
+        if id_publicacion == 0:
+            raise Exception("ID = 0 com_con")
         values = [com_con.get_congreso(), com_con.get_edicion(), com_con.get_lugar(), com_con.get_pagina_inicio(), com_con.get_pagina_fin(), id_publicacion]
         cur.execute("BEGIN")
         cur.execute(sql, values)
@@ -148,6 +148,9 @@ def insert_comCon(conn, com_con):
     except sqlite3.IntegrityError as err:
         cur.execute("ROLLBACK")
         print(err)
+    
+    except Exception as e:
+        print(e)
 
 
 def insert_persona(conn, persona): 
@@ -340,12 +343,12 @@ def select_data(titulo, autor, fecha_desde, fecha_hasta, tipos):
 def main():
     #-----------------------------CARGAR EN BASE DE DATOS--------------------------------------------#
     
-    #con = sql_connection() 
-    #insert_in_database(con, PATHS)
+    con = sql_connection() 
+    insert_in_database(con, PATHS)
 
     #-----------------------------PRUEBAS CONSULTAS A LA BASE DE DATOS--------------------------------#
-    data = select_data('', '', '2000', '2020', ['bbdd_articulo','bbdd_libro', 'bbdd_com_con'])
-    print(data)
+    # data = select_data('', '', '2000', '2020', ['bbdd_articulo','bbdd_libro', 'bbdd_com_con'])
+    # print(data)
 
 if __name__ == '__main__':
     main()

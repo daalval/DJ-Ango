@@ -4,7 +4,7 @@ from django.db import models
 
 class Revista(models.Model):
     id_revista = models.IntegerField(primary_key = True, null = False)
-    nombre = models.CharField(null = True, max_length = 45)
+    nombre = models.CharField(null = True, max_length = 45, unique=True)
 
 class Ejemplar(models.Model):
     id_ejemplar = models.IntegerField(primary_key = True, null = False)
@@ -13,12 +13,9 @@ class Ejemplar(models.Model):
     mes = models.IntegerField(null = True)
     revista = models.OneToOneField(Revista, on_delete = models.CASCADE)
 
-    class Meta:
-        unique_together = (("volumen", "numero", "mes"))
-
 class Publicacion(models.Model):
     id_publicacion = models.IntegerField(primary_key = True, null = False, unique=True)
-    titulo = models.CharField(null = True, max_length = 45, unique=True)
+    titulo = models.CharField(null = True, max_length = 45)
     anyo = models.IntegerField(null = True)
     URL = models.CharField(null = True, max_length = 45)
 
@@ -31,9 +28,6 @@ class Articulo(models.Model):
     ejemplar = models.OneToOneField(Ejemplar, on_delete = models.CASCADE, null = False)
     publicacion = models.OneToOneField(Publicacion, on_delete = models.CASCADE, null = False, primary_key = True)
 
-    class Meta:
-        unique_together = (("pagina_inicio", "pagina_fin", "ejemplar"))
-
 class Com_con(models.Model):
     congreso = models.CharField(null = True, max_length = 45)
     edicion = models.CharField(null = True, max_length = 45)
@@ -41,9 +35,6 @@ class Com_con(models.Model):
     pagina_inicio = models.IntegerField(null = True)
     pagina_fin = models.IntegerField(null = True)
     publicacion = models.OneToOneField(Publicacion, on_delete = models.CASCADE, null = False, primary_key = True)
-
-    class Meta:
-        unique_together = (("congreso", "edicion", "lugar", "pagina_inicio", "pagina_fin"))
 
 class Libro(models.Model):
     editorial = models.CharField(null = True, max_length = 45)
