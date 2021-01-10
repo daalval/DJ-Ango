@@ -8,6 +8,7 @@ class Articulo(Publicacion):
     """
     Clase artículo
     """
+    #Constructor de Articulo
     def __init__(self, pagina_inicio, pagina_fin, id_publicacion, titulo, anyo, url, autores, ejemplar):
         self._pagina_inicio = pagina_inicio
         self._pagina_fin = pagina_fin
@@ -26,6 +27,7 @@ class Articulo(Publicacion):
     def get_type(self):
         return ARTICULO
 
+#Transformar de un diccionario a un objeto Articulo
 def dict_2_articulo(dict):
     revista = Revista(None, dict['nombre'])
     ejemplar = Ejemplar(None, dict['volumen'], dict['numero'], dict['mes'], revista)

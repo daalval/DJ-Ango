@@ -1,4 +1,5 @@
 class Revista(object):
+    #Constructor de Revista
     def __init__(self, id_revista, nombre):
         self._id = id_revista
         self._nombre = nombre
