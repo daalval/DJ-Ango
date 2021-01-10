@@ -19,12 +19,14 @@ GOOGLE_SCHOLAR_LIBRO = 'book'
 class Selenium(object):
 
 
-
+    # Metodo que dandole una fecha_inicial, una fecha_final, unos tipos y
+    # opcionalmente un autor, selenium hace una busqueda en google scholar
     def search(self, fecha_inicial, fecha_final, autor, tipos):
         result = {}
         listElements = []
         driver = None
         
+        # Accede a las opciones avanzadas de google scholar para realizar la busqueda
         try:
             driver = webdriver.Chrome(
                 'bibliosearch/controllers/chromedriver.exe')
@@ -40,17 +42,21 @@ class Selenium(object):
             fecha_final_element.send_keys(str(fecha_final))
             fecha_final_element.send_keys(Keys.RETURN)
             
+            # Los elementos obtenidos en la busqueda
             listElements = WebDriverWait(driver, 4).until(
                 lambda driver: driver.find_elements_by_class_name('gs_or_cit.gs_nph'))
         except:
             driver.close()
+            # Salida si detecta que somos un robot sin ningun resultado, lanza excepcion
             raise Exception("SeleniumEngine error: El navegador ha detectado que eres un robot, sin resultados")
         try:
+            # Salida si no ha encontrado elementos
             if len(listElements) == 0:
+                driver.close()
                 return result
 
             index = 0
-
+            # Extraer cada elemento
             while(index < len(listElements)):
                 result.update(self.extract_element(
                     listElements[index], driver, tipos))
@@ -60,7 +66,7 @@ class Selenium(object):
 
             mas_paginas = driver.find_element_by_xpath(
                 '/html/body/div/div[9]/div[3]/div').get_attribute('innerText')
-
+            # Si hay más páginas, pasa de página
             if mas_paginas[0] == 'P':
                 next_page = driver.find_element_by_xpath(
                     '//*[@id="gs_nm"]/button[2]')
@@ -70,6 +76,7 @@ class Selenium(object):
                     listElements = WebDriverWait(driver, 4).until(
                         lambda driver: driver.find_elements_by_class_name('gs_or_cit.gs_nph'))
                     index = 0
+                    # Extraer cada elemento
                     while(index < len(listElements)):
                         result.update(self.extract_element(
                             listElements[index], driver, tipos))
@@ -81,18 +88,23 @@ class Selenium(object):
 
         except:
             driver.close()
+            # Salida si detecta que somosun robot con algún resultado
             return result
 
         driver.close()
+        # Salida si no detecta que somos robots
         return result
 
+    # Metodo que apartir de un elemento html crea una publicacion segun su tipo
     def extract_element(self, element, driver, tipos):
+        # Entramos en el bibtex
         element.click()
         WebDriverWait(driver, 10).until(
             EC.element_to_be_clickable((By.CLASS_NAME, 'gs_citi'))).click()
         text = driver.find_element_by_tag_name(
             'pre').get_attribute('innerText')
 
+        # Usamos la libreria bibtex para parsear el texto
         data = parse_string(text, 'bibtex')
 
         entry = list(data.entries.values())[0]
@@ -101,11 +113,13 @@ class Selenium(object):
 
         key = entry.key
 
+        # Salida si esta publicacion no es de un tipo buscado
         if type not in tipos:
             driver.back()
             driver.back()
             return {}
 
+        # Obtenemos los campos del elemento
         fields = entry.fields
         title = self.fix_string_without_accent(fields.get('title'))
 
@@ -122,6 +136,7 @@ class Selenium(object):
                        }
             personas.append(persona)
 
+        # Campos en comun
         result = {
 
             'anyo': year,
@@ -129,7 +144,7 @@ class Selenium(object):
             'titulo': title,
         }
 
-        # --------------------------------------------ARTICULOS------------------------------------------
+        # Si la publicacion es un articulo
         if type == ARTICULO:
 
             volume = fields.get('volume')
@@ -157,7 +172,7 @@ class Selenium(object):
                 'pagina_fin': final_page,
                 'publicado_en': publicado_en
             })
-        # --------------------------------------------LIBROS------------------------------------------
+        # Si la publicacion es un libro
         if type == LIBRO:
             pages = fields.get('pages')
             result.update({
@@ -166,7 +181,7 @@ class Selenium(object):
                 'editorial': publisher
             })
 
-        # --------------------------------------------COMUNICACION-CONGRESO------------------------------------------
+        # Si la publicacion es un com_con
         if type == COM_CON:
             organization = self.fix_string_without_accent(
                 fields.get('organization'))
@@ -194,6 +209,7 @@ class Selenium(object):
 
         url = None
 
+        # Obtener la url
         try:
             url = driver.find_element_by_xpath(
             '/html/body/div/div[10]/div[2]/div[2]/div[2]/div[4]/div/h3/a')
@@ -213,6 +229,7 @@ class Selenium(object):
             key: result
         }
 
+    # Metodo para transformar el tipo de google scholar en nuestro propio tipo
     def google_scholar_type_to_type(self,type):
         if type == GOOGLE_SCHOLAR_LIBRO:
             return LIBRO
@@ -222,6 +239,7 @@ class Selenium(object):
             return COM_CON
         raise Exception("GoogleScholar error: google_scholar_type_to_type tipo inexistente")
 
+    # Metodo para arreglar los acentos
     def fix_string_without_accent(self, string):
         if string == None:
             return None
@@ -241,7 +259,7 @@ class Selenium(object):
             index = string.find('{\\\'')
         return string
 
-
+# Metodo main para realizar pruebas
 def main():
     selenium = Selenium()
     
