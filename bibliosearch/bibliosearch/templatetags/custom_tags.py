@@ -1,3 +1,4 @@
+from bibliosearch.controllers.dbController import delete_all_data
 from bibliosearch.views.buscar import MAX_ROWS
 from django.template import Library
 import math
@@ -19,3 +20,7 @@ def index(indexable, i,j):
 @register.simple_tag
 def columns(indexable,row):
     return math.ceil(len(indexable) - row * 3)
+
+@register.simple_tag
+def call_delete_all_data():
+    delete_all_data()
