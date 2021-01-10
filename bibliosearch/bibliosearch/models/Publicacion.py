@@ -1,5 +1,6 @@
 class Publicacion(object):
 
+    #Constructor de Publicacion
     def __init__(self, id_publicacion, titulo, anyo, url, autores):
         self._id = id_publicacion
         self._titulo = titulo
