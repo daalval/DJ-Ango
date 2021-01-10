@@ -6,6 +6,7 @@ class Com_con(Publicacion):
     """
     Clase comunicaciones-congresos
     """
+    #Constructor de Comunicación-Congreso
     def __init__(self, congreso, edicion, lugar, pagina_inicio, pagina_fin, id_publicacion, titulo, anyo, url, autores):
         self._congreso = congreso
         self._edicion = edicion
@@ -32,5 +33,6 @@ class Com_con(Publicacion):
     def get_type(self):
         return COM_CON
 
+#Transformar de un diccionario a un objeto Com_con
 def dict_2_com_con(dict):
     return Com_con(dict['congreso'],dict['edicion'],dict['lugar'],dict['pagina_inicio'],dict['pagina_fin'],None,dict['titulo'],dict['anyo'],dict['URL'],dict['autores'])

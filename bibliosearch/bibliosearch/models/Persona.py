@@ -1,5 +1,6 @@
 class Persona(object):
 
+    #Constructor de Persona
     def __init__(self,id_persona, nombre, apellidos):
         self._id = id_persona
         self._nombre = nombre

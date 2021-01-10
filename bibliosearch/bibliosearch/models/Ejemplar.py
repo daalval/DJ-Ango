@@ -1,4 +1,5 @@
 class Ejemplar(object):
+    #Constructor de Ejemplar.
     def __init__(self, id_ejemplar, volumen, numero, mes, revista):
         self._id = id_ejemplar
         self._volumen = volumen
