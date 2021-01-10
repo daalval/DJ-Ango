@@ -23,7 +23,7 @@ def query(url, file, our_content_types, our_start_year, our_end_year):
         try:
             data = requests.get(url, verify=False, params=params).json()
         except Exception as e:
-            raise Exception("ieeeXploreEngine error: Máximo de consultas sobrepasado")
+            raise Exception("ieee_extractor error: Máximo de consultas sobrepasado")
 
         if type == LIBRO:
 

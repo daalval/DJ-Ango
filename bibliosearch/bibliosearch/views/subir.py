@@ -1,9 +1,9 @@
-from bibliosearch.controllers.seleniumEngine import Selenium
+from bibliosearch.controllers.googleScholar_extractor import Selenium
 from bibliosearch.models.Com_con import COM_CON
 from bibliosearch.models.Libro import LIBRO
 from bibliosearch.models.Articulo import ARTICULO
-from bibliosearch.controllers.ieeeEngine import query
-from bibliosearch.controllers.xml2json import xml_parser
+from bibliosearch.controllers.ieee_extractor import query
+from bibliosearch.controllers.dblp_extractor import xml_parser
 from bibliosearch.controllers.dbController import PATHS, insert_in_database, sql_connection
 from django.shortcuts import  render
 from django import forms

@@ -338,7 +338,27 @@ def select_data(titulo, autor, fecha_desde, fecha_hasta, tipos):
     data.sort(key=lambda x:x.get_titulo())
     return data
 
-            
+def delete_all_data():
+    conn = sql_connection()
+    cur = conn.cursor()
+
+    sql_delete_publicaciones = 'DELETE FROM bbdd_publicacion'
+    sql_delete_articulos = 'DELETE FROM bbdd_articulo'
+    sql_delete_ejemplares = 'DELETE FROM bbdd_ejemplar'
+    sql_delete_revistas = 'DELETE FROM bbdd_revista'
+    sql_delete_libros = 'DELETE FROM bbdd_libro'
+    sql_delete_com_con = 'DELETE FROM bbdd_com_con'
+    sql_delete_personas = 'DELETE FROM bbdd_persona'
+    sql_delete_personaspublicaciones = 'DELETE FROM bbdd_personapublicacion'
+
+    sqls = [sql_delete_publicaciones, sql_delete_articulos, sql_delete_ejemplares, sql_delete_revistas, sql_delete_libros, sql_delete_com_con,
+    sql_delete_personas, sql_delete_personaspublicaciones]
+
+    for sql in sqls:
+        cur.execute("BEGIN")
+        cur.execute(sql)
+        cur.execute("COMMIT")
+
         
 
 def main():
@@ -348,9 +368,10 @@ def main():
     # insert_in_database(con, PATHS)
 
     #-----------------------------PRUEBAS CONSULTAS A LA BASE DE DATOS--------------------------------#
-    data = select_data('', '', '1000', '2020', ['bbdd_articulo','bbdd_libro', 'bbdd_com_con'])
-    for publi in data:
-        print(publi.get_titulo())
+    # data = select_data('', '', '1000', '2020', ['bbdd_articulo','bbdd_libro', 'bbdd_com_con'])
+    # for publi in data:
+        # print(publi.get_titulo())
+    delete_all_data()
 
 if __name__ == '__main__':
     main()
