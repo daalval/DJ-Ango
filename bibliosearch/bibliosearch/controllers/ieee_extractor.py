@@ -8,23 +8,35 @@ IEEE_ARTICULO = 'Journals'
 IEEE_LIBRO = 'Books'
 IEEE_COM_CON = 'Conferences'
 
+# Método que se encarga de realizar la consulta en la web de ieeXplore
+# Parámetros: 
+#   url: link de consulta a ieeeXplore con su respectiva Api key
+#   file: archivo json en el que se guarda la info extraída
+#   our_content_types: tipos (articulos, libros, conferencias) sobre los que se quiere hacer la consulta
+#   our_start_year: año de comienzo
+#   our_end_year: año final
 def query(url, file, our_content_types, our_start_year, our_end_year):
 
     result = {}
     data = {}
 
+    # Para cada tipo se realizará una extracción distinta explicada dentro del for
+
     for type in our_content_types:
+        # Parámetros necesarios para la consulta a ieee
         params = dict(
             content_type = type_to_ieee_type(type),
             start_year = our_start_year,
             end_year = our_end_year,
             max_records = '20',
         )
+        # se guarda en data el json que devuelve la consulta en ieee
         try:
             data = requests.get(url, verify=False, params=params).json()
         except Exception as e:
             raise Exception("ieee_extractor error: Máximo de consultas sobrepasado")
 
+        # para cada tipo de publicacion se haran los mappings correspondientes
         if type == LIBRO:
 
             for book in data['articles']:
@@ -188,6 +200,7 @@ def query(url, file, our_content_types, our_start_year, our_end_year):
 
     return result
 
+# método para cambiar el tipo normal al que necesita ieee
 def type_to_ieee_type(type):
     if type == LIBRO:
         return IEEE_LIBRO
@@ -197,10 +210,12 @@ def type_to_ieee_type(type):
         return IEEE_COM_CON
     raise Exception("IeeeEngine error: ieee_type_to_type tipo inexistente")
 
+# método que llama al método query comentado anteriormente
 def get_result():
 
     result = query("https://ieeexploreapi.ieee.org/api/v1/search/articles?parameter&apikey=efv84mzqq6ydx4dbd59jhdcn", 'static/ieeeXplore.json', [ARTICULO, LIBRO, COM_CON], '2000', '2020')
 
+    # esto escribe el resultado en el archivo pasado como primer argumento en el método open
     with open('static/ieeeXplore.json', 'w') as json_file:
         json.dump(result, json_file)
     json_file.close()
