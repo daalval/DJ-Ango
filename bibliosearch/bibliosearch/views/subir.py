@@ -34,7 +34,7 @@ def subir(request):
 
             if data['articulo']:
                 try:
-                    dblp_results = xml_parser("static/dblp-pruebas.xml", "static/dblp.json", desde, hasta)
+                    dblp_results = xml_parser("static/dblp-pruebas.xml", desde, hasta)
                 except Exception as e:
                     errors.append(e)
                 

@@ -147,7 +147,7 @@ def main():
     """
     Main IEI parser
     """
-    result = xml_parser("static/dblp-pruebas.xml", 2005, 2020)
+    result = xml_parser("static/DPLB-ENTREGA-FINAL.xml", 2005, 2020)
 
     with open('static/dblp.json', 'w') as json_file:
         json.dump(result, json_file)

@@ -1,0 +1,1653 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dblp>
+	<article mdate="2020-06-25" key="tr/meltdown/m18" publtype="informal">
+		<author>Moritz Lipp</author>
+		<author>Michael Schwarz 0001</author>
+		<author>Daniel Gruss</author>
+		<author>Thomas Prescher 0002</author>
+		<author>Werner Haas 0004</author>
+		<author>Stefan Mangard</author>
+		<author>Paul Kocher</author>
+		<author>Daniel Genkin</author>
+		<author>Yuval Yarom</author>
+		<author>Mike Hamburg</author>
+		<title>Meltdown</title>
+		<journal>meltdownattack.com</journal>
+		<ee type="oa">https://meltdownattack.com/meltdown.pdf</ee>
+		<year>2018</year>
+	</article>
+	<article mdate="2020-03-24" key="tr/unicamp/IC-12-08" publtype="informal">
+		<author>Jacques Wainer</author>
+		<author>Michael Eckmann</author>
+		<author>Siome Goldenstein</author>
+		<author>Anderson Rocha 0001</author>
+		<title>Differences in productivity and impact across the different computer science subareas.</title>
+		<journal>Technical Report</journal>
+		<volume>IC-12-08</volume>
+		<year>2012</year>
+		<publisher>Institute of Computing, University of Campinas, Campinas, Brazil</publisher>
+		<ee type="oa">http://www.ic.unicamp.br/~reltech/2012/12-08.pdf</ee>
+		<note>In English, 30 pages</note>
+	</article>
+	<article mdate="2020-02-04" key="persons/LeyCHM11">
+		<author>Rita Ley</author>
+		<author orcid="0000-0002-1163-8988">Markus Casper</author>
+		<author>Hugo Hellebrand</author>
+		<author>Ralf Merz</author>
+		<title>Catchment classification by runoff behaviour with self-organizing maps (SOM)</title>
+		<journal>Hydrology and Earth System Sciences</journal>
+		<volume>15</volume>
+		<pages>2947-2962</pages>
+		<year>2011</year>
+		<ee type="oa">https://doi.org/10.5194/hess-15-2947-2011</ee>
+	</article>
+	<article mdate="2020-02-04" key="persons/CasperGGGHLR12">
+		<author orcid="0000-0002-1163-8988">Markus Casper</author>
+		<author>Gayane Grigoryan</author>
+		<author>Oliver Gronz</author>
+		<author>Oliver Gutjahr</author>
+		<author orcid="0000-0002-4831-9016">Günther Heinemann</author>
+		<author>Rita Ley</author>
+		<author>Andreas Rock</author>
+		<title>Analysis of projected hydrological behavior of catchments based on signature indices</title>
+		<journal>Hydrology and Earth System Sciences</journal>
+		<volume>16</volume>
+		<pages>409-421</pages>
+		<year>2012</year>
+		<ee type="oa">https://doi.org/10.5194/hess-16-409-2012</ee>
+	</article>
+	<article mdate="2020-07-09" key="journals/see/Davies19">
+		<author orcid="0000-0002-2113-9103">Sarah R. Davies</author>
+		<title>An Ethics of the System: Talking to Scientists About Research Integrity.</title>
+		<pages>1235-1253</pages>
+		<year>2019</year>
+		<volume>25</volume>
+		<journal>Sci. Eng. Ethics</journal>
+		<number>4</number>
+		<ee>https://doi.org/10.1007/s11948-018-0064-y</ee>
+		<ee>https://www.wikidata.org/entity/Q58657000</ee>
+		<url>db/journals/see/see25.html#Davies19</url>
+	</article>
+	<article mdate="2020-07-09" key="journals/see/Smith12">
+		<author>Steven R. Smith</author>
+		<title>Neuroscience, Ethics and Legal Responsibility: The Problem of the Insanity Defense - Commentary on "The Ethics of Neuroscience and the Neuroscience of Ethics: A Phenomenological-Existential Approach".</title>
+		<pages>475-481</pages>
+		<year>2012</year>
+		<volume>18</volume>
+		<journal>Sci. Eng. Ethics</journal>
+		<number>3</number>
+		<ee>https://doi.org/10.1007/s11948-012-9390-7</ee>
+		<ee>https://www.wikidata.org/entity/Q44045116</ee>
+		<url>db/journals/see/see18.html#Smith12</url>
+	</article>
+	<article mdate="2020-07-09" key="journals/see/NairB20">
+		<author>Indira Nair</author>
+		<author>William M. Bulleit</author>
+		<title>Pragmatism and Care in Engineering Ethics.</title>
+		<pages>65-87</pages>
+		<year>2020</year>
+		<volume>26</volume>
+		<journal>Sci. Eng. Ethics</journal>
+		<number>1</number>
+		<ee>https://doi.org/10.1007/s11948-018-0080-y</ee>
+		<ee>https://www.wikidata.org/entity/Q90930992</ee>
+		<url>db/journals/see/see26.html#NairB20</url>
+	</article>
+	<article mdate="2020-07-09" key="journals/see/Silva18">
+		<author>Jaime A. Teixeira da Silva</author>
+		<title>Reflection on the Fazlul Sarkar versus PubPeer ("John Doe") Case.</title>
+		<pages>323-325</pages>
+		<year>2018</year>
+		<volume>24</volume>
+		<journal>Sci. Eng. Ethics</journal>
+		<number>1</number>
+		<ee>https://doi.org/10.1007/s11948-016-9863-1</ee>
+		<ee>https://www.wikidata.org/entity/Q53750216</ee>
+		<url>db/journals/see/see24.html#Silva18</url>
+	</article>
+	<article mdate="2020-07-09" key="journals/see/Punzi18">
+		<author orcid="0000-0002-3689-8970">Vito L. Punzi</author>
+		<title>A Social Responsibility Guide for Engineering Students and Professionals of all Faith Traditions: An Overview.</title>
+		<pages>1253-1277</pages>
+		<year>2018</year>
+		<volume>24</volume>
+		<journal>Sci. Eng. Ethics</journal>
+		<number>4</number>
+		<ee>https://doi.org/10.1007/s11948-017-9948-5</ee>
+		<ee>https://www.wikidata.org/entity/Q47776669</ee>
+		<url>db/journals/see/see24.html#Punzi18</url>
+	</article>
+	<article mdate="2020-07-09" key="journals/see/Koepsell10">
+		<author>David Koepsell</author>
+		<title>On Genies and Bottles: Scientists' Moral Responsibility and Dangerous Technology R&amp;D.</title>
+		<pages>119-133</pages>
+		<year>2010</year>
+		<volume>16</volume>
+		<journal>Sci. Eng. Ethics</journal>
+		<number>1</number>
+		<ee>https://doi.org/10.1007/s11948-009-9158-x</ee>
+		<ee>https://www.wikidata.org/entity/Q33706687</ee>
+		<url>db/journals/see/see16.html#Koepsell10</url>
+	</article>
+	<article mdate="2020-07-09" key="journals/see/Frey10">
+		<author>William J. Frey</author>
+		<title>Teaching Virtue: Pedagogical Implications of Moral Psychology.</title>
+		<pages>611-628</pages>
+		<year>2010</year>
+		<volume>16</volume>
+		<journal>Sci. Eng. Ethics</journal>
+		<number>3</number>
+		<ee>https://doi.org/10.1007/s11948-009-9164-z</ee>
+		<ee>https://www.wikidata.org/entity/Q49048410</ee>
+		<url>db/journals/see/see16.html#Frey10</url>
+	</article>
+	<article mdate="2020-07-09" key="journals/see/DehalKKS18">
+		<author>Neelam Dehal</author>
+		<author orcid="0000-0001-5321-0958">Kewal Krishan</author>
+		<author orcid="0000-0003-0346-1075">Tanuj Kanchan</author>
+		<author>Amarjeet Singh 0004</author>
+		<title>Mandatory Publications: An Approach to Kill 'Lack of Will' or 'Lack of Skill'?</title>
+		<pages>773-777</pages>
+		<year>2018</year>
+		<volume>24</volume>
+		<journal>Sci. Eng. Ethics</journal>
+		<number>2</number>
+		<ee>https://doi.org/10.1007/s11948-017-9903-5</ee>
+		<ee>https://www.wikidata.org/entity/Q47225481</ee>
+		<url>db/journals/see/see24.html#DehalKKS18</url>
+	</article>
+	<article mdate="2020-07-09" key="journals/see/AdamisTMM10">
+		<author orcid="0000-0003-1315-1695">Dimitrios Adamis</author>
+		<author>Adrian Treloar</author>
+		<author>Finbarr C. Martin</author>
+		<author>Alastair J. D. Macdonald</author>
+		<title>Ethical Research in Delirium: Arguments for Including Decisionally Incapacitated Subjects.</title>
+		<pages>169-174</pages>
+		<year>2010</year>
+		<volume>16</volume>
+		<journal>Sci. Eng. Ethics</journal>
+		<number>1</number>
+		<ee>https://doi.org/10.1007/s11948-009-9120-y</ee>
+		<ee>https://www.wikidata.org/entity/Q51871907</ee>
+		<url>db/journals/see/see16.html#AdamisTMM10</url>
+	</article>
+	<article mdate="2020-07-09" key="journals/see/Houdek20">
+		<author orcid="0000-0001-9755-6635">Petr Houdek</author>
+		<title>Fraud and Understanding the Moral Mind: Need for Implementation of Organizational Characteristics into Behavioral Ethics.</title>
+		<pages>691-707</pages>
+		<year>2020</year>
+		<volume>26</volume>
+		<journal>Sci. Eng. Ethics</journal>
+		<number>2</number>
+		<ee>https://doi.org/10.1007/s11948-019-00117-z</ee>
+		<ee>https://www.wikidata.org/entity/Q92736437</ee>
+		<url>db/journals/see/see26.html#Houdek20</url>
+	</article>
+	<article mdate="2020-07-09" key="journals/see/TrujilloE15">
+		<author>Laura Yenisa Cabrera Trujillo</author>
+		<author>Sabrina Engel-Glatter</author>
+		<title>Human-Animal Chimera: A Neuro Driven Discussion? Comparison of Three Leading European Research Countries.</title>
+		<pages>595-617</pages>
+		<year>2015</year>
+		<volume>21</volume>
+		<journal>Sci. Eng. Ethics</journal>
+		<number>3</number>
+		<ee>https://doi.org/10.1007/s11948-014-9556-6</ee>
+		<ee>https://www.wikidata.org/entity/Q38217150</ee>
+		<url>db/journals/see/see21.html#TrujilloE15</url>
+	</article>
+	<article mdate="2020-07-29" key="journals/see/Attia13">
+		<author orcid="0000-0003-4745-5726">Peter M. Attia</author>
+		<title>Mega-Sized Concerns from the Nano-Sized World: The Intersection of Nano- and Environmental Ethics.</title>
+		<pages>1007-1016</pages>
+		<year>2013</year>
+		<volume>19</volume>
+		<journal>Sci. Eng. Ethics</journal>
+		<number>3</number>
+		<ee>https://doi.org/10.1007/s11948-012-9422-3</ee>
+		<ee>https://www.wikidata.org/entity/Q48339685</ee>
+		<url>db/journals/see/see19.html#Attia13</url>
+	</article>
+	<article mdate="2020-07-09" key="journals/see/HosseiniMBCDT20">
+		<author orcid="0000-0001-8675-736X">M. Reza Hosseini</author>
+		<author>Igor Martek</author>
+		<author orcid="0000-0002-7438-1235">Saeed Banihashemi</author>
+		<author>Albert P. C. Chan</author>
+		<author>Amos Darko</author>
+		<author>Mahdi Tahmasebi</author>
+		<title>Distinguishing Characteristics of Corruption Risks in Iranian Construction Projects: A Weighted Correlation Network Analysis.</title>
+		<pages>205-231</pages>
+		<year>2020</year>
+		<volume>26</volume>
+		<journal>Sci. Eng. Ethics</journal>
+		<number>1</number>
+		<ee>https://doi.org/10.1007/s11948-019-00089-0</ee>
+		<ee>https://www.wikidata.org/entity/Q91374986</ee>
+		<url>db/journals/see/see26.html#HosseiniMBCDT20</url>
+	</article>
+	<article mdate="2020-07-09" key="journals/see/JensenFGMS11">
+		<author orcid="0000-0002-3254-3136">Karsten Klint Jensen</author>
+		<author>Ellen-Marie Forsberg</author>
+		<author orcid="0000-0003-3150-8280">Christian Gamborg</author>
+		<author orcid="0000-0002-7155-7776">Kate Millar</author>
+		<author orcid="0000-0003-0397-3273">Peter Sandøe</author>
+		<title>Facilitating Ethical Reflection Among Scientists Using the Ethical Matrix.</title>
+		<pages>425-445</pages>
+		<year>2011</year>
+		<volume>17</volume>
+		<journal>Sci. Eng. Ethics</journal>
+		<number>3</number>
+		<ee>https://doi.org/10.1007/s11948-010-9218-2</ee>
+		<ee>https://www.wikidata.org/entity/Q53070734</ee>
+		<url>db/journals/see/see17.html#JensenFGMS11</url>
+	</article>
+	<article mdate="2020-08-13" key="journals/see/Rashid20">
+		<author orcid="0000-0003-0737-9116">Rafi Rashid</author>
+		<title>Training STEM Ph.D. Students to Deal with Moral Dilemmas.</title>
+		<pages>1861-1872</pages>
+		<year>2020</year>
+		<volume>26</volume>
+		<journal>Sci. Eng. Ethics</journal>
+		<number>3</number>
+		<ee>https://doi.org/10.1007/s11948-019-00174-4</ee>
+		<ee>https://www.wikidata.org/entity/Q92485691</ee>
+		<url>db/journals/see/see26.html#Rashid20</url>
+	</article>
+	<article mdate="2020-07-09" key="journals/see/SpierB14">
+		<author>Raymond E. Spier</author>
+		<author>Stephanie J. Bird</author>
+		<title>Science and Engineering Ethics Enters its Third Decade.</title>
+		<pages>1-3</pages>
+		<year>2014</year>
+		<volume>20</volume>
+		<journal>Sci. Eng. Ethics</journal>
+		<number>1</number>
+		<ee type="oa">https://doi.org/10.1007/s11948-014-9527-y</ee>
+		<ee>https://www.wikidata.org/entity/Q53621942</ee>
+		<url>db/journals/see/see20.html#SpierB14</url>
+	</article>
+	<article mdate="2020-07-09" key="journals/see/DorePF19">
+		<author>Maria Pina Dore</author>
+		<author orcid="0000-0003-3265-2823">Giovanni M. Pes</author>
+		<author>Fabrizia Faustinella</author>
+		<title>Italian Adagio: Every Law has Its Loophole.</title>
+		<pages>651-653</pages>
+		<year>2019</year>
+		<volume>25</volume>
+		<journal>Sci. Eng. Ethics</journal>
+		<number>2</number>
+		<ee>https://doi.org/10.1007/s11948-018-0031-7</ee>
+		<ee>https://www.wikidata.org/entity/Q49949488</ee>
+		<url>db/journals/see/see25.html#DorePF19</url>
+	</article>
+	<article mdate="2020-07-09" key="journals/see/Olson10">
+		<author>Lynne E. Olson</author>
+		<title>Developing a Framework for Assessing Responsible Conduct of Research Education Programs.</title>
+		<pages>185-200</pages>
+		<year>2010</year>
+		<volume>16</volume>
+		<journal>Sci. Eng. Ethics</journal>
+		<number>1</number>
+		<ee>https://doi.org/10.1007/s11948-010-9196-4</ee>
+		<ee>https://www.wikidata.org/entity/Q48229165</ee>
+		<url>db/journals/see/see16.html#Olson10</url>
+	</article>
+	<article mdate="2020-07-09" key="journals/see/KalichmanPB12">
+		<author orcid="0000-0002-4268-1188">Michael W. Kalichman</author>
+		<author>Dena Plemmons</author>
+		<author>Stephanie J. Bird</author>
+		<title>Editors' Overview: Neuroethics: Many Voices and Many Stories.</title>
+		<pages>423-432</pages>
+		<year>2012</year>
+		<volume>18</volume>
+		<journal>Sci. Eng. Ethics</journal>
+		<number>3</number>
+		<ee type="oa">https://doi.org/10.1007/s11948-012-9398-z</ee>
+		<ee>https://www.wikidata.org/entity/Q36354364</ee>
+		<url>db/journals/see/see18.html#KalichmanPB12</url>
+	</article>
+	<article mdate="2020-07-09" key="journals/see/KoepsellBP15">
+		<author>David Koepsell</author>
+		<author orcid="0000-0001-8485-7092">Willem-Paul Brinkman</author>
+		<author orcid="0000-0002-9834-9600">Sylvia C. Pont</author>
+		<title>Human Participants in Engineering Research: Notes from a Fledgling Ethics Committee.</title>
+		<pages>1033-1048</pages>
+		<year>2015</year>
+		<volume>21</volume>
+		<journal>Sci. Eng. Ethics</journal>
+		<number>4</number>
+		<ee>https://doi.org/10.1007/s11948-014-9568-2</ee>
+		<ee>https://www.wikidata.org/entity/Q38221031</ee>
+		<url>db/journals/see/see21.html#KoepsellBP15</url>
+	</article>
+	<article mdate="2020-07-09" key="journals/see/Stroth16">
+		<author>Nikolas Stroth</author>
+		<title>The Central Importance of Laboratories for Reducing Waste in Biomedical Research.</title>
+		<pages>1707-1716</pages>
+		<year>2016</year>
+		<volume>22</volume>
+		<journal>Sci. Eng. Ethics</journal>
+		<number>6</number>
+		<ee>https://doi.org/10.1007/s11948-015-9738-x</ee>
+		<ee>https://www.wikidata.org/entity/Q48525086</ee>
+		<url>db/journals/see/see22.html#Stroth16</url>
+	</article>
+	<article mdate="2020-07-09" key="journals/see/KliestikovaKMCK18">
+		<author>Jana Kliestikova</author>
+		<author>Tomas Kliestik</author>
+		<author>Maria Misankova</author>
+		<author>Tatiana Corejova</author>
+		<author>Anna Krizanova</author>
+		<title>Aspects of Morality and Law Enforcement in Today's Science in Post-Soviet Countries.</title>
+		<pages>1747-1753</pages>
+		<year>2018</year>
+		<volume>24</volume>
+		<journal>Sci. Eng. Ethics</journal>
+		<number>6</number>
+		<ee>https://doi.org/10.1007/s11948-017-9988-x</ee>
+		<ee>https://www.wikidata.org/entity/Q43925679</ee>
+		<url>db/journals/see/see24.html#KliestikovaKMCK18</url>
+	</article>
+	<article>
+		<author>Mohammad Fathi</author>
+		<title>A Spectrum Allocation Scheme Between Smart Grid Communication and Neighbor Communication Networks</title>
+		<year>2018</year>
+		<volume>12</volume>
+		<journal>IEEE Systems Journal</journal>
+		<url>https://ieeexplore.ieee.org/document/7131478/</url>
+		<pages>465-472</pages>
+		<publisher>IEEE</publisher>
+	</article>
+	<article>
+		<author>Sabrina De Capitani di Vimercati</author>
+		<author>Sara Foresti</author>
+		<author>Stefano Paraboschi</author>
+		<author>Gerardo Pelosi</author>
+		<author>Pierangela Samarati</author>
+		<title>Three-Server Swapping for Access Confidentiality</title>
+		<year>2018</year>
+		<volume>6</volume>
+		<journal>IEEE Transactions on Cloud Computing</journal>
+		<url>https://ieeexplore.ieee.org/document/7134727/</url>
+		<pages>492-505</pages>
+		<publisher>IEEE</publisher>
+	</article>
+	<article>
+		<author>Liwei Kuang</author>
+		<author>Laurence T. Yang</author>
+		<author>Jinjun Chen</author>
+		<author>Fei Hao</author>
+		<author>Changqing Luo</author>
+		<title>A Holistic Approach for Distributed Dimensionality Reduction of Big Data</title>
+		<year>2018</year>
+		<volume>6</volume>
+		<journal>IEEE Transactions on Cloud Computing</journal>
+		<url>https://ieeexplore.ieee.org/document/7134729/</url>
+		<pages>506-518</pages>
+		<publisher>IEEE</publisher>
+	</article>
+	<article>
+		<author>Jyoti Sahni</author>
+		<author>Deo Prakash Vidyarthi</author>
+		<title>A Cost-Effective Deadline-Constrained Dynamic Scheduling Algorithm for Scientific Workflows in a Cloud Environment</title>
+		<year>2018</year>
+		<volume>6</volume>
+		<journal>IEEE Transactions on Cloud Computing</journal>
+		<url>https://ieeexplore.ieee.org/document/7145406/</url>
+		<pages>2-18</pages>
+		<publisher>IEEE</publisher>
+	</article>
+	<article mdate="2020-07-09" key="journals/see/Miller19">
+		<author>Seumas Miller</author>
+		<title>Whither the University? Universities of Technology and the Problem of Institutional Purpose.</title>
+		<pages>1679-1698</pages>
+		<year>2019</year>
+		<volume>25</volume>
+		<journal>Sci. Eng. Ethics</journal>
+		<number>6</number>
+		<ee type="oa">https://doi.org/10.1007/s11948-019-00147-7</ee>
+		<ee>https://www.wikidata.org/entity/Q92224924</ee>
+		<url>db/journals/see/see25.html#Miller19</url>
+	</article>
+	<article mdate="2020-07-09" key="journals/see/Cheruvalath19">
+		<author orcid="0000-0001-8868-7174">Reena Cheruvalath</author>
+		<title>Does Studying 'Ethics' Improve Engineering Students' Meta-Moral Cognitive Skills?</title>
+		<pages>583-596</pages>
+		<year>2019</year>
+		<volume>25</volume>
+		<journal>Sci. Eng. Ethics</journal>
+		<number>2</number>
+		<ee>https://doi.org/10.1007/s11948-017-0009-x</ee>
+		<ee>https://www.wikidata.org/entity/Q47270751</ee>
+		<url>db/journals/see/see25.html#Cheruvalath19</url>
+	</article>
+	<article mdate="2020-07-09" key="journals/see/GilbertOMD18">
+		<author orcid="0000-0003-0524-8649">Frédéric Gilbert 0003</author>
+		<author orcid="0000-0002-1690-9505">Cathal D. O'Connell</author>
+		<author>Tajanka Mladenovska</author>
+		<author orcid="0000-0003-0292-9983">Susan Dodds</author>
+		<title>Print Me an Organ? Ethical and Regulatory Issues Emerging from 3D Bioprinting in Medicine.</title>
+		<pages>73-91</pages>
+		<year>2018</year>
+		<volume>24</volume>
+		<journal>Sci. Eng. Ethics</journal>
+		<number>1</number>
+		<ee>https://doi.org/10.1007/s11948-017-9874-6</ee>
+		<ee>https://www.wikidata.org/entity/Q42696042</ee>
+		<url>db/journals/see/see24.html#GilbertOMD18</url>
+	</article>
+	<article mdate="2020-07-09" key="journals/see/ErrenSM16">
+		<author>Thomas C. Erren</author>
+		<author>David M. Shaw</author>
+		<author>Peter Morfeld</author>
+		<title>Analyzing the Publish-or-Perish Paradigm with Game Theory: The Prisoner's Dilemma and a Possible Escape.</title>
+		<pages>1431-1446</pages>
+		<year>2016</year>
+		<volume>22</volume>
+		<journal>Sci. Eng. Ethics</journal>
+		<number>5</number>
+		<ee>https://doi.org/10.1007/s11948-015-9701-x</ee>
+		<ee>https://www.wikidata.org/entity/Q41367526</ee>
+		<url>db/journals/see/see22.html#ErrenSM16</url>
+	</article>
+	<article mdate="2020-07-09" key="journals/see/NicolosiR13">
+		<author>Guido Nicolosi</author>
+		<author>Guido Ruivenkamp</author>
+		<title>Re-skilling the Social Practices: Open Source and Life-Towards a Commons-Based Peer Production in Agro-biotechnology?</title>
+		<pages>1181-1200</pages>
+		<year>2013</year>
+		<volume>19</volume>
+		<journal>Sci. Eng. Ethics</journal>
+		<number>3</number>
+		<ee>https://doi.org/10.1007/s11948-012-9405-4</ee>
+		<ee>https://www.wikidata.org/entity/Q30422774</ee>
+		<url>db/journals/see/see19.html#NicolosiR13</url>
+	</article>
+	<article mdate="2020-07-09" key="journals/see/Wikman-SvahnL19">
+		<author orcid="0000-0001-6388-8674">Per Wikman-Svahn</author>
+		<author>Lars Lindblom</author>
+		<title>Toward a Responsibility-Catering Prioritarian Ethical Theory of Risk.</title>
+		<pages>655-670</pages>
+		<year>2019</year>
+		<volume>25</volume>
+		<journal>Sci. Eng. Ethics</journal>
+		<number>3</number>
+		<ee type="oa">https://doi.org/10.1007/s11948-018-0036-2</ee>
+		<ee>https://www.wikidata.org/entity/Q58657916</ee>
+		<url>db/journals/see/see25.html#Wikman-SvahnL19</url>
+	</article>
+	<article mdate="2020-07-09" key="journals/see/SemendeferiTDP16">
+		<author orcid="0000-0003-4651-5918">Ioanna Semendeferi</author>
+		<author>Panagiotis Tsiamyrtzis</author>
+		<author>Malcolm Dcosta</author>
+		<author orcid="0000-0001-8025-2600">Ioannis T. Pavlidis</author>
+		<title>Connecting Past with Present: A Mixed-Methods Science Ethics Course and its Evaluation.</title>
+		<pages>251-274</pages>
+		<year>2016</year>
+		<volume>22</volume>
+		<journal>Sci. Eng. Ethics</journal>
+		<number>1</number>
+		<ee>https://doi.org/10.1007/s11948-015-9626-4</ee>
+		<ee>https://www.wikidata.org/entity/Q47436915</ee>
+		<url>db/journals/see/see22.html#SemendeferiTDP16</url>
+	</article>
+	<article mdate="2020-07-09" key="journals/see/FlipseSO13">
+		<author>Steven M. Flipse</author>
+		<author>Maarten C. A. van der Sanden</author>
+		<author>Patricia Osseweijer</author>
+		<title>The Why and How of Enabling the Integration of Social and Ethical Aspects in Research and Development.</title>
+		<pages>703-725</pages>
+		<year>2013</year>
+		<volume>19</volume>
+		<journal>Sci. Eng. Ethics</journal>
+		<number>3</number>
+		<ee>https://doi.org/10.1007/s11948-012-9423-2</ee>
+		<ee>https://www.wikidata.org/entity/Q45768637</ee>
+		<url>db/journals/see/see19.html#FlipseSO13</url>
+	</article>
+	<article mdate="2020-07-09" key="journals/see/Berger15">
+		<author>Vance W. Berger</author>
+		<title>Conflicts of Interest, Selective Inertia, and Research Malpractice in Randomized Clinical Trials: An Unholy Trinity.</title>
+		<pages>857-874</pages>
+		<year>2015</year>
+		<volume>21</volume>
+		<journal>Sci. Eng. Ethics</journal>
+		<number>4</number>
+		<ee>https://doi.org/10.1007/s11948-014-9576-2</ee>
+		<ee>https://www.wikidata.org/entity/Q24289463</ee>
+		<url>db/journals/see/see21.html#Berger15</url>
+	</article>
+	<article mdate="2020-07-09" key="journals/see/Hansson11">
+		<author>Sven Ove Hansson</author>
+		<title>Do we Need a Special Ethics for Research?</title>
+		<pages>21-29</pages>
+		<year>2011</year>
+		<volume>17</volume>
+		<journal>Sci. Eng. Ethics</journal>
+		<number>1</number>
+		<ee>https://doi.org/10.1007/s11948-009-9186-6</ee>
+		<ee>https://www.wikidata.org/entity/Q39925740</ee>
+		<url>db/journals/see/see17.html#Hansson11</url>
+	</article>
+	<article mdate="2020-07-09" key="journals/see/CurzerPWP16">
+		<author>Howard J. Curzer</author>
+		<author>Gad Perry</author>
+		<author>Mark C. Wallace</author>
+		<author>Dan Perry</author>
+		<title>The Three Rs of Animal Research: What they Mean for the Institutional Animal Care and Use Committee and Why.</title>
+		<pages>549-565</pages>
+		<year>2016</year>
+		<volume>22</volume>
+		<journal>Sci. Eng. Ethics</journal>
+		<number>2</number>
+		<ee>https://doi.org/10.1007/s11948-015-9659-8</ee>
+		<ee>https://www.wikidata.org/entity/Q30375120</ee>
+		<url>db/journals/see/see22.html#CurzerPWP16</url>
+	</article>
+	<article mdate="2020-07-09" key="journals/see/PlougH14">
+		<author orcid="0000-0002-3693-0547">Thomas Ploug</author>
+		<author orcid="0000-0002-7200-5607">Søren Holm</author>
+		<title>Agreeing in Ignorance: Mapping the Routinisation of Consent in ICT-Services.</title>
+		<pages>1097-1110</pages>
+		<year>2014</year>
+		<volume>20</volume>
+		<journal>Sci. Eng. Ethics</journal>
+		<number>4</number>
+		<ee>https://doi.org/10.1007/s11948-013-9492-x</ee>
+		<ee>https://www.wikidata.org/entity/Q57303007</ee>
+		<url>db/journals/see/see20.html#PlougH14</url>
+	</article>
+	<article mdate="2020-08-13" key="journals/see/AkozerA16">
+		<author>Mehmet Aközer</author>
+		<author>Emel Aközer</author>
+		<title>Basing Science Ethics on Respect for Human Dignity.</title>
+		<pages>1627-1647</pages>
+		<year>2016</year>
+		<volume>22</volume>
+		<journal>Sci. Eng. Ethics</journal>
+		<number>6</number>
+		<ee>https://doi.org/10.1007/s11948-015-9731-4</ee>
+		<ee>https://www.wikidata.org/entity/Q58659024</ee>
+		<url>db/journals/see/see22.html#AkozerA16</url>
+	</article>
+	<article mdate="2020-07-09" key="journals/see/Oksvold16">
+		<author>Morten P. Oksvold</author>
+		<title>Incidence of Data Duplications in a Randomly Selected Pool of Life Science Publications.</title>
+		<pages>487-496</pages>
+		<year>2016</year>
+		<volume>22</volume>
+		<journal>Sci. Eng. Ethics</journal>
+		<number>2</number>
+		<ee>https://doi.org/10.1007/s11948-015-9668-7</ee>
+		<ee>https://www.wikidata.org/entity/Q30969930</ee>
+		<url>db/journals/see/see22.html#Oksvold16</url>
+	</article>
+	<article mdate="2020-07-09" key="journals/see/HevelkeN15">
+		<author>Alexander Hevelke</author>
+		<author>Julian Nida-Rümelin</author>
+		<title>Responsibility for Crashes of Autonomous Vehicles: An Ethical Analysis.</title>
+		<pages>619-630</pages>
+		<year>2015</year>
+		<volume>21</volume>
+		<journal>Sci. Eng. Ethics</journal>
+		<number>3</number>
+		<ee type="oa">https://doi.org/10.1007/s11948-014-9565-5</ee>
+		<ee>https://www.wikidata.org/entity/Q40636825</ee>
+		<url>db/journals/see/see21.html#HevelkeN15</url>
+	</article>
+	<article mdate="2020-07-09" key="journals/see/HorvatMOS16">
+		<author>Martina Horvat</author>
+		<author>Ana Mlinaric</author>
+		<author>Jelena Omazic</author>
+		<author>Vesna Supak-Smolcic</author>
+		<title>An Analysis of Medical Laboratory Technology Journals' Instructions for Authors.</title>
+		<pages>1095-1106</pages>
+		<year>2016</year>
+		<volume>22</volume>
+		<journal>Sci. Eng. Ethics</journal>
+		<number>4</number>
+		<ee>https://doi.org/10.1007/s11948-015-9689-2</ee>
+		<ee>https://www.wikidata.org/entity/Q47998475</ee>
+		<url>db/journals/see/see22.html#HorvatMOS16</url>
+	</article>
+	<article mdate="2020-07-09" key="journals/see/WicksonF15">
+		<author orcid="0000-0002-2841-4155">Fern Wickson</author>
+		<author>Ellen-Marie Forsberg</author>
+		<title>Standardising Responsibility? The Significance of Interstitial Spaces.</title>
+		<pages>1159-1180</pages>
+		<year>2015</year>
+		<volume>21</volume>
+		<journal>Sci. Eng. Ethics</journal>
+		<number>5</number>
+		<ee>https://doi.org/10.1007/s11948-014-9602-4</ee>
+		<ee>https://www.wikidata.org/entity/Q48061755</ee>
+		<url>db/journals/see/see21.html#WicksonF15</url>
+	</article>
+	<article mdate="2020-10-11" key="journals/see/SmithWMLSPSR20">
+		<author orcid="0000-0002-4615-8204">Elise Smith</author>
+		<author orcid="0000-0001-6771-3919">Bryn Williams-Jones</author>
+		<author orcid="0000-0002-3462-4546">Zubin Master</author>
+		<author>Vincent Larivière</author>
+		<author>Cassidy R. Sugimoto</author>
+		<author>Adèle Paul-Hus</author>
+		<author>Min Shi</author>
+		<author>David B. Resnik</author>
+		<title>Misconduct and Misbehavior Related to Authorship Disagreements in Collaborative Science.</title>
+		<pages>1967-1993</pages>
+		<year>2020</year>
+		<volume>26</volume>
+		<journal>Sci. Eng. Ethics</journal>
+		<number>4</number>
+		<ee>https://doi.org/10.1007/s11948-019-00112-4</ee>
+		<ee>https://www.wikidata.org/entity/Q92506302</ee>
+		<url>db/journals/see/see26.html#SmithWMLSPSR20</url>
+	</article>
+	<article mdate="2020-07-09" key="journals/see/Davis19">
+		<author orcid="0000-0002-5309-0199">Michael Davis 0002</author>
+		<title>Temporal Limits on What Engineers Can Plan.</title>
+		<pages>1609-1624</pages>
+		<year>2019</year>
+		<volume>25</volume>
+		<journal>Sci. Eng. Ethics</journal>
+		<number>5</number>
+		<ee type="oa">https://doi.org/10.1007/s11948-019-00124-0</ee>
+		<ee>https://www.wikidata.org/entity/Q92329543</ee>
+		<url>db/journals/see/see25.html#Davis19</url>
+	</article>
+	<article mdate="2020-07-09" key="journals/see/EversFMM15">
+		<author>David L. Evers</author>
+		<author>Carol B. Fowler</author>
+		<author>Jeffrey T. Mason</author>
+		<author>Rebecca K. Mimnall</author>
+		<title>Deliberate Microbial Infection Research Reveals Limitations to Current Safety Protections of Healthy Human Subjects.</title>
+		<pages>1049-1064</pages>
+		<year>2015</year>
+		<volume>21</volume>
+		<journal>Sci. Eng. Ethics</journal>
+		<number>4</number>
+		<ee>https://doi.org/10.1007/s11948-014-9579-z</ee>
+		<ee>https://www.wikidata.org/entity/Q38242596</ee>
+		<url>db/journals/see/see21.html#EversFMM15</url>
+	</article>
+	<article mdate="2020-07-09" key="journals/see/OwusuCSP20">
+		<author orcid="0000-0001-7263-0878">Emmanuel Kingsford Owusu</author>
+		<author>Albert P. C. Chan</author>
+		<author>Ming Shan</author>
+		<author>Erika Pärn</author>
+		<title>An Empirical Study on Construction Process Corruption Susceptibility: A Vignette of International Expertise.</title>
+		<pages>325-349</pages>
+		<year>2020</year>
+		<volume>26</volume>
+		<journal>Sci. Eng. Ethics</journal>
+		<number>1</number>
+		<ee>https://doi.org/10.1007/s11948-019-00083-6</ee>
+		<ee>https://www.wikidata.org/entity/Q92346366</ee>
+		<url>db/journals/see/see26.html#OwusuCSP20</url>
+	</article>
+	<article mdate="2020-07-09" key="journals/see/Cohen-Almagor15">
+		<author orcid="0000-0002-5869-9243">Raphael Cohen-Almagor</author>
+		<title>Press Self-Regulation in Britain: A Critique.</title>
+		<pages>159-181</pages>
+		<year>2015</year>
+		<volume>21</volume>
+		<journal>Sci. Eng. Ethics</journal>
+		<number>1</number>
+		<ee>https://doi.org/10.1007/s11948-014-9538-8</ee>
+		<ee>https://www.wikidata.org/entity/Q38200544</ee>
+		<url>db/journals/see/see21.html#Cohen-Almagor15</url>
+	</article>
+	<article mdate="2020-07-09" key="journals/see/NewberryALGD11">
+		<author orcid="0000-0002-7622-2238">Byron Newberry</author>
+		<author orcid="0000-0003-2079-0874">Katherine A. Austin</author>
+		<author>William D. Lawson</author>
+		<author>Greta Gorsuch</author>
+		<author>Thomas Darwin</author>
+		<title>Acclimating International Graduate Students to Professional Engineering Ethics.</title>
+		<pages>171-194</pages>
+		<year>2011</year>
+		<volume>17</volume>
+		<journal>Sci. Eng. Ethics</journal>
+		<number>1</number>
+		<ee>https://doi.org/10.1007/s11948-009-9178-6</ee>
+		<ee>https://www.wikidata.org/entity/Q47438541</ee>
+		<url>db/journals/see/see17.html#NewberryALGD11</url>
+	</article>
+	<article mdate="2020-05-18" key="journals/cce/PaulaviciusGKA20">
+		<author orcid="0000-0003-2057-2922">Remigijus Paulavicius</author>
+		<author>J. Gao</author>
+		<author>Polyxeni-Margarita Kleniati</author>
+		<author>Claire S. Adjiman</author>
+		<title>BASBL: Branch-And-Sandwich BiLevel solver. Implementation and computational study with the BASBLib test set.</title>
+		<year>2020</year>
+		<volume>132</volume>
+		<journal>Comput. Chem. Eng.</journal>
+		<ee>https://doi.org/10.1016/j.compchemeng.2019.106609</ee>
+		<url>db/journals/cce/cce132.html#PaulaviciusGKA20</url>
+	</article>
+	<article mdate="2020-05-18" key="journals/cce/ZhangVS11">
+		<author>Yan Zhang</author>
+		<author>Panagiotis D. Vouzis</author>
+		<author orcid="0000-0003-2087-9131">Nikolaos V. Sahinidis</author>
+		<title>GPU simulations for risk assessment in CO2 geologic sequestration.</title>
+		<pages>1631-1644</pages>
+		<year>2011</year>
+		<volume>35</volume>
+		<journal>Comput. Chem. Eng.</journal>
+		<number>8</number>
+		<ee>https://doi.org/10.1016/j.compchemeng.2011.03.023</ee>
+		<url>db/journals/cce/cce35.html#ZhangVS11</url>
+	</article>
+	<article mdate="2020-05-18" key="journals/cce/NapoliX11">
+		<author orcid="0000-0003-0730-8641">Giuseppe Napoli</author>
+		<author orcid="0000-0001-7723-2051">Maria Gabriella Xibilia</author>
+		<title>Soft Sensor design for a Topping process in the case of small datasets.</title>
+		<pages>2447-2456</pages>
+		<year>2011</year>
+		<volume>35</volume>
+		<journal>Comput. Chem. Eng.</journal>
+		<number>11</number>
+		<ee>https://doi.org/10.1016/j.compchemeng.2010.12.009</ee>
+		<url>db/journals/cce/cce35.html#NapoliX11</url>
+	</article>
+	<article mdate="2020-05-18" key="journals/cce/KissR11">
+		<author orcid="0000-0001-5099-606X">Anton A. Kiss</author>
+		<author>Rohit R. Rewagad</author>
+		<title>Energy efficient control of a BTX dividing-wall column.</title>
+		<pages>2896-2904</pages>
+		<year>2011</year>
+		<volume>35</volume>
+		<journal>Comput. Chem. Eng.</journal>
+		<number>12</number>
+		<ee>https://doi.org/10.1016/j.compchemeng.2011.03.024</ee>
+		<url>db/journals/cce/cce35.html#KissR11</url>
+	</article>
+	<article mdate="2020-05-18" key="journals/cce/HilleB18">
+		<author>Rubin Hille</author>
+		<author>Hector M. Budman</author>
+		<title>Simultaneous identification and optimization of biochemical processes under model-plant mismatch using output uncertainty bounds.</title>
+		<pages>125-138</pages>
+		<year>2018</year>
+		<volume>113</volume>
+		<journal>Comput. Chem. Eng.</journal>
+		<ee>https://doi.org/10.1016/j.compchemeng.2018.03.001</ee>
+		<url>db/journals/cce/cce113.html#HilleB18</url>
+	</article>
+	<article mdate="2020-05-18" key="journals/cce/GebreslassieSWY13">
+		<author orcid="0000-0002-1976-2158">Berhane H. Gebreslassie</author>
+		<author>Maxim Slivinsky</author>
+		<author>Belinda Wang</author>
+		<author orcid="0000-0001-9609-4299">Fengqi You</author>
+		<title>Life cycle optimization for sustainable design and operations of hydrocarbon biorefinery via fast pyrolysis, hydrotreating and hydrocracking.</title>
+		<pages>71-91</pages>
+		<year>2013</year>
+		<volume>50</volume>
+		<journal>Comput. Chem. Eng.</journal>
+		<ee>https://doi.org/10.1016/j.compchemeng.2012.10.013</ee>
+		<url>db/journals/cce/cce50.html#GebreslassieSWY13</url>
+	</article>
+	<article mdate="2020-05-18" key="journals/cce/VicenteRHSNJM19">
+		<author>Agustín Vicente</author>
+		<author>Rahul Raveendran</author>
+		<author>Biao Huang</author>
+		<author>Shabnam Sedghi</author>
+		<author>Anuj Narang</author>
+		<author>Hailei Jiang</author>
+		<author>Warren Mitchell</author>
+		<title>Computer vision system for froth-middlings interface level detection in the primary separation vessels.</title>
+		<pages>357-370</pages>
+		<year>2019</year>
+		<volume>123</volume>
+		<journal>Comput. Chem. Eng.</journal>
+		<ee>https://doi.org/10.1016/j.compchemeng.2019.01.017</ee>
+		<url>db/journals/cce/cce123.html#VicenteRHSNJM19</url>
+	</article>
+	<article mdate="2020-05-18" key="journals/cce/LejarzaB20">
+		<author>Fernando Lejarza</author>
+		<author>Michael Baldea</author>
+		<title>Closed-loop optimal operational planning of supply chains with fast product quality dynamics.</title>
+		<year>2020</year>
+		<volume>132</volume>
+		<journal>Comput. Chem. Eng.</journal>
+		<ee>https://doi.org/10.1016/j.compchemeng.2019.106594</ee>
+		<url>db/journals/cce/cce132.html#LejarzaB20</url>
+	</article>
+	<article mdate="2020-03-10" key="journals/cce/TsimopoulosG20">
+		<author>Evangelos G. Tsimopoulos</author>
+		<author>Michael C. Georgiadis</author>
+		<title>Withholding strategies for a conventional and wind generation portfolio in a joint energy and reserve pool market: A gaming-based approach.</title>
+		<pages>106692</pages>
+		<year>2020</year>
+		<volume>134</volume>
+		<journal>Comput. Chem. Eng.</journal>
+		<ee>https://doi.org/10.1016/j.compchemeng.2019.106692</ee>
+		<url>db/journals/cce/cce134.html#TsimopoulosG20</url>
+	</article>
+	<article mdate="2020-05-18" key="journals/cce/RahmanzadehCW13">
+		<author>Mostafa Rahmanzadeh</author>
+		<author>Long Cai</author>
+		<author>Ralph E. White</author>
+		<title>A new method for solving initial value problems.</title>
+		<pages>33-39</pages>
+		<year>2013</year>
+		<volume>58</volume>
+		<journal>Comput. Chem. Eng.</journal>
+		<ee>https://doi.org/10.1016/j.compchemeng.2013.06.001</ee>
+		<url>db/journals/cce/cce58.html#RahmanzadehCW13</url>
+	</article>
+	<article mdate="2020-05-18" key="journals/cce/RestrepoOC14">
+		<author orcid="0000-0003-3106-5045">Juan B. Restrepo</author>
+		<author orcid="0000-0003-1862-4842">Gerard Olivar</author>
+		<author>Carlos A. Cardona</author>
+		<title>Bifurcation analysis of dynamic process models using Aspen Dynamics® and Aspen Custom Modeler®.</title>
+		<pages>10-20</pages>
+		<year>2014</year>
+		<volume>62</volume>
+		<journal>Comput. Chem. Eng.</journal>
+		<ee>https://doi.org/10.1016/j.compchemeng.2013.11.013</ee>
+		<ee>https://www.wikidata.org/entity/Q60714981</ee>
+		<url>db/journals/cce/cce62.html#RestrepoOC14</url>
+	</article>
+	<article mdate="2020-05-27" key="journals/cce/WinterPWK19">
+		<author orcid="0000-0003-4995-6356">Casper de Winter</author>
+		<author>Venkata Reddy Palleti</author>
+		<author>Daniel Worm</author>
+		<author>Robert E. Kooij</author>
+		<title>Optimal placement of imperfect water quality sensors in water distribution networks.</title>
+		<pages>200-211</pages>
+		<year>2019</year>
+		<volume>121</volume>
+		<journal>Comput. Chem. Eng.</journal>
+		<ee>https://doi.org/10.1016/j.compchemeng.2018.10.021</ee>
+		<url>db/journals/cce/cce121.html#WinterPWK19</url>
+	</article>
+	<article mdate="2020-05-18" key="journals/cce/MuZCDL14">
+		<author>Yue Mu</author>
+		<author>Guoqun Zhao</author>
+		<author>Anbiao Chen</author>
+		<author>Guiwei Dong</author>
+		<author>Shuai Li</author>
+		<title>Numerical investigation of the crystallization and orientation behavior in polymer processing with a two-phase model.</title>
+		<pages>91-107</pages>
+		<year>2014</year>
+		<volume>63</volume>
+		<journal>Comput. Chem. Eng.</journal>
+		<ee>https://doi.org/10.1016/j.compchemeng.2013.12.010</ee>
+		<url>db/journals/cce/cce63.html#MuZCDL14</url>
+	</article>
+	<article mdate="2020-05-18" key="journals/cce/YenkieDL16">
+		<author>Kirti M. Yenkie</author>
+		<author>Urmila M. Diwekar</author>
+		<author>Andreas A. Linninger</author>
+		<title>Simulation-free estimation of reaction propensities in cellular reactions and gene signaling networks.</title>
+		<pages>154-163</pages>
+		<year>2016</year>
+		<volume>87</volume>
+		<journal>Comput. Chem. Eng.</journal>
+		<ee>https://doi.org/10.1016/j.compchemeng.2016.01.010</ee>
+		<url>db/journals/cce/cce87.html#YenkieDL16</url>
+	</article>
+	<article mdate="2020-05-18" key="journals/cce/FaveroSL15">
+		<author>Jovani L. Favero</author>
+		<author orcid="0000-0002-9568-0293">Luiz Fernando L. R. Silva</author>
+		<author>Paulo L. C. Lage</author>
+		<title>Modeling and simulation of mixing in water-in-oil emulsion flow through a valve-like element using a population balance model.</title>
+		<pages>155-170</pages>
+		<year>2015</year>
+		<volume>75</volume>
+		<journal>Comput. Chem. Eng.</journal>
+		<ee>https://doi.org/10.1016/j.compchemeng.2015.01.017</ee>
+		<url>db/journals/cce/cce75.html#FaveroSL15</url>
+	</article>
+	<article mdate="2020-05-18" key="journals/cce/LimaN16">
+		<author orcid="0000-0002-5735-6089">Ricardo M. Lima</author>
+		<author>Augusto Q. Novais</author>
+		<title>Symmetry breaking in MILP formulations for Unit Commitment problems.</title>
+		<pages>162-176</pages>
+		<year>2016</year>
+		<volume>85</volume>
+		<journal>Comput. Chem. Eng.</journal>
+		<ee>https://doi.org/10.1016/j.compchemeng.2015.11.004</ee>
+		<url>db/journals/cce/cce85.html#LimaN16</url>
+	</article>
+	<article mdate="2020-05-18" key="journals/cce/ElgsaeterSJ10">
+		<author>Steinar M. Elgsæter</author>
+		<author>Olav Slupphaug</author>
+		<author>Tor Arne Johansen</author>
+		<title>A structured approach to optimizing offshore oil and gas production with uncertain models.</title>
+		<pages>163-176</pages>
+		<year>2010</year>
+		<volume>34</volume>
+		<journal>Comput. Chem. Eng.</journal>
+		<number>2</number>
+		<ee>https://doi.org/10.1016/j.compchemeng.2009.07.011</ee>
+		<url>db/journals/cce/cce34.html#ElgsaeterSJ10</url>
+	</article>
+	<article mdate="2020-05-18" key="journals/cce/WangEI17">
+		<author orcid="0000-0001-9091-0363">Zilong Wang</author>
+		<author orcid="0000-0003-1785-526X">M. Sebastian Escotet-Espinoza</author>
+		<author>Marianthi Ierapetritou</author>
+		<title>Process analysis and optimization of continuous pharmaceutical manufacturing using flowsheet models.</title>
+		<pages>77-91</pages>
+		<year>2017</year>
+		<volume>107</volume>
+		<journal>Comput. Chem. Eng.</journal>
+		<ee>https://doi.org/10.1016/j.compchemeng.2017.02.030</ee>
+		<url>db/journals/cce/cce107.html#WangEI17</url>
+	</article>
+	<article mdate="2020-05-18" key="journals/cce/SchwartzR14">
+		<author>Jay D. Schwartz</author>
+		<author orcid="0000-0002-3141-0577">Daniel E. Rivera</author>
+		<title>A control-relevant approach to demand modeling for supply chain management.</title>
+		<pages>78-90</pages>
+		<year>2014</year>
+		<volume>70</volume>
+		<journal>Comput. Chem. Eng.</journal>
+		<ee>https://doi.org/10.1016/j.compchemeng.2014.05.020</ee>
+		<url>db/journals/cce/cce70.html#SchwartzR14</url>
+	</article>
+	<article mdate="2020-05-18" key="journals/cce/AssisCZFG17">
+		<author>Leonardo Salsano de Assis</author>
+		<author>Eduardo Camponogara</author>
+		<author>Bernardo Zimberg</author>
+		<author orcid="0000-0002-6506-9477">Enrique D. Ferreira</author>
+		<author>Ignacio E. Grossmann</author>
+		<title>A piecewise McCormick relaxation-based strategy for scheduling operations in a crude oil terminal.</title>
+		<pages>309-321</pages>
+		<year>2017</year>
+		<volume>106</volume>
+		<journal>Comput. Chem. Eng.</journal>
+		<ee>https://doi.org/10.1016/j.compchemeng.2017.06.012</ee>
+		<url>db/journals/cce/cce106.html#AssisCZFG17</url>
+	</article>
+	<article mdate="2020-05-18" key="journals/cce/GanPC18">
+		<author>Jingwei Gan</author>
+		<author orcid="0000-0003-4523-0304">Satish J. Parulekar</author>
+		<author>Ali Cinar</author>
+		<title>Development of a recursive time series model for fed-batch mammalian cell culture.</title>
+		<pages>289-298</pages>
+		<year>2018</year>
+		<volume>109</volume>
+		<journal>Comput. Chem. Eng.</journal>
+		<ee>https://doi.org/10.1016/j.compchemeng.2017.11.006</ee>
+		<url>db/journals/cce/cce109.html#GanPC18</url>
+	</article>
+	<article mdate="2020-05-18" key="journals/cce/ChenSCK14">
+		<author>Xiaopeng Chen</author>
+		<author orcid="0000-0002-4666-5126">Weixiang Shen</author>
+		<author orcid="0000-0002-6910-7346">Zhenwei Cao</author>
+		<author>Ajay Kapoor</author>
+		<title>Adaptive gain sliding mode observer for state of charge estimation based on combined battery equivalent circuit model.</title>
+		<pages>114-123</pages>
+		<year>2014</year>
+		<volume>64</volume>
+		<journal>Comput. Chem. Eng.</journal>
+		<ee>https://doi.org/10.1016/j.compchemeng.2014.02.015</ee>
+		<url>db/journals/cce/cce64.html#ChenSCK14</url>
+	</article>
+	<article mdate="2020-05-18" key="journals/cce/CorsanoGM14">
+		<author orcid="0000-0002-0235-4262">Gabriela Corsano</author>
+		<author orcid="0000-0001-6074-8473">Gonzalo Guillén-Gosálbez</author>
+		<author>Jorge M. Montagna</author>
+		<title>Computational methods for the simultaneous strategic planning of supply chains and batch chemical manufacturing sites.</title>
+		<pages>154-171</pages>
+		<year>2014</year>
+		<volume>60</volume>
+		<journal>Comput. Chem. Eng.</journal>
+		<ee>https://doi.org/10.1016/j.compchemeng.2013.09.001</ee>
+		<url>db/journals/cce/cce60.html#CorsanoGM14</url>
+	</article>
+	<article mdate="2020-05-18" key="journals/cce/WonLLJ10">
+		<author>Wangyun Won</author>
+		<author>Kwang Soon Lee</author>
+		<author>Seokho Lee</author>
+		<author>Chansul Jung</author>
+		<title>Repetitive control and online optimization of Catofin propane process.</title>
+		<pages>508-517</pages>
+		<year>2010</year>
+		<volume>34</volume>
+		<journal>Comput. Chem. Eng.</journal>
+		<number>4</number>
+		<ee>https://doi.org/10.1016/j.compchemeng.2009.12.011</ee>
+		<url>db/journals/cce/cce34.html#WonLLJ10</url>
+	</article>
+	<article mdate="2020-05-18" key="journals/cce/KhodadadiJ11">
+		<author>Hossein Khodadadi</author>
+		<author>Hooshang Jazayeri-Rad</author>
+		<title>Applying a dual extended Kalman filter for the nonlinear state and parameter estimations of a continuous stirred tank reactor.</title>
+		<pages>2426-2436</pages>
+		<year>2011</year>
+		<volume>35</volume>
+		<journal>Comput. Chem. Eng.</journal>
+		<number>11</number>
+		<ee>https://doi.org/10.1016/j.compchemeng.2010.12.010</ee>
+		<url>db/journals/cce/cce35.html#KhodadadiJ11</url>
+	</article>
+	<article mdate="2020-06-15" key="journals/cce/AmusatSF17">
+		<author orcid="0000-0002-4569-5729">Oluwamayowa O. Amusat</author>
+		<author>Paul R. Shearing</author>
+		<author orcid="0000-0002-5732-6082">Eric S. Fraga</author>
+		<title>On the design of complex energy systems: Accounting for renewables variability in systems sizing.</title>
+		<pages>103-115</pages>
+		<year>2017</year>
+		<volume>103</volume>
+		<journal>Comput. Chem. Eng.</journal>
+		<ee>https://doi.org/10.1016/j.compchemeng.2017.03.010</ee>
+		<url>db/journals/cce/cce103.html#AmusatSF17</url>
+	</article>
+	<article mdate="2020-05-18" key="journals/cce/AnantharamanNNG10">
+		<author orcid="0000-0001-9228-6197">Rahul Anantharaman</author>
+		<author>I. Nastad</author>
+		<author>Bjørn Nygreen</author>
+		<author orcid="0000-0003-2553-5725">Truls Gundersen</author>
+		<title>The sequential framework for heat exchanger network synthesis - The minimum number of units sub-problem.</title>
+		<pages>1822-1830</pages>
+		<year>2010</year>
+		<volume>34</volume>
+		<journal>Comput. Chem. Eng.</journal>
+		<number>11</number>
+		<ee>https://doi.org/10.1016/j.compchemeng.2009.12.002</ee>
+		<url>db/journals/cce/cce34.html#AnantharamanNNG10</url>
+	</article>
+	<article mdate="2020-05-18" key="journals/cce/FungNZG16">
+		<author>Ka Y. Fung</author>
+		<author>Ka Ming Ng</author>
+		<author orcid="0000-0002-7519-2858">Lei Zhang 0040</author>
+		<author orcid="0000-0002-6719-9283">Rafiqul Gani</author>
+		<title>A grand model for chemical product design.</title>
+		<pages>15-27</pages>
+		<year>2016</year>
+		<volume>91</volume>
+		<journal>Comput. Chem. Eng.</journal>
+		<ee>https://doi.org/10.1016/j.compchemeng.2016.03.009</ee>
+		<url>db/journals/cce/cce91.html#FungNZG16</url>
+	</article>
+	<article mdate="2020-05-18" key="journals/cce/CardosoBR16">
+		<author>Sónia R. Cardoso</author>
+		<author orcid="0000-0001-6594-9653">Ana Paula F. D. Barbosa-Póvoa</author>
+		<author orcid="0000-0003-3043-6086">Susana Relvas</author>
+		<title>Integrating financial risk measures into the design and planning of closed-loop supply chains.</title>
+		<pages>105-123</pages>
+		<year>2016</year>
+		<volume>85</volume>
+		<journal>Comput. Chem. Eng.</journal>
+		<ee>https://doi.org/10.1016/j.compchemeng.2015.10.012</ee>
+		<ee>https://www.wikidata.org/entity/Q57526530</ee>
+		<url>db/journals/cce/cce85.html#CardosoBR16</url>
+	</article>
+	<article mdate="2020-05-18" key="journals/cce/BodeKW11">
+		<author>Andreas Bode</author>
+		<author>Roman Kühner</author>
+		<author>Thomas Wisniewski</author>
+		<title>Identification of economic potentials in production processes: An industrial case study.</title>
+		<pages>2591-2601</pages>
+		<year>2011</year>
+		<volume>35</volume>
+		<journal>Comput. Chem. Eng.</journal>
+		<number>12</number>
+		<ee>https://doi.org/10.1016/j.compchemeng.2011.06.011</ee>
+		<url>db/journals/cce/cce35.html#BodeKW11</url>
+	</article>
+	<article mdate="2020-06-30" key="journals/mansci/ChanW18">
+		<author orcid="0000-0002-0092-2377">Jason Chan 0002</author>
+		<author orcid="0000-0002-8877-7134">Jing Wang 0019</author>
+		<title>Hiring Preferences in Online Labor Markets: Evidence of a Female Hiring Bias.</title>
+		<pages>2973-2994</pages>
+		<year>2018</year>
+		<volume>64</volume>
+		<journal>Manag. Sci.</journal>
+		<number>7</number>
+		<ee>https://doi.org/10.1287/mnsc.2017.2756</ee>
+		<url>db/journals/mansci/mansci64.html#ChanW18</url>
+	</article>
+	<article mdate="2020-06-30" key="journals/mansci/BapnaLMGG13">
+		<author>Ravi Bapna</author>
+		<author orcid="0000-0002-9561-7163">Nishtha Langer</author>
+		<author orcid="0000-0002-3822-9543">Amit Mehra</author>
+		<author>Ram D. Gopal</author>
+		<author orcid="0000-0002-2097-1643">Alok Gupta</author>
+		<title>Human Capital Investments and Employee Performance: An Analysis of IT Services Industry.</title>
+		<pages>641-658</pages>
+		<year>2013</year>
+		<volume>59</volume>
+		<journal>Manag. Sci.</journal>
+		<number>3</number>
+		<ee>https://doi.org/10.1287/mnsc.1120.1586</ee>
+		<url>db/journals/mansci/mansci59.html#BapnaLMGG13</url>
+	</article>
+	<article mdate="2020-06-30" key="journals/mansci/Gorman12j">
+		<author>Michael F. Gorman</author>
+		<title>Management Insights.</title>
+		<pages>iv-vi</pages>
+		<year>2012</year>
+		<volume>58</volume>
+		<journal>Manag. Sci.</journal>
+		<number>11</number>
+		<ee>https://doi.org/10.1287/mnsc.1120.1665</ee>
+		<url>db/journals/mansci/mansci58.html#Gorman12j</url>
+	</article>
+	<article mdate="2020-06-30" key="journals/mansci/BarillasN19">
+		<author orcid="0000-0002-5771-8860">Francisco Barillas</author>
+		<author orcid="0000-0002-0751-5264">Kristoffer P. Nimark</author>
+		<title>Speculation and the Bond Market: An Empirical No-Arbitrage Framework.</title>
+		<pages>4179-4203</pages>
+		<year>2019</year>
+		<volume>65</volume>
+		<journal>Manag. Sci.</journal>
+		<number>9</number>
+		<ee>https://doi.org/10.1287/mnsc.2018.3027</ee>
+		<url>db/journals/mansci/mansci65.html#BarillasN19</url>
+	</article>
+	<article mdate="2020-06-30" key="journals/mansci/GarofaloR18">
+		<author orcid="0000-0001-7767-6883">Orsola Garofalo</author>
+		<author orcid="0000-0002-4092-473X">Christina Rott</author>
+		<title>Shifting Blame? Experimental Evidence of Delegating Communication.</title>
+		<pages>3911-3925</pages>
+		<year>2018</year>
+		<volume>64</volume>
+		<journal>Manag. Sci.</journal>
+		<number>8</number>
+		<ee>https://doi.org/10.1287/mnsc.2017.2782</ee>
+		<url>db/journals/mansci/mansci64.html#GarofaloR18</url>
+	</article>
+	<article mdate="2020-06-30" key="journals/mansci/LaRiviereMN18">
+		<author orcid="0000-0002-6742-8963">Jacob LaRiviere</author>
+		<author orcid="0000-0002-4989-9825">Matthew McMahon</author>
+		<author orcid="0000-0002-6789-9378">William S. Neilson</author>
+		<title>Shareholder Protection and Agency Costs: An Experimental Analysis.</title>
+		<pages>3108-3128</pages>
+		<year>2018</year>
+		<volume>64</volume>
+		<journal>Manag. Sci.</journal>
+		<number>7</number>
+		<ee>https://doi.org/10.1287/mnsc.2017.2770</ee>
+		<url>db/journals/mansci/mansci64.html#LaRiviereMN18</url>
+	</article>
+	<article mdate="2020-06-30" key="journals/mansci/Gorman13f">
+		<author>Michael F. Gorman</author>
+		<title>Management Insights.</title>
+		<pages>iv-vii</pages>
+		<year>2013</year>
+		<volume>59</volume>
+		<journal>Manag. Sci.</journal>
+		<number>7</number>
+		<ee>https://doi.org/10.1287/mnsc.2013.1765</ee>
+		<url>db/journals/mansci/mansci59.html#Gorman13f</url>
+	</article>
+	<article mdate="2020-06-30" key="journals/mansci/Grennan14">
+		<author>Matthew Grennan</author>
+		<title>Bargaining Ability and Competitive Advantage: Empirical Evidence from Medical Devices.</title>
+		<pages>3011-3025</pages>
+		<year>2014</year>
+		<volume>60</volume>
+		<journal>Manag. Sci.</journal>
+		<number>12</number>
+		<ee>https://doi.org/10.1287/mnsc.2014.2006</ee>
+		<url>db/journals/mansci/mansci60.html#Grennan14</url>
+	</article>
+	<article mdate="2020-06-30" key="journals/mansci/KeppoK18">
+		<author>Jussi Keppo</author>
+		<author>Josef Korte</author>
+		<title>Risk Targeting and Policy Illusions - Evidence from the Announcement of the Volcker Rule.</title>
+		<year>2018</year>
+		<volume>64</volume>
+		<journal>Manag. Sci.</journal>
+		<number>1</number>
+		<ee>https://doi.org/10.1287/mnsc.2016.2583</ee>
+		<url>db/journals/mansci/mansci64.html#KeppoK18</url>
+		<pages>215-234</pages>
+	</article>
+	<article mdate="2020-06-30" key="journals/mansci/ChenDP12">
+		<author>Long Chen</author>
+		<author>Zhi Da</author>
+		<author>Richard Priestley</author>
+		<title>Dividend Smoothing and Predictability.</title>
+		<pages>1834-1853</pages>
+		<year>2012</year>
+		<volume>58</volume>
+		<journal>Manag. Sci.</journal>
+		<number>10</number>
+		<ee>https://doi.org/10.1287/mnsc.1120.1528</ee>
+		<url>db/journals/mansci/mansci58.html#ChenDP12</url>
+	</article>
+	<article mdate="2020-06-30" key="journals/mansci/ChiangLQ19">
+		<author orcid="0000-0001-8684-8122">Yao-Min Chiang</author>
+		<author orcid="0000-0003-0703-8952">Michelle Lowry</author>
+		<author>Yiming Qian</author>
+		<title>The Information Advantage of Underwriters in IPOs.</title>
+		<pages>5721-5740</pages>
+		<year>2019</year>
+		<volume>65</volume>
+		<journal>Manag. Sci.</journal>
+		<number>12</number>
+		<ee>https://doi.org/10.1287/mnsc.2018.3126</ee>
+		<url>db/journals/mansci/mansci65.html#ChiangLQ19</url>
+	</article>
+	<article mdate="2020-06-30" key="journals/mansci/NadarajahMS15">
+		<author>Selvaprabu Nadarajah</author>
+		<author>François Margot</author>
+		<author>Nicola Secomandi</author>
+		<title>Relaxations of Approximate Linear Programs for the Real Option Management of Commodity Storage.</title>
+		<pages>3054-3076</pages>
+		<year>2015</year>
+		<volume>61</volume>
+		<journal>Manag. Sci.</journal>
+		<number>12</number>
+		<ee>https://doi.org/10.1287/mnsc.2014.2136</ee>
+		<url>db/journals/mansci/mansci61.html#NadarajahMS15</url>
+	</article>
+	<article mdate="2020-06-30" key="journals/mansci/SimcoeW11">
+		<author>Timothy S. Simcoe</author>
+		<author>Dave M. Waguespack</author>
+		<title>Status, Quality, and Attention: What's in a (Missing) Name?</title>
+		<pages>274-290</pages>
+		<year>2011</year>
+		<volume>57</volume>
+		<journal>Manag. Sci.</journal>
+		<number>2</number>
+		<ee>https://doi.org/10.1287/mnsc.1100.1270</ee>
+		<url>db/journals/mansci/mansci57.html#SimcoeW11</url>
+	</article>
+	<article mdate="2020-06-30" key="journals/mansci/SubramanianRDW10">
+		<author>Upender Subramanian</author>
+		<author>Jagmohan S. Raju</author>
+		<author>Sanjay K. Dhar</author>
+		<author>Yusong Wang</author>
+		<title>Competitive Consequences of Using a Category Captain.</title>
+		<pages>1739-1765</pages>
+		<year>2010</year>
+		<volume>56</volume>
+		<journal>Manag. Sci.</journal>
+		<number>10</number>
+		<ee>https://doi.org/10.1287/mnsc.1100.1211</ee>
+		<url>db/journals/mansci/mansci56.html#SubramanianRDW10</url>
+	</article>
+	<article mdate="2020-06-30" key="journals/mansci/Dargnies12">
+		<author>Marie-Pierre Dargnies</author>
+		<title>Men Too Sometimes Shy Away from Competition: The Case of Team Competition.</title>
+		<pages>1982-2000</pages>
+		<year>2012</year>
+		<volume>58</volume>
+		<journal>Manag. Sci.</journal>
+		<number>11</number>
+		<ee>https://doi.org/10.1287/mnsc.1120.1542</ee>
+		<url>db/journals/mansci/mansci58.html#Dargnies12</url>
+	</article>
+	<article mdate="2020-06-30" key="journals/mansci/BernsteinM17">
+		<author>Fernando Bernstein</author>
+		<author>Víctor Martínez-de-Albéniz</author>
+		<title>Dynamic Product Rotation in the Presence of Strategic Customers.</title>
+		<pages>2092-2107</pages>
+		<year>2017</year>
+		<volume>63</volume>
+		<journal>Manag. Sci.</journal>
+		<number>7</number>
+		<ee>https://doi.org/10.1287/mnsc.2016.2448</ee>
+		<url>db/journals/mansci/mansci63.html#BernsteinM17</url>
+	</article>
+	<article mdate="2020-06-30" key="journals/mansci/RenHHH11">
+		<author>Charlotte R. Ren</author>
+		<author>Ye Hu</author>
+		<author>Yu (Jeffrey) Hu</author>
+		<author>Jerry Hausman</author>
+		<title>Managing Product Variety and Collocation in a Competitive Environment: An Empirical Investigation of Consumer Electronics Retailing.</title>
+		<pages>1009-1024</pages>
+		<year>2011</year>
+		<volume>57</volume>
+		<journal>Manag. Sci.</journal>
+		<number>6</number>
+		<ee>https://doi.org/10.1287/mnsc.1110.1327</ee>
+		<url>db/journals/mansci/mansci57.html#RenHHH11</url>
+	</article>
+	<article mdate="2020-06-30" key="journals/mansci/Teodoridis18">
+		<author orcid="0000-0002-4917-5552">Florenta Teodoridis</author>
+		<title>Understanding Team Knowledge Production: The Interrelated Roles of Technology and Expertise.</title>
+		<pages>3625-3648</pages>
+		<year>2018</year>
+		<volume>64</volume>
+		<journal>Manag. Sci.</journal>
+		<number>8</number>
+		<ee>https://doi.org/10.1287/mnsc.2017.2789</ee>
+		<url>db/journals/mansci/mansci64.html#Teodoridis18</url>
+	</article>
+	<article mdate="2020-10-02" key="journals/dafes/SilvanoSOPF17">
+		<author>Gilles Silvano</author>
+		<author orcid="0000-0002-0116-6489">Ivanovitch Silva</author>
+		<author orcid="0000-0001-9542-8357">Leonardo Oliveira</author>
+		<author>Marcos Pinheiro</author>
+		<author>Bruno Ferreira 0003</author>
+		<title>LVWNet: an hybrid simulation architecture for wireless sensor networks.</title>
+		<pages>139-155</pages>
+		<year>2017</year>
+		<volume>21</volume>
+		<journal>Des. Autom. Embed. Syst.</journal>
+		<number>3-4</number>
+		<ee>https://doi.org/10.1007/s10617-017-9191-y</ee>
+		<url>db/journals/dafes/dafes21.html#SilvanoSOPF17</url>
+	</article>
+	<article mdate="2020-10-02" key="journals/dafes/FarooqMB18">
+		<author orcid="0000-0002-5220-4908">Umer Farooq</author>
+		<author>Habib Mehrez</author>
+		<author orcid="0000-0002-1974-8268">Muhammad Khurram Bhatti</author>
+		<title>Inter-FPGA interconnect topologies exploration for multi-FPGA systems.</title>
+		<pages>117-140</pages>
+		<year>2018</year>
+		<volume>22</volume>
+		<journal>Des. Autom. Embed. Syst.</journal>
+		<number>1-2</number>
+		<ee>https://doi.org/10.1007/s10617-018-9207-2</ee>
+		<url>db/journals/dafes/dafes22.html#FarooqMB18</url>
+	</article>
+	<article mdate="2020-10-02" key="journals/dafes/AlistarPM15">
+		<author>Mirela Alistar</author>
+		<author>Paul Pop</author>
+		<author orcid="0000-0002-5098-8454">Jan Madsen</author>
+		<title>Redundancy optimization for error recovery in digital microfluidic biochips.</title>
+		<pages>129-159</pages>
+		<year>2015</year>
+		<volume>19</volume>
+		<journal>Des. Autom. Embed. Syst.</journal>
+		<number>1-2</number>
+		<ee>https://doi.org/10.1007/s10617-014-9157-2</ee>
+		<ee>https://www.wikidata.org/entity/Q54483818</ee>
+		<url>db/journals/dafes/dafes19.html#AlistarPM15</url>
+	</article>
+	<article mdate="2020-10-02" key="journals/dafes/BrisolaraF15">
+		<author orcid="0000-0003-3552-4456">Lisane B. de Brisolara</author>
+		<author>Ricardo Santos Ferreira</author>
+		<title>SBESC 2013 guest editor's introduction.</title>
+		<pages>327-328</pages>
+		<year>2015</year>
+		<volume>19</volume>
+		<journal>Des. Autom. Embed. Syst.</journal>
+		<number>4</number>
+		<ee type="oa">https://doi.org/10.1007/s10617-015-9165-x</ee>
+		<url>db/journals/dafes/dafes19.html#BrisolaraF15</url>
+	</article>
+	<article mdate="2020-10-02" key="journals/dafes/LizarragaDHLLG12">
+		<author>Adrian Lizarraga</author>
+		<author>Lu Ding</author>
+		<author>Jeff Hiner</author>
+		<author>Roman Lysecky</author>
+		<author>Susan Lysecky</author>
+		<author>Ann Gordon-Ross</author>
+		<title>ATLeS-SN.</title>
+		<pages>265-291</pages>
+		<year>2012</year>
+		<volume>16</volume>
+		<journal>Des. Autom. Embed. Syst.</journal>
+		<number>4</number>
+		<ee>https://doi.org/10.1007/s10617-013-9109-2</ee>
+		<url>db/journals/dafes/dafes16.html#LizarragaDHLLG12</url>
+	</article>
+	<article mdate="2020-10-02" key="journals/dafes/BonakdarpourBQ13">
+		<author>Borzoo Bonakdarpour</author>
+		<author>Marius Bozga</author>
+		<author>Jean Quilbeuf</author>
+		<title>Model-based implementation of distributed systems with priorities.</title>
+		<pages>251-276</pages>
+		<year>2013</year>
+		<volume>17</volume>
+		<journal>Des. Autom. Embed. Syst.</journal>
+		<number>2</number>
+		<ee>https://doi.org/10.1007/s10617-012-9091-0</ee>
+		<url>db/journals/dafes/dafes17.html#BonakdarpourBQ13</url>
+	</article>
+	<article mdate="2020-10-02" key="journals/dafes/ChrysosNGCMBV14">
+		<author>Nikolaos Chrysos</author>
+		<author>Fredy D. Neeser</author>
+		<author>Mitchell Gusat</author>
+		<author>Rolf Clauberg</author>
+		<author>Cyriel Minkenberg</author>
+		<author>Claude Basso</author>
+		<author>Kenneth M. Valk</author>
+		<title>Tandem queue weighted fair smooth scheduling.</title>
+		<pages>183-197</pages>
+		<year>2014</year>
+		<volume>18</volume>
+		<journal>Des. Autom. Embed. Syst.</journal>
+		<number>3-4</number>
+		<ee>https://doi.org/10.1007/s10617-014-9132-y</ee>
+		<url>db/journals/dafes/dafes18.html#ChrysosNGCMBV14</url>
+	</article>
+	<article mdate="2020-10-02" key="journals/dafes/HsiehPDL18">
+		<author orcid="0000-0002-1382-3298">Chen-Ying Hsieh</author>
+		<author>Jurn-Gyu Park</author>
+		<author orcid="0000-0002-3060-8119">Nikil D. Dutt</author>
+		<author>Sung-Soo Lim</author>
+		<title>MEMCOP: memory-aware co-operative power management governor for mobile games.</title>
+		<pages>95-116</pages>
+		<year>2018</year>
+		<volume>22</volume>
+		<journal>Des. Autom. Embed. Syst.</journal>
+		<number>1-2</number>
+		<ee>https://doi.org/10.1007/s10617-018-9201-8</ee>
+		<url>db/journals/dafes/dafes22.html#HsiehPDL18</url>
+	</article>
+	<article mdate="2020-10-02" key="journals/dafes/HerreraUV12">
+		<author>Fernando Herrera</author>
+		<author>Iñigo Ugarte</author>
+		<author orcid="0000-0002-6541-6176">Eugenio Villar</author>
+		<title>Towards automated implementation of adaptive systems from abstract SystemC specifications - From SystemC adaptive processes to embedded software and to synthesizable hardware descriptions.</title>
+		<pages>129-160</pages>
+		<year>2012</year>
+		<volume>16</volume>
+		<journal>Des. Autom. Embed. Syst.</journal>
+		<number>3</number>
+		<ee>https://doi.org/10.1007/s10617-012-9099-5</ee>
+		<url>db/journals/dafes/dafes16.html#HerreraUV12</url>
+	</article>
+	<article mdate="2020-10-02" key="journals/dafes/AnumandlaPSU12">
+		<author orcid="0000-0002-2067-8711">Kiran Kumar Anumandla</author>
+		<author orcid="0000-0003-2645-7634">Rangababu Peesapati</author>
+		<author orcid="0000-0002-1197-2943">Samrat L. Sabat</author>
+		<author orcid="0000-0001-8314-2618">Siba K. Udgata</author>
+		<title>SoC based floating point implementation of differential evolution algorithm using FPGA.</title>
+		<pages>221-240</pages>
+		<year>2012</year>
+		<volume>16</volume>
+		<journal>Des. Autom. Embed. Syst.</journal>
+		<number>4</number>
+		<ee>https://doi.org/10.1007/s10617-013-9107-4</ee>
+		<ee>https://www.wikidata.org/entity/Q59195049</ee>
+		<url>db/journals/dafes/dafes16.html#AnumandlaPSU12</url>
+	</article>
+	<article mdate="2020-10-02" key="journals/dafes/ParameswariM18">
+		<author orcid="0000-0002-3888-787X">M. Parameswari 0001</author>
+		<author>M. Balasingh Moses</author>
+		<title>Online measurement of water quality and reporting system using prominent rule controller based on aqua care-IOT.</title>
+		<pages>25-44</pages>
+		<year>2018</year>
+		<volume>22</volume>
+		<journal>Des. Autom. Embed. Syst.</journal>
+		<number>1-2</number>
+		<ee>https://doi.org/10.1007/s10617-017-9187-7</ee>
+		<url>db/journals/dafes/dafes22.html#ParameswariM18</url>
+	</article>
+	<article mdate="2020-10-02" key="journals/dafes/BertozziDS14">
+		<author>Davide Bertozzi</author>
+		<author>Giorgos Dimitrakopoulos</author>
+		<author>Sören Sonntag</author>
+		<title>Editorial.</title>
+		<pages>119-120</pages>
+		<year>2014</year>
+		<volume>18</volume>
+		<journal>Des. Autom. Embed. Syst.</journal>
+		<number>3-4</number>
+		<ee type="oa">https://doi.org/10.1007/s10617-014-9136-7</ee>
+		<url>db/journals/dafes/dafes18.html#BertozziDS14</url>
+	</article>
+	<article mdate="2020-10-02" key="journals/dafes/MafteiPM12">
+		<author>Elena Maftei</author>
+		<author orcid="0000-0001-9981-1775">Paul Pop</author>
+		<author orcid="0000-0002-5098-8454">Jan Madsen</author>
+		<title>Routing-based synthesis of digital microfluidic biochips.</title>
+		<pages>19-44</pages>
+		<year>2012</year>
+		<volume>16</volume>
+		<journal>Des. Autom. Embed. Syst.</journal>
+		<number>1</number>
+		<ee>https://doi.org/10.1007/s10617-012-9083-0</ee>
+		<ee>https://www.wikidata.org/entity/Q54483875</ee>
+		<url>db/journals/dafes/dafes16.html#MafteiPM12</url>
+	</article>
+	<article mdate="2020-10-02" key="journals/dafes/ParkXJPW15">
+		<author>Hyeongbae Park</author>
+		<author>Jingzhe Xu</author>
+		<author>Jeong-Hoon Ji</author>
+		<author>Jusung Park</author>
+		<author>Gyun Woo</author>
+		<title>Design methodology for on-chip-based processor debugger.</title>
+		<pages>35-57</pages>
+		<year>2015</year>
+		<volume>19</volume>
+		<journal>Des. Autom. Embed. Syst.</journal>
+		<number>1-2</number>
+		<ee>https://doi.org/10.1007/s10617-014-9135-8</ee>
+		<url>db/journals/dafes/dafes19.html#ParkXJPW15</url>
+	</article>
+	<article mdate="2020-10-02" key="journals/dafes/LiuYS20">
+		<author>Zongkai Liu</author>
+		<author orcid="0000-0003-0067-0605">Xiaoqiang Yang</author>
+		<author>Jinxing Shen</author>
+		<title>Optimization of multitask parallel mobile edge computing strategy based on deep learning architecture.</title>
+		<pages>129-143</pages>
+		<year>2020</year>
+		<volume>24</volume>
+		<journal>Des. Autom. Embed. Syst.</journal>
+		<number>3</number>
+		<ee>https://doi.org/10.1007/s10617-019-09222-5</ee>
+		<url>db/journals/dafes/dafes24.html#LiuYS20</url>
+	</article>
+	<article mdate="2020-10-02" key="journals/dafes/DaiZCJS13">
+		<author>Penglin Dai</author>
+		<author>Qingfeng Zhuge</author>
+		<author>Xianzhang Chen</author>
+		<author>Weiwen Jiang</author>
+		<author>Edwin Hsing-Mean Sha</author>
+		<title>Effective file data-block placement for different types of page cache on hybrid main memory architectures.</title>
+		<pages>485-506</pages>
+		<year>2013</year>
+		<volume>17</volume>
+		<journal>Des. Autom. Embed. Syst.</journal>
+		<number>3-4</number>
+		<ee>https://doi.org/10.1007/s10617-014-9148-3</ee>
+		<url>db/journals/dafes/dafes17.html#DaiZCJS13</url>
+	</article>
+	<article mdate="2020-10-02" key="journals/dafes/AdegbijaGM14">
+		<author>Tosiron Adegbija</author>
+		<author>Ann Gordon-Ross</author>
+		<author>Arslan Munir</author>
+		<title>Phase distance mapping: a phase-based cache tuning methodology for embedded systems.</title>
+		<pages>251-278</pages>
+		<year>2014</year>
+		<volume>18</volume>
+		<journal>Des. Autom. Embed. Syst.</journal>
+		<number>3-4</number>
+		<ee>https://doi.org/10.1007/s10617-014-9127-8</ee>
+		<url>db/journals/dafes/dafes18.html#AdegbijaGM14</url>
+	</article>
+	<article mdate="2020-10-02" key="journals/dafes/HouYH19">
+		<author>Neng Hou</author>
+		<author>Xiaohu Yan</author>
+		<author>Fazhi He</author>
+		<title>A survey on partitioning models, solution algorithms and algorithm parallelization for hardware/software co-design.</title>
+		<pages>57-77</pages>
+		<year>2019</year>
+		<volume>23</volume>
+		<journal>Des. Autom. Embed. Syst.</journal>
+		<number>1-2</number>
+		<ee>https://doi.org/10.1007/s10617-019-09220-7</ee>
+		<url>db/journals/dafes/dafes23.html#HouYH19</url>
+	</article>
+	<article mdate="2020-10-02" key="journals/dafes/TurkiMMA15">
+		<author>Mariem Turki</author>
+		<author>Zied Marrakchi</author>
+		<author>Habib Mehrez</author>
+		<author>Mohamed Abid</author>
+		<title>Signal multiplexing approach to improve inter-FPGA bandwidth of prototyping platform.</title>
+		<pages>223-242</pages>
+		<year>2015</year>
+		<volume>19</volume>
+		<journal>Des. Autom. Embed. Syst.</journal>
+		<number>3</number>
+		<ee>https://doi.org/10.1007/s10617-014-9155-4</ee>
+		<url>db/journals/dafes/dafes19.html#TurkiMMA15</url>
+	</article>
+	<article mdate="2020-10-02" key="journals/dafes/YangCO10">
+		<author>Chengmo Yang</author>
+		<author>Mingjing Chen</author>
+		<author>Alex Orailoglu</author>
+		<title>Squashing code size in microcoded IPs while delivering high decompression speed.</title>
+		<pages>265-284</pages>
+		<year>2010</year>
+		<volume>14</volume>
+		<journal>Des. Autom. Embed. Syst.</journal>
+		<number>3</number>
+		<ee type="oa">https://doi.org/10.1007/s10617-010-9057-z</ee>
+		<url>db/journals/dafes/dafes14.html#YangCO10</url>
+	</article>
+	<article mdate="2020-10-02" key="journals/dafes/LimBT14">
+		<author>TiongHoo Lim</author>
+		<author>Iain Bate</author>
+		<author orcid="0000-0003-1055-0471">Jonathan Timmis</author>
+		<title>A self-adaptive fault-tolerant systems for a dependable Wireless Sensor Networks.</title>
+		<pages>223-250</pages>
+		<year>2014</year>
+		<volume>18</volume>
+		<journal>Des. Autom. Embed. Syst.</journal>
+		<number>3-4</number>
+		<ee>https://doi.org/10.1007/s10617-013-9126-1</ee>
+		<ee>https://www.wikidata.org/entity/Q60473601</ee>
+		<url>db/journals/dafes/dafes18.html#LimBT14</url>
+	</article>
+	<article mdate="2020-10-02" key="journals/dafes/Zu20">
+		<author>Yue Zu</author>
+		<title>Deep learning parallel computing and evaluation for embedded system clustering architecture processor.</title>
+		<pages>145-159</pages>
+		<year>2020</year>
+		<volume>24</volume>
+		<journal>Des. Autom. Embed. Syst.</journal>
+		<number>3</number>
+		<ee>https://doi.org/10.1007/s10617-020-09235-5</ee>
+		<url>db/journals/dafes/dafes24.html#Zu20</url>
+	</article>
+	<article mdate="2020-10-02" key="journals/dafes/YoonBK13">
+		<author>Su-Kyung Yoon</author>
+		<author>Mei-Ying Bian</author>
+		<author>Shin-Dug Kim</author>
+		<title>An integrated memory-disk system with buffering adapter and non-volatile memory.</title>
+		<pages>609-626</pages>
+		<year>2013</year>
+		<volume>17</volume>
+		<journal>Des. Autom. Embed. Syst.</journal>
+		<number>3-4</number>
+		<ee>https://doi.org/10.1007/s10617-014-9152-7</ee>
+		<url>db/journals/dafes/dafes17.html#YoonBK13</url>
+	</article>
+	<article mdate="2020-10-02" key="journals/dafes/SiqueiraK20">
+		<author orcid="0000-0001-9604-3897">Hadley M. Siqueira</author>
+		<author>Márcio Eduardo Kreutz</author>
+		<title>A simultaneous multithreading processor architecture with predictable timing behavior.</title>
+		<pages>45-62</pages>
+		<year>2020</year>
+		<volume>24</volume>
+		<journal>Des. Autom. Embed. Syst.</journal>
+		<number>1</number>
+		<ee>https://doi.org/10.1007/s10617-019-09224-3</ee>
+		<url>db/journals/dafes/dafes24.html#SiqueiraK20</url>
+	</article>
+	<article mdate="2020-10-02" key="journals/dafes/RuaroCFM19">
+		<author>Marcelo Ruaro</author>
+		<author>Luciano L. Caimi</author>
+		<author orcid="0000-0002-3805-064X">Vinicius Fochi</author>
+		<author orcid="0000-0001-6126-6847">Fernando Gehm Moraes</author>
+		<title>Memphis: a framework for heterogeneous many-core SoCs generation and validation.</title>
+		<pages>103-122</pages>
+		<year>2019</year>
+		<volume>23</volume>
+		<journal>Des. Autom. Embed. Syst.</journal>
+		<number>3-4</number>
+		<ee>https://doi.org/10.1007/s10617-019-09223-4</ee>
+		<url>db/journals/dafes/dafes23.html#RuaroCFM19</url>
+	</article>
+	</dblp>
